@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ApacheServer &mdash; kevell_Multilanguage 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="kevell_Multilanguage 1.0.1 documentation" href="index.html" />
+    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="next" title="Aptana" href="gaptana.html" />
+    <link rel="prev" title="Cleopatra" href="gcleopatra_main.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="gaptana.html" title="Aptana"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="gcleopatra_main.html" title="Cleopatra"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" accesskey="U">Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="apacheserver">
+<h1>ApacheServer<a class="headerlink" href="#apacheserver" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Modul zielt auf die Installation des Apache-Servers. Ohne jede Anfrage wird automatisch die aktuelle Version des Apache-Server während der Installation zu installieren.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help beschreibt über den Zweck und die Befehle unter dieser Module. Es erklärt auch den Befehl, um die bestimmte Module installiert.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra ApacheServer <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Der Screenshot, wie unten dargestellt, visuell repräsentieren die Verwendung des Befehls-Hilfe unter diesem Modul.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# cleopatra ApacheServer <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>is part of Core and provides you  with a method by which you can install Apache HTTP Server
+
+ ApacheServer, apache-server, apacheserver
+
+       - install
+       Installs Apache HTTP Server
+       example: cleopatra apacheserver install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Es ist einfacher, diese besondere Werkzeug unter Kleopatra, indem Sie einfach mit dem Befehl unten angegeben zu installieren,</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra ApacheServer install
+</pre></div>
+</div>
+<p>Nachdem er den Befehl oben, wird das Tool fragen, wie</p>
+<p>Installieren Sie Apache Server? (Y / N)</p>
+<p>wenn Sie einen Eingang als Y geben, wird das Modul erfolgreich installiert.</p>
+<p>Der Screenshot unten angegeben erklärt visuell über die Schritte und Befehle beinhaltet in der Installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra apacheserver install
+Install Apache Server? (Y/N)
+Y
+*******************************
+*        Pharaoh Tools        *
+*         Apache Server!        *
+*******************************
+[Pharaoh Logging] Package apache2 from the Packager Apt is already installed, so not installing
+[Pharaoh Logging] Restarting apache2 service
+AH00558: apache2: Could not reliably determine the server&#39;s fully qualified domain name, using 127.0.1.1. Set the &#39;ServerName&#39; directive globally to suppress this message
+ * Restarting web server apache2
+  ...done.
+... All done!
+*******************************
+Thanks for installing , visit www.pharaohtools.com for more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+ApacheServer: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="optionen">
+<h2>Optionen<a class="headerlink" href="#optionen" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="25%" />
+<col width="27%" />
+<col width="12%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Alternative Parameter</th>
+<th class="head">Erforderlich</th>
+<th class="head">Kommentar</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install Apache Server? (Y/N)</td>
+<td>Statt ApacheServer , die wir
+verwenden können</td>
+<td>Yes</td>
+<td>Wenn der Benutzer gibt Eingabe wie ja,
+wird Installation fortgesetzt</td>
+</tr>
+<tr class="row-odd"><td>Install Apache Server? (Y/N)</td>
+<td>Statt ApacheServer , die wir
+verwenden können</td>
+<td>No</td>
+<td>Wenn der Benutzer gibt Eingang als nicht,
+wird es bekommen Ausfahrt.|</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="version">
+<h2>Version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<p>Während das Werkzeug die Bearbeitung wird es greift automatisch den zuletzt aktualisierten Version und macht sie bereit für die Installation zu bekommen.</p>
+</div>
+<div class="section" id="vorteile-fur-die-endbenutzer">
+<h2>Vorteile für die Endbenutzer<a class="headerlink" href="#vorteile-fur-die-endbenutzer" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Diese Module hilft dem Benutzer bei der Installation des Apache-Server. Es vereinfacht die Arbeit der Benutzer bei der Installation des
+Servers als automatisch überprüfen Sie die aktuelle Version des Apache-Server.</li>
+<li>Es ist wohlhabend in Cent OS und als auch in Ubuntu.</li>
+<li>Die in der Erklärung verwendeten Parameter ist nicht case sensitive, was ein zusätzlicher Vorteil ist.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ApacheServer</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#optionen">Optionen</a></li>
+<li><a class="reference internal" href="#version">Version</a></li>
+<li><a class="reference internal" href="#vorteile-fur-die-endbenutzer">Vorteile für die Endbenutzer</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="gcleopatra_main.html"
+                        title="previous chapter">Cleopatra</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="gaptana.html"
+                        title="next chapter">Aptana</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/gapacheserver.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="gaptana.html" title="Aptana"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="gcleopatra_main.html" title="Cleopatra"
+             >previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" >Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, kevells.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

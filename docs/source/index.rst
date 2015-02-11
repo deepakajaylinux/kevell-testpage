@@ -1,11 +1,11 @@
 Welcome to kevell_Multilanguage's documentation!
-================================================
+==================================================
 
 Pharaohtools Documentation
-==========================
+============================
 
 About pharaohtools
-==================
+====================
 
 
 Willkommen auf der pharaohtools Dokumentation !
@@ -14,8 +14,9 @@ Die Pharaonen hat seinen eigenen Nutzen , während im Vergleich zu anderen Tools
 
 Commands
 *********
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 6
    
  gcleopatra_main
 

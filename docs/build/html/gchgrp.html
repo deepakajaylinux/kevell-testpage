@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>chgrp &mdash; kevell_Multilanguage 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="kevell_Multilanguage 1.0.1 documentation" href="index.html" />
+    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="next" title="Chmode" href="gchmode.html" />
+    <link rel="prev" title="Cassandra" href="gcassandra.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="gchmode.html" title="Chmode"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="gcassandra.html" title="Cassandra"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" accesskey="U">Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="chgrp">
+<h1>chgrp<a class="headerlink" href="#chgrp" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Dateien und Verzeichnisse gehören sowohl ein Besitzer und eine Gruppe. Eine Gruppe besteht üblicherweise aus einer Sammlung von Benutzern, die alle zu der gleichen Gruppe. Der erste Satz von drei ist die Lese-, Schreib- und Ausführungsberechtigungen für den Eigentümer der Datei.
+Eine Gruppe kann auch von einem Benutzer, in der Regel der Benutzer, der die Datei erzeugt bestehen. Jeder Benutzer des Systems, einschließlich der Root-Benutzer wird seine eigene Gruppe, zu der er oder sie ist das einzige Mitglied zugewiesen wurde, gewährleistet den Zugang nur von diesem Benutzer. Der zweite Satz von drei ist die Lese-, Schreib- und Ausführungsberechtigungen für alle, die der Benutzergruppe für die Datei
+gehört.</p>
+<p>Der Root-Benutzer, der Systemadministrator besitzt die meisten der Systemdateien, die auch für die Stammgruppe, von denen nur der Root-Benutzer ist Mitglied angehören. Die meisten Verwaltungsdateien, wie Konfigurationsdateien im Verzeichnis / etc, sind durch den Benutzer root gehört und gehören zur Stammgruppe. Nur root hat die Erlaubnis, sie zu ändern, während normale Benutzer kann lesen und, im Falle von Programmen, auch ausführen</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, die Nutzung des Wandels Gruppenmodul zu bestimmen. Der Benutzer wird kommen, um über die andere Art und Weise / Format um dieses Modul ausführen kennen. Dieser Befehl leitet den Anwender, um den Zweck dieses Befehls kennen. Da unten sind die Kommando- und der Screenshot der gleiche.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra Chgrp <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Die bildliche Darstellung der Bildschirm ist unten angegeben,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/#  cleopatra Chgrp <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>handles file group ownership changing functions.
+
+ Chgrp, chgrp
+
+       - path
+       Will change the file group ownership of a path
+       example: cleopatra chgrp path --yes --guess --recursive --path<span class="o">=</span>/a/file/path --group<span class="o">=</span>golden
+
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="weg">
+<h2>Weg<a class="headerlink" href="#weg" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer die Datei Gruppeneigentum an den Pfad ändern muss, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra chgrp path –yes –guess –recursive –path<span class="o">=</span>/”File path” –group<span class="o">=</span>”group name”
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Es gibt zwei alternative Parameter, die in der Befehlszeile verwendet werden kann.</p>
+<p>chgrp, Chgrp</p>
+<p>Beispiel:  cleopatra Chgrp path/ cleopatra chgrp path</p>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Auch wenn andere Benutzer in der Lage, eine Datei zugreifen, kann nur der Besitzer die Berechtigungen ändern. Wenn Sie andere Benutzer über
+eine der Berechtigungen die Datei steuern geben möchten, können Sie den Besitzer der Datei von selbst zu dem anderen Benutzer ändern.</li>
+<li>Sie können auch die Gruppe für eine Datei und Verzeichnisse zu ändern, mit dem Befehl chgrp. chgrp nimmt als erstes Argument den Namen der
+neuen Gruppe für ein von Dateien oder Verzeichnissen.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">chgrp</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#weg">Weg</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="gcassandra.html"
+                        title="previous chapter">Cassandra</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="gchmode.html"
+                        title="next chapter">Chmode</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/gchgrp.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="gchmode.html" title="Chmode"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="gcassandra.html" title="Cassandra"
+             >previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" >Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, kevells.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

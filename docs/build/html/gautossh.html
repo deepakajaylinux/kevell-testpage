@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>AutoSSH &mdash; kevell_Multilanguage 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="kevell_Multilanguage 1.0.1 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="autossh">
+<h1>AutoSSH<a class="headerlink" href="#autossh" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ubersicht">
+<h2>Übersicht<a class="headerlink" href="#ubersicht" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Modul ermöglicht die Benutzern, AutoSSH ein Phlagrant Feld. Autossh ist ein kleines Frontend für SSH, die die Verbindung zu überwachen, und starten Sie den Tunnel, wenn es fällt oder nicht mehr reagiert.</p>
+<p>Autossh verwendet ssh um eine Schleife von ssh Versand (eine vom lokalen zum entfernten, aus der Ferne zu lokalen) zu erstellen, und dann sendet Daten, die sie erwartet, um wieder testen.</p>
+<p>Lassen Sie uns sehen Sie die Funktionen der automatischen ssh in anstehenden Themen.</p>
+</div>
+<div class="section" id="help-befehl">
+<h2>Help-Befehl<a class="headerlink" href="#help-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Help-Befehl führt die Benutzer über den Zweck und auch als zu den Optionen, die im Auto SSH-Modul enthalten sind. Es listet alternative Ausgabeparameter des Auto-SSH-Moduls. Es beschreibt auch die Syntax für die Verwendung der Cli, Sftp_put, Sftp_get Befehle. Der Help-Befehl für Auto-SSH-Modul wird gezeigt wie unten beschrieben.</p>
+<div class="highlight-bash"><div class="highlight"><pre>phlagrant AutoSSH <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Die Syntax zum Deklarieren des Help-Befehls ist nicht Groß-/Kleinschreibung einen zusätzlichen Vorteil. Der folgende Screenshot visualisieren Sie über den Befehl Help unter Auto SSH.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevells@corp:/# phlagrant AutoSSH <span class="nb">help</span>
+
+******************************
+Pharaoh Tools - Phlagrant
+******************************
+
+
+ This <span class="nb">command </span>allows you to autoSSH a phlagrant box
+
+ AutoSSH, auto-ssh, autossh, ssh, SSH
+
+       - cli
+       Open an SSH Cli to your Phlagrant Box
+       example: phlagrant auto-ssh cli --yes --guess
+
+       - sftp-put
+       SFTP Put a file on to your Phlagrant Box
+       example: phlagrant auto-ssh sftp-put --yes --guess --source<span class="o">=</span>/path/to/source --target<span class="o">=</span>/path/to/target
+
+       - sftp-get
+       SFTP Get a file from your Phlagrant Box
+       example: phlagrant auto-ssh sftp-get --yes --guess --source<span class="o">=</span>/path/to/source --target<span class="o">=</span>/path/to/target
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="funktionen-der-autossh">
+<h2>Funktionen der AutoSSH<a class="headerlink" href="#funktionen-der-autossh" title="Permalink to this headline">¶</a></h2>
+<p>Wie in den oben genannten Befehl Help dargestellt, enthält die wichtigsten Funktionen von diesem Auto ssh-Modul</p>
+<ul class="simple">
+<li>cli</li>
+<li>sftp_put</li>
+<li>sftp_get</li>
+</ul>
+</div>
+<div class="section" id="cli">
+<h2>CLI<a class="headerlink" href="#cli" title="Permalink to this headline">¶</a></h2>
+<p>Nach Aktivierung oder Aufbau eines automatisch ssh in der Benutzer-Umgebung, kann die Cli erstellt werden, die verwendet wird, um einen SSH-Cli an die Benutzer-Phlagrant-Box zu öffnen, mithilfe des folgenden Befehls:</p>
+<div class="highlight-bash"><div class="highlight"><pre>phlagrant auto-ssh cli --yes --guess
+</pre></div>
+</div>
+<p>Cli wird verwendet, für die Auflistung der verfügbaren Clients in bestimmten Umgebungen, wo wird das automatisch ssh generiert.</p>
+</div>
+<div class="section" id="sftp-put">
+<h2>Sftp_put<a class="headerlink" href="#sftp-put" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion dient für platzieren oder verschieben die erforderlichen Dateien oder Daten von der Quelle zum Ziel einer bestimmten Umgebung, wo die Auto ssh generiert wird. Dies kann mithilfe des Befehls, die unten gegeben:</p>
+<div class="highlight-bash"><div class="highlight"><pre>phlagrant auto-ssh sftp-put --yes --guess --source<span class="o">=</span><span class="s2">&quot;path/to/source --target=/path/to/target</span>
+</pre></div>
+</div>
+<p>Der obigen Befehl wird eine Datei auf das Feld Benutzer Phlagrant setzen. Der folgende Screenshot zeigt visuell den Prozess.</p>
+</div>
+<div class="section" id="sftp-get">
+<h2>Sftp_get<a class="headerlink" href="#sftp-get" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion dient zum Abrufen oder Abrufen der erforderlichen Dateien oder Daten von der Quelle zum Ziel einer bestimmten Umgebung, wo die Auto ssh generiert wird. Dies kann mithilfe des Befehls, die unten gegeben:</p>
+<div class="highlight-bash"><div class="highlight"><pre>phlagrant auto-ssh sftp-get --yes --guess --source<span class="o">=</span><span class="s2">&quot;path/to/source --target=/path/to/target</span>
+</pre></div>
+</div>
+<p>Der Befehl, die oben gezeigt wird Ruft oder erhält eine Datei aus dem Benutzer-Phlagrant-Feld. Der folgende Screenshot zeigt visuell den Prozess.</p>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>AutoSSH</li>
+<li>auto-ssh</li>
+<li>autossh</li>
+<li>ssh</li>
+<li>SSH</li>
+</ul>
+<p>In der oben genannten Liste können alternative Parameter in Deklaration verwendet werden.</p>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Die Parameter in der Hilfe verwendet und Installation und un Installationsvorgänge Groß-/Kleinschreibung keinen zusätzlichen Vorteil,
+während im Vergleich zu anderen ist.</li>
+<li>Es ist wohlhabend, in beiden Ubuntu sowie als Cent OS.</li>
+<li>Die Cli-Funktionsliste outet die verfügbaren Clients in einer bestimmten Umgebung mit Auto SSH.</li>
+<li>Sftp_put, Sftp_get können und rufen Sie die Dateien bzw. zwischen Quelle und Ziel einer bestimmten Umgebung mithilfe von automatischen SSH.</li>
+<li>Die Syntax zum Deklarieren der Cli gelegt, Get deutlich in dem Help-Befehl dargestellt.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">AutoSSH</a><ul>
+<li><a class="reference internal" href="#ubersicht">Übersicht</a></li>
+<li><a class="reference internal" href="#help-befehl">Help-Befehl</a></li>
+<li><a class="reference internal" href="#funktionen-der-autossh">Funktionen der AutoSSH</a></li>
+<li><a class="reference internal" href="#cli">CLI</a></li>
+<li><a class="reference internal" href="#sftp-put">Sftp_put</a></li>
+<li><a class="reference internal" href="#sftp-get">Sftp_get</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/gautossh.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, kevells.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
