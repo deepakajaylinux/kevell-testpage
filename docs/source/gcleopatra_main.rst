@@ -2,7 +2,9 @@ Cleopatra
 ===========
 
 
-Contents:
+Playing with Cleopatra Modules
+*******************************
+
 
 
 .. toctree::

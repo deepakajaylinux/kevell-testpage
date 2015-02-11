@@ -17,16 +17,9 @@ Commands
 .. toctree::
    :maxdepth: 2
    
- cleopatra
- phlagrant
- Dapperstrano_main 
- jrush_main
- Testingkamen_main
+ gcleopatra_main
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
+
 
