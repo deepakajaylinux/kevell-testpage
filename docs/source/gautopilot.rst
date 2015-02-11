@@ -1,0 +1,94 @@
+=============
+Autopilot
+=============
+
+
+Zusammenfassung
+-----------------------
+
+Autopilot bietet benutzerdefinierte Ausführung. Es unterstützt den kleinen und mittleren Unternehmensgesellschaften bereit, Wachstum erfahren und neue Chance. Unsere umfangreiche Managed IT Services bieten eine Vielzahl von detaillierten und gründlichen Lösungen für den Anwender Geschäft, einschließlich Netzwerk, Wolke, Software, Datensicherung, und IT-Dienstleistungen.
+
+Wir nehmen den Streit aus der Anwender-Technologie. In der heutigen wettbewerbsorientierten Geschäftsumfeld der Anwender keine Zeit haben, für Computer-Probleme? Wir machen IT-Probleme verschwinden, für immer! Die Anwenderunternehmensfunktionen am besten, wenn der Benutzer nicht über die DevOps Technologielösungen, die es zu fahren Sorgen machen. Wir wollen helfen dem Anwender legte es auf Autopilot so Benutzer kann auf dem Business-Anwender konzentrieren wollen bauen. Es ist bequem mit Ubuntu und Cent OS.
+
+Hilfe Befehl
+------------------
+
+Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den Autopilot-Module enthalten sind. Der Befehl help Listen aus der alternativen Parameter cleopatra Autopilot Modul. Es beschreibt auch die Syntax zur Erfassung des Nutzers oder der Nutzerin € ™ s Maschine. Der Befehl help für Autopilot unten gezeigt.
+
+.. code-block:: bash
+
+	cleopatra autopilot help
+
+Der folgende Screenshot zeigt die Funktionalität des Autopiloten.
+
+.. code-block:: bash
+
+ kevell@corp:~# cleopatra autopilot help
+ ******************************
+
+
+  This command is part of a default Module and provides you with a method by
+  which you can perform user defined executions of any Cleopatra Modules, in
+  any order, and with your own predefined settings.
+
+  Autopilot, autopilot, auto
+
+    - install, execute, x
+    execute all of the defined modules in your Autopilot file
+    example: cleopatra autopilot x --autopilot-file=*path-to-file*
+
+    - test
+    execute all of the steps defined as tests in your Autopilot file
+    example: cleopatra autopilot test --autopilot-file=*path-to-file*
+
+ ------------------------------
+ End Help
+ ******************************
+
+Installation
+----------------
+
+Autopilot fungieren als Standardmodul und stellt auch benutzerdefinierte Hinrichtungen. Es gibt zwei Möglichkeiten zur Verfügung. Sie sind,
+
+  *   installieren
+  *   ausführen
+
+.. code-block:: bash
+
+	cleopatra autopilot install
+
+nach Eingabe wie die oben genannten Befehls es beginnt die Installation. Folgende Schnappschüsse führt den Benutzer zu Autopilot-Installation.
+
+
+ausführen
+------------
+
+Diese Option wird verwendet, ausführen, um alle definierten Module im Autopilot ausführen. Der folgende Screenshot zeigt die Funktion.
+
+Optionen
+-------------
+
+.. cssclass:: table-bordered
+
+ +----------------------------+-----------------------------------------------+---------------+--------------------------------------------+
+ | Parameter 		      | Alternative Parameter 			      | Option 	      | Kommentare				   |
+ +============================+===============================================+===============+============================================+
+ |Install autopilot?(Y/N)     | Anstelle der Verwendung von Autopilot kann    | Y	      | Autopilot kann unter Cleopatra             |
+ |			      | der Anwender nutzen Autopilot, autopilot,auto |               | installiert werden.			   |
+ +----------------------------+-----------------------------------------------+---------------+--------------------------------------------+
+ |Install autopilot?(Y/N)     | Anstelle der Verwendung von Autopilot kann    | N             | Es stoppt den Installationsprozess         |
+ |                            | der Anwender nutzen Autopilot, autopilot,auto||               |                                            |
+ +----------------------------+-----------------------------------------------+---------------+--------------------------------------------+
+
+
+Vorteile
+-----------
+
+
+* Erhöhung der Betriebseffizienz
+* Reduzierung und Kontrolle der Betriebskosten
+* Kostengünstiger Zugriff auf Unternehmensebene Unterstützung
+* Erfahrung Minimierte Ausfallzeiten
+* Fähigkeit, auf der Ausführung des benutzerdefinierten Ausführung konzentrieren
+* Nicht Groß- und Kleinschreibung.
+* Gelassen Arbeit mit Ubuntu und Cent-OS.
