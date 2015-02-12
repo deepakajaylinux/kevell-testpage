@@ -18,6 +18,9 @@ Playing with Cleopatra Modules
    gbehat
    gcassandra
    gchgrp
+   gchromedriver
    gchmode
    gchown
-
+   gcleopatra
+   gdevelopertools
+   genvironmentconfig

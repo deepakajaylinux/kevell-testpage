@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>EnvironmentConfig &mdash; kevell_Multilanguage 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="kevell_Multilanguage 1.0.1 documentation" href="index.html" />
+    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="prev" title="DeveloperTools" href="gdevelopertools.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="gdevelopertools.html" title="DeveloperTools"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" accesskey="U">Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="environmentconfig">
+<h1>EnvironmentConfig<a class="headerlink" href="#environmentconfig" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Mit diesem Modul können die Benutzer bei der Konfiguration ihrer Umgebung für ihr Projekt erforderlich. Lassen Sie uns sehen, wie man die Umgebung zu konfigurieren, wie man die unerwünschten Umwelt, wie Sie die Optionsliste für die Liste der verfügbaren Umgebungen in kommenden Themen benutzen zu löschen.</p>
+</div>
+<div class="section" id="hilfe-command">
+<h2>Hilfe command<a class="headerlink" href="#hilfe-command" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help führt den Anwender über den Zweck des Moduls, seine alternative Parameter, die in der Erklärung verwendet. Sie weist auf die drei Funktionen der Umgebungskonfiguration die Liste sind, zu konfigurieren, zu löschen. Er legt auch die Syntax für drei Hauptfunktionen. Die zur Feststellung der Hilfe verwendete Syntax ist wie folgt:</p>
+<div class="highlight-bash"><div class="highlight"><pre>       cleopatra envconfig <span class="nb">help</span>
+
+kevell@corp:/# cleopatra envconfig <span class="nb">help</span>
+******************************
+
+
+This <span class="nb">command </span>is part of a default Module and provides you with a method by which you can
+configure environments <span class="k">for</span> your project from the <span class="nb">command </span>line. Currently compliant with
+both Dapperstrano and Cleopatra.
+
+
+EnvironmentConfig, environmentconfig, environment-config, envconfig, env-config
+
+      - list
+      List current environments
+      example: cleopatra envconfig list --yes
+
+      - list-local
+      List current <span class="nb">local </span>environments
+      example: cleopatra envconfig list-local --yes
+
+      - configure, config
+      Configure bespoke environments <span class="k">for</span> your project to use
+      example: cleopatra envconfig config
+      <span class="c"># below to create an empty environment to add instances to</span>
+      example: cleopatra envconfig config --yes
+                  --keep-current-environments <span class="c"># do not overwrite the current environments stored in papyrusfile</span>
+                  --no-manual-servers <span class="c"># so it will not ask you to interactively enter connection details of instances</span>
+                  --add-single-environment <span class="c"># otherwise it will loop for more until you specify not to</span>
+                  --environment-name<span class="o">=</span><span class="s2">&quot;some-name&quot;</span> <span class="c"># name of the environment to create</span>
+                  --tmp-dir<span class="o">=</span>/tmp/ <span class="c"># we&#39;re deprecating this soon</span>
+
+      - configure-default, config-default
+      Configure default environments <span class="k">for</span> your project to use
+      example: cleopatra envconfig config-default
+      example: cleopatra envconfig config-default --yes --environment-name<span class="o">=</span><span class="s2">&quot;local-80/local-8080&quot;</span>
+
+      - delete, del
+      Configure the environments <span class="k">for</span> your project to use
+      example: cleopatra envconfig delete
+      example: cleopatra envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="wie-man-die-umgebung-konfigurieren">
+<h2>Wie man die Umgebung konfigurieren<a class="headerlink" href="#wie-man-die-umgebung-konfigurieren" title="Permalink to this headline">¶</a></h2>
+<p>Für den Zweck der Konfiguration der Umgebung kann der Benutzer den folgenden Befehl verwenden</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra envconfig config
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls über die folgenden Operationen erfolgt wie folgt:</p>
+<p>Schritt 1: Konfigurieren von Umgebungen hier? (Y / N)</p>
+<p>Der Benutzer die Eingabe Y oder N sind</p>
+<p>Schritt 2: Verwenden Sie die vorhandene Umgebung Einstellungen? (Y / N)</p>
+<p>Der Benutzer die Eingabe Y oder N sind</p>
+<p>Wenn die Benutzereingabe als Y wird mit bereits bestehenden fortzufahren.</p>
+<p>Wenn sie als Eingang N, wird es in Bezug auf die Umwelt, fragt Informationen</p>
+<p>Preis: Name der Umwelt</p>
+<p>Preis: Standard temporäre Verzeichnis (Ort)</p>
+<p>Nach den obigen Schritten der Benutzer zur Eingabe der folgenden Angaben:</p>
+<p>Ziel eingeben?</p>
+<p>Geben Sie hier?</p>
+<p>Geben Sie das Kennwort?</p>
+<p>In einem anderen Server? (Y / N)</p>
+<p>Der Benutzer die Eingabe Y oder N sind</p>
+<p>Schließlich erhält der Umgebungskonfiguration Erfolg wie in der Abbildung unten dargestellt</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra envconfig config
+
+*********************************************
+Configure Environments Here? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Environment <span class="m">1</span>  :
+Default Settings <span class="k">for</span> Any App not setup <span class="k">for</span> environment  enter them now.
+Value <span class="k">for</span>: Name of this Environment
+kevells
+Value <span class="k">for</span>: Default Temp Dir <span class="o">(</span>should usually be /tmp/<span class="o">)</span>
+
+Enter Servers - this is an array of entries
+Enter target ?
+/home/kevells
+Enter user ?
+kevells
+Enter password ?
+123456
+Add Another Server? <span class="o">(</span>Y/N<span class="o">)</span>
+N
+******************************
+
+
+Success
+In Environment Configuration
+******************************
+</pre></div>
+</div>
+<p>Beim Konfigurieren einer Umgebung, wenn der Benutzer wünschen, mit der aktuellen Umgebung zu konfigurieren, sie den folgenden Befehl verwenden:</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra envconfig config --keep-current-environments
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls vor, werden dazu aufgefordert, die folgenden Details, wie in der Tabellenform dargestellt:</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="32%" />
+<col width="13%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Optionen</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Configure Environments Here? (Y/N)</td>
+<td>Y</td>
+<td>Wenn der Benutzer gegebenenfalls die Umgebungen in der aktuellen
+Umgebung können sie Eingang als Y konfigurieren</td>
+</tr>
+<tr class="row-odd"><td>Configure Environments Here? (Y/N)</td>
+<td>N</td>
+<td>Wenn der Benutzer nicht wünscht, um die Umwelt in der aktuellen
+Umgebung, die sie eingeben können, wie N konfigurieren</td>
+</tr>
+<tr class="row-even"><td>Use existing environment settings? (Y/N)</td>
+<td>Y</td>
+<td>Wenn der Benutzer wünschen, die bestehenden Umgebungseinstellungen zu
+verwenden, sie können Eingang als Y.</td>
+</tr>
+<tr class="row-odd"><td>Use existing environment settings? (Y/N)</td>
+<td>N</td>
+<td>Wenn der Benutzer nicht wünscht, um die vorhandenen
+Umgebungseinstellungen verwenden, können sie Eingang als N.</td>
+</tr>
+<tr class="row-even"><td>Do you want to add another environment?
+(Y/N)</td>
+<td>Y</td>
+<td>Wenn der Benutzer wünschen, eine andere Umgebung hinzufügen, können
+sie Eingang als Y.</td>
+</tr>
+<tr class="row-odd"><td>Do you want to add another environment?
+(Y/N)</td>
+<td>N</td>
+<td>Wenn der Benutzer nicht wünscht, eine andere Umgebung, können sie
+Eingang als N. hinzufügen.|</td>
+</tr>
+</tbody>
+</table>
+<p>Der folgende Screenshot bildlich repräsentiert die oben genannten Verfahren</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra envconfig config --keep-current-environments
+
+Configure Environments Here? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Use existing environment settings? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Do you want to add another environment? <span class="o">(</span>Y/N<span class="o">)</span>
+N
+******************************
+
+
+Success
+In Environment Configuration
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="wie-umgebungskonfiguration-loschen">
+<h2>Wie Umgebungskonfiguration löschen<a class="headerlink" href="#wie-umgebungskonfiguration-loschen" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer, die Umwelt zu Konfiguration zu löschen muss, können sie geben Sie den folgenden Befehl ein:</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;kevells&quot;</span>
+</pre></div>
+</div>
+<p>Der Benutzer kann den Namen der Umgebung, die sie, wie oben gezeigt, die gelöscht werden soll angeben.</p>
+<p>Nach der Eingabe des Befehls oben, werden Sie gefragt,</p>
+<p>Schritt 1: Environments löschen Hier?</p>
+<p>und zeigt eine Warnmeldung</p>
+<div class="highlight-bash"><div class="highlight"><pre>WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for</span> boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
+</pre></div>
+</div>
+<p>Der Benutzer hat auf Y oder N angeben</p>
+<p>Schritt 2: Umwelt Kevells (Name der angegebenen Umgebung, die angeblich zu löschen) gefunden. Sind Sie sicher, es zu löschen? (Y / N)</p>
+<p>Der Benutzer hat auf Y oder N angeben</p>
+<p>Schließlich ist der angegebenen Umgebung gelöscht wird, wie im Screenshot zu sehen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra envconfig del --environment-name<span class="o">=</span><span class="s2">&quot;kevells&quot;</span>
+Delete Environments Here?
+WARNING: Deleting an environment from papyrus is final. You may be looking <span class="k">for</span> boxify box-destroy instead <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Environment kevells found. Are you sure you want to delete it? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Removing environment kevells.
+******************************
+
+
+Success
+In Environment Configuration
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="wie-listet-umwelt-configuration">
+<h2>Wie listet Umwelt configuration<a class="headerlink" href="#wie-listet-umwelt-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer die Liste der Details in Bezug auf Umwelt-Konfiguration sehen möchten, können sie Eingang wie dargestellt</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra envconfig list --yes
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls oben, wird die Ausgabe angezeigt werden, wie im Bild gezeigt</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra envconfig list --yes
+******************************
+
+
+array<span class="o">(</span>0<span class="o">)</span> <span class="o">{</span>
+<span class="o">}</span>
+
+In Environment Configuration
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Statt envconfig können die folgenden Parameter in der Erklärung verwendet werden:</p>
+<ul class="simple">
+<li>EnvironmentConfig</li>
+<li>environmentconfig</li>
+<li>Umwelt-config</li>
+<li>env-config</li>
+</ul>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Es ist gut-to-do in beiden Cent OS und als auch in Ubuntu.</li>
+<li>Die in der Erklärung verwendet muss nicht beachtet werden, welche ein zusätzlicher Vorteil ist, während im Vergleich zu anderen Parametern.</li>
+<li>Dieses Modul führt die Benutzer, wie man die Umgebung zu konfigurieren, wie man die unerwünschten Umgebung zu löschen, wie Sie die
+Optionsliste verwenden für den verfügbaren Umgebungen</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">EnvironmentConfig</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-command">Hilfe command</a></li>
+<li><a class="reference internal" href="#wie-man-die-umgebung-konfigurieren">Wie man die Umgebung konfigurieren</a></li>
+<li><a class="reference internal" href="#wie-umgebungskonfiguration-loschen">Wie Umgebungskonfiguration löschen</a></li>
+<li><a class="reference internal" href="#wie-listet-umwelt-configuration">Wie listet Umwelt configuration</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="gdevelopertools.html"
+                        title="previous chapter">DeveloperTools</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/genvironmentconfig.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="gdevelopertools.html" title="DeveloperTools"
+             >previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" >Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, kevells.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
