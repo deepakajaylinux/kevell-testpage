@@ -50,7 +50,7 @@ Wenn der Benutzer Zitadelle Server Maschine installieren muss, können Sie die f
 
 .. code-block:: bash
 
-                Install citadel Cleopatra
+                cleopatra Citadel install
 
  kevell@corp:/# cleopatra Citadel install
  Install Citadel Server? (Y/N)
@@ -242,7 +242,7 @@ Dieser Befehl hilft bei der Konfiguration des Servers Zitadelle. Einmal die unte
 .. code-block:: bash
 
 
-                Configure Cleopatra Citadel
+                cleopatra citadel configure
 
 
 Vorteile
