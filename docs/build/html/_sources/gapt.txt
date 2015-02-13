@@ -1,0 +1,180 @@
+======
+Apt
+======
+
+Zusammenfassung
+-------------------------
+
+Das Hauptziel dieser apt-Modul ist es, neue Wohnungen zu erstellen und ebenso zielt auf die Änderung der bestehenden Wohnungen. Das Modul verfügt über eine Sammlung von verschiedenen Merkmalen zugreifen und APTS basierend auf den Anforderungen der Benutzer zu ändern.
+
+Die anstehenden Themen behandelt, wie man dieses Modul über die verschiedenen Aspekte dieses Moduls beim Zugang apt zu verwenden und außerdem.
+
+Hilfe Befehl
+-------------------
+
+Der Befehl help ist eine kurze Bedienungsanleitung, die die Benutzer sich bewusst sein, erhalten über die Nutzung erleichtert, Methoden der Umgang mit diesem Modul, um verschiedene Funktionen auszuführen. Außerdem werden outs die alternativen Parameter, die in Erklärungen verwendet werden kann. Sie weist auf die Syntax Beispiel für die Verwendung und den Zugriff auf verschiedene Funktionen unter Apt.
+
+Der Befehl für die Hilfe-Option unter Apt erklärt verwendet wird unten gezeigt,
+.. code-block:: bash
+
+	cleopatra Apt help
+
+Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter apt.
+
+.. code-block:: bash
+
+ kevell@corp:/# cleopatra apt help
+ ******************************
+
+
+  This command allows you to modify create or modify apts
+
+  Apt, apt
+
+        - create
+        Create a new system apt, overwriting if it exists
+        example: cleopatra apt create --aptname="somename"
+
+        - remove
+        Remove a system apt
+        example: cleopatra apt remove --aptname="somename"
+
+        - set-password
+        Set the password of a system apt
+        example: cleopatra apt set-password --aptname="somename" --new-password="somepassword"
+
+        - exists
+        Check the existence of a apt
+        example: cleopatra apt exists --aptname="somename"
+
+        - show-groups
+        Show groups to which a apt belongs
+        example: cleopatra apt show-groups --aptname="somename"
+
+        - add-to-group
+        Add apt to a group
+        example: cleopatra apt add-to-group --aptname="somename" --groupname="somegroupname"
+
+
+Verschiedene Features von Apt
+---------------------------------
+
+Dieses Thema beschäftigt sich mit verschiedenen Funktionen apt unter diesem Modul und auch die Möglichkeiten, diese verschiedenen Funktionen.
+
+Die verschiedenen Aspekte dieses Moduls unter apt aufgelistet unten,
+
+* Erstellen
+* Entfernen
+* Set-Passwort
+* vorhanden
+* Show-Gruppen
+* Add-to-Gruppe
+* Remove-from-Gruppe
+
+
+CREATE
+----------
+
+Diese Funktion zielt auf die Schaffung eines neuen Systems geeignet, und so gut wie überschreibt bei bereits bestehenden. Diese Funktion von apt mit diesem Modul kann durch die folgende Syntax erreicht werden,
+
+.. code-block:: bash
+
+	cleopatra apt create --aptname="somename"
+
+An der Stelle des aptname kann der Benutzer den Namen des apt, die erstellt werden soll angeben. Nach der Eingabe des Befehls, wie oben angegeben, wird das neue System apt mit dem angegebenen Namen erstellt werden.
+
+ENTFERNEN
+------------------
+
+Dies funktioniert zielt darauf ab, eine bestehende apt. Diese Funktion von apt mit diesem Modul kann durch die folgende Syntax erreicht werden,
+
+ .. code-block:: bash
+
+	cleopatra apt remove --aptname="somename"
+
+An der Stelle des aptname kann der Benutzer den Namen des apt, die gelöscht werden soll angeben. Nach der Eingabe des Befehls, wie oben angegeben, die angegebene apt werden gelöscht.
+
+SET PASS
+--------------------
+
+Diese Funktion erleichtert die Einstellung eines neuen Passworts zu einem System geeignet gemäß den Anforderungen. Dies kann durch den Befehl als angegeben, einzuhalten
+unten,       
+
+.. code-block:: bash
+
+	cleopatra apt set-password --aptname="somename" --new-password="somepassword"
+
+Um diese Funktionen zu implementieren, muss der Benutzer, um die beiden Felder geben,
+
+* Apt Name
+* Neues Kennwort
+
+Nachdem Sie die beiden Felder im Format der oben genannten Befehl wird das neue Kennwort für den angegebenen apt erstellt werden.
+
+
+VORHANDEN
+-----------------
+
+Diese Funktion soll die Überprüfung der Existenz eines apt. Dies kann einfach durchgeführt werden, indem Sie unter dem Befehl,
+
+.. code-block:: bash
+
+	cleopatra apt exists --aptname="somename"
+
+TAfter Aufbringen der Befehl wie oben, wird das Vorliegen eines genannten apt die Ergebnisse sichergestellt werden.
+
+Gruppen Zeige
+--------------------
+
+Diese Funktion unterstützt die Nutzer wissen zu welcher Gruppe hat der apt gehört. Dies kann einfach durch das unten stehende Befehl erreicht werden,
+
+.. code-block:: bash
+
+	cleopatra apt show-groups --aptname="somename"
+
+Der Benutzer muss den Namen des apt im Bereich der aptname angeben, um die Details seiner Gruppe wissen.
+
+ADD _TO_GROUP
+-----------------------
+
+Der Hauptzweck dieser Funktion besteht darin, die erforderliche apt zur gewünschten Gruppe, indem einfach den Befehl, die nachstehend angegeben hinzuzufügen,
+
+.. code-block:: bash
+
+	cleopatra apt add-to-group --aptname="somename" --groupname="somegroupname"
+
+Um diese Funktion zu implementieren, muss der Benutzer die beiden folgenden Felder nach ihren Bedürfnissen im Format der oben genannten Befehl angeben,
+
+* Aptname
+* Gruppennamen
+
+REMOVE_FROM_GROUP
+--------------------------------
+
+Das Hauptziel dieser Funktion ist es, indem einfach der Befehl, die nachstehend angegeben entfernen Sie die apt aus einer Gruppe,
+
+.. code-block:: bash
+
+	cleopatra apt remove-from-group --aptname="somename" --groupname="somegroupname"
+
+Um diese Funktion zu implementieren, muss der Benutzer die beiden folgenden Felder nach ihren Bedürfnissen im Format der oben genannten Befehl angeben,
+
+* Aptname
+* Gruppennamen
+
+
+Alternative Parameter
+-----------------------------
+
+Die alternative Parameter für dieses Modul, die beide in Erklärung verwendet werden,
+
+* Apt
+* apt
+
+
+Vorteile
+---------
+
+* Die verwendeten Hilfe und andere unterschiedliche Merkmale von apt erklärt Parameter wird nicht zwischen Groß- und Kleinschreibung.
+* Es ist gut-to-do in beiden Cent os und als auch in Ubuntu.
+* Mit diesem Modul kann der Benutzer zu erstellen und zu ändern sowie die apt nach ihren Bedürfnissen.

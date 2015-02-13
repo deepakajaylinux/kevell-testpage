@@ -79,7 +79,7 @@ Die bildliche Darstellung der oben genannte Befehl ist im folgenden aufgeführt,
  ******************************
 
 
-Pfad
+Weg 
 --------
 
 Chmod-Pfad ist der Befehl der die Zugriffsberechtigungen auf Dateisystemobjekte (Dateien und Verzeichnisse) zu ändern.
