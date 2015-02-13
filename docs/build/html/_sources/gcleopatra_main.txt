@@ -12,15 +12,21 @@ Das Spiel mit Kleopatra -Module
     
   
 
+   gapachereverseproxy
    gapacheserver
+   gapachevirtualhosteditor
    gaptana
    gautopilot
+   gawstats
    gbehat
    gcassandra
    gchgrp
    gchromedriver
    gchmode
    gchown
+   gcitadel
    gcleopatra
+   gcomposer
+   gcopy
    gdevelopertools
    genvironmentconfig

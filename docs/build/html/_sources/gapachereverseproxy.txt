@@ -1,0 +1,237 @@
+=============================
+ApacheReverseProxyModules   
+=============================
+
+
+Zusammenfassung
+----------------------
+
+Dieses Modul soll die Installation der Bibliotheksfunktionen. Während der Installation der Library-Funktionen, wird es die Verfügbarkeit von bereits existierenden Library-Funktionen zu überprüfen. Es hilft bei der Verwaltung und Konfiguration der Anwendungseinstellungen. Der Benutzer kann die Standardwerte für die Anwendungseinstellungen angeben.
+
+Hilfe Befehl
+----------------
+
+Der Befehl help führt den Benutzer zu kennen die Anwendungen und auch die Möglichkeiten und Maßnahmen, die durchgeführt werden können. Es listet outs die Alternative
+
+Die Codierung zur Verwendung Befehl help unter Apache Reverse-Proxy-Modul zu machen, ist wie folgt gegeben
+
+.. code-block:: bash
+
+         cleopatra ApacheReverseProxyModules help
+
+Der unten abgebildete Screenshot gibt Ihnen eine bildliche Darstellung der Befehl help Nutzung.
+
+.. code-block:: bash
+
+ Kevell@corp/# cleopatra ApacheReverseProxyModules help
+ ******************************
+
+
+ This command is part of Core and provides you  with a method by which you can configure Application Settings.
+ You can configure default application settings, ie: mysql admin user, host, pass
+
+ ApacheReverseProxyModules, apache-reverse-proxy-modules, apache-proxy-mods, apacheproxymodules, apache-lb-mods,
+ apache-load-balancer-modules
+
+ - install
+      Installs Load Balancer/Reverse Proxy Apache Modules
+      example: cleopatra apache-lb-mods install
+
+ ------------------------------
+ End Help
+ ****************************
+
+
+
+Installation
+--------------
+
+Wenn der Benutzer den Apache Reverse-Proxy-Modul, um ihr System können sie den Befehl unten angegebenen Eingangs installieren möchten,
+
+.. code-block:: bash
+
+	       cleopatra ApacheReverseProxyModules install
+
+Option
+------
+
+.. cssclass:: table-bordered
+
+ +-----------------------+----------------------------------------+---------------+------------------------------------------+
+ | Parameter             | Alternative Parameter                  | erforderlich  | Kommentar                                |
+ +=======================+========================================+===============+==========================================+ 
+ |Install Reverse Proxy  | Statt ReverseProxy Apache -Module      | Y(Yes)	  | Wenn der Benutzereingaben wie Y ,        |
+ |Apache Modules         | Der Benutzer kann auch angeben, die    |               | wird das Apache-Modul installiert werden |
+ |			 | folgenden Parameter:                   |               |                                          |
+ |                       | ApacheReverseProxyModules,             |               |                                          |
+ |                       | apache-reverse-proxy-modules, apache-  |               |                                          |
+ |                       | proxy-mods, apacheproxymodules,        |               |                                          |
+ |                       | apache-lb-mods, apache-load-balancer,  |               |                                          |
+ |                       | modules                                |               |                                          |
+ +-----------------------+----------------------------------------+---------------+------------------------------------------+
+ |Install ReverseProxy   | Statt ReverseProxy Apache -Module      | N(No)         | Wenn der Benutzereingaben als N, wird    |
+ |Apache Modules         | Der Benutzer kann auch angeben, die    |               | der Prozess wird beendigt von            |
+ |                       | folgenden Parameter:                   |               | Installations                            |
+ |                       | ApacheReverseProxyModules,             |               |                                          |
+ |                       | apache-reverse-proxy-modules, apache-  |               |                                          |
+ |                       | proxy-mods, apacheproxymodules,        |               |                                          |
+ |                       | apache-lb-mods, apache-load-balancer,  |               |                                          |
+ |                       | modules|                               |               |                                          |
+ +-----------------------+----------------------------------------+---------------+------------------------------------------+
+
+
+Bei der Installation des Reverse-Proxy- Module , wird es liest die Paketlisten , Statusinformationen , erstellt die Abhängigkeitsstruktur . Falls Pakete fehlen , werden die neuen Pakete installiert werden. Die unten gezeigten Screenshot Willen erklärt den Prozess der Installation grafisch .
+
+.. code-block:: bash
+
+
+ kevell@corp:/#: cleopatra ApacheReverseProxyModules install
+ Install Apache Rev. Proxy Modules? (Y/N) 
+ Y
+ *******************************
+ *        Pharaoh Tools        *
+ *         Apache Proxy Mods!        *
+ *******************************
+ Reading package lists...
+ Building dependency tree...
+ Reading state information...
+ The following NEW packages will be installed:
+  libapache2-mod-proxy-html
+ 0 upgraded, 1 newly installed, 0 to remove and 229 not upgraded.
+ Need to get 1,464 B of archives.
+ After this operation, 22.5 kB of additional disk space will be used.
+ Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/universe libapache2-mod-proxy-html amd64 1:2.4.7-1ubuntu4.1 [1,464 B]
+ Fetched 1,464 B in 1s (1,323 B/s)
+ Selecting previously unselected package libapache2-mod-proxy-html.
+ (Reading database ... 181545 files and directories currently installed.)
+ Preparing to unpack .../libapache2-mod-proxy-html_1%3a2.4.7-1ubuntu4.1_amd64.deb ...
+ Unpacking libapache2-mod-proxy-html (1:2.4.7-1ubuntu4.1) ...
+ Setting up libapache2-mod-proxy-html (1:2.4.7-1ubuntu4.1) ...
+ [Pharaoh Logging] Adding Package libapache2-mod-proxy-html from the Packager Apt executed correctly
+ [Pharaoh Logging] Package libxml2-dev from the Packager Apt is already installed, so not installing
+ Creating /tmp/cleopatra-temp-script-49127207421.sh
+ chmod 755 /tmp/cleopatra-temp-script-49127207421.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-49127207421.sh Permissions
+ Executing /tmp/cleopatra-temp-script-49127207421.sh
+ Considering dependency proxy_balancer for lbmethod_byrequests:
+ Considering dependency proxy for proxy_balancer:
+ Enabling module proxy.
+ Considering dependency alias for proxy_balancer:
+ Module alias already enabled
+ Considering dependency slotmem_shm for proxy_balancer:
+ Enabling module slotmem_shm.
+ Enabling module proxy_balancer.
+ Enabling module lbmethod_byrequests.
+ To activate the new configuration, you need to run:
+  service apache2 restart
+ Temp File /tmp/cleopatra-temp-script-49127207421.sh Removed
+ Creating /tmp/cleopatra-temp-script-12740464083.sh
+ chmod 755 /tmp/cleopatra-temp-script-12740464083.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-12740464083.sh Permissions
+ Executing /tmp/cleopatra-temp-script-12740464083.sh
+ Module proxy already enabled
+ Temp File /tmp/cleopatra-temp-script-12740464083.sh Removed
+ Creating /tmp/cleopatra-temp-script-61839737362.sh
+ chmod 755 /tmp/cleopatra-temp-script-61839737362.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-61839737362.sh Permissions
+ Executing /tmp/cleopatra-temp-script-61839737362.sh
+ Considering dependency proxy for proxy_http:
+ Module proxy already enabled
+ Enabling module proxy_http.
+ To activate the new configuration, you need to run:
+  service apache2 restart
+ Temp File /tmp/cleopatra-temp-script-61839737362.sh Removed
+ Creating /tmp/cleopatra-temp-script-22752304452.sh
+ chmod 755 /tmp/cleopatra-temp-script-22752304452.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-22752304452.sh Permissions
+ Executing /tmp/cleopatra-temp-script-22752304452.sh
+ ERROR: Module mod_proxy_http does not exist!
+ Temp File /tmp/cleopatra-temp-script-22752304452.sh Removed
+ Creating /tmp/cleopatra-temp-script-19250932602.sh
+ chmod 755 /tmp/cleopatra-temp-script-19250932602.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-19250932602.sh Permissions
+ Executing /tmp/cleopatra-temp-script-19250932602.sh
+ Considering dependency proxy for proxy_ftp:
+ Module proxy already enabled
+ Enabling module proxy_ftp.
+ To activate the new configuration, you need to run:
+ service apache2 restart
+ Temp File /tmp/cleopatra-temp-script-85272088847.sh Removed
+ Creating /tmp/cleopatra-temp-script-31029043648.sh
+ chmod 755 /tmp/cleopatra-temp-script-31029043648.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-31029043648.sh Permissions
+ Executing /tmp/cleopatra-temp-script-31029043648.sh
+ Considering dependency proxy for proxy_wstunnel:
+ Module proxy already enabled
+ Enabling module proxy_wstunnel.
+ To activate the new configuration, you need to run:
+  service apache2 restart
+ Temp File /tmp/cleopatra-temp-script-31029043648.sh Removed
+ Creating /tmp/cleopatra-temp-script-2400353229.sh
+ chmod 755 /tmp/cleopatra-temp-script-2400353229.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-2400353229.sh Permissions
+ Executing /tmp/cleopatra-temp-script-2400353229.sh
+ Considering dependency proxy for proxy_balancer:
+ Module proxy already enabled
+ Considering dependency alias for proxy_balancer:
+ Module alias already enabled
+ Considering dependency slotmem_shm for proxy_balancer:
+ Module slotmem_shm already enabled
+ Module proxy_balancer already enabled
+ Temp File /tmp/cleopatra-temp-script-2400353229.sh Removed
+ Creating /tmp/cleopatra-temp-script-88564779807.sh
+ chmod 755 /tmp/cleopatra-temp-script-88564779807.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-88564779807.sh Permissions
+ Executing /tmp/cleopatra-temp-script-88564779807.sh
+ Enabling module cache.
+ To activate the new configuration, you need to run:
+  service apache2 restart
+ Temp File /tmp/cleopatra-temp-script-88564779807.sh Removed
+ Creating /tmp/cleopatra-temp-script-68936090528.sh
+ chmod 755 /tmp/cleopatra-temp-script-68936090528.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-68936090528.sh Permissions
+ Executing /tmp/cleopatra-temp-script-88564779807.sh
+ Enabling module cache.
+ To activate the new configuration, you need to run:
+  service apache2 restart
+ Temp File /tmp/cleopatra-temp-script-88564779807.sh Removed
+ Creating /tmp/cleopatra-temp-script-68936090528.sh
+ chmod 755 /tmp/cleopatra-temp-script-68936090528.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-68936090528.sh Permissions
+ Executing /tmp/cleopatra-temp-script-68936090528.sh
+ Enabling module headers.
+ To activate the new configuration, you need to run:
+  service apache2 restart
+ Temp File /tmp/cleopatra-temp-script-68936090528.sh Removed
+ [Pharaoh Logging] Restarting apache2 service
+ Output of config test was:
+ apache2: Syntax error on line 214 of /etc/apache2/apache2.conf: Could not open configuration file /etc/apache2/httpd.conf: No such file or dir ectory.
+ Action 'configtest' failed.
+ The Apache error log may have more information.
+ * Restarting web server apache2
+   ...fail!
+ * The apache2 configtest failed.
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+ 
+
+ Single App Installer:
+ --------------------------------------------
+ ApacheReverseProxyModules: Success
+ ------------------------------
+ Installer Finished
+ ******************************
+
+
+
+Vorteile für die Nutzer
+----------------------------
+
+* Es zeigt die verfügbaren Paketlisten , und der Reihe nach installiert die fehlenden und notwendigen Pakete .
+* Die Reverse-Proxy leitet zu einem festen Ziel im Auftrag von Kunden willkürlich.
+* Es wird enthält die Inhalte, die von einem Server in eine größere Website gehostet wird.
+* Es hilft bei der Konfiguration der Anwendungseinstellungen.
+* Es ist wohlhabend in Cent OS und als auch in Ubuntu.
+* Die in der Erklärung verwendeten Parameter ist nicht case sensitive, was ein zusätzlicher Vorteil ist.

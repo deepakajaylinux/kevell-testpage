@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Copy &mdash; kevell_Multilanguage 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="kevell_Multilanguage 1.0.1 documentation" href="index.html" />
+    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="next" title="DeveloperTools" href="gdevelopertools.html" />
+    <link rel="prev" title="Composer" href="gcomposer.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="gdevelopertools.html" title="DeveloperTools"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="gcomposer.html" title="Composer"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" accesskey="U">Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="copy">
+<h1>Copy<a class="headerlink" href="#copy" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Kopie ist der Befehl in einer Linux-Shell eingegeben, kopieren eine Datei von einem Ort zum anderen, möglicherweise auf einem anderen Dateisystem. Die Originaldatei bleibt unverändert, und die neue Datei möglicherweise das gleiche oder einen anderen Namen. Kopie ist das Kommando, das eine Kopie Ihrer Dateien oder Verzeichnisse erstellt. Die Möglichkeiten, die Dateien unter Linux kopiert werden, hängt von Ihrem Vertrieb und Datei-System. Alle Versionen von Linux konnte Dateien über die Befehlszeile kopieren. Es gibt auch eine Reihe von Datei-Manager, die sowohl textbasierte und GUI, die verwendet werden könnte.</p>
+<ol class="upperalpha simple" start="26">
+<li><ol class="first upperalpha" start="2">
+<li>angenommen, Sie haben eine Datei mit dem Namen Bild.jpg im Arbeitsverzeichnis und eine Kopie davon Bild-02.jpg aufgerufen werden soll. Würden Sie den Befehl ausführen und die Datei kopiert werden. Hier Bild.jpg ist die Quelle des Kopiervorgangs und Bild-02.jpg ist das Ziel. Heute existieren beide Dateien in Ihrem Arbeitsverzeichnis.</li>
+</ol>
+</li>
+</ol>
+<p>Die Quell- und Ziel-Dateien können auch in verschiedenen Verzeichnissen befinden. Machen Sie zum Beispiel eine Kopie der Datei /home/chuck/pictures/picture.jpg im Verzeichnis/Home/Chuck/Backup. Die Zieldatei wird auch picture.jpg genannt.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, die Verwendung von Kopie Modul bestimmen. Der Benutzer wird kommen, über den anderen Weg/Format wissen, dieses Modul ausgeführt. Dieser Befehl führt den Endbenutzer, um diesen Befehl zu erfahren. Unten gegeben sind, den Befehl und den Screenshot von der gleichen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra copy <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Die bildliche Darstellung der Copy-Befehl-Screenshot ist nachfolgend aufgeführt,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra copy <span class="nb">help</span>
+******************************
+
+
+This <span class="nb">command </span>handles file copying functions.
+
+Copy, copy
+
+      - put
+      Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from <span class="nb">local </span>to remote
+      example: cleopatra copy put
+      example: cleopatra copy put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="setzen">
+<h2>Setzen<a class="headerlink" href="#setzen" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer zum Kopieren einer Datei in unsere Quelle zu anderen Ziel muss, die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra copy put
+</pre></div>
+</div>
+<p>Das System fragt nach Quellpfad der Datei und Zieldateipfad.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra copy put
+Copy files? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Enter <span class="nb">source </span>file path
+/kevell.html
+Enter target file path
+/home/desktop
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>Copy<span class="o">]</span> Executing cp -r /kevell.html /home/desktop
+******************************
+
+
+Copy Result: Success
+------------------------------
+Copy Finished
+******************************
+</pre></div>
+</div>
+<p>Es gibt eine weitere Möglichkeit, worin Sie den Quell- und Ziel-Pfad in der Befehlszeile geben können.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra copy put --yes --source<span class="o">=</span><span class="s2">&quot;/kevell.html&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/opt&quot;</span>
+
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>Copy<span class="o">]</span> Executing cp -r /kevell.html /opt
+******************************
+
+
+Copy Result: Success
+------------------------------
+Copy Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Es gibt zwei alternative Parameter, die in der Befehlszeile Copy, Kopie verwendet werden kann.</p>
+<p>ZB: Cleopatra Kopie ablegen / Cleopatra kopieren helfen</p>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Dieser Befehl können Sie eine Kopie Ihrer Dateien oder Verzeichnisse erstellen.</li>
+<li>Kopieren Sie eine Datei oder ein Verzeichnis von Quelle zum Zielort mit einem Befehl</li>
+<li>Wenn Sie eine Datei aus einem Ordner zu einem anderen mit dem gleichen Namen kopieren möchten, reicht nur der Namen des Ziel-Verzeichnisses</li>
+<li>Ein Verzeichnis (und alle seine Inhalte) können zum Ziel die rekursive Option-r von Quelle kopiert werden</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Copy</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#setzen">Setzen</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="gcomposer.html"
+                        title="previous chapter">Composer</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="gdevelopertools.html"
+                        title="next chapter">DeveloperTools</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/gcopy.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="gdevelopertools.html" title="DeveloperTools"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="gcomposer.html" title="Composer"
+             >previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" >Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, kevells.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

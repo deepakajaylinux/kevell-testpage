@@ -1,0 +1,126 @@
+===================
+ApacheVHostEditor
+===================
+
+Zusammenfassung
+-----------------
+
+Apache Virtual Hosts werden verwendet, um mehr als eine Domäne von einer einzelnen IP-Adresse ausgeführt. Dies ist besonders nützlich für Menschen, die Apache Vhost Funktionen verarbeiten müssen. Die Websites anzeigen unterschiedlicher Informationen für die Besucher, abhängig davon, mit denen die Benutzer Zugriff auf die Website. Es gibt keine Begrenzung für die Anzahl der virtuellen Hosts, auf denen ein Virtual-Private-Server(VPS) hinzugefügt werden kann.Dies ist geeignet für Ubuntu und CentOS.
+
+Hilfe Befehl
+------------------
+Help-Befehl führt die Benutzer über den Zweck und auch als zu den Optionen, die in enthalten sind die Apache Virtualhost-Editor Module. Der Hilfebefehl listet die alternative Ausgabeparameter von einemPache Virtualhost-Editor
+unter Cleopatra-Modul. Es beschreibt auch die Syntax für die Installation des Benutzers Updation. Der Help-Befehl für einePache Virtualhost-Editor ist unten dargestellt.
+
+.. code-block:: bash
+
+                 cleopatra Apache VirtualHost editor help
+
+Der folgende Screenshot zeigt den vollen Aufwand für einePache Virtualhost Editor.
+
+
+.. code-block:: bash
+
+Alternative Parameter
+-----------------------------------
+
+Im folgenden sind die alternative Parameter, die in Deklarationen definiert werden können:
+
+ApacheVHostEditor, Apachevhosteditor, Vhosteditor, Vhe, Vhosted.
+
+Hinzufügen
+-----------------
+
+Dieser Befehl verwendet, um einen virtuellen Host erstellen. Überschreiben ist möglich. Der folgende Befehl kann zum Erstellen eines virtuellen Hosts Editor übernommen werden.
+
+.. code-block:: bash
+
+                sudo cleopatra vhe add
+
+nach Eingabe des oben genannte Befehls, dass er folgendes verlangen kann,
+
+VHE-Document-Root, Vhe-Datei-Erweiterung, Vhe Apache Befehl, Vhe IP-Port, Vhe Vhost Directory, Vhe Vorlage, Vorlage Vhe Standardnamen.
+
+Der Nutzer hat zu geben, dass alle Details eins nach dem anderen sonst in der Befehlszeile selbst eingeben. Der folgende Screenshot erklärt darüber
+ 
+Hinzufügen-Balancer
+---------------------
+
+Dieser Befehl verwendet, um einen virtuellen Host erstellen. Überschreiben ist möglich. Es gibt zwei Möglichkeiten, die Eingabe. Fügen Sie auf einfache Weise kann der Benutzer Vhe geben. Die zweite Möglichkeit zusammen mit dem Befehl Host Pfadnamen kann genannt werden. Der folgende Befehl kann zum Erstellen eines virtuellen Hosts Editor übernommen werden.
+
+.. code-block:: bash
+
+                sudo cleopatra vhe add
+
+nach Eingabe des oben genannte Befehls, dass er folgendes verlangen kann,
+
+VHE-Document-Root, Vhe-Datei-Erweiterung, Vhe Apache Befehl, Vhe IP-Port, Vhe Vhost Directory, Vhe Vorlage, Vorlage Vhe Standardnamen.
+
+Der Nutzer hat zu geben, dass alle Details eins nach dem anderen sonst alles in der Befehlszeile selbst eingeben. Der folgende Screenshot erklärt darüber
+ 
+Entfernen
+-------------
+
+Dieser Befehl verwendet, um einen bestimmten Vhost zu löschen. Es gibt zwei Möglichkeiten, die Eingabe. Auf einfache Weise kann der Benutzer Vhe remove(rm) geben. Die zweite Möglichkeit zusammen mit dem Befehl Host Pfadnamen kann genannt werden. Der folgende Befehl wird verwendet, um den Hostnamen zu entfernen.
+
+.. code-block:: bash
+
+ 	       cleopatra vhe rm
+
+Die folgende Abbildung zeigt der Funktion des Rm.
+
+.. code-block:: bash
+
+
+ 
+Liste
+--------
+
+Dieser Befehl verwendet, um die aktuellen virtuellen Hosts aufzulisten. Der folgende Befehl verwendet, um die virtuellen Hosts aufzulisten.
+
+.. code-block:: bash
+ 
+               cleopatra vhe list
+
+
+Der Screenshot zeigt die List-Funktion.
+ 
+.. code-block:: bash
+ 
+Aktivieren
+---------------
+
+SEcure Boot ist eine Funktion, die bösartige Software und nicht autorisierte Medien laden während des Startvorgangs zu verhindern. Diese Option aktivieren aktiviert den Server-Block. Im virtuellen Host, wenn die verwendeten den folgenden Befehl eingegeben
+
+.. code-block:: bash
+
+                 cleopatra vhe enable
+
+Diese Option ist standardmäßig aktiviert. Diese Option erlaubt es, den virtuellen Host-Server zu aktivieren.
+
+Assists Modul entwickeln viele der grundlegenden Fähigkeiten, die zum Dienst hohe Ausführung Umgebungen durch unser Verständnis über die Zusammenhänge zwischen Menschen, Prozesse und Technologien erforderlich. Der folgende Screenshot erklärt das gleiche.
+
+Deaktivieren
+-----------------
+
+Diese deaktivieren, verwendet um den Server zu deaktivieren. Inaktive oder im Leerlauf virtuellen Host Editor-Verbindungen werden normalerweise vom Server getrennt, nach einer bestimmten Zeit. Der folgende Befehl wird verwendet, um den virtuellen Host-Editor zu deaktivieren.
+
+.. code-block:: bash
+
+                cleopatra vhe disable
+
+Nach der Eingabe dieses Befehls, es kann den Benutzer bitten, disab le der Server. Wenn die Benutzereingaben, wie es ja den Server deaktivieren d.h. wird nicht zulassen jede Stelle in diesem Server zu arbeiten.
+
+In der folgenden Bildschirmabbildung visualisieren es offenbar.
+ 
+.. code-block:: bash
+
+ 
+Vorteile
+---------------
+
+* Multi-User kann gleichzeitig zugreifen.
+* Der Benutzer hinzufügen oder Entfernen von virtuellen Hosts kann.
+* Der virtuellen Host-Editor aktivieren oder Deaktivieren des virtuellen Hosts nach Wunsch des Benutzers kann.
+* Groß-und Kleinschreibung nicht.
+* Wohlhabenden in Ubuntu und CentOS.

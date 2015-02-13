@@ -22,7 +22,7 @@ Der Screenshot, wie unten dargestellt, visuell repräsentieren die Verwendung de
 .. code-block:: bash
 
 
- kevells@corp:/# cleopatra ApacheServer help
+ kevell@corp:/# cleopatra ApacheServer help
  ******************************
 
 
