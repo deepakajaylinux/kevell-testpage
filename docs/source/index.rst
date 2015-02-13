@@ -4,7 +4,7 @@ Welcome to kevell_Multilanguage's documentation!
 Pharaohtools Documentation
 ============================
 
-About pharaohtools
+Über pharaohtools 
 ====================
 
 

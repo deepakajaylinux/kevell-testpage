@@ -2,8 +2,8 @@ Cleopatra
 ===========
 
 
-Playing with Cleopatra Modules
-*******************************
+Das Spiel mit Kleopatra -Module
+*********************************
 
 
 
