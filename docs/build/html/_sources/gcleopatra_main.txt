@@ -29,6 +29,7 @@ Das Spiel mit Kleopatra -Module
    gchmode
    gchown
    gcitadel
+   gcleofy
    gcleopatra
    gcomposer
    gcopy
