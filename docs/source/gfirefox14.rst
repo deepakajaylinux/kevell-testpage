@@ -1,0 +1,125 @@
+===================
+FireFox14
+===================
+
+Zusammenfassung
+-------------------
+
+Dieses Modul verwendet werden, um firefox14 installieren. Ubuntu veröffentlicht aktualisierte Versionen in regelmäßigen Abständen. Es implementiert aktuellen und erwarteten Web-Standards. Langfristige Unterstützung enthält Updates für neue Hardware, Sicherheitspatches und Updates für das Cloud Computing-Infrastruktur. Es ist bequem mit Ubuntu und Cent OS.
+
+
+Hilfe Befehl
+----------------
+
+Dieser Befehl kann über die Ziele und Befehle unter Firefox14 Modul funktionieren. Es erklärt auch den Befehl zum firefox14 installieren. Vor der Installation kann der Benutzer lesen diese Hilfe Befehl erklärt seine Funktion.
+
+.. code-block:: bash
+           
+      cleopatra firefox14 help
+
+
+Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.
+
+.. code-block:: bash
+
+	Kevell@corp:/# cleopatra firefox14 help
+	******************************
+
+
+	 This command allows you to install Firefox14.
+
+	 Firefox14, ff14, firefox14
+
+        - install
+        Installs the latest version of Firefox 14
+        example: cleopatra firefox14 install
+
+	------------------------------
+	End Help
+	******************************
+
+
+
+
+
+
+
+Installation
+--------------
+
+It is a glaring process to install firefox14 module under Cleopatra by just using the command given below,
+
+
+.. code-block:: bash
+       
+  cleopatra firefox14 install
+
+Nach dem Schlüssel in der Befehl dazu aufgefordert, können
+
+Install firefox14?(Y/N)
+
+Falls die Benutzereingaben , wie Y , kann firefox14 aus dem Paket zu installieren. Else , kann sie den Bildschirm zu verlassen . Die folgenden Screenshots kann es erklären .
+ 
+.. code-block:: bash
+        
+        kevell@corp:/# cleopatra Firefox14 install
+
+        Install Firefox? (Y/N) 
+        y
+        *******************************
+        *        Pharaoh Tools        *
+        *          Firefox            *
+        *******************************
+        Creating /tmp/cleopatra-temp-script-51942043520.sh
+        chmod 755 /tmp/cleopatra-temp-script-51942043520.sh 2>/dev/null
+        Changing /tmp/cleopatra-temp-script-51942043520.sh Permissions
+        Executing /tmp/cleopatra-temp-script-51942043520.sh
+        Cloning into 'firefox14'...
+        remote: Counting objects: 78, done.
+        remote: Total 78 (delta 0), reused 0 (delta 0)
+        Unpacking objects: 100% (78/78), done.
+        Checking connectivity... done.
+        Temp File /tmp/cleopatra-temp-script-51942043520.sh Removed
+        Program Executor Deleted if existed
+        ... All done!
+        *******************************
+        Thanks for installing , visit www.pharaohtools.com for more
+        ******************************
+
+
+        Single App Installer:
+        --------------------------------------------
+        Firefox14: Success
+        ------------------------------
+        Installer Finished
+        ******************************
+
+
+                                                       
+
+Options
+--------------
+
+.. cssclass:: table-bordered
+
+ +------------------------------+--------------------------------------+---------------+--------------------------------------------+
+ | Parameter                    |  Alternative Parameter               | Erforderlich  |  Kommentar                                 |
+ +==============================+======================================+===============+============================================+
+ |cleopatra firefox14           | Anstelle der Verwendung firefox14    | Y(Yes)        | System startet Installation Under          |
+ |Install? (Y/N)                | wir verwenden können, ff14,          |               | cleopatra                                  |
+ |                              | Firefox14                            |               |                                            |
+ +------------------------------+--------------------------------------+---------------+--------------------------------------------+
+ |cleopatra firefox14           | Anstelle der Verwendung firefox14    | N(No)         | Das System stoppt den Installationsprozess |
+ |Install? (Y/N)                | wir verwenden können, ff14,          |               | Under cleopatra                            |
+ |                              | Firefox14|                           |               |                                            |
+ +------------------------------+--------------------------------------+---------------+--------------------------------------------+
+
+
+Vorteile
+------------------
+
+* Firefox14 nutzt die Unterstützung für neue Hardware und Integration aller in dieser Serie bisher veröffentlichten Updates.
+* Firefox14 ist nicht case sensitive.
+* Datenschutz- und Sicherheitsmaßnahmen, ist intelligent Suche möglich.
+* Es ist bequem mit Ubuntu und CentOS.
+

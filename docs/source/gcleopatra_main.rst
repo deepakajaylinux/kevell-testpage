@@ -35,4 +35,9 @@ Das Spiel mit Kleopatra -Module
    gcopy
    gdevelopertools
    gdnsify
+   gencryption
    genvironmentconfig
+   gfile
+   gfirefox
+   gfirefox14
+   gfirefox17

@@ -1,0 +1,118 @@
+==========
+FireFox
+==========
+
+Zusammenfassung
+----------------------
+
+Dieses Modul verwendet werden, um Firefox zu installieren. Ubuntu veröffentlicht aktualisierte Versionen in regelmäßigen Abständen. Es implementiert aktuellen und erwarteten Web-Standards. Langfristige Unterstützung enthält Updates für neue Hardware, Sicherheitspatches und Updates für das Cloud Computing-Infrastruktur. Es ist bequem mit Ubuntu und Cent OS.
+
+
+Hilfe Befehl
+----------------
+
+Dieser Befehl kann über die Ziele und Befehle unter Firefox-Modul funktionieren. Es erklärt auch den Befehl firefox installieren. Vor der Installation kann der Benutzer lesen diese Hilfe Befehl erklärt seine Funktion.
+
+.. code-block:: bash
+
+              cleopatra firefox help
+
+Das folgende Bild hilft Ihnen auch dieses Modul klar verstehen,
+
+.. code-block:: bash
+
+	 kevell@corp:/# cleopatra firefox help
+
+	 ******************************
+
+
+	 This command is part of Core and provides you  with a method by which you can install Firefox from your package
+         manager
+
+	 Firefox, firefox
+
+        - install
+        Installs Firefox
+        example: cleopatra firefox install
+
+	------------------------------
+	End Help
+	******************************
+
+Installation
+-------------------
+
+It is a glaring process to install firefox module under Cleopatra by just using the command given below,
+
+
+.. code-block:: bash
+
+	cleopatra firefox install
+
+After key in the command, it can asks
+
+Install firefox?(Y/N)
+
+In case the user input as Y, it can install firefox from the package. Else, it can exit the screen. The following screen shots can explain it.
+
+.. code-block:: bash
+
+ kevell@corp:/# cleopatra firefox install
+
+ Install Firefox? (Y/N)
+ y
+ *******************************
+ *        Pharaoh Tools        *
+ *          Firefox            *
+ *******************************
+ Creating /tmp/cleopatra-temp-script-51942043520.sh
+ chmod 755 /tmp/cleopatra-temp-script-51942043520.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-51942043520.sh Permissions
+ Executing /tmp/cleopatra-temp-script-51942043520.sh
+ Cloning into 'firefox'...
+ remote: Counting objects: 78, done.
+ remote: Total 78 (delta 0), reused 0 (delta 0)
+ Unpacking objects: 100% (78/78), done.
+ Checking connectivity... done.
+ Temp File /tmp/cleopatra-temp-script-51942043520.sh Removed
+ Program Executor Deleted if existed
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Installer:
+ --------------------------------------------
+ Firefox: Success
+ ------------------------------
+ Installer Finished
+ ******************************
+
+
+Options
+--------------
+
+.. cssclass:: table-bordered
+
+
+ +-----------------------------------+--------------------------------------+-------------+--------------------------------------------+
+ | Parameter                         | Alternative Parameter                | Optionen    | Kommentare                                 |
+ +===================================+======================================+=============+============================================+
+ |cleopatra firefox Install (Y/N)    | Anstelle der Verwendung firefox wir  | Y(Yes)      | System startet Installation können sie     |
+ |                                   | verwenden können, Firefox, firefox   |             | Eingang als Y                              |
+ +-----------------------------------+--------------------------------------+-------------+--------------------------------------------+
+ |cleopatra Firefox Install (Y/N)    | Anstelle der Verwendung firefox wir  | N(No)       | Das System stoppt den Installationsprozess |
+ |                                   | verwenden können Firefox, firefox|   |             |                                            |
+ +-----------------------------------+--------------------------------------+-------------+--------------------------------------------+
+ 
+
+
+Vorteile
+-------------
+
+* Firefox nutzt die Unterstützung für neue Hardware und Integration aller in dieser Serie bisher veröffentlichten Updates.
+* Es ist bequem mit Ubuntu und CentOS.
+* Firefox ist nicht case sensitive.
+* Datenschutz- und Sicherheitsmaßnahmen, intelligente Suche
+

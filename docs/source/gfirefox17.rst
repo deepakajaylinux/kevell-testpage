@@ -1,0 +1,117 @@
+===================
+FireFox17
+===================
+
+
+Zusammenfassung
+--------------------
+
+Dieses Modul verwendet werden, um firefox17 installieren. Ubuntu veröffentlicht aktualisierte Versionen in regelmäßigen Abständen. Es implementiert aktuellen und erwarteten Web-Standards. Langfristige Unterstützung enthält Updates für neue Hardware, Sicherheitspatches und Updates für das Cloud Computing-Infrastruktur. Es ist bequem mit Ubuntu und Cent OS.
+
+Hilfe Befehl
+-----------------------
+
+Dieser Befehl kann über die Ziele und Befehle unter Firefox17 Modul funktionieren. Es erklärt auch den Befehl zum firefox17 installieren. Vor der Installation kann der Benutzer lesen diese Hilfe Befehl erklärt seine Funktion
+
+.. code-block:: bash
+                    
+	cleopatra firefox17 help
+
+Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.
+
+.. code-block:: bash
+
+	Kevell@corp:/# cleopatra firefox17 help
+	******************************
+
+
+        This command allows you to install Firefox17.
+
+        Firefox17, ff17, firefox17
+
+        - install
+        Installs the latest version of Firefox 17
+        example: cleopatra firefox17 install
+
+	------------------------------
+	End Help
+	******************************
+
+Installation
+-------------------
+
+Es ist eine eklatante Prozess firefox17 Modul unter Cleopatra von nur mit dem Befehl unten angegeben zu installieren,
+
+.. code-block:: bash
+         
+         cleopatra firefox17 install
+
+After key in the command, it can asks
+
+Install firefox17?(Y/N)
+
+In case the user input as Y, it can install firefox17 from the package. Else, it can exit the screen. The following screen shots can explain it.
+
+
+.. code-block:: bash
+
+
+
+ kevell@corp:/# cleopatra Firefox17 install
+ Install Firefox 17? (Y/N) 
+ Y
+ *******************************
+ *        Pharaoh Tools        *
+ *          Firefox 17         *
+ *******************************
+ Creating /tmp/cleopatra-temp-script-34898518137.sh
+ chmod 755 /tmp/cleopatra-temp-script-34898518137.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-34898518137.sh Permissions
+ Executing /tmp/cleopatra-temp-script-34898518137.sh
+ Cloning into 'firefox17'...
+ remote: Counting objects: 78, done.
+ remote: Total 78 (delta 0), reused 0 (delta 0)
+ Unpacking objects: 100% (78/78), done.
+ Checking connectivity... done.
+ Temp File /tmp/cleopatra-temp-script-34898518137.sh Removed
+ Program Executor Deleted if existed
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Installer:
+ --------------------------------------------
+ Firefox17: Success
+ ------------------------------
+ Installer Finished
+ ******************************
+
+
+Optionen
+----------
+
+.. cssclass:: table-bordered
+
+
+ +---------------------------+--------------------------------------------+--------------+--------------------------------------------+
+ | Parameter                 | Alternative Parameter                      | Erforderlich |  Kommentar                                 |
+ +===========================+============================================+==============+============================================+
+ |cleopatra firefox17        | Anstelle der Verwendung firefox17 wir      | Y(yes)       | System startet Installation Under          |
+ |Install? (Y/N)             | verwenden können, ff17, Firefox17          |              | cleopatra                                  |
+ +---------------------------+--------------------------------------------+--------------+--------------------------------------------+
+ |cleopatra firefox17        | Anstelle der Verwendung firefox17 wir      | N (No)       | Das System stoppt den Installationsprozess |
+ |Install? (Y/N)             | verwenden können, ff17, Firefox17          |              | Under cleopatra|                           |
+ +---------------------------+--------------------------------------------+--------------+--------------------------------------------+
+
+
+
+Vorteile
+------------------
+
+* Firefox17 nutzt die Unterstützung für neue Hardware und Integration aller in dieser Serie bisher veröffentlichten Updates.
+* Firefox zum Installieren firefox17
+* Firefox17 ist nicht case sensitive.
+* Datenschutz- und Sicherheitsmaßnahmen, ist intelligent Suche möglich.
+

@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>File &mdash; kevell_Multilanguage 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="kevell_Multilanguage 1.0.1 documentation" href="index.html" />
+    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="next" title="FireFox" href="gfirefox.html" />
+    <link rel="prev" title="EnvironmentConfig" href="genvironmentconfig.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="gfirefox.html" title="FireFox"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="genvironmentconfig.html" title="EnvironmentConfig"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" accesskey="U">Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="file">
+<h1>File<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Die Datei ist ein Standardprogramm zum Erkennen der Art von Daten in einer Computerdatei enthalten sind. Die Datei Befehl versucht, jedes Dateisystemobjekt (dh Datei, ein Verzeichnis oder Link), die als Argument (dh Eingang) vorgesehen ist, zu klassifizieren. Datei testet jedes Argument in einem Versuch, sie zu klassifizieren. Es gibt drei Arten von Tests, in dieser Reihenfolge durchgeführt: Dateisystem-Tests, magische Zahl Tests und Sprachtests.</p>
+<p>Das erste ist ein Dateisystem-Test, der den Systemaufruf stat verwendet, um Informationen aus der Objekt inode (die Informationen zu einer Datei enthält) zu erhalten.</p>
+<p>Der zweite Test überprüft, ob es eine magische Zahl, die eine Reihe an oder nahe der Anfang von vielen Arten von Dateien, die das Dateiformat anzeigt (dh die Art der Datei) eingebettet ist.</p>
+<p>Im Falle, dass die ersten beiden Tests fehlschlagen, um den Typ einer Datei zu ermitteln, werden Sprachtests verwendet werden, um festzustellen, ob es Klartext (dh ausschließlich aus Menschen lesbare Zeichen besteht), und, wenn ja, welche Art von Klartext , wie beispielsweise HTML (Hypertext Markup Language) oder Quellcode</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion dient, um die Verwendung von Dateimodul zu bestimmen. Der Benutzer wird kommen, um über die verschiedenen Möglichkeiten / Format um dieses Modul ausführen kennen. Dieser Befehl leitet den Anwender, um den Zweck dieses Befehls kennen. Da unten sind die Kommando- und der Screenshot der gleiche.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra file <span class="nb">help</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="schaffen">
+<h2>schaffen<a class="headerlink" href="#schaffen" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer braucht, um eine neue Systemdatei erstellen, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+<p>Die unten angegebenen Befehle überschreiben Dateien, die es gibt</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create --file<span class="o">=</span><span class="s2">&quot;somename” --overwrite-existing</span>
+</pre></div>
+</div>
+<p>The below given command for write the data in the file</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create –file<span class="o">=</span><span class="s2">&quot;somename” --data=&quot;</span>things to put in the file<span class="s2">&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="loschen">
+<h2>löschen<a class="headerlink" href="#loschen" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer eine Systemdatei zu löschen muss, wird die unten gegebenen Befehl das Verfahren auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra file delete --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vorhanden">
+<h2>vorhanden<a class="headerlink" href="#vorhanden" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer benötigt, um die Existenz einer Datei zu überprüfen, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra file exists --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="anhangen">
+<h2>anhängen<a class="headerlink" href="#anhangen" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer eine Zeile in eine Datei angehängt werden muss, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra file append --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Line option – you can insert a line to be appended</li>
+</ul>
+</div>
+<div class="section" id="should-have-line">
+<h2>Should-have-line<a class="headerlink" href="#should-have-line" title="Permalink to this headline">¶</a></h2>
+<p>When the user needs to ensure that a file contains a particular line, the below given command will execute the process</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra file should-have-line --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Line option – Statement that needs to be checked</li>
+</ul>
+</div>
+<div class="section" id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="21%" />
+<col width="45%" />
+<col width="34%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Alternative Parameter</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>cleopatra file help</td>
+<td>Eine der beiden alternativen Parameter können
+verwendet werden, in Befehl - File, file
+eg: cleopatra File Install/ cleopatra file Install</td>
+<td>Sobald der Benutzer bietet die
+Möglichkeit, beginnt Systems
+Verarbeitung|</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Geben Sie einen Datei speziell formatierte, die positionsempfindlichen Tests; Standardpositionsempfindlichen Tests und kontextsensitive Tests nicht durchgeführt werden.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">File</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#schaffen">schaffen</a></li>
+<li><a class="reference internal" href="#loschen">löschen</a></li>
+<li><a class="reference internal" href="#vorhanden">vorhanden</a></li>
+<li><a class="reference internal" href="#anhangen">anhängen</a></li>
+<li><a class="reference internal" href="#should-have-line">Should-have-line</a></li>
+<li><a class="reference internal" href="#options">Options</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="genvironmentconfig.html"
+                        title="previous chapter">EnvironmentConfig</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="gfirefox.html"
+                        title="next chapter">FireFox</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/gfile.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="gfirefox.html" title="FireFox"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="genvironmentconfig.html" title="EnvironmentConfig"
+             >previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" >Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, kevells.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

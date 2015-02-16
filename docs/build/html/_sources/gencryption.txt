@@ -1,0 +1,113 @@
+============
+Encryption
+============
+
+Zusammenfassung
+-----------------------
+
+Dieses Modul ermöglicht es den Benutzern, Ver- oder Entschlüsseln einer Datei.
+
+Verschlüsselung ist der Vorgang von Nachrichten oder Informationen kodiert in einer Weise, dass nur autorisierte Parteien sie lesen kann. Verschlüsselung an sich nicht verhindern, Abhören, bestreitet aber den Inhalt der Mitteilung an die Abfangjäger. In einem Verschlüsselungsverfahren, die Nachricht oder die Daten, die als Klartext verschlüsselt wird unter Verwendung eines Verschlüsselungsalgorithmus, Erzeugen Chiffretext, der nur gelesen werden kann, wenn entschlüsselt werden. Aus technischen Gründen ist, verwendet ein Verschlüsselungssystem in der Regel eine durch einen Algorithmus erzeugte Pseudozufallsschlüssel. Es ist grundsätzlich möglich, die Nachricht, ohne zu besitzen den Schlüssel zu entschlüsseln, aber, für eine gut gestaltete Verschlüsselungsschema, große Rechenkapazitäten und Fähigkeiten erforderlich sind. Ein berechtigter Empfänger kann leicht entschlüsseln die Nachricht mit dem Schlüssel vom Originator an die Empfänger vorgesehen, aber nicht an unbefugte Abfangjäger.
+
+Wir wollen sehen, wie dieses Modul in die Ver- und Entschlüsselung einer Datei oder String.
+
+
+Hilfe Befehl
+-------------------
+
+Der Befehl help ist eine kurze Bedienungsanleitung, die die Benutzer beim Umgang mit diesem Modul unterstützt. Es legt die Parameter, die in alternative Erklärung verwendet werden kann. Er legt auch die möglichen Aufgaben im Rahmen dieses Verschlüsselungsmodul, zusammen mit der Syntax für sie. Der Befehl für die Hilfe-Option erklärt verwendet wird unten gezeigt,
+
+.. code-block:: bash
+
+	cleopatra encryption help
+
+Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Verschlüsselung.
+
+.. code-block:: bash
+
+
+
+ kevell@corp:/# cleopatra encryption help
+
+ ******************************
+
+
+ This command allows you to encrypt or decrypt a file.  
+
+ Encryption, encrypt  
+
+ - install        
+	Encrypts a file or string        
+ 	example: sudo cleopatra encryption install --yes --unencrypted-data=/var/www/a-website/build/config/cleopatra/SSH/raw/bastion        
+	 --encryption-target-file=/tmp/encrypted --encryption-key=/root/.cleopatra/SSH/key --encryption-file-permissions=""                
+	 --encryption-file-owner="" --encryption-file-group=""                
+
+ - uninstall        
+	Decrypts an encrypted file or string        
+	example: sudo cleopatra encryption uninstall --yes --encrypted-data=/tmp/encrypted        
+	 --encryption-target-file=/var/www/a-website/build/config/cleopatra/SSH/raw/bastion --encryption-key=/root/.cleopatra/SSH/key                	 --encryption-file-permissions="" --encryption-file-owner="" --encryption-file-group=""                
+
+ ------------------------------
+ End Help
+ ******************************
+
+installieren
+--------------
+
+
+Diese Funktion erlaubt den Benutzern, eine Datei oder einen String, indem Sie einfach mit dem Befehl, die nachstehend angegeben zu verschlüsseln,
+
+.. code-block:: bash
+
+	 sudo cleopatra encryption install --yes --unencrypted-data=/var/www/a-website/build/config/cleopatra/SSH/raw/bastion
+ 	--encryption-target-file=/tmp/encrypted --encryption-key=/root/.cleopatra/SSH/key --encryption-file-permissions=""                
+	 --encryption-file-owner="" --encryption-file-group=""                
+
+Um diese Funktion zu implementieren, muss der Anwender die folgenden Felder im Format der oben genannten Syntax angeben,
+
+* Verschlüsselung Zieldatei
+* Verschlüsselung
+* SSH-Schlüssel
+* Verschlüsselung Dateiberechtigung
+* Verschlüsselung Dateieigentümer
+* Verschlüsselung Dateigruppe
+
+
+Uninstall
+-----------
+
+Diese Funktion ermöglicht es dem Benutzer, eine verschlüsselte Datei oder String entschlüsseln. Dies kann durch Verwendung unter den Befehl erreicht werden,
+
+.. code-block:: bash
+
+	sudo cleopatra encryption uninstall --yes --encrypted-data=/tmp/encrypted
+	 --encryption-target-file=/var/www/a-website/build/config/cleopatra/SSH/raw/bastion --encryption-key=/root/.cleopatra/SSH/key                	 --encryption-file-permissions="" --encryption-file-owner="" --encryption-file-group=""                
+
+
+Um diese Funktion zu implementieren, muss der Anwender die folgenden Felder im Format der oben genannten Syntax angeben,
+
+* Verschlüsselung Zieldatei
+* Verschlüsselung
+* SSH-Schlüssel
+* Verschlüsselung Dateiberechtigung
+* Verschlüsselung Dateieigentümer
+* Verschlüsselung Dateigruppe
+
+Alternative Parameter
+------------------------------
+
+
+Die alternative Parameter für dieses Modul, die beide in Erklärung verwendet werden,
+
+* Verschlüsselung
+* verschlüsseln
+
+
+Vorteile
+---------
+
+* Die in Hilfe und Verschlüsselung und Entschlüsselung verwendet un muss nicht beachtet werden Parameter, die ein zusätzlicher Vorteil ist, 
+  während im Vergleich zu andere.
+* Es ist gut-to-do sowohl Ubuntu und sowie Cent OS.
+* Es ist eine gesicherten Modus, denn nur autorisierte Person kann sie benutzen.
+

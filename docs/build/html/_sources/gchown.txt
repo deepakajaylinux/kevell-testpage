@@ -37,8 +37,8 @@ Nachdem er den Befehl gab, listet der Befehl die Hilfeoptionen. Die folgenden Sc
 	******************************
 
 
-Installation
-------------
+Weg
+------
 
 Es ist ein ausgezeichneter Prozess für dieses Modul unter Cleopatra leicht mit dem Befehl unten gegeben,
 
@@ -57,7 +57,7 @@ Dies ist optisch von der folgenden Bildschirmabbildung dargestellt.
 
 .. code-block:: bash
 
-	kevells@corp:/# cleopatra chown path --yes --guess --recursive --path=/phj.php --owner=deepak
+	kevell@corp:/# cleopatra chown path --yes --guess --recursive --path=/phj.php --owner=deepak
 
 	Enter ownership user:
 	deepak

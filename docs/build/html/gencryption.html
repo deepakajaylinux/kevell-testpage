@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Encryption &mdash; kevell_Multilanguage 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="kevell_Multilanguage 1.0.1 documentation" href="index.html" />
+    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="next" title="EnvironmentConfig" href="genvironmentconfig.html" />
+    <link rel="prev" title="Dnsify" href="gdnsify.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="genvironmentconfig.html" title="EnvironmentConfig"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="gdnsify.html" title="Dnsify"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" accesskey="U">Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="encryption">
+<h1>Encryption<a class="headerlink" href="#encryption" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Modul ermöglicht es den Benutzern, Ver- oder Entschlüsseln einer Datei.</p>
+<p>Verschlüsselung ist der Vorgang von Nachrichten oder Informationen kodiert in einer Weise, dass nur autorisierte Parteien sie lesen kann. Verschlüsselung an sich nicht verhindern, Abhören, bestreitet aber den Inhalt der Mitteilung an die Abfangjäger. In einem Verschlüsselungsverfahren, die Nachricht oder die Daten, die als Klartext verschlüsselt wird unter Verwendung eines Verschlüsselungsalgorithmus, Erzeugen Chiffretext, der nur gelesen werden kann, wenn entschlüsselt werden. Aus technischen Gründen ist, verwendet ein Verschlüsselungssystem in der Regel eine durch einen Algorithmus erzeugte Pseudozufallsschlüssel. Es ist grundsätzlich möglich, die Nachricht, ohne zu besitzen den Schlüssel zu entschlüsseln, aber, für eine gut gestaltete Verschlüsselungsschema, große Rechenkapazitäten und Fähigkeiten erforderlich sind. Ein berechtigter Empfänger kann leicht entschlüsseln die Nachricht mit dem Schlüssel vom Originator an die Empfänger vorgesehen, aber nicht an unbefugte Abfangjäger.</p>
+<p>Wir wollen sehen, wie dieses Modul in die Ver- und Entschlüsselung einer Datei oder String.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help ist eine kurze Bedienungsanleitung, die die Benutzer beim Umgang mit diesem Modul unterstützt. Es legt die Parameter, die in alternative Erklärung verwendet werden kann. Er legt auch die möglichen Aufgaben im Rahmen dieses Verschlüsselungsmodul, zusammen mit der Syntax für sie. Der Befehl für die Hilfe-Option erklärt verwendet wird unten gezeigt,</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra encryption <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Verschlüsselung.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra encryption <span class="nb">help</span>
+
+******************************
+
+
+This <span class="nb">command </span>allows you to encrypt or decrypt a file.
+
+Encryption, encrypt
+
+- install
+       Encrypts a file or string
+       example: sudo cleopatra encryption install --yes --unencrypted-data<span class="o">=</span>/var/www/a-website/build/config/cleopatra/SSH/raw/bastion
+        --encryption-target-file<span class="o">=</span>/tmp/encrypted --encryption-key<span class="o">=</span>/root/.cleopatra/SSH/key --encryption-file-permissions<span class="o">=</span><span class="s2">&quot;&quot;</span>
+        --encryption-file-owner<span class="o">=</span><span class="s2">&quot;&quot;</span> --encryption-file-group<span class="o">=</span><span class="s2">&quot;&quot;</span>
+
+- uninstall
+       Decrypts an encrypted file or string
+       example: sudo cleopatra encryption uninstall --yes --encrypted-data<span class="o">=</span>/tmp/encrypted
+        --encryption-target-file<span class="o">=</span>/var/www/a-website/build/config/cleopatra/SSH/raw/bastion --encryption-key<span class="o">=</span>/root/.cleopatra/SSH/key                    --encryption-file-permissions<span class="o">=</span><span class="s2">&quot;&quot;</span> --encryption-file-owner<span class="o">=</span><span class="s2">&quot;&quot;</span> --encryption-file-group<span class="o">=</span><span class="s2">&quot;&quot;</span>
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installieren">
+<h2>installieren<a class="headerlink" href="#installieren" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion erlaubt den Benutzern, eine Datei oder einen String, indem Sie einfach mit dem Befehl, die nachstehend angegeben zu verschlüsseln,</p>
+<div class="highlight-bash"><div class="highlight"><pre> sudo cleopatra encryption install --yes --unencrypted-data<span class="o">=</span>/var/www/a-website/build/config/cleopatra/SSH/raw/bastion
+--encryption-target-file<span class="o">=</span>/tmp/encrypted --encryption-key<span class="o">=</span>/root/.cleopatra/SSH/key --encryption-file-permissions<span class="o">=</span><span class="s2">&quot;&quot;</span>
+ --encryption-file-owner<span class="o">=</span><span class="s2">&quot;&quot;</span> --encryption-file-group<span class="o">=</span><span class="s2">&quot;&quot;</span>
+</pre></div>
+</div>
+<p>Um diese Funktion zu implementieren, muss der Anwender die folgenden Felder im Format der oben genannten Syntax angeben,</p>
+<ul class="simple">
+<li>Verschlüsselung Zieldatei</li>
+<li>Verschlüsselung</li>
+<li>SSH-Schlüssel</li>
+<li>Verschlüsselung Dateiberechtigung</li>
+<li>Verschlüsselung Dateieigentümer</li>
+<li>Verschlüsselung Dateigruppe</li>
+</ul>
+</div>
+<div class="section" id="uninstall">
+<h2>Uninstall<a class="headerlink" href="#uninstall" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion ermöglicht es dem Benutzer, eine verschlüsselte Datei oder String entschlüsseln. Dies kann durch Verwendung unter den Befehl erreicht werden,</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo cleopatra encryption uninstall --yes --encrypted-data<span class="o">=</span>/tmp/encrypted
+ --encryption-target-file<span class="o">=</span>/var/www/a-website/build/config/cleopatra/SSH/raw/bastion --encryption-key<span class="o">=</span>/root/.cleopatra/SSH/key                    --encryption-file-permissions<span class="o">=</span><span class="s2">&quot;&quot;</span> --encryption-file-owner<span class="o">=</span><span class="s2">&quot;&quot;</span> --encryption-file-group<span class="o">=</span><span class="s2">&quot;&quot;</span>
+</pre></div>
+</div>
+<p>Um diese Funktion zu implementieren, muss der Anwender die folgenden Felder im Format der oben genannten Syntax angeben,</p>
+<ul class="simple">
+<li>Verschlüsselung Zieldatei</li>
+<li>Verschlüsselung</li>
+<li>SSH-Schlüssel</li>
+<li>Verschlüsselung Dateiberechtigung</li>
+<li>Verschlüsselung Dateieigentümer</li>
+<li>Verschlüsselung Dateigruppe</li>
+</ul>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Die alternative Parameter für dieses Modul, die beide in Erklärung verwendet werden,</p>
+<ul class="simple">
+<li>Verschlüsselung</li>
+<li>verschlüsseln</li>
+</ul>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Die in Hilfe und Verschlüsselung und Entschlüsselung verwendet un muss nicht beachtet werden Parameter, die ein zusätzlicher Vorteil ist,
+während im Vergleich zu andere.</li>
+<li>Es ist gut-to-do sowohl Ubuntu und sowie Cent OS.</li>
+<li>Es ist eine gesicherten Modus, denn nur autorisierte Person kann sie benutzen.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Encryption</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#installieren">installieren</a></li>
+<li><a class="reference internal" href="#uninstall">Uninstall</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="gdnsify.html"
+                        title="previous chapter">Dnsify</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="genvironmentconfig.html"
+                        title="next chapter">EnvironmentConfig</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/gencryption.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="genvironmentconfig.html" title="EnvironmentConfig"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="gdnsify.html" title="Dnsify"
+             >previous</a> |</li>
+        <li><a href="index.html">kevell_Multilanguage 1.0.1 documentation</a> &raquo;</li>
+          <li><a href="gcleopatra_main.html" >Cleopatra</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, kevells.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
