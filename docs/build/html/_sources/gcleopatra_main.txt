@@ -11,7 +11,9 @@ Das Spiel mit Kleopatra -Module
    :maxdepth: 6
     
   
-
+  
+   gapacheconf
+   gapachemodules
    gapachereverseproxy
    gapacheserver
    gapachevirtualhosteditor
