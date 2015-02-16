@@ -31,4 +31,5 @@ Das Spiel mit Kleopatra -Module
    gcomposer
    gcopy
    gdevelopertools
+   gdnsify
    genvironmentconfig
