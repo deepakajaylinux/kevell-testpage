@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>FireFox17 &mdash; KEVELL 0.1 documentation</title>
+    <title>Firewall &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,7 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
     <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
-    <link rel="next" title="FireFox24" href="gfirefox24.html" />
-    <link rel="prev" title="FireFox14" href="gfirefox14.html" />
+    <link rel="prev" title="FireFox33" href="gfirefox33.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -88,10 +87,9 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">FireFox17</a><ul>
+<li><a class="reference internal" href="#">Firewall</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#optionen">Optionen</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
@@ -104,10 +102,8 @@
             
               
                 
-  <li><a href="gfirefox14.html"
-         title="Previous Chapter: FireFox14">&laquo; FireFox14</a></li>
-  <li><a href="gfirefox24.html"
-         title="Next Chapter: FireFox24">FireFox24 &raquo;</a></li>
+  <li><a href="gfirefox33.html"
+         title="Previous Chapter: FireFox33">&laquo; FireFox33</a></li>
               
             
             
@@ -115,7 +111,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/gfirefox17.txt"
+  <a href="_sources/gfirewall.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -152,30 +148,66 @@
     <div class="col-md-9">
       
   
-  <div class="section" id="firefox17">
-<h1>FireFox17<a class="headerlink" href="#firefox17" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="firewall">
+<h1>Firewall<a class="headerlink" href="#firewall" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>Dieses Modul verwendet werden, um firefox17 installieren. Ubuntu veröffentlicht aktualisierte Versionen in regelmäßigen Abständen. Es implementiert aktuellen und erwarteten Web-Standards. Langfristige Unterstützung enthält Updates für neue Hardware, Sicherheitspatches und Updates für das Cloud Computing-Infrastruktur. Es ist bequem mit Ubuntu und Cent OS.</p>
+<p>Eine Firewall ist ein Netzwerk-Sicherheitssystem , das die ein- und ausgehenden Netzwerkverkehr basierend auf einer angelegten Regelsatz steuert. Firewalls gibt es sowohl als Software-Lösung und als Hardware-Appliance.</p>
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
-<p>Dieser Befehl kann über die Ziele und Befehle unter Firefox17 Modul funktionieren. Es erklärt auch den Befehl zum firefox17 installieren. Vor der Installation kann der Benutzer lesen diese Hilfe Befehl erklärt seine Funktion</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra firefox17 <span class="nb">help</span>
+<p>Dieser Befehl help unterstützen den Anwender zu Cleopatra. Es führt den Anwender die Erlaubnis.
+Der Benutzer kann die Änderung nach Wunsch zu tun. Hilfe Bild wird den Benutzer zu führen. Lassen Sie uns zu visualisieren.</p>
+<div class="highlight-bash"><div class="highlight"><pre>cleopatra Firewall <span class="nb">help</span>
 </pre></div>
 </div>
-<p>Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# cleopatra firefox17 <span class="nb">help</span>
+<p>Der Screenshot für den obigen Befehl aufgelistet unten,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra Firewall <span class="nb">help</span>
 ******************************
+This <span class="nb">command </span>allows you to modify create or modify firewalls
 
+ Firewall, firewall
 
-This <span class="nb">command </span>allows you to install Firefox17.
+       - <span class="nb">enable</span>
+<span class="nb">       </span>Enable system firewall
+       example: cleopatra firewall <span class="nb">enable</span>
 
-Firefox17, ff17, firefox17
+       - disable
+       Disable system firewall
+       example: cleopatra firewall disable
 
-- install
-Installs the latest version of Firefox 17
-example: cleopatra firefox17 install
+       - allow
+       Allow a Firewall rule
+       example: cleopatra firewall allow --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - deny
+       Deny a Firewall rule. Allow connection attempts to be ignored and <span class="nb">time </span>out.
+       example: cleopatra firewall deny --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - reject
+       Reject a Firewall rule. Terminate connections attempts with an error to the connector.
+       example: cleopatra firewall reject --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - limit
+       Limit a Firewall rule. ufw will deny connections <span class="k">if</span> an IP address has attempted
+       to initiate <span class="m">6</span> or more connections in the last <span class="m">30</span> seconds.
+       example: cleopatra firewall limit --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - delete
+       Delete a Firewall rule.
+       example: cleopatra firewall delete --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - insert
+       Insert a Firewall rule.
+       example: cleopatra firewall insert --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - reset
+       Reset a Firewall rule.
+       example: cleopatra firewall reset --firewall-rule<span class="o">=</span><span class="s2">&quot;ssh/tcp&quot;</span>
+
+       - default
+       Set default policy, should be allow, deny, or reject
+       example: cleopatra firewall default --policy<span class="o">=</span><span class="s2">&quot;deny&quot;</span>
 
 ------------------------------
 End Help
@@ -183,80 +215,79 @@ End Help
 </pre></div>
 </div>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Es ist eine eklatante Prozess firefox17 Modul unter Cleopatra von nur mit dem Befehl unten angegeben zu installieren,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra firefox17 install
-</pre></div>
-</div>
-<p>After key in the command, it can asks</p>
-<p>Install firefox17?(Y/N)</p>
-<p>In case the user input as Y, it can install firefox17 from the package. Else, it can exit the screen. The following screen shots can explain it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra Firefox17 install
-Install Firefox 17? <span class="o">(</span>Y/N<span class="o">)</span>
-Y
-*******************************
-*        Pharaoh Tools        *
-*          Firefox <span class="m">17</span>         *
-*******************************
-Creating /tmp/cleopatra-temp-script-34898518137.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-34898518137.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-34898518137.sh Permissions
-Executing /tmp/cleopatra-temp-script-34898518137.sh
-Cloning into <span class="s1">&#39;firefox17&#39;</span>...
-remote: Counting objects: 78, <span class="k">done</span>.
-remote: Total <span class="m">78</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
-Unpacking objects: 100% <span class="o">(</span>78/78<span class="o">)</span>, <span class="k">done</span>.
-Checking connectivity... <span class="k">done</span>.
-Temp File /tmp/cleopatra-temp-script-34898518137.sh Removed
-Program Executor Deleted <span class="k">if</span> existed
-... All <span class="k">done</span>!
-*******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
-******************************
-
-
-Single App Installer:
---------------------------------------------
-Firefox17: Success
-------------------------------
-Installer Finished
-******************************
-</pre></div>
-</div>
-</div>
 <div class="section" id="optionen">
 <h2>Optionen<a class="headerlink" href="#optionen" title="Permalink to this headline">¶</a></h2>
+<p>Firewalls Regeln können nach Ihren Bedürfnissen, Anforderungen und Sicherheitsbedrohungslage angepasst werden. Der Benutzer kann Firewall-Regeln auf Basis von solchen Bedingungen wie zu erstellen oder zu deaktivieren:</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="21%" />
-<col width="34%" />
-<col width="11%" />
-<col width="34%" />
+<col width="17%" />
+<col width="46%" />
+<col width="37%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameter</th>
-<th class="head">Alternative Parameter</th>
-<th class="head">Erforderlich</th>
+<th class="head">Funktion</th>
 <th class="head">Kommentar</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra firefox17
-Install? (Y/N)</td>
-<td>Anstelle der Verwendung firefox17 wir
-verwenden können, ff17, Firefox17</td>
-<td>Y(yes)</td>
-<td>System startet Installation Under
-cleopatra</td>
+<tr class="row-even"><td>IP address</td>
+<td>Absperren eine bestimmte IP-Adresse oder einen
+Bereich von IP-Adressen, die Sie denken,
+sind räuberische</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td>cleopatra firefox17
-Install? (Y/N)</td>
-<td>Anstelle der Verwendung firefox17 wir
-verwenden können, ff17, Firefox17</td>
-<td>N (No)</td>
-<td>Das System stoppt den Installationsprozess
-Under cleopatra|</td>
+<tr class="row-odd"><td>Enable</td>
+<td>Aktivieren Sie Firewall-System</td>
+<td>cleopatra firewall enable</td>
+</tr>
+<tr class="row-even"><td>Disable</td>
+<td>Deaktivieren System-Firewall</td>
+<td>cleopatra firewall disable</td>
+</tr>
+<tr class="row-odd"><td>Allow</td>
+<td>Lassen Sie Firewall-Regel</td>
+<td>cleopatra firewall allow –firewall-rule
+=”ssh/tcp”</td>
+</tr>
+<tr class="row-even"><td>Deny</td>
+<td>Lassen Verbindungsversuch ignoriert und Auszeit
+werden</td>
+<td>cleopatra firewall deny –firewall-rule
+=”ssh/tcp”</td>
+</tr>
+<tr class="row-odd"><td>Reject</td>
+<td>Verbindung beenden Versuche mit einem Fehler an dem
+Verbinder</td>
+<td>cleopatra firewall reject –firewall-rule=
+”ssh/tcp”</td>
+</tr>
+<tr class="row-even"><td>Limit</td>
+<td>Ufw werden Verbindungen zu verweigern, wenn eine
+IP-Adresse zu initiieren 6 oder mehr Verbindung in
+den letzten 30 Sekunden versucht.</td>
+<td>cleopatra firewall limit –firewall-rule=
+”ssh/tcp”</td>
+</tr>
+<tr class="row-odd"><td>Delete</td>
+<td>Löschen Sie eine Firewall-Regel</td>
+<td>cleopatra firewall delete –firewall-rule=
+”ssh/tcp”</td>
+</tr>
+<tr class="row-even"><td>Insert</td>
+<td>Setzen Sie eine Firewall-Regel</td>
+<td>cleopatra firewall insert –firewall-rule=
+”ssh/tcp”</td>
+</tr>
+<tr class="row-odd"><td>Reset</td>
+<td>Zurücksetzen eine Firewall-Regel</td>
+<td>cleopatra firewall reset –firewall-rule=
+”ssh/tcp”</td>
+</tr>
+<tr class="row-even"><td>default</td>
+<td>Standardrichtlinie, soll ermöglichen, zu leugnen
+oder ablehnen.|</td>
+<td>cleopatra firewall default –policy=”deny”</td>
 </tr>
 </tbody>
 </table>
@@ -264,10 +295,12 @@ Under cleopatra|</td>
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Firefox17 nutzt die Unterstützung für neue Hardware und Integration aller in dieser Serie bisher veröffentlichten Updates.</li>
-<li>Firefox zum Installieren firefox17</li>
-<li>Firefox17 ist nicht case sensitive.</li>
-<li>Datenschutz- und Sicherheitsmaßnahmen, ist intelligent Suche möglich.</li>
+<li>Die Firewall verhindert unerwünschten Zugriff auf das System über ein Netzwerk durch die Ermittlung und Verhinderung von Kommunikation über
+riskante Ports.</li>
+<li>System kommunizieren über viele verschiedene anerkannte Ports, und die Firewall wird dazu neigen, diese ohne Rückfrage oder weist den
+Benutzer zu ermöglichen.</li>
+<li>Firewalls können auch &#8220;verdächtige&#8221; Aktivität von außen zu erkennen.</li>
+<li>Der Benutzer kann die Regel, nach ihrem Wunsch eingestellt.</li>
 </ul>
 </div>
 </div>
@@ -328,8 +361,8 @@ Under cleopatra|</td>
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gfirefox17.rst">
-          FireFox17
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gfirewall.rst">
+          Firewall
         </a> on GitHub.
       </li>
 

@@ -1,0 +1,114 @@
+===================
+FireFox24
+===================
+
+Zusammenfassung
+-----------------------
+
+  Dieses Modul verwendet werden, um firefox24 installieren. Ubuntu veröffentlicht aktualisierte Versionen in regelmäßigen Abständen. Es implementiert aktuellen und erwarteten Web-Standards. Langfristige Unterstützung enthält Updates für neue Hardware, Sicherheitspatches und Updates für das Cloud Computing-Infrastruktur. Es ist bequem mit Ubuntu und Cent OS.
+
+
+Hilfe Befehl
+------------------
+
+Dieser Befehl kann über die Ziele und Befehle unter Firefox24 Modul funktionieren. Es erklärt auch den Befehl zum firefox24 installieren. Vor der Installation kann der Benutzer lesen diese Hilfe Befehl erklärt seine Funktion
+
+.. code-block:: bash
+          
+           cleopatra firefox24 help
+
+Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.
+
+.. code-block:: bash
+
+        Kevell@corp:/# cleopatra firefox24 help
+        ******************************
+
+
+         This command allows you to install Firefox14.
+
+         Firefox24, ff24, firefox24
+
+        - install
+        Installs the latest version of Firefox 24
+        example: cleopatra firefox14 install
+
+        ------------------------------
+        End Help
+        ******************************
+
+
+Installation
+-------------------
+
+Es ist eine eklatante Prozess firefox24 Modul unter Cleopatra von nur mit dem Befehl unten angegeben zu installieren,
+
+.. code-block:: bash
+         
+        cleopatra firefox24 install
+
+After key in the command, it can asks
+
+Install firefox24?(Y/N)
+
+In case the user input as Y, it can install firefox24 from the package. Else, it can exit the screen. The following screen shots can explain it.
+
+.. code-block:: bash
+        
+        kevell@corp:/# cleopatra Firefox24 install
+
+        Install Firefox? (Y/N) 
+        y
+        *******************************
+        *        Pharaoh Tools        *
+        *          Firefox 24         *
+        *******************************
+        Creating /tmp/cleopatra-temp-script-51942043520.sh
+        chmod 755 /tmp/cleopatra-temp-script-51942043520.sh 2>/dev/null
+        Changing /tmp/cleopatra-temp-script-51942043520.sh Permissions
+        Executing /tmp/cleopatra-temp-script-51942043520.sh
+        Cloning into 'firefox24'...
+        remote: Counting objects: 78, done.
+        remote: Total 78 (delta 0), reused 0 (delta 0)
+        Unpacking objects: 100% (78/78), done.
+        Checking connectivity... done.
+        Temp File /tmp/cleopatra-temp-script-51942043520.sh Removed
+        Program Executor Deleted if existed
+        ... All done!
+        *******************************
+        Thanks for installing , visit www.pharaohtools.com for more
+        ******************************
+
+
+        Single App Installer:
+        --------------------------------------------
+        Firefox24: Success
+        ------------------------------
+        Installer Finished
+        ******************************
+
+Optionen
+--------------
+
+.. cssclass:: table-bordered
+
+
+ +-----------------------------+------------------------------------------+-----------------+-----------------------------------------+
+ | Parameter                   |  Alternative Parameter                   | Erforderlich    |  Kommentar                              |
+ +=============================+==========================================+=================+=========================================+
+ |cleopatra firefox24          | Anstelle der Verwendung firefox24 wir    | Y(Yes)          | System startet Installation Under       |
+ |Install? (Y/N)               | verwenden können, ff24, Firefox24        |                 | cleopatra                               |
+ +-----------------------------+------------------------------------------+-----------------+-----------------------------------------+
+ |cleopatra firefox24          | Anstelle der Verwendung firefox24 wir    | N(No)           | Das System stoppt den                   |
+ |Install? (Y/N)               | verwenden können, ff24, Firefox24        |                 | Installationsprozess Under cleopatra|   |
+ +-----------------------------+------------------------------------------+-----------------+-----------------------------------------+
+
+
+Vorteile
+------------------
+
+* Firefox24 nutzt die Unterstützung für neue Hardware und Integration aller in dieser Serie bisher veröffentlichten Updates.
+* Firefox24 eignet sich mit Ubuntu und Cent-OS.
+* Firefox24 ist nicht case sensitive.
+* Datenschutz- und Sicherheitsmaßnahmen, ist intelligent Suche möglich.
+

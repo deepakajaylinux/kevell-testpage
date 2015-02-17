@@ -41,3 +41,17 @@ Das Spiel mit Kleopatra -Module
    gfirefox
    gfirefox14
    gfirefox17
+   gfirefox24
+   gfirefox33
+   gfirewall
+   ggitbucket
+   ggitkeysafe
+   ggitlab
+   ggittools
+
+
+
+
+
+
+
