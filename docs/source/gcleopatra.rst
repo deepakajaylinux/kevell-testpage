@@ -96,15 +96,17 @@ Option
 .. cssclass:: table-bordered
 
 
- +---------------------------------------------+---------------+----------------------------------------------+
- | Parameter 				       | Option	       | Kommentare				      |
- +=============================================+===============+==============================================+
- |Install cleopatra cleopatra Update to        | Y(YES)        | Es wird Cleopatra installieren unter         |
- |latest version? (Y/N)			       |               | Cleopatra				      |
- +---------------------------------------------+---------------+----------------------------------------------+
- |Install cleopatra cleopatra Update to        | N(NO)	       | Es wird die Installation zu beenden	      |
- |latest version? (Y/N)|		       |               | 				              |
- +---------------------------------------------+---------------+----------------------------------------------+
+ +---------------------------------------+------------------------------------+---------+---------------------------------------+
+ | Parameter 				 | Alternative Parameter              | Option	| Kommentare		        	|
+ +=======================================+====================================+=========+=======================================+
+ |Install cleopatra cleopatra Update to  | Anstelle von cleopatra wir         | Y(YES)  | Es wird cleopatra installieren unter  |
+ |latest version? (Y/N)			 | verwenden können, cleopatra,       |         | cleopatra				|
+ |                                       | cleo du auch                       |         |                                       |
+ +---------------------------------------+------------------------------------+---------+---------------------------------------+
+ |Install cleopatra cleopatra Update to  | Anstelle von cleopatra wir         | N(NO)	| Es wird die Installation zu beenden	|
+ |latest version? (Y/N) 	         | verwenden können, cleopatra,       |         | cleopatra	                        |
+ |                                       | cleo du auch|                      |         |                                       |
+ +---------------------------------------+------------------------------------+---------+---------------------------------------+
 
 
 
