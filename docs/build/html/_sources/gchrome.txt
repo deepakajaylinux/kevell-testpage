@@ -1,5 +1,5 @@
 ===========
-Chrom
+Chrome
 ===========
 
 Übersicht
@@ -203,11 +203,11 @@ Optionen
  | Parameter		 | Alternative Parameter			   | Optionen        | Kommentare				|
  +=======================+=================================================+=================+==========================================+
  |cleopatra Chrome 	 | Eine der beiden alternativen Parameter kann das | Y		     | Sobald der Benutzer die Option bietet, 	|
- |Install 		 | Kommando verwendet werden - Chrome , chrome     |		     | startet System-Installation		|
+ |Install? (Y/N)         | Kommando verwendet werden - Chrome , chrome     |		     | startet System-Installation		|
  |			 | eg: cleopatra chrome Install			   | 		     |					        |
  +-----------------------+-------------------------------------------------+-----------------+------------------------------------------+
  |cleopatra Chrome       | Eine der beiden alternativen Parameter kann das | N               | Sobald der Benutzer die Option bietet,   |
- |Install                | Kommando verwendet werden - Chrome , chrome     |                 | hält System-Installation                 |
+ |Install? (Y/N)         | Kommando verwendet werden - Chrome , chrome     |                 | hält System-Installation                 |
  |                       | eg: cleopatra chrome Install.|                  |                 |                                          |
  +-----------------------+-------------------------------------------------+-----------------+------------------------------------------+
  

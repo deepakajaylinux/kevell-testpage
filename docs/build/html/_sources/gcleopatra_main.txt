@@ -25,6 +25,7 @@ Das Spiel mit Kleopatra -Module
    gboxify
    gcassandra
    gchgrp
+   gchrome
    gchromedriver
    gchmode
    gchown
@@ -48,7 +49,7 @@ Das Spiel mit Kleopatra -Module
    ggitkeysafe
    ggitlab
    ggittools
-
+   ghaproxy
 
 
 
