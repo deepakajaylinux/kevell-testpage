@@ -1,0 +1,88 @@
+===========
+Hostname
+===========
+
+Zusammenfassung
+-----------------------
+
+Da IP-Adressen sind nicht schwer zu merken (und sind nicht besonders aussagekräftigen), ermöglicht das Internet auch dem Benutzer, ein Computer und nicht ein Name einer Zahlenfolge angeben. Diese ganze Zeichenfolge als Hostnamen des Comput er bekannt. Es gibt zwei Möglichkeiten zur Verfügung. Anzeigen und ändern. Durch die Nutzung dieser Module kann der Benutzer anzuzeigen oder zu ändern Hostnamen.
+
+Hilfe Befehl
+-----------------------
+
+Dieser Befehl kann über die Ziele und Befehle unter Hostnamen-Modul funktionieren. Es erklärt auch den Befehl zum Hostnamen-Modul ändern. Vor dem Host-Namen zu ändern, der Benutzer lesen diese Hilfe Befehl erklärt seine Funktion.
+
+.. code-block:: bash
+         
+                cleopatra hostname help
+
+Der folgende Screenshot mit sich bringen kann, um sie zu kümmern.
+
+.. code-block:: bash
+
+ kevell@corp:/# cleopatra hostname help
+
+ ******************************
+
+
+  This command allows you to view or modify hostname
+
+  Hostname, hostname
+
+        - change
+        Change the system hostname
+        example: cleopatra hostname change --hostname="my-laptop"
+
+        - show
+        Show the system hostname
+        example: cleopatra hostname show
+
+ ------------------------------
+ End Help
+ ******************************
+
+Sich Ändern
+----------------
+
+Hostnamen werden in der Regel in einem Verwaltungskapazitäten verwendet und können in Computer-Browser-Listen, aktive Verzeichnislisten , IP-Adresse, um den Hostnamen Auflösungen, E-Mail-Kopfzeilen usw. angezeigt Wenn der Benutzer den Hostnamen ändern möchten, können Sie den folgenden Befehl verwenden.
+
+.. code-block:: bash
+           
+                cleopatra hostname change –hostname=”kevellcorp”
+
+Aus der obigen Befehl der neue Host-Namen eingeben können.
+
+Show
+-------------------
+
+Dieses Modul ist eine spürbare Prozess um den Hostnamen unter Cleopatra von nur mit dem Befehl unten gegeben anzusehen,
+
+.. code-block:: bash
+         
+                cleopatra hostname show
+
+Nach dem Schlüssel im Befehl, es zeigt den Hostnamen.
+
+Option
+------------
+
+.. cssclass:: table-bordered
+
+ +----------------------------+------------------------------------------+--------------+--------------------------------------+
+ | Parameters                 | Alternative Parameter                    | Optionen     | Kommentare                           |
+ +============================+==========================================+==============+======================================+
+ |cleopatra hostname          | anstelle von Hostname wir verwenden      | Show	        | System beginnt, die die hostname     |
+ |                            | können, Hostname,hostname                |              | Verfahren unter cleopatra            |
+ +----------------------------+------------------------------------------+--------------+--------------------------------------+
+ |cleopatra hostname change   | anstelle von Hostname wir verwenden      | Change       | System beginnt, die die hostname     |
+ |–hostname=”Name”            | können, Hostname,hostname                |              | Verfahren unter cleopatra|           |
+ +----------------------------+------------------------------------------+--------------+--------------------------------------+
+
+
+Vorteile
+-------------
+
+* Hostnamen können einfache Namen, bestehend aus einem einzigen Wort oder eine Phrase sein, oder sie strukturiert werden kann.
+* Hostnamen können nicht empfindlich sein.
+* Hostname anzeigen und leicht modifiziert.
+

@@ -50,7 +50,15 @@ Das Spiel mit Kleopatra -Module
    ggitlab
    ggittools
    ghaproxy
-
+   ghhvm
+   ghostname
+   ginstallpackage
+   gintellij
+   ginvoke
+   gjava
+   gjenkinssudonopass
+   gjmeter
+   
 
 
 

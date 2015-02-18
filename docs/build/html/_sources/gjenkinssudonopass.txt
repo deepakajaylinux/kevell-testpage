@@ -1,0 +1,114 @@
+==================
+JenkinsSudoNoPass
+==================
+
+Zusammenfassung
+------------------------
+
+Jenkins ist ein beliebtes Build-Server. Jenkins bietet kontinuierliche Integrationsleistungen für die Softwareentwicklung. Jenkinssudonopass tolerieren den Benutzer auf einen Eintrag in der Systemdatei sudo angrenzen. Diese Aufmachungen die Benutzer jenkins mit heraus PASSWORT funktionieren. Dieser eignet sich für Ubuntu und
+CentOS.
+
+
+Hilfe Befehl
+-----------------------
+
+Der Befehl help verwalten die Benutzer über den Zweck und als auch über die Möglichkeiten, die in der jenkinssudonopass Modul enthalten sind. Der Befehl help Listen aus der alternativen Parameter jenkinssudonopass. Es beschreibt auch die Syntax für die Verwendung jenkinssudonopass zu Securify. Der Befehl help für jenkinssudonopass ist unten angegeben.
+
+.. code-block:: bash
+
+		cleopatra Jenkinssudonopass help
+
+Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter jenkinssudonopass.
+
+.. code-block:: bash
+
+ kevell@corp:/# cleopatra JenkinsSudoNoPass help
+ ******************************
+
+
+  This command allows you to add an entry to the system sudo file that will
+  allow your Jenkins user to have passwordless sudo. This is required for
+  quite a few of the Jenkins builds provided by Golden Contact, as Jenkins
+  will perform test execution, software installs and more, silently.
+
+  JenkinsSudoNoPass, jenkinssudonopass, jenkins-sudo-nopass, jenkins-sudo-passwordless
+
+        - install
+        Installs the Jenkins sudo without password entry
+        example: cleopatra jenkins-sudo-nopass install
+
+ ------------------------------
+ End Help
+ ******************************
+
+Installation
+-----------------
+
+Dieser Befehl ermächtigen, jenkins sudo ohne Passworteingabe zu installieren. Wenn der Benutzer die Installation jenkinssudonopass folgendem Befehl führt den Benutzer zu installieren.
+
+.. code-block:: bash
+
+                cleopatra Jenkinssudonopass install
+
+Nachdem Sie diesen Befehl fragt das System Benutzer wünschen. Das andere Verfahren wird die Installation durch den Screenshot.
+
+.. code-block:: bash
+
+ kevell@corp:/# cleopatra jenkinssudonopass install
+ Install Sudo w/o Pass for Jenkins User? (Y/N) 
+ Y
+ *******************************
+ *        Pharaoh Tools        *
+ *         Jenk Sudo Ps        *
+ *******************************
+ Creating /tmp/cleopatra-temp-script-2682022801.sh
+ chmod 755 /tmp/cleopatra-temp-script-2682022801.sh 2>/dev/null
+ Changing /tmp/cleopatra-temp-script-2682022801.sh Permissions
+ Executing /tmp/cleopatra-temp-script-2682022801.sh
+ The following will be written to /etc/sudoers
+ Please check if it looks wrong
+ It may break your system if wrong !!!
+ jenkins ALL=NOPASSWD: ALL
+ Temp File /tmp/cleopatra-temp-script-2682022801.sh Removed
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Installer:
+ --------------------------------------------
+ JenkinsSudoNoPass: Success
+ ------------------------------
+ Installer Finished
+ ******************************
+
+Optionen
+-----------
+
+.. cssclass:: table-bordered
+
+ +----------------------------+------------------------------------------------+-----------+------------------------------------------+
+ | Parameters                 | Alternative Parameters                         | Optionen  | Kommentare                               |
+ +============================+================================================+===========+==========================================+
+ |Install sudo w/o for        | anstelle von jenkinssudonopass, olgende        | Y         | Wenn der Benutzer wünschen, den          |
+ |Jenkins user? (Y/N)         | Alternativen können ebenfalls verwendet        |           | Installationsprozess können sie Eingang  |
+ |                            | werden: JenkinsSudoNoPass , jenkinssudonopass, |           | sie Eingang als Y. gehen                 |
+ |                            | jenkins-sudo-nopass,jenkins-sudo-passwordless  |           |                                          |
+ +----------------------------+------------------------------------------------+-----------+------------------------------------------+
+ |Install sudo w/o for        | anstelle von jenkinssudonopass, olgende        | N         | Wenn der Benutzer wünschen, den          |
+ |Jenkins user? (Y/N)         | Alternativen können ebenfalls verwendet        |           | Installationsprozess können sie Eingang  |
+ |                            | werden: JenkinsSudoNoPass , jenkinssudonopass, |           | als N. gehen                             | 
+ |                            | jenkins-sudo-nopass,jenkins-sudo-passwordless| |           |                                          |
+ +----------------------------+------------------------------------------------+-----------+------------------------------------------+
+
+
+Vorteile
+-----------
+
+* Open-Source kontinuierliche Integration.
+* Jenkinssudonopass ist eine Automatisierung baut.
+* Mit dem Scripting baut und entfernen Sie menschliche Fehler Probleme, sind Computer einfach besser läuft wiederholende Aufgaben.
+* Jenkinssudonopass müssen Zeit auf ihren Einsätzen verbringen
+* Vielseitigkeit und Flexibilität.
+
