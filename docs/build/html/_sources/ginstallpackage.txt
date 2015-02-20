@@ -10,17 +10,17 @@ Installieren Sie das Paket sind Differentiallogikausgänge allgemein in Hochgesc
 Hilfe Befehl
 -----------------------
 
-Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den Install Module enthalten sind. Der Befehl help Listen aus der alternativen Parameter Install unter Kleopatra-Modul. Es beschreibt auch die Syntax für die Installation. Der Befehl help zur Install Modul ist nachfolgend dargestellt.
+Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den Install Module enthalten sind. Der Befehl help Listen aus der alternativen Parameter Install unter ptconfigure-Modul. Es beschreibt auch die Syntax für die Installation. Der Befehl help zur Install Modul ist nachfolgend dargestellt.
 
 .. code-block:: bash
 
-		cleopatra installpackage help
+		ptconfigure installpackage help
 
 Der folgende Screenshot zeigt den vollen Einsatz von Install Modul.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra InstallPackage help
+ kevell@corp:/# ptconfigure InstallPackage help
 
  ******************************
 
@@ -33,23 +33,23 @@ Der folgende Screenshot zeigt den vollen Einsatz von Install Modul.
     - dev-client
       install a dev client machine for you to work on, a bunch of IDE's, DB's and a complete set of the
       tools you need to start work immediately.
-      example: cleopatra install autopilot dev-client
+      example: ptconfigure install autopilot dev-client
 
     - dev-server
       Install the preconfigured list of software for a developers server.
-      example: cleopatra install autopilot dev-server
+      example: ptconfigure install autopilot dev-server
 
     - test-server
       Install the preconfigured list of software for a testing server.
-      example: cleopatra install autopilot test-server
+      example: ptconfigure install autopilot test-server
 
     - build-server
       Install the preconfigured list of software for a build server.
-      example: cleopatra install autopilot test-server
+      example: ptconfigure install autopilot test-server
 
     - production
       Install the preconfigured list of software for a production server.
-      example: cleopatra install autopilot test-server
+      example: ptconfigure install autopilot test-server
 
  ------------------------------
  End Help
@@ -60,11 +60,11 @@ Der folgende Screenshot zeigt den vollen Einsatz von Install Modul.
 Installation
 ---------------
 
-Die Installation umfasst die Installation von Install erforderlich, um die Installation in einer aktualisierten Version zu machen. Es ist eine offensichtliche Prozess Install Modul unter Cleopatra installieren. Installpackage um nur mit dem Befehl unten angegeben,
+Die Installation umfasst die Installation von Install erforderlich, um die Installation in einer aktualisierten Version zu machen. Es ist eine offensichtliche Prozess Install Modul unter ptconfigure installieren. Installpackage um nur mit dem Befehl unten angegeben,
 
 .. code-block:: bash
 
-	cleopatra installpackage Install
+	ptconfigure installpackage Install
 
 Nach beleben den Befehl geben Sie den Wert katechisieren.
 
@@ -86,7 +86,7 @@ Dieser Befehl wird verwendet, um auf eine Reihe von integrierten Entwicklungsumg
 
 .. code-block:: bash
 
-		cleopatra install autopilot dev-client
+		ptconfigure install autopilot dev-client
 
 Nach der Eingabe wie die oben genannten Befehls es beginnt mit der Installation-Prozess.
 
@@ -97,11 +97,11 @@ Die folgende Schnappschuss zeigt seine Funktionen.
 Dev-Server
 ----------------
 
-Dieser Befehl verwendet werden, um vorkonfiguriert Liste von Software für Server eines Entwicklers zu installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig Cleopatra empfiehlt dev-Server mit diesem Befehl.
+Dieser Befehl verwendet werden, um vorkonfiguriert Liste von Software für Server eines Entwicklers zu installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig ptconfigure empfiehlt dev-Server mit diesem Befehl.
 
 .. code-block:: bash
 
-		cleopatra install autopilot dev-server
+		ptconfigure install autopilot dev-server
 
 Der Screenshot führt den Benutzer über seine Funktion.
 
@@ -114,7 +114,7 @@ Hier wirkt Autopilot eine wichtige Rolle bei Test-Server. Es verwendet, um die v
 
 .. code-block:: bash
 
-		cleopatra install autopilot test-server
+		ptconfigure install autopilot test-server
 
 Die folgende Schnappschuss zeigt seine Funktionen.
 
@@ -123,11 +123,11 @@ Die folgende Schnappschuss zeigt seine Funktionen.
 Build-Server
 -------------------
 
-Dieser Befehl verwendet werden, um vorkonfiguriert Liste der Software für einen Build-Server installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig Cleopatra empfiehlt Bau-Server mit diesem Befehl.
+Dieser Befehl verwendet werden, um vorkonfiguriert Liste der Software für einen Build-Server installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig ptconfigure empfiehlt Bau-Server mit diesem Befehl.
 
 .. code-block:: bash
 
-	cleopatra install autopilot build-server
+	ptconfigure install autopilot build-server
 
 Die folgende Schnappschuss zeigt seine Funktionen.
 
@@ -136,11 +136,11 @@ Die folgende Schnappschuss zeigt seine Funktionen.
 Herstellung
 -----------------
 
-Dieser Befehl verwendet werden, um vorkonfiguriert Liste der Software für einen produktiven Server installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig Cleopatra empfiehlt Produktionsserver mit diesem Befehl.
+Dieser Befehl verwendet werden, um vorkonfiguriert Liste der Software für einen produktiven Server installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig ptconfigure empfiehlt Produktionsserver mit diesem Befehl.
 
 .. code-block:: bash
 
-		cleopatra install autopilot build-server
+		ptconfigure install autopilot build-server
 
 Die folgende Schnappschuss zeigt seine Funktionen.
 

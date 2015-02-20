@@ -16,13 +16,13 @@ Dieser Befehl hilft, die Nutzung von Cassandra Modul zu bestimmen. Der Benutzer 
 
 .. code-block:: bash
         
-	        cleopatra cassandra help
+	        ptconfigure cassandra help
 
 Die bildliche Darstellung des obigen Befehls ist nachstehend gezeigt,
 
 .. code-block:: bash
 
- kevells@corp:/# cleopatra cassandra help
+ kevell@corp:/# ptconfigure cassandra help
 
  ******************************
 
@@ -33,7 +33,7 @@ Die bildliche Darstellung des obigen Befehls ist nachstehend gezeigt,
 
         - install
         Installs the latest version of Cassandra
-        example: cleopatra cassandra install
+        example: ptconfigure cassandra install
 
  ------------------------------
  End Help
@@ -47,13 +47,13 @@ Dieser Befehl hilft bei der Installation von Cassandra im System. Die unten ange
 
 .. code-block:: bash
 
-                cleopatra cassandra install
+                ptconfigure cassandra install
 
 Die bildliche Darstellung des obigen Befehls ist nachstehend gezeigt,
 
 .. code-block:: bash
 
- kevells@corp:/#  cleopatra cassandra install
+ kevell@corp:/#  ptconfigure cassandra install
 
  Install Cassandra? (Y/N) 
  Y
@@ -61,10 +61,10 @@ Die bildliche Darstellung des obigen Befehls ist nachstehend gezeigt,
  *        Pharaoh Tools        *
  *         Cassandra!        *
  *******************************
- Creating /tmp/cleopatra-temp-script-10553509319.sh
- chmod 755 /tmp/cleopatra-temp-script-10553509319.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-10553509319.sh Permissions
- Executing /tmp/cleopatra-temp-script-10553509319.sh
+ Creating /tmp/ptconfigure-temp-script-10553509319.sh
+ chmod 755 /tmp/ptconfigure-temp-script-10553509319.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-10553509319.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-10553509319.sh
  gpg: directory `/home/deepak/.gnupg' created
  gpg: new configuration file `/home/deepak/.gnupg/gpg.conf' created
  gpg: WARNING: options in `/home/deepak/.gnupg/gpg.conf' are not yet active during this run
@@ -268,7 +268,7 @@ Die bildliche Darstellung des obigen Befehls ist nachstehend gezeigt,
  Get:41 http://us.archive.ubuntu.com precise/main Translation-en [726 kB]
  Get:42 http://us.archive.ubuntu.com precise/universe Translation-en [3341 kB]
  Fetched 10.2 MB in 4min 2s (42.1 kB/s)
- Temp File /tmp/cleopatra-temp-script-10553509319.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-10553509319.sh Removed
  W: Duplicate sources.list entry http://repos.zend.com/zend-server/6.1/deb/ server/non-free amd64 Packages (/var/lib/apt/lists/repos.zend.com_zend-server_6.1_deb_dists_server_non-free_binary-amd64_Packages)
  W: Duplicate sources.list entry http://repos.zend.com/zend-server/6.1/deb/ server/non-free amd64 Packages (/var/lib/apt/lists/repos.zend.com_zend-server_6.1_deb_dists_server_non-free_binary-amd64_Packages)
  W: Duplicate sources.list entry http://repos.zend.com/zend-server/6.1/deb/ server/non-free amd64 Packages (/var/lib/apt/lists/repos.zend.com_zend-server_6.1_deb_dists_server_non-free_binary-amd64_Packages)
@@ -326,27 +326,31 @@ Optionen
  +------------------------+----------------------------------------------+---------------+----------------------------------------+
  | Parameter              | Alternative Parameter                        | Optionen      | Kommentare                             |
  +========================+==============================================+===============+========================================+
- |cleopatra cassandra     | Es gibt zwei alternative Parameter, die in   | Y             | System startet Installation            | 
+ |ptconfigure cassandra   | Es gibt zwei alternative Parameter, die in   | Y             | System startet Installation            | 
  |Install                 | der Befehlszeile verwendet werden können.    |               |                                        |
  |                        | Cassandra , cassandra                        |               |                                        |
- |                        | Beispiel: cleopatra cassandra install        |               |                                        |
- |                        | cleopatra Cassandra install                  |               |                                        |
+ |                        | Beispiel: ptconfigure cassandra install      |               |                                        |
+ |                        | ptconfigure Cassandra install                |               |                                        |
  +------------------------+----------------------------------------------+---------------+----------------------------------------+
- |cleopatra cassandra     | Es gibt zwei alternative Parameter, die in   | N             | Das System stoppt den                  | 
+ |ptconfigure cassandra   | Es gibt zwei alternative Parameter, die in   | N             | Das System stoppt den                  | 
  |Install                 | der Befehlszeile verwendet werden können.    |               | Installationsprozess                   |
  |                        | Cassandra , cassandra                        |               |                                        |
- |                        | Beispiel: cleopatra cassandra install        |               |                                        |
- |                        | cleopatra Cassandra install.|                |               |                                        |
+ |                        | Beispiel: ptconfigure cassandra install      |               |                                        |
+ |                        | ptconfigure Cassandra install.|              |               |                                        |
  +------------------------+----------------------------------------------+---------------+----------------------------------------+
 
 
 Vorteile
 --------
 
-* Dezentrale - Jeder Knoten im Cluster die gleiche Rolle. Es gibt keinen Single Point of Failure. Die Daten werden über den Cluster (also jeder   Knoten unterschiedliche Daten enthält) verteilt, aber es gibt keinen Master als jedem Knoten kann jede Anforderung zu bedienen.
+* Dezentrale - Jeder Knoten im Cluster die gleiche Rolle. Es gibt keinen Single Point of Failure. Die Daten werden über den Cluster (also
+  jeder   Knoten unterschiedliche Daten enthält) verteilt, aber es gibt keinen Master als jedem Knoten kann jede Anforderung zu bedienen.
 * Unterstützt Replikation und Multi Rechenzentrum Replikation - Replikationsstrategien sind konfigurierbar. Cassandra als verteiltes System 
   entwickelt, für die Bereitstellung einer großen Zahl von Knotenpunkten über mehrere Datenzentren. Key Features von Cassandras verteilten 
   Architektur  sind speziell für Mehr Data Center Deployment zugeschnitten, für die Redundanz, Failover und Disaster Recovery.
-* Skalierbarkeit - Lese- und Schreibdurchsatz sowohl Anstieg linear neue Maschinen hinzugefügt werden, ohne Ausfallzeiten oder Unterbrechung von  Anwendungen.
-* Hochverfügbare - Die Daten werden automatisch auf mehrere Knoten für die Fehlertoleranz repliziert. Replikation über mehrere Rechenzentren unt  erstützt. Ausgefallenen Knoten kann ohne Ausfallzeiten ausgetauscht werden.
-* Tunable Konsistenz - Schreibt und liest bieten eine abstimmbare Maß an Kohärenz, den ganzen Weg von "schreibt nie im Stich" auf "Block für all  e Replikate, um lesbar sein", mit dem Quorum-Ebene in der Mitte.
+* Skalierbarkeit - Lese- und Schreibdurchsatz sowohl Anstieg linear neue Maschinen hinzugefügt werden, ohne Ausfallzeiten oder 
+  Unterbrechung von  Anwendungen.
+* Hochverfügbare - Die Daten werden automatisch auf mehrere Knoten für die Fehlertoleranz repliziert. Replikation über mehrere 
+  Rechenzentren unt  erstützt. Ausgefallenen Knoten kann ohne Ausfallzeiten ausgetauscht werden.
+* Tunable Konsistenz - Schreibt und liest bieten eine abstimmbare Maß an Kohärenz, den ganzen Weg von "schreibt nie im Stich" auf "Block 
+  für all  e Replikate, um lesbar sein", mit dem Quorum-Ebene in der Mitte.

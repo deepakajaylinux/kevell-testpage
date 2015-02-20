@@ -15,14 +15,14 @@ Der Befehl help führt den Anwender beim Umgang mit diesem Modul, um zu handhabe
 
 .. code-block:: bash
 
-	cleopatra DNSify help
+	ptconfigure DNSify help
 
 
 The syntax for declaring the help command is not case sensitive which is an added advantage. The following screenshot visualize you about the help command under dnsify.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra Dnsify help 
+ kevell@corp:/# ptconfigure Dnsify help 
  ****************************** 
 
 
@@ -33,16 +33,16 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - install-generic-autopilots 
         Install the generic Dnsify autopilot templates for a Tiny or Medium (Current Default) set of Environments 
-        example: cleopatra dnsify install-generic-autopilots 
-        example: cleopatra dnsify install-generic-autopilots 
+        example: ptconfigure dnsify install-generic-autopilots 
+        example: ptconfigure dnsify install-generic-autopilots 
                     --yes 
-                    --guess # will set --destination-dir=*this dir +*build/config/cleopatra/dnsify/autopilots/ 
+                    --guess # will set --destination-dir=*this dir +*build/config/ptconfigure/dnsify/autopilots/ 
                     --template-group=tiny 
                     --destination-dir=*path-to-destination* 
 
         - box-add 
         Installs a Box through a cloud provider 
-        example: cleopatra dnsify box-add --environment-name="*environment*" 
+        example: ptconfigure dnsify box-add --environment-name="*environment*" 
             --server-prefix="my-app" 
             --provider="DigitalOcean" // DigitalOcean, Rackspace, VSphere 
             --image-id="3101045" // DO=3101045 , RAX=ffd597d6-2cc4-4b43-b8f4-b1006715b84e 
@@ -54,18 +54,18 @@ The syntax for declaring the help command is not case sensitive which is an adde
 
         - box-remove 
         Removes a Box from the papyrus 
-        example: cleopatra dnsify box-remove --environment-name="staging" --environment-version="5.0" --provider="apt-get" 
+        example: ptconfigure dnsify box-remove --environment-name="staging" --environment-version="5.0" --provider="apt-get" 
 
         - box-destroy 
         Removes a Box from both papyrus and the cloud provider 
-        example: cleopatra dnsify box-destroy --environment-name="staging" 
+        example: ptconfigure dnsify box-destroy --environment-name="staging" 
             --destroy-all-boxes 
             --destroy 
 
         - list-papyrus 
         List all servers in papyrus, or those of a particular environment 
-        example: cleopatra dnsify list-papyrus --yes 
-        example: cleopatra dnsify list-papyrus --yes --environment-name="staging" 
+        example: ptconfigure dnsify list-papyrus --yes 
+        example: ptconfigure dnsify list-papyrus --yes --environment-name="staging" 
 
 
  ------------------------------ 
@@ -93,9 +93,9 @@ Diese Funktion soll die Installation geltenden Autopiloten zu einem kleinen oder
 
 .. code-block:: bash
 	
-	cleopatra dnsify install-generic-autopilots 
+	ptconfigure dnsify install-generic-autopilots 
                     --yes 
-                    --guess # will set --destination-dir=*this dir +*build/config/cleopatra/dnsify/autopilots/ 
+                    --guess # will set --destination-dir=*this dir +*build/config/ptconfigure/dnsify/autopilots/ 
                     --template-group=tiny 
                     --destination-dir=*path-to-destination* 
 
@@ -114,7 +114,7 @@ Diese Funktion soll das Hinzufügen einer Box über einen Cloud-Anbieter, indem 
 
 .. code-block:: bash
 
- example: cleopatra dnsify box-add --environment-name="*environment*" 
+ example: ptconfigure dnsify box-add --environment-name="*environment*" 
             --server-prefix="my-app" 
             --provider="DigitalOcean" // DigitalOcean, Rackspace, VSphere 
             --image-id="3101045" // DO=3101045 , RAX=ffd597d6-2cc4-4b43-b8f4-b1006715b84e 
@@ -142,7 +142,7 @@ Diese Funktion zielt darauf ab, einen Rahmen aus der Papyrus. Dies kann durch Ve
 
 .. code-block:: bash
 
-	cleopatra dnsify box-remove --environment-name="staging" --environment-version="5.0" --provider="apt-get"
+	ptconfigure dnsify box-remove --environment-name="staging" --environment-version="5.0" --provider="apt-get"
 
 Der Benutzer muss die folgenden Felder angeben, wie im obigen Befehl dargestellt,
 
@@ -157,7 +157,7 @@ Diese Funktion zielt darauf ab, einen Rahmen aus der Papyrus. Diese Funktion kan
 
 .. code-block:: bash
 
-	cleopatra dnsify box-destroy --environment-name="staging" 
+	ptconfigure dnsify box-destroy --environment-name="staging" 
             --destroy-all-boxes 
             --destroy
 
@@ -171,7 +171,7 @@ Liste
 
 .. code-block:: bash
 
-	cleopatra dnsify list-papyrus --yes --environment-name="staging"
+	ptconfigure dnsify list-papyrus --yes --environment-name="staging"
 
 Der oben genannte Befehl listet Papyrus einer angegebenen Umgebung.
 

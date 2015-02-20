@@ -15,7 +15,7 @@ Dieser Befehl kann über die Ziele und Befehle unter Firefox33 Modul funktionier
 
 .. code-block:: bash
           
-           cleopatra firefox33 help
+           ptconfigure firefox33 help
 
 Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.
 
@@ -27,7 +27,7 @@ The following image also helps you to understand this module clearly.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra Firefox33 help
+ kevell@corp:/# ptconfigure Firefox33 help
  ******************************
 
 
@@ -37,7 +37,7 @@ The following image also helps you to understand this module clearly.
 
         - install
         Installs the latest version of Firefox 33
-        example: cleopatra firefox33 install
+        example: ptconfigure firefox33 install
 
  ------------------------------
  End Help
@@ -47,11 +47,11 @@ The following image also helps you to understand this module clearly.
 Installation
 -------------------
 
-Es ist eine eklatante Prozess firefox17 Modul unter Cleopatra von nur mit dem Befehl unten angegeben zu installieren,
+Es ist eine eklatante Prozess firefox17 Modul unter ptconfigure von nur mit dem Befehl unten angegeben zu installieren,
 
 .. code-block:: bash
     
-                cleopatra firefox33 install
+                ptconfigure firefox33 install
 
 After key in the command, it can asks
 
@@ -61,24 +61,24 @@ In case the user input as Y, it can install firefox33 from the package. Else, it
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra Firefox33 install
+ kevell@corp:/# ptconfigure Firefox33 install
  Install Firefox 33? (Y/N) 
  Y
  *******************************
  *        Pharaoh Tools        *
  *          Firefox 33         *
  *******************************
- Creating /tmp/cleopatra-temp-script-5246928428.sh
- chmod 755 /tmp/cleopatra-temp-script-5246928428.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-5246928428.sh Permissions
- Executing /tmp/cleopatra-temp-script-5246928428.sh
+ Creating /tmp/ptconfigure-temp-script-5246928428.sh
+ chmod 755 /tmp/ptconfigure-temp-script-5246928428.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-5246928428.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-5246928428.sh
  Cloning into 'firefox33'...
  remote: Counting objects: 79, done.
  Unpacking objects:  81% (64/79)   
  remote: Total 79 (delta 0), reused 0 (delta 0)
  Unpacking objects: 100% (79/79), done.
  Checking connectivity... done.
- Temp File /tmp/cleopatra-temp-script-5246928428.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-5246928428.sh Removed
  Program Executor Deleted if existed
  ... All done!
  *******************************
@@ -99,15 +99,15 @@ Optionen
 .. cssclass:: table-bordered
 
 
- +---------------------------+---------------------------------------------+----------------+---------------------------------------+
- | Parameter                 |  Alternative Parameter                      | Erforderlich   |  Kommentar                            |
- +===========================+=============================================+================+=======================================+
- |cleopatra firefox33        | Anstelle der Verwendung firefox33 wir       | Y(Yes)         | System startet Installation Under     |
- |Install? (Y/N)             | verwenden können, ff33, Firefox33           |                | cleopatra                             |
- +---------------------------+---------------------------------------------+----------------+---------------------------------------+
- |cleopatra firefox33        | Anstelle der Verwendung firefox33 wir       | N(No)          | Das System stoppt den                 |
- |Install? (Y/N)             | verwenden können, ff33, Firefox33           |                | Installationsprozess Under cleopatra| |
- +---------------------------+---------------------------------------------+----------------+---------------------------------------+
+ +---------------------------+---------------------------------------------+----------------+-----------------------------------------+
+ | Parameter                 |  Alternative Parameter                      | Erforderlich   |  Kommentar                              |
+ +===========================+=============================================+================+=========================================+
+ |ptconfigure firefox33      | Anstelle der Verwendung firefox33 wir       | Y(Yes)         | System startet Installation Under       |
+ |Install? (Y/N)             | verwenden können, ff33, Firefox33           |                | ptconfigure                             |
+ +---------------------------+---------------------------------------------+----------------+-----------------------------------------+
+ |ptconfigure firefox33      | Anstelle der Verwendung firefox33 wir       | N(No)          | Das System stoppt den                   |
+ |Install? (Y/N)             | verwenden können, ff33, Firefox33           |                | Installationsprozess Under ptconfigure| |
+ +---------------------------+---------------------------------------------+----------------+-----------------------------------------+
 
 
 Vorteile

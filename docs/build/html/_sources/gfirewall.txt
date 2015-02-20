@@ -11,18 +11,18 @@ Eine Firewall ist ein Netzwerk-Sicherheitssystem , das die ein- und ausgehenden 
 Hilfe Befehl
 ----------------
 
-Dieser Befehl help unterstützen den Anwender zu Cleopatra. Es führt den Anwender die Erlaubnis.
+Dieser Befehl help unterstützen den Anwender zu ptconfigure. Es führt den Anwender die Erlaubnis.
 Der Benutzer kann die Änderung nach Wunsch zu tun. Hilfe Bild wird den Benutzer zu führen. Lassen Sie uns zu visualisieren.
 
 .. code-block:: bash
 
-  cleopatra Firewall help
+  ptconfigure Firewall help
 
 Der Screenshot für den obigen Befehl aufgelistet unten,
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra Firewall help
+ kevell@corp:/# ptconfigure Firewall help
  ******************************
  This command allows you to modify create or modify firewalls
 
@@ -30,44 +30,44 @@ Der Screenshot für den obigen Befehl aufgelistet unten,
 
         - enable
         Enable system firewall
-        example: cleopatra firewall enable
+        example: ptconfigure firewall enable
 
         - disable
         Disable system firewall
-        example: cleopatra firewall disable
+        example: ptconfigure firewall disable
 
         - allow
         Allow a Firewall rule
-        example: cleopatra firewall allow --firewall-rule="ssh/tcp"
+        example: ptconfigure firewall allow --firewall-rule="ssh/tcp"
 
         - deny
         Deny a Firewall rule. Allow connection attempts to be ignored and time out.
-        example: cleopatra firewall deny --firewall-rule="ssh/tcp"
+        example: ptconfigure firewall deny --firewall-rule="ssh/tcp"
 
         - reject
         Reject a Firewall rule. Terminate connections attempts with an error to the connector.
-        example: cleopatra firewall reject --firewall-rule="ssh/tcp"
+        example: ptconfigure firewall reject --firewall-rule="ssh/tcp"
 
         - limit
         Limit a Firewall rule. ufw will deny connections if an IP address has attempted
         to initiate 6 or more connections in the last 30 seconds.
-        example: cleopatra firewall limit --firewall-rule="ssh/tcp"
+        example: ptconfigure firewall limit --firewall-rule="ssh/tcp"
 
         - delete
         Delete a Firewall rule.
-        example: cleopatra firewall delete --firewall-rule="ssh/tcp"
+        example: ptconfigure firewall delete --firewall-rule="ssh/tcp"
 
         - insert
         Insert a Firewall rule.
-        example: cleopatra firewall insert --firewall-rule="ssh/tcp"
+        example: ptconfigure firewall insert --firewall-rule="ssh/tcp"
 
         - reset
         Reset a Firewall rule.
-        example: cleopatra firewall reset --firewall-rule="ssh/tcp"
+        example: ptconfigure firewall reset --firewall-rule="ssh/tcp"
 
         - default
         Set default policy, should be allow, deny, or reject
-        example: cleopatra firewall default --policy="deny"
+        example: ptconfigure firewall default --policy="deny"
 
  ------------------------------
  End Help
@@ -87,34 +87,34 @@ Firewalls Regeln können nach Ihren Bedürfnissen, Anforderungen und Sicherheits
  |                   | Bereich von IP-Adressen, die Sie denken,            |                                           |
  |                   | sind räuberische                                    |                                           |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Enable             | Aktivieren Sie Firewall-System                      | cleopatra firewall enable                 |
+ |Enable             | Aktivieren Sie Firewall-System                      | ptconfigure firewall enable               |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Disable            | Deaktivieren System-Firewall                        | cleopatra firewall disable                |
+ |Disable            | Deaktivieren System-Firewall                        | ptconfigure firewall disable              |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Allow              | Lassen Sie Firewall-Regel                           | cleopatra firewall allow –firewall-rule   |
+ |Allow              | Lassen Sie Firewall-Regel                           | ptconfigure firewall allow –firewall-rule |
  |                   |                                                     | =”ssh/tcp”                                |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Deny               | Lassen Verbindungsversuch ignoriert und Auszeit     | cleopatra firewall deny –firewall-rule    |
+ |Deny               | Lassen Verbindungsversuch ignoriert und Auszeit     | ptconfigure firewall deny –firewall-rule  |
  |                   | werden                                              | =”ssh/tcp”                                |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Reject             | Verbindung beenden Versuche mit einem Fehler an dem | cleopatra firewall reject –firewall-rule= |
- |                   | Verbinder                                           | ”ssh/tcp”                                 |
+ |Reject             | Verbindung beenden Versuche mit einem Fehler an dem | ptconfigure firewall reject –firewall-    |
+ |                   | Verbinder                                           | rule=”ssh/tcp”                            |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Limit              | Ufw werden Verbindungen zu verweigern, wenn eine    | cleopatra firewall limit –firewall-rule=  |
- |                   | IP-Adresse zu initiieren 6 oder mehr Verbindung in  | ”ssh/tcp”                                 |
+ |Limit              | Ufw werden Verbindungen zu verweigern, wenn eine    | ptconfigure firewall limit –firewall      |
+ |                   | IP-Adresse zu initiieren 6 oder mehr Verbindung in  | -rule=”ssh/tcp”                           |
  |                   | den letzten 30 Sekunden versucht.                   |                                           |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Delete             | Löschen Sie eine Firewall-Regel                     | cleopatra firewall delete –firewall-rule= |
- |                   |                                                     | ”ssh/tcp”                                 |
+ |Delete             | Löschen Sie eine Firewall-Regel                     | ptconfigure firewall delete –firewall     |
+ |                   |                                                     | -rule=”ssh/tcp”                           |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Insert             | Setzen Sie eine Firewall-Regel                      | cleopatra firewall insert –firewall-rule= |
- |                   |                                                     | ”ssh/tcp”                                 |
+ |Insert             | Setzen Sie eine Firewall-Regel                      | ptconfigure firewall insert –firewall     |
+ |                   |                                                     | -rule=”ssh/tcp”                           |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |Reset              | Zurücksetzen eine Firewall-Regel                    | cleopatra firewall reset –firewall-rule=  |
- |                   |                                                     | ”ssh/tcp”                                 |
+ |Reset              | Zurücksetzen eine Firewall-Regel                    | ptconfigure firewall reset –firewall      |
+ |                   |                                                     | -rule=”ssh/tcp”                           |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
- |default            | Standardrichtlinie, soll ermöglichen, zu leugnen    | cleopatra firewall default –policy=”deny” |
- |                   | oder ablehnen.|                                     |                                           |
+ |default            | Standardrichtlinie, soll ermöglichen, zu leugnen    | ptconfigure firewall default –policy      |
+ |                   | oder ablehnen.                                      | =”deny”|                                  |
  +-------------------+-----------------------------------------------------+-------------------------------------------+
 
 

@@ -10,17 +10,17 @@ Git Schlüsselsafe mit dem Sie installiert Git Schlüsselsafe. Dies ermöglicht 
 Hilfe Befehl
 ----------------------
 
-Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den Gitkeysafe Module enthalten sind. Der Befehl help listet einige der alternativen Parameter Gitkeysafe unter Cleopatra-Modul. Es beschreibt auch die Syntax für die Installation keysafe des Benutzers. Der Befehl help für Gitkeysafe ist nachfolgend dargestellt.
+Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den Gitkeysafe Module enthalten sind. Der Befehl help listet einige der alternativen Parameter Gitkeysafe unter ptconfigure-Modul. Es beschreibt auch die Syntax für die Installation keysafe des Benutzers. Der Befehl help für Gitkeysafe ist nachfolgend dargestellt.
 
 .. code-block:: bash
 
-		cleopatra GitkeySafe help
+		ptconfigure GitkeySafe help
 
 Die Syntax für den Befehl help non-und Kleinschreibung, die einen Vorteil für das Modul erstellt. Der folgende Screenshot den Benutzer über den Befehl Hilfe visualisieren unter der Syntax für den Befehl help non-und Kleinschreibung, die einen Vorteil für das Modul erstellt. Der folgende Screenshot den Benutzer über den Befehl help unter gitkeysafe visualisieren.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra GitKeySafe help
+ kevell@corp:/# ptconfigure GitKeySafe help
 
  ******************************
 
@@ -31,7 +31,7 @@ Die Syntax für den Befehl help non-und Kleinschreibung, die einen Vorteil für 
 
         - install
         Installs Git Key-Safe Server
-        example: cleopatra gitkeysafe install
+        example: ptconfigure gitkeysafe install
 
         script example: git-safe-key -i /path/to/key clone http://git.com/repo.git
 
@@ -46,13 +46,13 @@ Die Installation erfolgt in der Regel Code kopiert / von den Installationsdateie
 
 .. code-block:: bash
 
-		cleopatra gitkeysafe install
+		ptconfigure gitkeysafe install
 
 Während der Installation dieses Moduls die folgender Bildschirm erschienen ist.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra gitkeysafe install
+ kevell@corp:/# ptconfigure gitkeysafe install
 
  Install Git Key-Safe Server? (Y/N) 
  Y
@@ -82,15 +82,15 @@ Option
 .. cssclass:: table-bordered
 
 
- +--------------------------+----------------------------------------------------+--------------+-------------------------------------------+
- | Parameter                |  Alternative Parameter                             | Optionen     | Kommentare                                |
- +==========================+====================================================+==============+===========================================+
- |Install gitkeysafe? (Y/N) | Anstelle der Verwendung gitkeysafe wir verwenden   | Y            | Es installiert gitkeysafe unter cleopatra |
- |                          | können, GitKeySafe,git-key-safe                    |              |                                           |
- +--------------------------+----------------------------------------------------+--------------+-------------------------------------------+
- |Install gitkeysafe? (Y/N) | Anstelle der Verwendung gitkeysafe wir verwenden   | N            | Das System Ausfahrt die Installation      |
- |                          | können, GitKeySafe,git-key-safe|                   |              |                                           |
- +--------------------------+----------------------------------------------------+--------------+-------------------------------------------+
+ +--------------------------+----------------------------------------------------+--------------+----------------------------------------+
+ | Parameter                |  Alternative Parameter                             | Optionen     | Kommentare                             |
+ +==========================+====================================================+==============+========================================+
+ |Install gitkeysafe? (Y/N) | Anstelle der Verwendung gitkeysafe wir verwenden   | Y            | Es installiert gitkeysafe              |
+ |                          | können, GitKeySafe,git-key-safe                    |              | unter ptconfigure                      |
+ +--------------------------+----------------------------------------------------+--------------+----------------------------------------+
+ |Install gitkeysafe? (Y/N) | Anstelle der Verwendung gitkeysafe wir verwenden   | N            | Das System Ausfahrt die Installation   |
+ |                          | können, GitKeySafe,git-key-safe|                   |              |                                        |
+ +--------------------------+----------------------------------------------------+--------------+----------------------------------------+
 
 Vorteile
 --------------

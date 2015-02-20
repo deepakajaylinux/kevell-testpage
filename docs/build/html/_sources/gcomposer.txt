@@ -17,11 +17,11 @@ Dieser Befehl hilft, die Verwendung von Komponist Modul bestimmen. Der Benutzer 
 
 .. code-block:: bash
 
-             cleopatra Composer Help
+             ptconfigure Composer Help
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra composer help
+ kevell@corp:/# ptconfigure composer help
  ******************************
 
 
@@ -31,7 +31,7 @@ Dieser Befehl hilft, die Verwendung von Komponist Modul bestimmen. Der Benutzer 
 
         - install
         Installs the latest version of composer
-        example: cleopatra composer install
+        example: ptconfigure composer install
 
  ------------------------------
  End Help
@@ -44,7 +44,7 @@ Wenn der Benutzer Komponist-Modul installiert, in der Maschine muss, die unten m
 
 .. code-block:: bash
 
-           cleopatra composer help 
+           ptconfigure composer help 
 
 Während der Installation, das System Fragen für den Verzeichnisnamen, wenn Sie Ihren Pfad einrichten will, können Sie Ihre Pfad definieren. Definieren Sie Ihren Weg zu sein, gefolgt von ' /' symbol hat. Drücken Sie die EINGABETASTE, um die Standard-Pfad zu verwenden.
 
@@ -61,9 +61,9 @@ Während der Installation, das System Fragen zum Ausführen von Verzeichnisnamen
  +-------------------------------+---------------------------------+------------------+------------------------------------------------+
  | Parameter 			 | Alternative Parameter	   | Option	      | Kommentare				       |
  +===============================+=================================+==================+================================================+
- |cleopatra composer Install     | Composer , composer             | Y                | System startet Installation                    |
+ |ptconfigure composer Install   | Composer , composer             | Y                | System startet Installation                    |
  +-------------------------------+---------------------------------+------------------+------------------------------------------------+
- |cleopatra composer Install     | Composer , composer             | N                | System stoppt Installation process|            |
+ |ptconfigure composer Install   | Composer , composer             | N                | System stoppt Installation process|            |
  +-------------------------------+---------------------------------+------------------+------------------------------------------------+
 
           

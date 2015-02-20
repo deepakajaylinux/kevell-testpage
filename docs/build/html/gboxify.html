@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
     <link rel="next" title="Cassandra" href="gcassandra.html" />
     <link rel="prev" title="Behat" href="gbehat.html" />
 
@@ -80,7 +80,7 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 </li>
@@ -148,7 +148,7 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 
@@ -166,11 +166,11 @@
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
 <p>Der Befehl help führt den Anwender beim Umgang mit diesem Modul, um zu handhaben und führen verschiedene Funktionen aus einer Box. Es listet outs die alternativen Parameter, und hebt die Syntax für die verschiedenen Funktionen der Verwendung und Modifizierung einer Box. Die Syntax für die Hilfe-Option unter dem boxify Moduls ist unten dargestellt,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Boxify <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Boxify <span class="nb">help</span>
 </pre></div>
 </div>
 <p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter boxify.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra Boxify <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Boxify <span class="nb">help</span>
 ******************************
 
 
@@ -181,16 +181,16 @@
 
        - install-generic-autopilots
        Install the generic Boxify autopilot templates <span class="k">for</span> a Tiny or Medium <span class="o">(</span>Current Default<span class="o">)</span> <span class="nb">set </span>of Environments
-       example: cleopatra boxify install-generic-autopilots
-       example: cleopatra boxify install-generic-autopilots
+       example: ptconfigure boxify install-generic-autopilots
+       example: ptconfigure boxify install-generic-autopilots
                    --yes
-                   --guess <span class="c"># will set --destination-dir=*this dir +*build/config/cleopatra/boxify/autopilots/</span>
+                   --guess <span class="c"># will set --destination-dir=*this dir +*build/config/ptconfigure/boxify/autopilots/</span>
                    --template-group<span class="o">=</span>tiny
                    --destination-dir<span class="o">=</span>*path-to-destination*
 
        - box-add
        Installs a Box through a cloud provider
-       example: cleopatra boxify box-add --environment-name<span class="o">=</span><span class="s2">&quot;*environment*&quot;</span>
+       example: ptconfigure boxify box-add --environment-name<span class="o">=</span><span class="s2">&quot;*environment*&quot;</span>
            --server-prefix<span class="o">=</span><span class="s2">&quot;my-app&quot;</span>
            --provider<span class="o">=</span><span class="s2">&quot;DigitalOcean&quot;</span> // DigitalOcean, Rackspace, VSphere
            --image-id<span class="o">=</span><span class="s2">&quot;3101045&quot;</span> // <span class="nv">DO</span><span class="o">=</span><span class="m">3101045</span> , <span class="nv">RAX</span><span class="o">=</span>ffd597d6-2cc4-4b43-b8f4-b1006715b84e
@@ -202,18 +202,18 @@
 
        - box-remove
        Removes a Box from the papyrus
-       example: cleopatra boxify box-remove --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span> --environment-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --provider<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
+       example: ptconfigure boxify box-remove --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span> --environment-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --provider<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
 
        - box-destroy
        Removes a Box from both papyrus and the cloud provider
-       example: cleopatra boxify box-destroy --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+       example: ptconfigure boxify box-destroy --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
            --destroy-all-boxes
            --destroy
 
        - list-papyrus
        List all servers in papyrus, or those of a particular environment
-       example: cleopatra boxify list-papyrus --yes
-       example: cleopatra boxify list-papyrus --yes --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+       example: ptconfigure boxify list-papyrus --yes
+       example: ptconfigure boxify list-papyrus --yes --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
 
 
 ------------------------------
@@ -236,9 +236,9 @@ End Help
 <div class="section" id="installieren-sie-generische-autopiloten">
 <h2>Installieren Sie generische Autopiloten<a class="headerlink" href="#installieren-sie-generische-autopiloten" title="Permalink to this headline">¶</a></h2>
 <p>Diese Funktion soll die Installation geltenden Autopiloten zu einem kleinen oder mittleren Reihe von Umgebungen. Dies kann durch den Befehl, wie unten angegeben durchgeführt werden,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra boxify install-generic-autopilots
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify install-generic-autopilots
             --yes
-            --guess <span class="c"># will set --destination-dir=*this dir +*build/config/cleopatra/boxify/autopilots/</span>
+            --guess <span class="c"># will set --destination-dir=*this dir +*build/config/ptconfigure/boxify/autopilots/</span>
             --template-group<span class="o">=</span>tiny
             --destination-dir<span class="o">=</span>*path-to-destination*
 </pre></div>
@@ -253,7 +253,7 @@ soll.</p>
 <div class="section" id="hinzufugen-box">
 <h2>Hinzufügen Box<a class="headerlink" href="#hinzufugen-box" title="Permalink to this headline">¶</a></h2>
 <p>Diese Funktion soll das Hinzufügen einer Box über einen Cloud-Anbieter, einfach, indem Sie den folgenden Befehl,</p>
-<div class="highlight-bash"><div class="highlight"><pre>example: cleopatra boxify box-add --environment-name<span class="o">=</span><span class="s2">&quot;*environment*&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>example: ptconfigure boxify box-add --environment-name<span class="o">=</span><span class="s2">&quot;*environment*&quot;</span>
     --server-prefix<span class="o">=</span><span class="s2">&quot;my-app&quot;</span>
     --provider<span class="o">=</span><span class="s2">&quot;DigitalOcean&quot;</span> // DigitalOcean, Rackspace, VSphere
     --image-id<span class="o">=</span><span class="s2">&quot;3101045&quot;</span> // <span class="nv">DO</span><span class="o">=</span><span class="m">3101045</span> , <span class="nv">RAX</span><span class="o">=</span>ffd597d6-2cc4-4b43-b8f4-b1006715b84e
@@ -278,7 +278,7 @@ soll.</p>
 <div class="section" id="entfernen-box">
 <h2>Entfernen Box<a class="headerlink" href="#entfernen-box" title="Permalink to this headline">¶</a></h2>
 <p>Diese Funktion zielt darauf ab, einen Rahmen aus der Papyrus. Dies kann durch Verwendung unter den Befehl durchgeführt werden,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra boxify box-remove --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span> --environment-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --provider<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify box-remove --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span> --environment-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --provider<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
 </pre></div>
 </div>
 <p>Der Benutzer muss die folgenden Felder angeben, wie im obigen Befehl dargestellt,</p>
@@ -291,7 +291,7 @@ soll.</p>
 <div class="section" id="die-zerstorung-einer-box">
 <h2>Die Zerstörung einer Box<a class="headerlink" href="#die-zerstorung-einer-box" title="Permalink to this headline">¶</a></h2>
 <p>Diese Funktion zielt darauf ab, einen Rahmen aus der Papyrus. Diese Funktion kann einfach mit dem folgenden Befehl durchgeführt werden,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra boxify box-destroy --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify box-destroy --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
     --destroy-all-boxes
     --destroy
 </pre></div>
@@ -301,7 +301,7 @@ soll.</p>
 <div class="section" id="liste">
 <h2>Liste<a class="headerlink" href="#liste" title="Permalink to this headline">¶</a></h2>
 <p>Das Hauptziel dieser Funktion ist es, listet alle Server eines bestimmten Papyrus oder in einer Umgebung. Die Syntax für das Auflisten aller Server ist wie unten dargestellt,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra boxify list-papyrus --yes --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure boxify list-papyrus --yes --environment-name<span class="o">=</span><span class="s2">&quot;staging&quot;</span>
 </pre></div>
 </div>
 <p>Der oben genannte Befehl listet Papyrus einer angegebenen Umgebung.</p>

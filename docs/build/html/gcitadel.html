@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
     <link rel="next" title="Cleofy" href="gcleofy.html" />
     <link rel="prev" title="Chown" href="gchown.html" />
 
@@ -80,7 +80,7 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 </li>
@@ -144,7 +144,7 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 
@@ -163,11 +163,11 @@
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
 <p>Dieser Befehl hilft, um die Verwendung von Citadel-Modul zu bestimmen. Der Benutzer wird kommen, über die verschiedenen Möglichkeiten/Format wissen, dieses Modul ausgeführt. Der alternative-Parameter, die in der Deklaration verwendet werden ist klar unter der Hilfe-Option definiert. Dieser Befehl führt den Endbenutzer zu wissen, den Befehl für die Installation. Im folgenden sind der Befehl.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra citadel Help
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure citadel Help
 </pre></div>
 </div>
 <p>Die bildliche Darstellung des Screenshots ist nachfolgend aufgeführt,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra Citadel <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Citadel <span class="nb">help</span>
 ******************************
 
 
@@ -177,11 +177,11 @@ Citadel, citadel-server, citadel
 
       - install
       Installs Citadel Server
-      example: cleopatra citadel install
+      example: ptconfigure citadel install
 
       - configure
       Configure E-Mail with Citadel Server
-      example: cleopatra citadel configure
+      example: ptconfigure citadel configure
 
 ------------------------------
 End Help
@@ -191,20 +191,20 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer Zitadelle Server Maschine installieren muss, können Sie die folgenden Befehle, um die Zitadelle-Suite installieren eingeben. Das System wird der Prozess der Installation ausführen. Unten gegeben sind, den Befehl und den Screenshot von der gleichen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>               cleopatra Citadel install
+<div class="highlight-bash"><div class="highlight"><pre>               ptconfigure Citadel install
 
-kevell@corp:/# cleopatra Citadel install
+kevell@corp:/# ptconfigure Citadel install
 Install Citadel Server? (Y/N)
 Y
 *******************************
 *        Pharaoh Tools        *
 *         Citadel Server!     *
 *******************************
-Creating /tmp/cleopatra-temp-script-11993825383.sh
-chmod 755 /tmp/cleopatra-temp-script-11993825383.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-11993825383.sh Permissions
-Executing /tmp/cleopatra-temp-script-11993825383.sh
-Temp File /tmp/cleopatra-temp-script-11993825383.sh Removed
+Creating /tmp/ptconfigure-temp-script-11993825383.sh
+chmod 755 /tmp/ptconfigure-temp-script-11993825383.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-11993825383.sh Permissions
+Executing /tmp/ptconfigure-temp-script-11993825383.sh
+Temp File /tmp/ptconfigure-temp-script-11993825383.sh Removed
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -225,11 +225,11 @@ Setting up debconf-utils (1.5.51ubuntu2) ...
 [Pharaoh Logging] Stopping apache2 service
 * Stopping web server apache2
 *
-Creating /tmp/cleopatra-temp-script-74031405363.sh
-chmod 755 /tmp/cleopatra-temp-script-74031405363.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-74031405363.sh Permissions
-Executing /tmp/cleopatra-temp-script-74031405363.sh
-Temp File /tmp/cleopatra-temp-script-74031405363.sh Removed
+Creating /tmp/ptconfigure-temp-script-74031405363.sh
+chmod 755 /tmp/ptconfigure-temp-script-74031405363.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-74031405363.sh Permissions
+Executing /tmp/ptconfigure-temp-script-74031405363.sh
+Temp File /tmp/ptconfigure-temp-script-74031405363.sh Removed
 apache2_invoke: Enable configuration javascript-common
 invoke-rc.d: initscript apache2, action &quot;reload&quot; failed.
 Reading package lists...
@@ -357,10 +357,10 @@ Installer Finished
 <h2>Option<a class="headerlink" href="#option" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="24%" />
+<col width="25%" />
 <col width="35%" />
-<col width="11%" />
-<col width="30%" />
+<col width="9%" />
+<col width="31%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameter</th>
@@ -370,22 +370,22 @@ Installer Finished
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra Citadel Install?
+<tr class="row-even"><td>ptconfigure Citadel Install?
 (Y/N)</td>
 <td>Entweder der drei alternativen Parameter
 können in Befehls verwendet werden -
 Citadel, Citadel server, citadel
-eg: Cleopatra  citadel-server Install</td>
+eg: ptconfigure  citadel-server Install</td>
 <td>Y</td>
 <td>Sobald der Benutzer diese Option bietet
 ,  startet System Installation</td>
 </tr>
-<tr class="row-odd"><td>Cleopatra citadel to install?
+<tr class="row-odd"><td>ptconfigure citadel to install?
 (Y / N)</td>
 <td>Entweder der drei alternativen Parameter
 können in Befehls verwendet werden -
 Citadel, Citadel server, citadel
-eg: Cleopatra  citadel-server Install|</td>
+eg: ptconfigure  citadel-server Install|</td>
 <td>N</td>
 <td>Sobald der Benutzer diese Option bietet
 Das System stoppt den
@@ -397,7 +397,7 @@ Installationsprozess</td>
 <div class="section" id="konfiguration">
 <h2>Konfiguration<a class="headerlink" href="#konfiguration" title="Permalink to this headline">¶</a></h2>
 <p>Dieser Befehl hilft bei der Konfiguration des Servers Zitadelle. Einmal die unten mit dem Befehl wird ausgeführt, das System liefert Ihnen mit dem Standardwert für jeden Abschnitt, wenn es irgendwelche Änderungen erfolgen, der Benutzer kann die Daten bereitstellen. Nachfolgend finden Sie der Befehl für die Konfiguration verwendet.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra citadel configure
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure citadel configure
 </pre></div>
 </div>
 </div>

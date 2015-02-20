@@ -1,8 +1,8 @@
-Cleopatra
-===========
+PTConfigure
+============
 
 
-Das Spiel mit Kleopatra -Module
+Das Spiel mit ptconfigure -Module
 *********************************
 
 
@@ -31,7 +31,7 @@ Das Spiel mit Kleopatra -Module
    gchown
    gcitadel
    gcleofy
-   gcleopatra
+   gptconfigure
    gcomposer
    gcopy
    gdevelopertools

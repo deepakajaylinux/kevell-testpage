@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PTConfigure &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="next" title="ApacheConf" href="gapacheconf.html" />
+    <link rel="prev" title="Welcome to kevell_Multilanguage’s documentation!" href="index.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">PTConfigure</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">PTConfigure</a><ul>
+<li><a class="reference internal" href="#das-spiel-mit-ptconfigure-module">Das Spiel mit ptconfigure -Module</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="index.html"
+         title="Previous Chapter: Welcome to kevell_Multilanguage’s documentation!">&laquo; Welcome to kevel...</a></li>
+  <li><a href="gapacheconf.html"
+         title="Next Chapter: ApacheConf">ApacheConf &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gptconfigure_main.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">PTConfigure</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="ptconfigure">
+<h1>PTConfigure<a class="headerlink" href="#ptconfigure" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="das-spiel-mit-ptconfigure-module">
+<h2>Das Spiel mit ptconfigure -Module<a class="headerlink" href="#das-spiel-mit-ptconfigure-module" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gapacheconf.html">ApacheConf</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gapacheconf.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheconf.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheconf.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheconf.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheconf.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gapachemodules.html">ApacheModules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gapachemodules.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachemodules.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachemodules.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachemodules.html#option">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachemodules.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gapachereverseproxy.html">ApacheReverseProxyModules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gapachereverseproxy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachereverseproxy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachereverseproxy.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachereverseproxy.html#option">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachereverseproxy.html#vorteile-fur-die-nutzer">Vorteile für die Nutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gapacheserver.html">ApacheServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gapacheserver.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheserver.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheserver.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheserver.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheserver.html#version">Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapacheserver.html#vorteile-fur-die-endbenutzer">Vorteile für die Endbenutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gapachevirtualhosteditor.html">ApacheVHostEditor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#hinzufugen">Hinzufügen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#hinzufugen-balancer">Hinzufügen-Balancer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#entfernen">Entfernen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#liste">Liste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#aktivieren">Aktivieren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#deaktivieren">Deaktivieren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevirtualhosteditor.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gapt.html">Apt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#verschiedene-features-von-apt">Verschiedene Features von Apt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#create">CREATE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#entfernen">ENTFERNEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#set-pass">SET PASS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#vorhanden">VORHANDEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#gruppen-zeige">Gruppen Zeige</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#add-to-group">ADD _TO_GROUP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#remove-from-group">REMOVE_FROM_GROUP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapt.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gaptana.html">Aptana</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gaptana.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaptana.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaptana.html#deinstallation">Deinstallation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaptana.html#platform-language-support">Platform &amp; Language support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaptana.html#benefits">Benefits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gautopilot.html">Autopilot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot.html#ausfuhren">ausführen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gawstats.html">Awstats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gawstats.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gawstats.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gawstats.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gawstats.html#features-von-awstats">Features von Awstats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gawstats.html#anforderungen-von-awstats">Anforderungen von Awstats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gawstats.html#dateien">Dateien</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gawstats.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gbehat.html">Behat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gbehat.html#ubersicht">Übersicht</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbehat.html#help-befehl">Help-Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbehat.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbehat.html#version">Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbehat.html#vorteile-fur-die-nutzer">Vorteile für die Nutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gboxify.html">Boxify</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#verschiedene-funktionen-der-boxify">Verschiedene Funktionen der boxify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#installieren-sie-generische-autopiloten">Installieren Sie generische Autopiloten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#hinzufugen-box">Hinzufügen Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#entfernen-box">Entfernen Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#die-zerstorung-einer-box">Die Zerstörung einer Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#liste">Liste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gboxify.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gcassandra.html">Cassandra</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gcassandra.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcassandra.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcassandra.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcassandra.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcassandra.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gchgrp.html">chgrp</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gchgrp.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchgrp.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchgrp.html#weg">Weg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchgrp.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchgrp.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gchrome.html">Chrome</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gchrome.html#ubersicht">Übersicht</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchrome.html#help-befehl">Help-Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchrome.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchrome.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchrome.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gchromedriver.html">ChromeDriver</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gchromedriver.html#ubersicht">Übersicht</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchromedriver.html#help-befehl">Help-Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchromedriver.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchromedriver.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gchmode.html">Chmode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gchmode.html#ubersicht">Übersicht</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchmode.html#help-befehl">Help-Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchmode.html#weg">Weg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchmode.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchmode.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gchown.html">Chown</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gchown.html#ubersicht">Übersicht</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchown.html#help-befehl">Help-Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchown.html#weg">Weg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchown.html#option">Option</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gcitadel.html">Citadel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gcitadel.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcitadel.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcitadel.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcitadel.html#option">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcitadel.html#konfiguration">Konfiguration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcitadel.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gcleofy.html">Cleofy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#funktionen-cleofy">Funktionen cleofy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#liste">Liste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#standard">Standard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#sehr-klein">Sehr Klein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#medium">Medium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#medium-web">Medium_Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#db-cluster">DB_cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#install-generic-autopilots">Install_generic_autopilots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcleofy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure.html">PTConfigure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gptconfigure.html#synopsis">Synopsis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gptconfigure.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gptconfigure.html#option">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gptconfigure.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gcomposer.html">Composer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gcomposer.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomposer.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomposer.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomposer.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gcopy.html">Copy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gcopy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcopy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcopy.html#setzen">Setzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcopy.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcopy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdevelopertools.html">DeveloperTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdevelopertools.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdevelopertools.html#hilfe-command">Hilfe command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdevelopertools.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdevelopertools.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdevelopertools.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdnsify.html">Dnsify</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#verschiedene-funktionen-der-dnsify">Verschiedene Funktionen der dnsify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#installieren-sie-generische-autopiloten">Installieren Sie generische Autopiloten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#hinzufugen-box">Hinzufügen Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#entfernen-box">Entfernen Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#die-zerstorung-einer-box">Die Zerstörung einer Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#liste">Liste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdnsify.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gencryption.html">Encryption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gencryption.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gencryption.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gencryption.html#installieren">installieren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gencryption.html#uninstall">Uninstall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gencryption.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gencryption.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="genvironmentconfig.html">EnvironmentConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig.html#hilfe-command">Hilfe command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig.html#wie-man-die-umgebung-konfigurieren">Wie man die Umgebung konfigurieren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig.html#wie-umgebungskonfiguration-loschen">Wie Umgebungskonfiguration löschen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig.html#wie-listet-umwelt-configuration">Wie listet Umwelt configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gfile.html">File</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#schaffen">schaffen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#loschen">löschen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#vorhanden">vorhanden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#anhangen">anhängen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#should-have-line">Should-have-line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfile.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gfirefox.html">FireFox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gfirefox14.html">FireFox14</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox14.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox14.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox14.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox14.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox14.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gfirefox17.html">FireFox17</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox17.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox17.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox17.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox17.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox17.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gfirefox24.html">FireFox24</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox24.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox24.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox24.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox24.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox24.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gfirefox33.html">FireFox33</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox33.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox33.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox33.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox33.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirefox33.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gfirewall.html">Firewall</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gfirewall.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirewall.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirewall.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfirewall.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ggitbucket.html">Gitbucket</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ggitbucket.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitbucket.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitbucket.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitbucket.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitbucket.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ggitkeysafe.html">GitKeySafe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ggitkeysafe.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitkeysafe.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitkeysafe.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitkeysafe.html#option">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitkeysafe.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ggitlab.html">Git lab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ggitlab.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitlab.html#helpcommand">Helpcommand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitlab.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitlab.html#option">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitlab.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ggittools.html">Git tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ggittools.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggittools.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggittools.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggittools.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggittools.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ghaproxy.html">HAProxy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ghaproxy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghaproxy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghaproxy.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghaproxy.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghaproxy.html#konfiguration">Konfiguration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghaproxy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ghhvm.html">HHVM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ghhvm.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghhvm.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghhvm.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghhvm.html#un-installation">Un-Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghhvm.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ghostname.html">Hostname</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ghostname.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghostname.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghostname.html#sich-andern">Sich Ändern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghostname.html#show">Show</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghostname.html#option">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghostname.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ginstallpackage.html">InstallPackage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#dev-client">Dev-Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#dev-server">Dev-Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#test-server">Test-Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#build-server">Build-Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#herstellung">Herstellung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginstallpackage.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gintellij.html">IntelliJ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gintellij.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gintellij.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gintellij.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gintellij.html#parameter">Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gintellij.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ginvoke.html">Invoke</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke.html#erhalten">erhalten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gjava.html">JAVA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gjava.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjava.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjava.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjava.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gjenkinssudonopass.html">JenkinsSudoNoPass</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gjenkinssudonopass.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjenkinssudonopass.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjenkinssudonopass.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjenkinssudonopass.html#optionen">Optionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjenkinssudonopass.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gjmeter.html">Jmeter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gjmeter.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjmeter.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjmeter.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gjmeter.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gptconfigure_main.rst">
+          PTConfigure
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

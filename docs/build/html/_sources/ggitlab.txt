@@ -14,13 +14,13 @@ Hilfe Befehl umfasst ein umfangreiches, konsolenbasierten Hilfesystem, erinnert 
 
 .. code-block:: bash
 
-		cleopatra gitlab help
+		ptconfigure gitlab help
 
 Die folgenden Screenshots erklärt seine Funktionen deutlich.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra gitlab help
+ kevell@corp:/# ptconfigure gitlab help
  ******************************
 
 
@@ -31,7 +31,7 @@ Die folgenden Screenshots erklärt seine Funktionen deutlich.
 
         - install
         Installs the latest version of GitLab on a system
-        example: cleopatra gitlab install
+        example: ptconfigure gitlab install
 
  ------------------------------
  End Help
@@ -40,11 +40,11 @@ Die folgenden Screenshots erklärt seine Funktionen deutlich.
 Installation
 ---------------------
 
-    Die Installation umfasst die Bereitstellung von oder Verbindung mit Dienstleistungen erforderlich, um die installierten Geräte betriebsbereit. Es ist ein Verfahren offenbart, um git Labormodul unter Cleopatra installieren, indem einfach mit dem Befehl unten angegeben,
+    Die Installation umfasst die Bereitstellung von oder Verbindung mit Dienstleistungen erforderlich, um die installierten Geräte betriebsbereit. Es ist ein Verfahren offenbart, um git Labormodul unter ptconfigure installieren, indem einfach mit dem Befehl unten angegeben,
 
 .. code-block:: bash
 
-		cleopatra gitlab install
+		ptconfigure gitlab install
 
 Nach beleben den Befehl geben Sie den Wert katechisieren.
 
@@ -56,15 +56,15 @@ Option
 .. cssclass:: table-bordered
 
 
- +----------------------+------------------------------------------------+-------------+------------------------------------------+
- | Parameter            |  Alternative Parameter                         | Optionen    | Kommentare                               |
- +======================+================================================+=============+==========================================+
- |Install gitlab?(Y/N)  | Anstelle der Verwendung gitlab wir verwenden   | Y(Yes)      | Es wird installiert git und eine Reihe   | 
- |                      | können Gitlab,gitlab,git-lab                   |             | von gemeinsamen gitlab under cleopatra.  |
- +----------------------+------------------------------------------------+-------------+------------------------------------------+
- |Install gitlab?(Y/N)  | Anstelle der Verwendung gitlab wir verwenden   | N(No)       | Das System Ausfahrt die Installation     |
- |                      | können Gitlab,gitlab,git-lab|                  |             |                                          |
- +----------------------+------------------------------------------------+-------------+------------------------------------------+
+ +----------------------+------------------------------------------------+-------------+--------------------------------------------+
+ | Parameter            |  Alternative Parameter                         | Optionen    | Kommentare                                 |
+ +======================+================================================+=============+============================================+
+ |Install gitlab?(Y/N)  | Anstelle der Verwendung gitlab wir verwenden   | Y(Yes)      | Es wird installiert git und eine Reihe     | 
+ |                      | können Gitlab,gitlab,git-lab                   |             | von gemeinsamen gitlab under ptconfigure.  |
+ +----------------------+------------------------------------------------+-------------+--------------------------------------------+
+ |Install gitlab?(Y/N)  | Anstelle der Verwendung gitlab wir verwenden   | N(No)       | Das System Ausfahrt die Installation       |
+ |                      | können Gitlab,gitlab,git-lab|                  |             |                                            |
+ +----------------------+------------------------------------------------+-------------+--------------------------------------------+
 
 Vorteile
 ----------

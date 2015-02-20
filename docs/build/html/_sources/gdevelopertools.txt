@@ -15,14 +15,14 @@ Devtools macht Paketentwicklung ein Kinderspiel: Es funktioniert mit bestehenden
 
 .. code-block:: bash
 	
-	cleopatra devtools help
+	ptconfigure devtools help
 
 
 Die folgende Abbildung erklärt es.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra devtools help
+ kevell@corp:/# ptconfigure devtools help
  ******************************
 
 
@@ -33,7 +33,7 @@ Die folgende Abbildung erklärt es.
 
        - install
        Installs the latest version of Developer Tools
-       example: cleopatra devtools install
+       example: ptconfigure devtools install
 
  ------------------------------
  End Help
@@ -44,11 +44,11 @@ Die folgende Abbildung erklärt es.
 Installation
 -----------------
 
-    Die Installation umfasst die Bereitstellung von oder Verbindung mit Dienstleistungen erforderlich, um die installierten Geräte betriebsbereit. Es ist eine offensichtliche Prozess devtools Modul unter Cleopatra installieren, indem einfach mit dem Befehl unten angegeben,
+    Die Installation umfasst die Bereitstellung von oder Verbindung mit Dienstleistungen erforderlich, um die installierten Geräte betriebsbereit. Es ist eine offensichtliche Prozess devtools Modul unter ptconfigure installieren, indem einfach mit dem Befehl unten angegeben,
 
 .. code-block:: bash
 
-	cleopatra devtools install
+	ptconfigure devtools install
 
 Nach beleben den Befehl geben Sie den Wert katechisieren.
 
@@ -65,7 +65,7 @@ Options
  | Parameter 		   | Alternate parameter 			 | Option       | Kommentare				       |
  +=========================+=============================================+==============+==============================================+
  |Install devtools?(Y/N)   | Anstelle der Verwendung devtools wir        | Y		| Es wird installiert editor and Database      |
- |			   | verwenden können, DeveloperTools,           |		| devtools unter cleopatra		       |
+ |			   | verwenden können, DeveloperTools,           |		| devtools unter ptconfigure		       |
  |			   | devtools,dev-tools                          | 		| 					       |
  +-------------------------+---------------------------------------------+--------------+----------------------------------------------+
  |Install devtools?(Y/N)   | Anstelle der Verwendung devtools wir        | N            | Das System Ausfahrt die Installation         |

@@ -10,11 +10,11 @@ Apache Virtual Hosts werden verwendet, um mehr als eine Domäne von einer einzel
 Hilfe Befehl
 ------------------
 Help-Befehl führt die Benutzer über den Zweck und auch als zu den Optionen, die in enthalten sind die Apache Virtualhost-Editor Module. Der Hilfebefehl listet die alternative Ausgabeparameter von einemPache Virtualhost-Editor
-unter Cleopatra-Modul. Es beschreibt auch die Syntax für die Installation des Benutzers Updation. Der Help-Befehl für einePache Virtualhost-Editor ist unten dargestellt.
+unter ptconfigure-Modul. Es beschreibt auch die Syntax für die Installation des Benutzers Updation. Der Help-Befehl für einePache Virtualhost-Editor ist unten dargestellt.
 
 .. code-block:: bash
 
-                 cleopatra Apache VirtualHost editor help
+                 ptconfigure Apache VirtualHost editor help
 
 Der folgende Screenshot zeigt den vollen Aufwand für einePache Virtualhost Editor.
 
@@ -35,7 +35,7 @@ Dieser Befehl verwendet, um einen virtuellen Host erstellen. Überschreiben ist 
 
 .. code-block:: bash
 
-                sudo cleopatra vhe add
+                sudo ptconfigure vhe add
 
 nach Eingabe des oben genannte Befehls, dass er folgendes verlangen kann,
 
@@ -50,7 +50,7 @@ Dieser Befehl verwendet, um einen virtuellen Host erstellen. Überschreiben ist 
 
 .. code-block:: bash
 
-                sudo cleopatra vhe add
+                sudo ptconfigure vhe add
 
 nach Eingabe des oben genannte Befehls, dass er folgendes verlangen kann,
 
@@ -65,7 +65,7 @@ Dieser Befehl verwendet, um einen bestimmten Vhost zu löschen. Es gibt zwei Mö
 
 .. code-block:: bash
 
- 	       cleopatra vhe rm
+ 	       ptconfigure vhe rm
 
 Die folgende Abbildung zeigt der Funktion des Rm.
 
@@ -80,7 +80,7 @@ Dieser Befehl verwendet, um die aktuellen virtuellen Hosts aufzulisten. Der folg
 
 .. code-block:: bash
  
-               cleopatra vhe list
+               ptconfigure vhe list
 
 
 Der Screenshot zeigt die List-Funktion.
@@ -94,7 +94,7 @@ SEcure Boot ist eine Funktion, die bösartige Software und nicht autorisierte Me
 
 .. code-block:: bash
 
-                 cleopatra vhe enable
+                 ptconfigure vhe enable
 
 Diese Option ist standardmäßig aktiviert. Diese Option erlaubt es, den virtuellen Host-Server zu aktivieren.
 
@@ -107,7 +107,7 @@ Diese deaktivieren, verwendet um den Server zu deaktivieren. Inaktive oder im Le
 
 .. code-block:: bash
 
-                cleopatra vhe disable
+                ptconfigure vhe disable
 
 Nach der Eingabe dieses Befehls, es kann den Benutzer bitten, disab le der Server. Wenn die Benutzereingaben, wie es ja den Server deaktivieren d.h. wird nicht zulassen jede Stelle in diesem Server zu arbeiten.
 

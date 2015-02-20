@@ -52,7 +52,7 @@ Dieser Befehl hilft, um die Verwendung von Wechsel-Modus-Modul zu bestimmen. Der
 
 .. code-block:: bash
         
-	        cleopatra Chmod help
+	        ptconfigure Chmod help
 
 
 
@@ -61,7 +61,7 @@ Die bildliche Darstellung der oben genannte Befehl ist im folgenden aufgeführt,
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra Chmod help
+ kevell@corp:/# ptconfigure Chmod help
  ******************************
 
 
@@ -71,7 +71,7 @@ Die bildliche Darstellung der oben genannte Befehl ist im folgenden aufgeführt,
 
         - path
         Will change the file permission mode of a path
-        example: cleopatra chmod path --yes --guess --recursive --path=/a/file/path --mode=0777
+        example: ptconfigure chmod path --yes --guess --recursive --path=/a/file/path --mode=0777
 
 
  ------------------------------
@@ -91,7 +91,7 @@ Wenn der Benutzer den Modus der Datei ändern muss die unten mit dem Befehl füh
 
 .. code-block:: bash
         
-	        cleopatra chmod path –yes –guess –recursive –path=/”File path” –mode=0777
+	        ptconfigure chmod path –yes –guess –recursive –path=/”File path” –mode=0777
 
 
 
@@ -103,14 +103,15 @@ Es gibt zwei alternative Parameter, die in der Befehlszeile verwendet werden kö
 
 Chmod, Chmod
 
-ZB: cleopatra Chmode path/ cleopatra chmod path
+ZB: ptconfigure Chmode path/ ptconfigure chmod path
 
 
 Vorteile
 --------------
 
 
-Chmod ändert die Zugriffsrechte der Datei Filename zum angegebenen Berechtigungen Berechtigungen angegeben. Berechtigungen definiert die Berechtigungen für den Besitzer der Datei ("Nutzer"), Mitglieder der Gruppe, die Datei (die "Gruppe") und alle anderen ("andere") besitzt. Es gibt zwei 
+Chmod ändert die Zugriffsrechte der Datei Filename zum angegebenen Berechtigungen Berechtigungen angegeben. Berechtigungen definiert die Berechtigungen für den Besitzer der Datei ("Nutzer"), Mitglieder der Gruppe, die Datei (die "Gruppe") und alle anderen ("andere") besitzt. Es gibt zwei
+
 Möglichkeiten, diese Berechtigungen darzustellen: mit Symbolen (alphanumerische Zeichen) oder mit Oktalzahlen (die Ziffern 0 bis 7).
 
  

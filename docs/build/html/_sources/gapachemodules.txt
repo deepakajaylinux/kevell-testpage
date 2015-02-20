@@ -14,13 +14,13 @@ Dieses Help-Befehl wird über den Zweck eines bestimmten Moduls erläutert. Die 
 
 .. code-block:: bash
 
-	 cleopatra apache modules help
+	 ptconfigure apache modules help
 
 Nachdem er den Befehl gab, listet der Befehl die Hilfeoptionen. Die folgenden Screenshots geben visuellen Effekt für die Nutzung dieses Moduls.
 
 .. code-Block:: bash
 
- kevell@corp:/# cleopatra ApacheModules help
+ kevell@corp:/# ptconfigure ApacheModules help
  ******************************
 
 
@@ -31,7 +31,7 @@ Nachdem er den Befehl gab, listet der Befehl die Hilfeoptionen. Die folgenden Sc
 
         - install
         Installs common apache Modules
-        example: cleopatra apache-modules install
+        example: ptconfigure apache-modules install
 
  ------------------------------
  End Help
@@ -41,7 +41,7 @@ Nachdem er den Befehl gab, listet der Befehl die Hilfeoptionen. Die folgenden Sc
 Installation
 --------------
 
-Installation ist kein schwieriger Prozess, dieses Modul unter Cleopatra zu installieren, nur mit dem Befehl unten gegeben,
+Installation ist kein schwieriger Prozess, dieses Modul unter ptconfigure zu installieren, nur mit dem Befehl unten gegeben,
 
 .. code-block:: bash
 
@@ -60,7 +60,7 @@ The following screen shots will give visual effect for the installation of this 
 
 .. code-block:: bash
 
- kevell@corp:/#  cleopatra apache-modules install
+ kevell@corp:/#  ptconfigure apache-modules install
  Install Apache Modules? (Y/N) 
  y
  *******************************
@@ -84,26 +84,26 @@ The following screen shots will give visual effect for the installation of this 
  Processing triggers for man-db (2.6.7.1-1) ...
  Setting up libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4.4) ...
  [Pharaoh Logging] Adding Package libxml2-dev from the Packager Apt executed correctly
- Creating /tmp/cleopatra-temp-script-11435369770.sh
- chmod 755 /tmp/cleopatra-temp-script-11435369770.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-11435369770.sh Permissions
- Executing /tmp/cleopatra-temp-script-11435369770.sh
+ Creating /tmp/ptconfigure-temp-script-11435369770.sh
+ chmod 755 /tmp/ptconfigure-temp-script-11435369770.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-11435369770.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-11435369770.sh
  Enabling module rewrite.
  To activate the new configuration, you need to run:
   service apache2 restart
- Temp File /tmp/cleopatra-temp-script-11435369770.sh Removed
- Creating /tmp/cleopatra-temp-script-95277456152.sh
- chmod 755 /tmp/cleopatra-temp-script-95277456152.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-95277456152.sh Permissions
- Executing /tmp/cleopatra-temp-script-95277456152.sh
+ Temp File /tmp/ptconfigure-temp-script-11435369770.sh Removed
+ Creating /tmp/ptconfigure-temp-script-95277456152.sh
+ chmod 755 /tmp/ptconfigure-temp-script-95277456152.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-95277456152.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-95277456152.sh
  Considering dependency filter for deflate:
  Module filter already enabled
  Module deflate already enabled
- Temp File /tmp/cleopatra-temp-script-95277456152.sh Removed
- Creating /tmp/cleopatra-temp-script-1351048337.sh
- chmod 755 /tmp/cleopatra-temp-script-1351048337.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-1351048337.sh Permissions
- Executing /tmp/cleopatra-temp-script-1351048337.sh
+ Temp File /tmp/ptconfigure-temp-script-95277456152.sh Removed
+ Creating /tmp/ptconfigure-temp-script-1351048337.sh
+ chmod 755 /tmp/ptconfigure-temp-script-1351048337.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-1351048337.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-1351048337.sh
  Considering dependency setenvif for ssl:
  Module setenvif already enabled
  Considering dependency mime for ssl:
@@ -114,14 +114,14 @@ The following screen shots will give visual effect for the installation of this 
  See /usr/share/doc/apache2/README.Debian.gz on how to configure SSL and create self-signed certificates.
  To activate the new configuration, you need to run:
    service apache2 restart
- Temp File /tmp/cleopatra-temp-script-1351048337.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-1351048337.sh Removed
  [Pharaoh Logging] Package libapache2-mod-php5 from the Packager Apt is already installed, so not installing
- Creating /tmp/cleopatra-temp-script-89813944614.sh
- chmod 755 /tmp/cleopatra-temp-script-89813944614.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-89813944614.sh Permissions
- Executing /tmp/cleopatra-temp-script-89813944614.sh
+ Creating /tmp/ptconfigure-temp-script-89813944614.sh
+ chmod 755 /tmp/ptconfigure-temp-script-89813944614.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-89813944614.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-89813944614.sh
  Module php5 already enabled
- Temp File /tmp/cleopatra-temp-script-89813944614.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-89813944614.sh Removed
  [Pharaoh Logging] Restarting apache2 service
  Output of config test was:
  apache2: Syntax error on line 214 of /etc/apache2/apache2.conf: Could not open configuration file /etc/apache2/httpd.conf: No such file or 
@@ -162,7 +162,7 @@ Option
 Vorteile 
 --------
 
-* Das Modul ist eine Hilfe für Link mit Kleopatra.
+* Das Modul ist eine Hilfe für Link mit ptconfigure.
 * Während der Installation des Apache-Module, werden es die Konfigurationsdateien hinnehmen.
 * Wenn die Konfigurationsdateien nicht im System vorhanden sind werden Sie dieses Modul automatisch installiert.
 

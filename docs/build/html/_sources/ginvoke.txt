@@ -14,7 +14,7 @@ Diese Funktion dient, um die Verwendung von Aufrufmodul zu bestimmen. Der Benutz
 
 .. code-block:: bash
         
-	        cleopatra invoke help
+	        ptconfigure invoke help
 
 erhalten
 --------
@@ -23,7 +23,7 @@ Wenn der Benutzer eine Datei in unserer Quelle zu anderen Ziel holt braucht, wir
 
 .. code-block:: bash
         
-	        cleopatra invoke get
+	        ptconfigure invoke get
 
 Das System fragt nach Quelldateipfad und Zieldateipfad.
 
@@ -35,7 +35,7 @@ Alternative Parameter
 
 Es gibt zwei alternative Parameter, der in der Befehlszeile aufrufen verwendet werden kann, rufen Sie.
 
-ZB: cleopatra invoke erhalten / cleopatra invoke erhalten
+ZB: ptconfigure invoke erhalten / ptconfigure invoke erhalten
 
 Vorteile
 --------------

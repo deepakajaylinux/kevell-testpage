@@ -19,7 +19,7 @@ Der Befehl help ist eine kurze Bedienungsanleitung, die die Benutzer beim Umgang
 
 .. code-block:: bash
 
-	cleopatra encryption help
+	ptconfigure encryption help
 
 Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Verschlüsselung.
 
@@ -27,7 +27,7 @@ Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein
 
 
 
- kevell@corp:/# cleopatra encryption help
+ kevell@corp:/# ptconfigure encryption help
 
  ******************************
 
@@ -38,14 +38,14 @@ Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein
 
  - install        
 	Encrypts a file or string        
- 	example: sudo cleopatra encryption install --yes --unencrypted-data=/var/www/a-website/build/config/cleopatra/SSH/raw/bastion        
-	 --encryption-target-file=/tmp/encrypted --encryption-key=/root/.cleopatra/SSH/key --encryption-file-permissions=""                
+ 	example: sudo ptconfigure encryption install --yes --unencrypted-data=/var/www/a-website/build/config/ptconfigure/SSH/raw/bastion        
+	 --encryption-target-file=/tmp/encrypted --encryption-key=/root/.ptconfigure/SSH/key --encryption-file-permissions=""                
 	 --encryption-file-owner="" --encryption-file-group=""                
 
  - uninstall        
 	Decrypts an encrypted file or string        
-	example: sudo cleopatra encryption uninstall --yes --encrypted-data=/tmp/encrypted        
-	 --encryption-target-file=/var/www/a-website/build/config/cleopatra/SSH/raw/bastion --encryption-key=/root/.cleopatra/SSH/key                	 --encryption-file-permissions="" --encryption-file-owner="" --encryption-file-group=""                
+	example: sudo ptconfigure encryption uninstall --yes --encrypted-data=/tmp/encrypted        
+	 --encryption-target-file=/var/www/a-website/build/config/ptconfigure/SSH/raw/bastion --encryption-key=/root/.ptconfigure/SSH/key                	 --encryption-file-permissions="" --encryption-file-owner="" --encryption-file-group=""                
 
  ------------------------------
  End Help
@@ -59,8 +59,8 @@ Diese Funktion erlaubt den Benutzern, eine Datei oder einen String, indem Sie ei
 
 .. code-block:: bash
 
-	 sudo cleopatra encryption install --yes --unencrypted-data=/var/www/a-website/build/config/cleopatra/SSH/raw/bastion
- 	--encryption-target-file=/tmp/encrypted --encryption-key=/root/.cleopatra/SSH/key --encryption-file-permissions=""                
+	 sudo ptconfigure encryption install --yes --unencrypted-data=/var/www/a-website/build/config/ptconfigure/SSH/raw/bastion
+ 	--encryption-target-file=/tmp/encrypted --encryption-key=/root/.ptconfigure/SSH/key --encryption-file-permissions=""                
 	 --encryption-file-owner="" --encryption-file-group=""                
 
 Um diese Funktion zu implementieren, muss der Anwender die folgenden Felder im Format der oben genannten Syntax angeben,
@@ -80,8 +80,8 @@ Diese Funktion ermöglicht es dem Benutzer, eine verschlüsselte Datei oder Stri
 
 .. code-block:: bash
 
-	sudo cleopatra encryption uninstall --yes --encrypted-data=/tmp/encrypted
-	 --encryption-target-file=/var/www/a-website/build/config/cleopatra/SSH/raw/bastion --encryption-key=/root/.cleopatra/SSH/key                	 --encryption-file-permissions="" --encryption-file-owner="" --encryption-file-group=""                
+	sudo ptconfigure encryption uninstall --yes --encrypted-data=/tmp/encrypted
+	 --encryption-target-file=/var/www/a-website/build/config/ptconfigure/SSH/raw/bastion --encryption-key=/root/.ptconfigure/SSH/key                	 --encryption-file-permissions="" --encryption-file-owner="" --encryption-file-group=""                
 
 
 Um diese Funktion zu implementieren, muss der Anwender die folgenden Felder im Format der oben genannten Syntax angeben,

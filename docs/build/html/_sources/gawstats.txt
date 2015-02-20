@@ -20,7 +20,7 @@ Der Help-Befehl führt die Benutzer über den Zweck und auch als zu den Optionen
 
 .. code-block:: bash
 
-                cleopatra AWStats Help
+                ptconfigure AWStats Help
 
 Die Syntax zum Deklarieren des Help-Befehls ist nicht Groß-/Kleinschreibung einen zusätzlichen Vorteil. Der folgende Screenshot visualisieren Sie über den Befehl Help unter AWStats.
 
@@ -32,7 +32,7 @@ Der Befehl für die Installation der AWStats auf dem Benutzer-Computer verwendet
 
 .. code-block:: bash
 
-		cleopatra AWStats install
+		ptconfigure AWStats install
 
 
 Nach Eingabe des obigen Befehls, geschieht Folgendes, wie in tabellarischer Form dargestellt.

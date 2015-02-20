@@ -32,13 +32,13 @@ Diese Funktion dient, um die Verwendung von gitbucket Modul bestimmen. Der Benut
 
 .. code-block:: bash
      
-                cleopatra gitbucket help
+                ptconfigure gitbucket help
 
 Der Screenshot für den obigen Befehl aufgelistet unten,
 
 .. code-block:: bash
 
- kevell@corp:/$ cleopatra gitbucket help
+ kevell@corp:/# ptconfigure gitbucket help
  ******************************
   This command allows you to install a full Git Bucket installation on to a server
   The dependencies for GitBucket are also installed.
@@ -47,7 +47,7 @@ Der Screenshot für den obigen Befehl aufgelistet unten,
 
         - install
         Installs the latest version of GitBucket on a system
-        example: cleopatra gitbucket install
+        example: ptconfigure gitbucket install
 
  ------------------------------
  End Help
@@ -61,21 +61,21 @@ Während der Installation wird das System fordern Repository-Stammverzeichnis. D
 
 .. code-block:: bash
        
-                cleopatra gitbucket install
+                ptconfigure gitbucket install
 
 
 The screenshot for the above command is listed below,
 
 .. code-block:: bash
 
- kevell@corp:/$ cleopatra gitbucket install
+ kevell@corp:/# ptconfigure gitbucket install
  Install Git Bucket? (Y/N)
  y
  *******************************
  *        Pharaoh Tools        *
  *         !GitBucket!        *
  *******************************
- PHP Notice:  Undefined index: version in /opt/cleopatra/cleopatra/src/Modules/GitBucket/Model/GitBucketUbuntu.php on line 67
+ PHP Notice:  Undefined index: version in /opt/ptconfigure/ptconfigure/src/Modules/GitBucket/Model/GitBucketUbuntu.php on line 67
  [Pharaoh Logging] Ensure module install is not checking versions
  [Pharaoh Logging] Command 'git' found
  [Pharaoh Logging] No command 'gitk' found
@@ -85,7 +85,7 @@ The screenshot for the above command is listed below,
  *        Pharaoh Tools        *
  *         !Git Tools!!        *
  *******************************
- PHP Warning:  file_put_contents(/opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/../../../cleovars): failed to open stream: Permission denied in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/AppConfig.php on line 115
+ PHP Warning:  file_put_contents(/opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/../../../cleovars): failed to open stream: Permission denied in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/AppConfig.php on line 115
  [Pharaoh Logging] Package git from the Packager Apt is already installed, so not installing
  Reading package lists...
  Building dependency tree...
@@ -103,7 +103,7 @@ The screenshot for the above command is listed below,
  Unpacking git-core (1:1.9.1-1ubuntu0.1) ...
  Setting up git-core (1:1.9.1-1ubuntu0.1) ...
  [Pharaoh Logging] Adding Package git-core from the Packager Apt executed correctly
- PHP Warning:  file_put_contents(/opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/../../../cleovars): failed to open stream: Permission denied in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/AppConfig.php on line 115
+ PHP Warning:  file_put_contents(/opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/../../../cleovars): failed to open stream: Permission denied in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/AppConfig.php on line 115
  Reading package lists...
  Building dependency tree...
  Reading state information...
@@ -123,7 +123,7 @@ The screenshot for the above command is listed below,
  Processing triggers for man-db (2.6.7.1-1) ...
  Setting up gitk (1:1.9.1-1ubuntu0.1) ...
  [Pharaoh Logging] Adding Package gitk from the Packager Apt executed correctly
- PHP Warning:  file_put_contents(/opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/../../../cleovars): failed to open stream: Permission denied in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/AppConfig.php on line 115
+ PHP Warning:  file_put_contents(/opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/../../../cleovars): failed to open stream: Permission denied in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/AppConfig.php on line 115
  Reading package lists...
  Building dependency tree...
  Reading state information...
@@ -162,17 +162,17 @@ The screenshot for the above command is listed below,
  Setting up libjs-underscore (1.4.4-2ubuntu1) ...
  Setting up git-cola (1.9.3-1) ...
  [Pharaoh Logging] Adding Package git-cola from the Packager Apt executed correctly
- PHP Warning:  file_put_contents(/opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/../../../cleovars): failed to open stream: Permission denied in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/AppConfig.php on line 115
+ PHP Warning:  file_put_contents(/opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/../../../cleovars): failed to open stream: Permission denied in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/AppConfig.php on line 115
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more
  [Pharaoh Logging] Ensure module install is not checking versions
  [Pharaoh Logging] Module Java reports itself as Installed
  [Pharaoh Logging] Not installing as already installed
- Creating /tmp/cleopatra-temp-script-15361773074.sh
- chmod 755 /tmp/cleopatra-temp-script-15361773074.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-15361773074.sh Permissions
- Executing /tmp/cleopatra-temp-script-15361773074.sh
+ Creating /tmp/ptconfigure-temp-script-15361773074.sh
+ chmod 755 /tmp/ptconfigure-temp-script-15361773074.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-15361773074.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-15361773074.sh
  Cloning into 'gitbucket-war'...
  remote: Counting objects: 8, done.
  remote: Total 8 (delta 0), reused 0 (delta 0)
@@ -180,11 +180,11 @@ The screenshot for the above command is listed below,
  Checking connectivity... done.
  mkdir: cannot create directory ‘/opt/gitbucket/’: Permission denied
  mv: target ‘/opt/gitbucket/’ is not a directory
- Temp File /tmp/cleopatra-temp-script-15361773074.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-15361773074.sh Removed
  Enter Repository Root Directory:
  /
  Program Executor Deleted if existed
- PHP Warning:  file_put_contents(/usr/bin/gitbucket): failed to open stream: Permission denied in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/BaseLinuxApp.php on line 312
+ PHP Warning:  file_put_contents(/usr/bin/gitbucket): failed to open stream: Permission denied in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 312
  chmod: cannot access ‘/usr/bin/gitbucket’: No such file or directory
  ... All done!
  *******************************
@@ -204,15 +204,15 @@ Optionen
 
 .. cssclass:: table-bordered
 
-        +-----------------------------+------------------------+-----------------------+-----------------------------------------------+
-        |       Parameter             | Alternative Parameter  |        Option         |                Kommentare                     |
-        +=============================+========================+=======================+===============================================+
-        |cleopatra  gitbucket Install |GitBucket, gitbucket ,  |Y                      |System startet Installation                    |
-        |                             |git-bucket              |                       |                                               |
-        +-----------------------------+------------------------+-----------------------+-----------------------------------------------+
-        |cleopatra  gitbucket Install |GitBucket, gitbucket ,  |N                      |                                               |
-        |                             |git-bucket              |                       |Das System stoppt den Installations|           |
-        +-----------------------------+------------------------+-----------------------+-----------------------------------------------+
+        +-------------------------------+------------------------+----------------+-----------------------------------------------+
+        |       Parameter               | Alternative Parameter  | Option         |                Kommentare                     |
+        +===============================+========================+================+===============================================+
+        |ptconfigure  gitbucket Install |GitBucket, gitbucket ,  |Y               |System startet Installation                    |
+        |                               |git-bucket              |                |                                               |
+        +-------------------------------+------------------------+----------------+-----------------------------------------------+
+        |ptconfigure  gitbucket Install |GitBucket, gitbucket ,  |N               |                                               |
+        |                               |git-bucket              |                |Das System stoppt den Installations|           |
+        +-------------------------------+------------------------+----------------+-----------------------------------------------+
 
 Vorteile
 --------------

@@ -14,14 +14,14 @@ Der Befehl help führt den Anwender über den Zweck und als auch über die Mögl
 
 .. code-block:: bash
 
-		cleopatra HHVM help
+		ptconfigure HHVM help
 
 Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter HHVM.
 
 .. code-block:: bash
 
 
- kevell@corp:/# cleopatra HHVM help
+ kevell@corp:/# ptconfigure HHVM help
  ******************************
 
 
@@ -31,11 +31,11 @@ Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein
 
         - install
         Installs HHVM through package manager
-        example: cleopatra hhvm install
+        example: ptconfigure hhvm install
 
         - uninstall
         Uninstalls HHVM through package manager
-        example: cleopatra hhvm uninstall
+        example: ptconfigure hhvm uninstall
 
  ------------------------------
  End Help
@@ -48,7 +48,7 @@ Der Befehl zum Installieren der HHVM zum Benutzer Maschine verwendet wird unten 
 
 .. code-block:: bash
 
-                cleopatra HHVM install
+                ptconfigure HHVM install
 
 Nach der Eingabe des Befehls oben, passiert folgendes Verfahren im Tabellenformat angezeigt.
 
@@ -71,17 +71,17 @@ Schließlich Installationsprozess abgeschlossen wird. Der folgende Screenshot bi
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra HHVM install
+ kevell@corp:/# ptconfigure HHVM install
  Install HHVM? (Y/N) 
  Y
  *******************************
  *        Pharaoh Tools        *
  *          ! HHVM !        *
  *******************************
- Creating /tmp/cleopatra-temp-script-41870275104.sh
- chmod 755 /tmp/cleopatra-temp-script-41870275104.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-41870275104.sh Permissions
- Executing /tmp/cleopatra-temp-script-41870275104.sh
+ Creating /tmp/ptconfigure-temp-script-41870275104.sh
+ chmod 755 /tmp/ptconfigure-temp-script-41870275104.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-41870275104.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-41870275104.sh
  --2015-01-16 14:19:14--  http://dl.hhvm.com/conf/hhvm.gpg.key
  Resolving dl.hhvm.com (dl.hhvm.com)... 140.211.166.134
  Connecting to dl.hhvm.com (dl.hhvm.com)|140.211.166.134|:80... connected.
@@ -195,7 +195,7 @@ Schließlich Installationsprozess abgeschlossen wird. Der folgende Screenshot bi
  Ign http://in.archive.ubuntu.com trusty/universe Translation-en_IN
  Fetched 2,347 kB in 42s (55.6 kB/s)
  Reading package lists...
- Temp File /tmp/cleopatra-temp-script-41870275104.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-41870275104.sh Removed
  Reading package lists...
  Building dependency tree...
  Reading state information...
@@ -318,14 +318,14 @@ Der Befehl für die Installation des un HHVM verwendet wird unten gezeigt.
 
 .. code-block:: bash
 
-		cleopatra HHVM uninstall
+		ptconfigure HHVM uninstall
 
 Der Screenshot für den obigen Befehl aufgelistet unten,
 
 .. code-block:: bash
 
 
- kevell@corp:/# cleopatra hhvm uninstall
+ kevell@corp:/# ptconfigure hhvm uninstall
 
  Uninstall HHVM? (Y/N)
  y
@@ -333,10 +333,10 @@ Der Screenshot für den obigen Befehl aufgelistet unten,
  *        Pharaoh Tools        *
  *          ! HHVM !        *
  *******************************
- PHP Warning:  Illegal string offset 'object' in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/BaseLinuxApp.php on line 290
- PHP Warning:  Illegal string offset 'method' in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/BaseLinuxApp.php on line 290
- PHP Warning:  Illegal string offset 'params' in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/BaseLinuxApp.php on line 290
- PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'p' not found in /opt/cleopatra/cleopatra/src/Modules/CleopatraRequired/Model/BaseLinuxApp.php on line 290
+ PHP Warning:  Illegal string offset 'object' in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+ PHP Warning:  Illegal string offset 'method' in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+ PHP Warning:  Illegal string offset 'params' in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
+ PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'p' not found in /opt/ptconfigure/ptconfigure/src/Modules/ptconfigureRequired/Model/BaseLinuxApp.php on line 290
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more
@@ -357,5 +357,6 @@ Vorteile
 * Die in Hilfe und Installation und un-Installation Operationen verwendet muss nicht beachtet werden, welche ein zusätzlicher Vorteil ist, 
   während im Vergleich zu anderen Parametern.
 * Es ist gut-to-do sowohl Ubuntu und sowie Cent OS.
-* HHVM hat die Möglichkeit, Live-Typinformationen nutzen, um effizienter nativen Code erzeugen, was zu höheren Webserver Durchsatz und niedriger  Latenzzeit.
+* HHVM hat die Möglichkeit, Live-Typinformationen nutzen, um effizienter nativen Code erzeugen, was zu höheren Webserver Durchsatz 
+  und niedriger  Latenzzeit.
 

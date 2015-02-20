@@ -21,7 +21,7 @@ Diese Funktion dient, um die Verwendung von Dateimodul zu bestimmen. Der Benutze
 
 .. code-block:: bash
         
-	        cleopatra file help
+	        ptconfigure file help
 
 schaffen
 ------------
@@ -30,19 +30,19 @@ Wenn der Benutzer braucht, um eine neue Systemdatei erstellen, wird der unten an
 
 .. code-block:: bash
 
-                cleopatra file create --file="somename"
+                ptconfigure file create --file="somename"
 
 Die unten angegebenen Befehle überschreiben Dateien, die es gibt
 
 .. code-block:: bash
          
-	       cleopatra file create --file="somename” --overwrite-existing
+	       ptconfigure file create --file="somename” --overwrite-existing
 
 The below given command for write the data in the file
 
 .. code-block:: bash
            
-		cleopatra file create –file="somename” --data="things to put in the file" 
+		ptconfigure file create –file="somename” --data="things to put in the file" 
 
 löschen
 ----------
@@ -51,7 +51,7 @@ Wenn der Benutzer eine Systemdatei zu löschen muss, wird die unten gegebenen Be
 
 .. code-block:: bash
 	
-		cleopatra file delete --file="somename"
+		ptconfigure file delete --file="somename"
 
 vorhanden
 -----------
@@ -60,7 +60,7 @@ Wenn der Benutzer benötigt, um die Existenz einer Datei zu überprüfen, wird d
 
 .. code-block:: bash
 
-		cleopatra file exists --filename="somename"
+		ptconfigure file exists --filename="somename"
 
 anhängen
 ------------
@@ -69,7 +69,7 @@ Wenn der Benutzer eine Zeile in eine Datei angehängt werden muss, wird der unte
 
 .. code-block:: bash
 	
-		cleopatra file append --filename="somename" --line="a line"
+		ptconfigure file append --filename="somename" --line="a line"
 
 * Line option – you can insert a line to be appended
 
@@ -80,7 +80,7 @@ When the user needs to ensure that a file contains a particular line, the below 
 
 .. code-block:: bash
 	
-		cleopatra file should-have-line --filename="somename" --line="a line"
+		ptconfigure file should-have-line --filename="somename" --line="a line"
 
 * Line option – Statement that needs to be checked
 
@@ -90,17 +90,18 @@ Options
 
 .. cssclass:: table-bordered
 
- +-------------------------+------------------------------------------------------+----------------------------------------+
- | Parameter               | Alternative Parameter                                | Kommentare                             |
- +=========================+======================================================+========================================+
- |cleopatra file help      | Eine der beiden alternativen Parameter können        | Sobald der Benutzer bietet die         |
- |                         | verwendet werden, in Befehl - File, file             | Möglichkeit, beginnt Systems           |
- |                         | eg: cleopatra File Install/ cleopatra file Install   | Verarbeitung|                          |
- +-------------------------+------------------------------------------------------+----------------------------------------+
+ +-------------------------+----------------------------------------------------------+----------------------------------------+
+ | Parameter               | Alternative Parameter                                    | Kommentare                             |
+ +=========================+==========================================================+========================================+
+ |ptconfigure file help    | Eine der beiden alternativen Parameter können            | Sobald der Benutzer bietet die         |
+ |                         | verwendet werden, in Befehl - File, file                 | Möglichkeit, beginnt Systems           |
+ |                         | eg: ptconfigure File Install/ ptconfigure file Install   | Verarbeitung|                          |
+ +-------------------------+----------------------------------------------------------+----------------------------------------+
 
                              
 Vorteile
 -----------
 
-* Geben Sie einen Datei speziell formatierte, die positionsempfindlichen Tests; Standardpositionsempfindlichen Tests und kontextsensitive Tests nicht durchgeführt werden.
+* Geben Sie einen Datei speziell formatierte, die positionsempfindlichen Tests; Standardpositionsempfindlichen Tests und kontextsensitive
+  Tests nicht durchgeführt werden.
 

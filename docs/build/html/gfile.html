@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
     <link rel="next" title="FireFox" href="gfirefox.html" />
     <link rel="prev" title="EnvironmentConfig" href="genvironmentconfig.html" />
 
@@ -80,7 +80,7 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 </li>
@@ -147,7 +147,7 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 
@@ -168,43 +168,43 @@
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
 <p>Diese Funktion dient, um die Verwendung von Dateimodul zu bestimmen. Der Benutzer wird kommen, um über die verschiedenen Möglichkeiten / Format um dieses Modul ausführen kennen. Dieser Befehl leitet den Anwender, um den Zweck dieses Befehls kennen. Da unten sind die Kommando- und der Screenshot der gleiche.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file <span class="nb">help</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="schaffen">
 <h2>schaffen<a class="headerlink" href="#schaffen" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer braucht, um eine neue Systemdatei erstellen, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file create --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 </pre></div>
 </div>
 <p>Die unten angegebenen Befehle überschreiben Dateien, die es gibt</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create --file<span class="o">=</span><span class="s2">&quot;somename” --overwrite-existing</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file create --file<span class="o">=</span><span class="s2">&quot;somename” --overwrite-existing</span>
 </pre></div>
 </div>
 <p>The below given command for write the data in the file</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file create –file<span class="o">=</span><span class="s2">&quot;somename” --data=&quot;</span>things to put in the file<span class="s2">&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file create –file<span class="o">=</span><span class="s2">&quot;somename” --data=&quot;</span>things to put in the file<span class="s2">&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="loschen">
 <h2>löschen<a class="headerlink" href="#loschen" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer eine Systemdatei zu löschen muss, wird die unten gegebenen Befehl das Verfahren auszuführen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file delete --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file delete --file<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="vorhanden">
 <h2>vorhanden<a class="headerlink" href="#vorhanden" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer benötigt, um die Existenz einer Datei zu überprüfen, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file exists --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file exists --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="anhangen">
 <h2>anhängen<a class="headerlink" href="#anhangen" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer eine Zeile in eine Datei angehängt werden muss, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file append --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file append --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -214,7 +214,7 @@
 <div class="section" id="should-have-line">
 <h2>Should-have-line<a class="headerlink" href="#should-have-line" title="Permalink to this headline">¶</a></h2>
 <p>When the user needs to ensure that a file contains a particular line, the below given command will execute the process</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra file should-have-line --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure file should-have-line --filename<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --line<span class="o">=</span><span class="s2">&quot;a line&quot;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -225,9 +225,9 @@
 <h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="21%" />
-<col width="45%" />
-<col width="34%" />
+<col width="20%" />
+<col width="47%" />
+<col width="33%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameter</th>
@@ -236,10 +236,10 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra file help</td>
+<tr class="row-even"><td>ptconfigure file help</td>
 <td>Eine der beiden alternativen Parameter können
 verwendet werden, in Befehl - File, file
-eg: cleopatra File Install/ cleopatra file Install</td>
+eg: ptconfigure File Install/ ptconfigure file Install</td>
 <td>Sobald der Benutzer bietet die
 Möglichkeit, beginnt Systems
 Verarbeitung|</td>
@@ -250,7 +250,8 @@ Verarbeitung|</td>
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Geben Sie einen Datei speziell formatierte, die positionsempfindlichen Tests; Standardpositionsempfindlichen Tests und kontextsensitive Tests nicht durchgeführt werden.</li>
+<li>Geben Sie einen Datei speziell formatierte, die positionsempfindlichen Tests; Standardpositionsempfindlichen Tests und kontextsensitive
+Tests nicht durchgeführt werden.</li>
 </ul>
 </div>
 </div>

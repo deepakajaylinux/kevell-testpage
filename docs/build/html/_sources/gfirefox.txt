@@ -15,13 +15,13 @@ Dieser Befehl kann über die Ziele und Befehle unter Firefox-Modul funktionieren
 
 .. code-block:: bash
 
-              cleopatra firefox help
+              ptconfigure firefox help
 
 Das folgende Bild hilft Ihnen auch dieses Modul klar verstehen,
 
 .. code-block:: bash
 
-	 kevell@corp:/# cleopatra firefox help
+	 kevell@corp:/# ptconfigure firefox help
 
 	 ******************************
 
@@ -33,7 +33,7 @@ Das folgende Bild hilft Ihnen auch dieses Modul klar verstehen,
 
         - install
         Installs Firefox
-        example: cleopatra firefox install
+        example: ptconfigure firefox install
 
 	------------------------------
 	End Help
@@ -42,12 +42,12 @@ Das folgende Bild hilft Ihnen auch dieses Modul klar verstehen,
 Installation
 -------------------
 
-It is a glaring process to install firefox module under Cleopatra by just using the command given below,
+It is a glaring process to install firefox module under ptconfigure by just using the command given below,
 
 
 .. code-block:: bash
 
-	cleopatra firefox install
+	ptconfigure firefox install
 
 After key in the command, it can asks
 
@@ -57,7 +57,7 @@ In case the user input as Y, it can install firefox from the package. Else, it c
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra firefox install
+ kevell@corp:/# ptconfigure firefox install
 
  Install Firefox? (Y/N)
  y
@@ -65,16 +65,16 @@ In case the user input as Y, it can install firefox from the package. Else, it c
  *        Pharaoh Tools        *
  *          Firefox            *
  *******************************
- Creating /tmp/cleopatra-temp-script-51942043520.sh
- chmod 755 /tmp/cleopatra-temp-script-51942043520.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-51942043520.sh Permissions
- Executing /tmp/cleopatra-temp-script-51942043520.sh
+ Creating /tmp/ptconfigure-temp-script-51942043520.sh
+ chmod 755 /tmp/ptconfigure-temp-script-51942043520.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-51942043520.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-51942043520.sh
  Cloning into 'firefox'...
  remote: Counting objects: 78, done.
  remote: Total 78 (delta 0), reused 0 (delta 0)
  Unpacking objects: 100% (78/78), done.
  Checking connectivity... done.
- Temp File /tmp/cleopatra-temp-script-51942043520.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-51942043520.sh Removed
  Program Executor Deleted if existed
  ... All done!
  *******************************
@@ -99,10 +99,10 @@ Options
  +-----------------------------------+--------------------------------------+-------------+--------------------------------------------+
  | Parameter                         | Alternative Parameter                | Optionen    | Kommentare                                 |
  +===================================+======================================+=============+============================================+
- |cleopatra firefox Install (Y/N)    | Anstelle der Verwendung firefox wir  | Y(Yes)      | System startet Installation können sie     |
+ |ptconfigure firefox Install (Y/N)  | Anstelle der Verwendung firefox wir  | Y(Yes)      | System startet Installation können sie     |
  |                                   | verwenden können, Firefox, firefox   |             | Eingang als Y                              |
  +-----------------------------------+--------------------------------------+-------------+--------------------------------------------+
- |cleopatra Firefox Install (Y/N)    | Anstelle der Verwendung firefox wir  | N(No)       | Das System stoppt den Installationsprozess |
+ |ptconfigure Firefox Install (Y/N)  | Anstelle der Verwendung firefox wir  | N(No)       | Das System stoppt den Installationsprozess |
  |                                   | verwenden können Firefox, firefox|   |             |                                            |
  +-----------------------------------+--------------------------------------+-------------+--------------------------------------------+
  

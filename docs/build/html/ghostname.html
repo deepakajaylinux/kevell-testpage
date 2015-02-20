@@ -31,7 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="InstallPackage" href="ginstallpackage.html" />
     <link rel="prev" title="HHVM" href="ghhvm.html" />
 
 
@@ -79,7 +80,7 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 </li>
@@ -106,6 +107,8 @@
                 
   <li><a href="ghhvm.html"
          title="Previous Chapter: HHVM">&laquo; HHVM</a></li>
+  <li><a href="ginstallpackage.html"
+         title="Next Chapter: InstallPackage">InstallPackage &raquo;</a></li>
               
             
             
@@ -141,7 +144,7 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 
@@ -159,11 +162,11 @@
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
 <p>Dieser Befehl kann über die Ziele und Befehle unter Hostnamen-Modul funktionieren. Es erklärt auch den Befehl zum Hostnamen-Modul ändern. Vor dem Host-Namen zu ändern, der Benutzer lesen diese Hilfe Befehl erklärt seine Funktion.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra hostname <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure hostname <span class="nb">help</span>
 </pre></div>
 </div>
 <p>Der folgende Screenshot mit sich bringen kann, um sie zu kümmern.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra hostname <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure hostname <span class="nb">help</span>
 
 ******************************
 
@@ -174,11 +177,11 @@
 
        - change
        Change the system hostname
-       example: cleopatra hostname change --hostname<span class="o">=</span><span class="s2">&quot;my-laptop&quot;</span>
+       example: ptconfigure hostname change --hostname<span class="o">=</span><span class="s2">&quot;my-laptop&quot;</span>
 
        - show
        Show the system hostname
-       example: cleopatra hostname show
+       example: ptconfigure hostname show
 
 ------------------------------
 End Help
@@ -189,15 +192,15 @@ End Help
 <div class="section" id="sich-andern">
 <h2>Sich Ändern<a class="headerlink" href="#sich-andern" title="Permalink to this headline">¶</a></h2>
 <p>Hostnamen werden in der Regel in einem Verwaltungskapazitäten verwendet und können in Computer-Browser-Listen, aktive Verzeichnislisten , IP-Adresse, um den Hostnamen Auflösungen, E-Mail-Kopfzeilen usw. angezeigt Wenn der Benutzer den Hostnamen ändern möchten, können Sie den folgenden Befehl verwenden.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra hostname change –hostname<span class="o">=</span>”kevellcorp”
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure hostname change –hostname<span class="o">=</span>”kevellcorp”
 </pre></div>
 </div>
 <p>Aus der obigen Befehl der neue Host-Namen eingeben können.</p>
 </div>
 <div class="section" id="show">
 <h2>Show<a class="headerlink" href="#show" title="Permalink to this headline">¶</a></h2>
-<p>Dieses Modul ist eine spürbare Prozess um den Hostnamen unter Cleopatra von nur mit dem Befehl unten gegeben anzusehen,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra hostname show
+<p>Dieses Modul ist eine spürbare Prozess um den Hostnamen unter ptconfigure von nur mit dem Befehl unten gegeben anzusehen,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure hostname show
 </pre></div>
 </div>
 <p>Nach dem Schlüssel im Befehl, es zeigt den Hostnamen.</p>
@@ -219,20 +222,20 @@ End Help
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra hostname</td>
+<tr class="row-even"><td>ptconfigure hostname</td>
 <td>anstelle von Hostname wir verwenden
 können, Hostname,hostname</td>
 <td>Show</td>
 <td>System beginnt, die die hostname
-Verfahren unter cleopatra</td>
+Verfahren unter ptconfigure</td>
 </tr>
-<tr class="row-odd"><td>cleopatra hostname change
+<tr class="row-odd"><td>ptconfigure hostname change
 –hostname=”Name”</td>
 <td>anstelle von Hostname wir verwenden
 können, Hostname,hostname</td>
 <td>Change</td>
 <td>System beginnt, die die hostname
-Verfahren unter cleopatra|</td>
+Verfahren unter ptconfigure|</td>
 </tr>
 </tbody>
 </table>

@@ -15,13 +15,13 @@ Dieser Befehl kann über die Ziele und Befehle unter Firefox17 Modul funktionier
 
 .. code-block:: bash
                     
-	cleopatra firefox17 help
+	ptconfigure firefox17 help
 
 Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.
 
 .. code-block:: bash
 
-	Kevell@corp:/# cleopatra firefox17 help
+	Kevell@corp:/# ptconfigure firefox17 help
 	******************************
 
 
@@ -31,7 +31,7 @@ Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.
 
         - install
         Installs the latest version of Firefox 17
-        example: cleopatra firefox17 install
+        example: ptconfigure firefox17 install
 
 	------------------------------
 	End Help
@@ -40,11 +40,11 @@ Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.
 Installation
 -------------------
 
-Es ist eine eklatante Prozess firefox17 Modul unter Cleopatra von nur mit dem Befehl unten angegeben zu installieren,
+Es ist eine eklatante Prozess firefox17 Modul unter ptconfigure von nur mit dem Befehl unten angegeben zu installieren,
 
 .. code-block:: bash
          
-         cleopatra firefox17 install
+         ptconfigure firefox17 install
 
 After key in the command, it can asks
 
@@ -57,23 +57,23 @@ In case the user input as Y, it can install firefox17 from the package. Else, it
 
 
 
- kevell@corp:/# cleopatra Firefox17 install
+ kevell@corp:/# ptconfigure Firefox17 install
  Install Firefox 17? (Y/N) 
  Y
  *******************************
  *        Pharaoh Tools        *
  *          Firefox 17         *
  *******************************
- Creating /tmp/cleopatra-temp-script-34898518137.sh
- chmod 755 /tmp/cleopatra-temp-script-34898518137.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-34898518137.sh Permissions
- Executing /tmp/cleopatra-temp-script-34898518137.sh
+ Creating /tmp/ptconfigure-temp-script-34898518137.sh
+ chmod 755 /tmp/ptconfigure-temp-script-34898518137.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-34898518137.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-34898518137.sh
  Cloning into 'firefox17'...
  remote: Counting objects: 78, done.
  remote: Total 78 (delta 0), reused 0 (delta 0)
  Unpacking objects: 100% (78/78), done.
  Checking connectivity... done.
- Temp File /tmp/cleopatra-temp-script-34898518137.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-34898518137.sh Removed
  Program Executor Deleted if existed
  ... All done!
  *******************************
@@ -98,11 +98,11 @@ Optionen
  +---------------------------+--------------------------------------------+--------------+--------------------------------------------+
  | Parameter                 | Alternative Parameter                      | Erforderlich |  Kommentar                                 |
  +===========================+============================================+==============+============================================+
- |cleopatra firefox17        | Anstelle der Verwendung firefox17 wir      | Y(yes)       | System startet Installation Under          |
- |Install? (Y/N)             | verwenden können, ff17, Firefox17          |              | cleopatra                                  |
+ |ptconfigure firefox17      | Anstelle der Verwendung firefox17 wir      | Y(yes)       | System startet Installation Under          |
+ |Install? (Y/N)             | verwenden können, ff17, Firefox17          |              | ptconfigure                                |
  +---------------------------+--------------------------------------------+--------------+--------------------------------------------+
- |cleopatra firefox17        | Anstelle der Verwendung firefox17 wir      | N (No)       | Das System stoppt den Installationsprozess |
- |Install? (Y/N)             | verwenden können, ff17, Firefox17          |              | Under cleopatra|                           |
+ |ptconfigure firefox17      | Anstelle der Verwendung firefox17 wir      | N (No)       | Das System stoppt den Installationsprozess |
+ |Install? (Y/N)             | verwenden können, ff17, Firefox17          |              | Under ptconfigure|                         |
  +---------------------------+--------------------------------------------+--------------+--------------------------------------------+
 
 

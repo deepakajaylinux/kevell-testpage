@@ -20,13 +20,13 @@ Dieser Befehl hilft, die Nutzung des Wandels Gruppenmodul zu bestimmen. Der Benu
 
 .. code-block:: bash
         
-	        cleopatra Chgrp help
+	        ptconfigure Chgrp help
 
 Die bildliche Darstellung der Bildschirm ist unten angegeben,
 
 .. code-block:: bash
 
- kevell@corp:/#  cleopatra Chgrp help
+ kevell@corp:/#  ptconfigure Chgrp help
  ******************************
 
 
@@ -36,7 +36,7 @@ Die bildliche Darstellung der Bildschirm ist unten angegeben,
 
         - path
         Will change the file group ownership of a path
-        example: cleopatra chgrp path --yes --guess --recursive --path=/a/file/path --group=golden
+        example: ptconfigure chgrp path --yes --guess --recursive --path=/a/file/path --group=golden
 
 
  ------------------------------
@@ -50,7 +50,7 @@ Wenn der Benutzer die Datei Gruppeneigentum an den Pfad ändern muss, wird der u
 
 .. code-block:: bash
         
-	        cleopatra chgrp path –yes –guess –recursive –path=/”File path” –group=”group name”
+	        ptconfigure chgrp path –yes –guess –recursive –path=/”File path” –group=”group name”
 
 Alternative Parameter 
 ---------------------------------------
@@ -59,7 +59,7 @@ Es gibt zwei alternative Parameter, die in der Befehlszeile verwendet werden kan
 
 chgrp, Chgrp
 
-Beispiel:  cleopatra Chgrp path/ cleopatra chgrp path
+Beispiel:  ptconfigure Chgrp path/ ptconfigure chgrp path
 
 Vorteile
 ----------

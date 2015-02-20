@@ -16,7 +16,7 @@ Der Befehl help führt den Anwender über den Zweck und als auch über die Mögl
 
 .. code-block:: bash
 
- 		cleopatra IntelliJ help
+ 		ptconfigure IntelliJ help
 
 Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter IntelliJ.
 
@@ -24,7 +24,7 @@ Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein
 
 
 
- kevell@corp:/# cleopatra IntelliJ help
+ kevell@corp:/# ptconfigure IntelliJ help
  ******************************
 
 
@@ -34,7 +34,7 @@ Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein
 
         - install
         Installs the latest version of Developer Tools
-        example: cleopatra gittools install
+        example: ptconfigure gittools install
 
  ------------------------------
  End Help
@@ -47,7 +47,7 @@ Der Befehl zum Installieren der JRush zum Benutzer Maschine verwendet wird unten
 
 .. code-block:: bash
 
-		cleopatra IntelliJ install
+		ptconfigure IntelliJ install
 
 Nach der Eingabe des Befehls vor, tritt die folgenden Funktionen:
 
@@ -60,7 +60,7 @@ Schließlich ist die Installation von IntelliJ abgeschlossen wird. Der Screensho
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra IntelliJ install
+ kevell@corp:/# ptconfigure IntelliJ install
  Install IntelliJ IDE? (Y/N) 
  Y
  *******************************
@@ -68,18 +68,18 @@ Schließlich ist die Installation von IntelliJ abgeschlossen wird. Der Screensho
  *         IntelliJ IDE        *
  *******************************
  Enter IntelliJ Version
- PHP Notice:  Undefined offset: 0 in /opt/cleopatra/cleopatra/src/Core/Base/Model/Base.php on line 187
+ PHP Notice:  Undefined offset: 0 in /opt/ptconfigure/ptconfigure/src/Core/Base/Model/Base.php on line 187
  (0)  
- PHP Notice:  Undefined offset: 1 in /opt/cleopatra/cleopatra/src/Core/Base/Model/Base.php on line 187
+ PHP Notice:  Undefined offset: 1 in /opt/ptconfigure/ptconfigure/src/Core/Base/Model/Base.php on line 187
  (1)  
 
  [Pharaoh Logging] Ensure module install is not checking versions
  [Pharaoh Logging] Module Java reports itself as Installed
  [Pharaoh Logging] Not installing as already installed
- Creating /tmp/cleopatra-temp-script-98824051629.sh
- chmod 755 /tmp/cleopatra-temp-script-98824051629.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-98824051629.sh Permissions
- Executing /tmp/cleopatra-temp-script-98824051629.sh
+ Creating /tmp/ptconfigure-temp-script-98824051629.sh
+ chmod 755 /tmp/ptconfigure-temp-script-98824051629.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-98824051629.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-98824051629.sh
  Cloning into 'intellij'...
  remote: Counting objects: 1026, done.
  remote: Total 1026 (delta 0), reused 0 (delta 0)
@@ -87,7 +87,7 @@ Schließlich ist die Installation von IntelliJ abgeschlossen wird. Der Screensho
  Resolving deltas: 100% (60/60), done.
  Checking connectivity... done.
  Checking out files: 100% (744/744), done.
- Temp File /tmp/cleopatra-temp-script-98824051629.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-98824051629.sh Removed
  Program Executor Deleted if existed
  ... All done!
  *******************************
@@ -107,7 +107,7 @@ Parameter
 
 Anstelle von IntelliJ können wir, intellij verwenden
 
-Eg: cleopatra invoke get/ cleopatra invoke get
+Eg: ptconfigure invoke get/ ptconfigure invoke get
 
 Vorteile
 ------------

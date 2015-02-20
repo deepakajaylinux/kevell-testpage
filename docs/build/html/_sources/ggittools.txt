@@ -7,27 +7,27 @@ Zusammenfassung
 
 Gittools ist ein verteiltes Versionskontrollsystem mit einem Schwerpunkt auf Geschwindigkeit, Datensicherheit und Unterstützung für verteilte, nicht-linearen Workflows.
 
-Dieses Modul Aufzugsanlage in aktualisierte Version. Während der Installation kann es auch gitfrom, git Kern gitcole, gitfrom unter Cleopatra installieren. Automation möglich. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.
+Dieses Modul Aufzugsanlage in aktualisierte Version. Während der Installation kann es auch gitfrom, git Kern gitcole, gitfrom unter ptconfigure installieren. Automation möglich. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.
 
 Hilfe Befehl
 ---------------
 
-Dieser Befehl help führen den Benutzer zu Cleopatra. Es ist weniger zeitaufwendig, da es automatisch installiert werden können. Geeignet für alle Arten von Benutzer. Der folgende Befehl help wird der Benutzer für gittools Installation zu unterstützen. Dieses Befehlszeilenargument gibt den Namen des Befehls über die Informationen angezeigt werden soll.
+Dieser Befehl help führen den Benutzer zu ptconfigure. Es ist weniger zeitaufwendig, da es automatisch installiert werden können. Geeignet für alle Arten von Benutzer. Der folgende Befehl help wird der Benutzer für gittools Installation zu unterstützen. Dieses Befehlszeilenargument gibt den Namen des Befehls über die Informationen angezeigt werden soll.
 
 .. code-block:: bash
 
-		cleopatra gittools help
+		ptconfigure gittools help
 
 Nach der Eingabe des Befehls zeigt es die Nutzung. Dieser Screenshot kann die Funktion dieses Befehls zum Ausdruck bringen.
 
 Installation
 ----------------
 
-    Die Installation umfasst die Bereitstellung von oder Verbindung mit Dienstleistungen erforderlich, um die installierten Geräte betriebsbereit. Es ist eine offensichtliche Prozess gittools Modul unter Cleopatra installieren, indem einfach mit dem Befehl unten angegeben,
+    Die Installation umfasst die Bereitstellung von oder Verbindung mit Dienstleistungen erforderlich, um die installierten Geräte betriebsbereit. Es ist eine offensichtliche Prozess gittools Modul unter ptconfigure installieren, indem einfach mit dem Befehl unten angegeben,
 
 .. code-block:: bash 
 
-		cleopatra gittools install
+		ptconfigure gittools install
 
 Nach beleben den Befehl geben Sie den Wert katechisieren.
 
@@ -51,7 +51,7 @@ Options
  | Parameter             |  Alternative Parameter                              | Optionen   | Kommentare                                 |
  +=======================+=====================================================+============+============================================+
  |Install gittools?(Y/N) | Anstelle der Verwendung gittppls wir verwenden      | Y(Yes)     | Es git installieren und gemeinsamer        |
- |                       | können GitTools,gittools,git-tools                  |            | gittools unter Kleopatra.                  |
+ |                       | können GitTools,gittools,git-tools                  |            | gittools unter ptconfigure.                |
  +-----------------------+-----------------------------------------------------+------------+--------------------------------------------+
  |Install gittools?(Y/N) | Anstelle der Verwendung gitlab wir verwenden        | N(No)      | Das System Ausfahrt die Installation       |
  |                       | können GitTools,gittools,git-tools|                 |            |                                            |

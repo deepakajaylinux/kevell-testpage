@@ -14,14 +14,14 @@ Der Befehl help führt den Anwender über den Zweck und als auch über die Mögl
 
 .. code-block:: bash
 
-		cleopatra Jmeter help
+		ptconfigure Jmeter help
 
 
 Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Jmeter.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra Jmeter help
+ kevell@corp:/# ptconfigure Jmeter help
 
  ******************************
 
@@ -32,7 +32,7 @@ Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein
 
         - install
         Installs the latest version of Jmeter
-        example: cleopatra jmeter install
+        example: ptconfigure jmeter install
 
  ------------------------------
  End Help
@@ -45,7 +45,7 @@ Der Befehl zum Installieren der jmeter im Benutzer Maschine verwendet wird unten
 
 .. code-block:: bash
 
-		cleopatra jmeter install
+		ptconfigure jmeter install
 
 Nach der Eingabe des Befehls oben, passiert folgendes Verfahren im Tabellenformat angezeigt.
 
@@ -90,7 +90,7 @@ Vorteile
 * Es ist gut-to-do sowohl Ubuntu und sowie Cent OS.
 * Dies wird Modul installiert die Jmeter in aktualisierte Version.
 * Wenn das Modul bereits in der Benutzermaschine vorhandene es wird eine Meldung angezeigt werden, da sie bereits vorhanden sind.
-* JMeter unterstützt variable Parametrierung, Behauptungen (Antwort Validierung), pro Thema Cookies, Konfigurationsvariablen und eine Vielzahl 
-  von Berichte.
+* JMeter unterstützt variable Parametrierung, Behauptungen (Antwort Validierung), pro Thema Cookies, Konfigurationsvariablen und eine
+  Vielzahl von Berichte.
 * Off-Site-Entwickler können leicht erweitern JMeter mit benutzerdefinierten Plugins.
 

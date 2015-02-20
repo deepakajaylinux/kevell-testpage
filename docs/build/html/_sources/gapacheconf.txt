@@ -15,13 +15,13 @@ Der Befehl Help beschreibt den Zweck und die Befehle, die unter diese Module zur
 
 .. code-block:: bash
 
-	cleopatra apacheconf help
+	ptconfigure apacheconf help
 
 In der Bildschirmabbildung so darzustellen, wie unten dargestellt, visuell die Verwendung des Hilfebefehls "unter dieses Modul.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra apacheconf help
+ kevell@corp:/# ptconfigure apacheconf help
  ******************************
 
 
@@ -32,7 +32,7 @@ In der Bildschirmabbildung so darzustellen, wie unten dargestellt, visuell die V
 
         - install
         Installs a configuration for Apache
-        example: cleopatra apacheconf install
+        example: ptconfigure apacheconf install
 
  ------------------------------
  End Help
@@ -44,12 +44,12 @@ In der Bildschirmabbildung so darzustellen, wie unten dargestellt, visuell die V
 Installation
 ----------------
 
-Es ist einfacher zu diesem Tool unter Cleopatra zu installieren, indem Sie einfach den nachstehenden Befehl,
+Es ist einfacher zu diesem Tool unter ptconfigure zu installieren, indem Sie einfach den nachstehenden Befehl,
  
  
 .. code-block:: bash
  
-	  cleopatra apacheconf install
+	  ptconfigure apacheconf install
 
 After giving the command above, the tool will ask as
 
@@ -67,7 +67,7 @@ Der Screenshot unten angegeben erklärt visuell über die Schritte und Befehle b
 .. code-block:: bash
 
 
- kevell@corp:/# cleopatra apacheconf install
+ kevell@corp:/# ptconfigure apacheconf install
  Install Apache Conf? (Y/N) 
  y
  *******************************

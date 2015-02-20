@@ -31,7 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="IntelliJ" href="gintellij.html" />
     <link rel="prev" title="Hostname" href="ghostname.html" />
 
 
@@ -79,7 +80,7 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 </li>
@@ -110,6 +111,8 @@
                 
   <li><a href="ghostname.html"
          title="Previous Chapter: Hostname">&laquo; Hostname</a></li>
+  <li><a href="gintellij.html"
+         title="Next Chapter: IntelliJ">IntelliJ &raquo;</a></li>
               
             
             
@@ -145,7 +148,7 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 
@@ -162,12 +165,12 @@
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
-<p>Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den Install Module enthalten sind. Der Befehl help Listen aus der alternativen Parameter Install unter Kleopatra-Modul. Es beschreibt auch die Syntax für die Installation. Der Befehl help zur Install Modul ist nachfolgend dargestellt.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra installpackage <span class="nb">help</span>
+<p>Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den Install Module enthalten sind. Der Befehl help Listen aus der alternativen Parameter Install unter ptconfigure-Modul. Es beschreibt auch die Syntax für die Installation. Der Befehl help zur Install Modul ist nachfolgend dargestellt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure installpackage <span class="nb">help</span>
 </pre></div>
 </div>
 <p>Der folgende Screenshot zeigt den vollen Einsatz von Install Modul.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra InstallPackage <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure InstallPackage <span class="nb">help</span>
 
 ******************************
 
@@ -180,23 +183,23 @@
    - dev-client
      install a dev client machine <span class="k">for</span> you to work on, a bunch of IDE<span class="s1">&#39;s, DB&#39;</span>s and a <span class="nb">complete set </span>of the
      tools you need to start work immediately.
-     example: cleopatra install autopilot dev-client
+     example: ptconfigure install autopilot dev-client
 
    - dev-server
      Install the preconfigured list of software <span class="k">for</span> a developers server.
-     example: cleopatra install autopilot dev-server
+     example: ptconfigure install autopilot dev-server
 
    - <span class="nb">test</span>-server
      Install the preconfigured list of software <span class="k">for</span> a testing server.
-     example: cleopatra install autopilot <span class="nb">test</span>-server
+     example: ptconfigure install autopilot <span class="nb">test</span>-server
 
    - build-server
      Install the preconfigured list of software <span class="k">for</span> a build server.
-     example: cleopatra install autopilot <span class="nb">test</span>-server
+     example: ptconfigure install autopilot <span class="nb">test</span>-server
 
    - production
      Install the preconfigured list of software <span class="k">for</span> a production server.
-     example: cleopatra install autopilot <span class="nb">test</span>-server
+     example: ptconfigure install autopilot <span class="nb">test</span>-server
 
 ------------------------------
 End Help
@@ -206,8 +209,8 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Die Installation umfasst die Installation von Install erforderlich, um die Installation in einer aktualisierten Version zu machen. Es ist eine offensichtliche Prozess Install Modul unter Cleopatra installieren. Installpackage um nur mit dem Befehl unten angegeben,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra installpackage Install
+<p>Die Installation umfasst die Installation von Install erforderlich, um die Installation in einer aktualisierten Version zu machen. Es ist eine offensichtliche Prozess Install Modul unter ptconfigure installieren. Installpackage um nur mit dem Befehl unten angegeben,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure installpackage Install
 </pre></div>
 </div>
 <p>Nach beleben den Befehl geben Sie den Wert katechisieren.</p>
@@ -224,7 +227,7 @@ End Help
 <div class="section" id="dev-client">
 <h2>Dev-Client<a class="headerlink" href="#dev-client" title="Permalink to this headline">¶</a></h2>
 <p>Dieser Befehl wird verwendet, um auf eine Reihe von integrierten Entwicklungsumgebung ist, Datenbank und einem kompletten Satz von Werkzeugen, die dem Benutzer müssen sofort mit der Arbeit beginnen zu arbeiten. Mit dem folgenden Befehl für dev Client-Rechner verwendet.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra install autopilot dev-client
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot dev-client
 </pre></div>
 </div>
 <p>Nach der Eingabe wie die oben genannten Befehls es beginnt mit der Installation-Prozess.</p>
@@ -235,8 +238,8 @@ End Help
 </div>
 <div class="section" id="dev-server">
 <h2>Dev-Server<a class="headerlink" href="#dev-server" title="Permalink to this headline">¶</a></h2>
-<p>Dieser Befehl verwendet werden, um vorkonfiguriert Liste von Software für Server eines Entwicklers zu installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig Cleopatra empfiehlt dev-Server mit diesem Befehl.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra install autopilot dev-server
+<p>Dieser Befehl verwendet werden, um vorkonfiguriert Liste von Software für Server eines Entwicklers zu installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig ptconfigure empfiehlt dev-Server mit diesem Befehl.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot dev-server
 </pre></div>
 </div>
 <p>Der Screenshot führt den Benutzer über seine Funktion.</p>
@@ -247,7 +250,7 @@ End Help
 <div class="section" id="test-server">
 <h2>Test-Server<a class="headerlink" href="#test-server" title="Permalink to this headline">¶</a></h2>
 <p>Hier wirkt Autopilot eine wichtige Rolle bei Test-Server. Es verwendet, um die vorkonfigurierte Liste von Software für den Test-Server installieren. Testing-Software zur Verfügung. Der folgende Befehl verwendet werden, um Test-Server zu installieren.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra install autopilot <span class="nb">test</span>-server
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot <span class="nb">test</span>-server
 </pre></div>
 </div>
 <p>Die folgende Schnappschuss zeigt seine Funktionen.</p>
@@ -257,8 +260,8 @@ End Help
 </div>
 <div class="section" id="build-server">
 <h2>Build-Server<a class="headerlink" href="#build-server" title="Permalink to this headline">¶</a></h2>
-<p>Dieser Befehl verwendet werden, um vorkonfiguriert Liste der Software für einen Build-Server installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig Cleopatra empfiehlt Bau-Server mit diesem Befehl.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra install autopilot build-server
+<p>Dieser Befehl verwendet werden, um vorkonfiguriert Liste der Software für einen Build-Server installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig ptconfigure empfiehlt Bau-Server mit diesem Befehl.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot build-server
 </pre></div>
 </div>
 <p>Die folgende Schnappschuss zeigt seine Funktionen.</p>
@@ -268,8 +271,8 @@ End Help
 </div>
 <div class="section" id="herstellung">
 <h2>Herstellung<a class="headerlink" href="#herstellung" title="Permalink to this headline">¶</a></h2>
-<p>Dieser Befehl verwendet werden, um vorkonfiguriert Liste der Software für einen produktiven Server installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig Cleopatra empfiehlt Produktionsserver mit diesem Befehl.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra install autopilot build-server
+<p>Dieser Befehl verwendet werden, um vorkonfiguriert Liste der Software für einen produktiven Server installieren. Autopilot wirkt als eine wichtige Rolle in diesem Prozess. Um herauszufinden, diese Funktionen richtig ptconfigure empfiehlt Produktionsserver mit diesem Befehl.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure install autopilot build-server
 </pre></div>
 </div>
 <p>Die folgende Schnappschuss zeigt seine Funktionen.</p>

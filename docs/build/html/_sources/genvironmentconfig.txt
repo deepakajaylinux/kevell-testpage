@@ -15,32 +15,32 @@ Der Befehl help führt den Anwender über den Zweck des Moduls, seine alternativ
 
 .. code-block:: bash
 
-	cleopatra envconfig help
+	ptconfigure envconfig help
 
- kevell@corp:/# cleopatra envconfig help
+ kevell@corp:/# ptconfigure envconfig help
  ******************************
 
 
  This command is part of a default Module and provides you with a method by which you can
  configure environments for your project from the command line. Currently compliant with
- both Dapperstrano and Cleopatra.
+ both Dapperstrano and ptconfigure.
 
 
  EnvironmentConfig, environmentconfig, environment-config, envconfig, env-config
 
        - list
        List current environments
-       example: cleopatra envconfig list --yes
+       example: ptconfigure envconfig list --yes
 
        - list-local
        List current local environments
-       example: cleopatra envconfig list-local --yes
+       example: ptconfigure envconfig list-local --yes
 
        - configure, config
        Configure bespoke environments for your project to use
-       example: cleopatra envconfig config
+       example: ptconfigure envconfig config
        # below to create an empty environment to add instances to
-       example: cleopatra envconfig config --yes
+       example: ptconfigure envconfig config --yes
                    --keep-current-environments # do not overwrite the current environments stored in papyrusfile
                    --no-manual-servers # so it will not ask you to interactively enter connection details of instances
                    --add-single-environment # otherwise it will loop for more until you specify not to
@@ -49,13 +49,13 @@ Der Befehl help führt den Anwender über den Zweck des Moduls, seine alternativ
 
        - configure-default, config-default
        Configure default environments for your project to use
-       example: cleopatra envconfig config-default
-       example: cleopatra envconfig config-default --yes --environment-name="local-80/local-8080"
+       example: ptconfigure envconfig config-default
+       example: ptconfigure envconfig config-default --yes --environment-name="local-80/local-8080"
 
        - delete, del
        Configure the environments for your project to use
-       example: cleopatra envconfig delete
-       example: cleopatra envconfig del --environment-name="staging"
+       example: ptconfigure envconfig delete
+       example: ptconfigure envconfig del --environment-name="staging"
 
 
  ------------------------------
@@ -71,7 +71,7 @@ Für den Zweck der Konfiguration der Umgebung kann der Benutzer den folgenden Be
 
 .. code-block:: bash
 
-	cleopatra envconfig config
+	ptconfigure envconfig config
 
 Nach der Eingabe des Befehls über die folgenden Operationen erfolgt wie folgt:
 
@@ -108,7 +108,7 @@ Schließlich erhält der Umgebungskonfiguration Erfolg wie in der Abbildung unte
 .. code-block:: bash
 
 
- kevell@corp:/# cleopatra envconfig config
+ kevell@corp:/# ptconfigure envconfig config
 
  *********************************************
  Configure Environments Here? (Y/N)
@@ -141,7 +141,7 @@ Beim Konfigurieren einer Umgebung, wenn der Benutzer wünschen, mit der aktuelle
 .. code-block:: bash
 
 
- cleopatra envconfig config --keep-current-environments
+ ptconfigure envconfig config --keep-current-environments
 
 Nach der Eingabe des Befehls vor, werden dazu aufgefordert, die folgenden Details, wie in der Tabellenform dargestellt:
 
@@ -175,7 +175,7 @@ Der folgende Screenshot bildlich repräsentiert die oben genannten Verfahren
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra envconfig config --keep-current-environments
+ kevell@corp:/# ptconfigure envconfig config --keep-current-environments
  
  Configure Environments Here? (Y/N)
  Y
@@ -199,7 +199,7 @@ Wenn der Benutzer, die Umwelt zu Konfiguration zu löschen muss, können sie geb
 
 .. code-block:: bash
 
-	cleopatra envconfig del --environment-name="kevells"
+	ptconfigure envconfig del --environment-name="kevells"
 
 Der Benutzer kann den Namen der Umgebung, die sie, wie oben gezeigt, die gelöscht werden soll angeben.
 
@@ -226,7 +226,7 @@ Schließlich ist der angegebenen Umgebung gelöscht wird, wie im Screenshot zu s
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra envconfig del --environment-name="kevells"
+ kevell@corp:/# ptconfigure envconfig del --environment-name="kevells"
  Delete Environments Here?
  WARNING: Deleting an environment from papyrus is final. You may be looking for boxify box-destroy instead (Y/N)
  Y
@@ -248,7 +248,7 @@ Wenn der Benutzer die Liste der Details in Bezug auf Umwelt-Konfiguration sehen 
 
 .. code-block:: bash
 
-	cleopatra envconfig list --yes
+	ptconfigure envconfig list --yes
 
 
 Nach der Eingabe des Befehls oben, wird die Ausgabe angezeigt werden, wie im Bild gezeigt
@@ -256,7 +256,7 @@ Nach der Eingabe des Befehls oben, wird die Ausgabe angezeigt werden, wie im Bil
 .. code-block:: bash
 
 
- kevell@corp:/# cleopatra envconfig list --yes
+ kevell@corp:/# ptconfigure envconfig list --yes
  ******************************
 
 

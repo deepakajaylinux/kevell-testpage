@@ -31,7 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="Jmeter" href="gjmeter.html" />
     <link rel="prev" title="JAVA" href="gjava.html" />
 
 
@@ -79,7 +80,7 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 </li>
@@ -105,6 +106,8 @@
                 
   <li><a href="gjava.html"
          title="Previous Chapter: JAVA">&laquo; JAVA</a></li>
+  <li><a href="gjmeter.html"
+         title="Next Chapter: Jmeter">Jmeter &raquo;</a></li>
               
             
             
@@ -140,7 +143,7 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 
@@ -159,11 +162,11 @@ CentOS.</p>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
 <p>Der Befehl help verwalten die Benutzer über den Zweck und als auch über die Möglichkeiten, die in der jenkinssudonopass Modul enthalten sind. Der Befehl help Listen aus der alternativen Parameter jenkinssudonopass. Es beschreibt auch die Syntax für die Verwendung jenkinssudonopass zu Securify. Der Befehl help für jenkinssudonopass ist unten angegeben.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Jenkinssudonopass <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Jenkinssudonopass <span class="nb">help</span>
 </pre></div>
 </div>
 <p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter jenkinssudonopass.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra JenkinsSudoNoPass <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure JenkinsSudoNoPass <span class="nb">help</span>
 ******************************
 
 
@@ -176,7 +179,7 @@ CentOS.</p>
 
        - install
        Installs the Jenkins sudo without password entry
-       example: cleopatra jenkins-sudo-nopass install
+       example: ptconfigure jenkins-sudo-nopass install
 
 ------------------------------
 End Help
@@ -187,26 +190,26 @@ End Help
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Dieser Befehl ermächtigen, jenkins sudo ohne Passworteingabe zu installieren. Wenn der Benutzer die Installation jenkinssudonopass folgendem Befehl führt den Benutzer zu installieren.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra Jenkinssudonopass install
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Jenkinssudonopass install
 </pre></div>
 </div>
 <p>Nachdem Sie diesen Befehl fragt das System Benutzer wünschen. Das andere Verfahren wird die Installation durch den Screenshot.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra jenkinssudonopass install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure jenkinssudonopass install
 Install Sudo w/o Pass <span class="k">for</span> Jenkins User? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
 *        Pharaoh Tools        *
 *         Jenk Sudo Ps        *
 *******************************
-Creating /tmp/cleopatra-temp-script-2682022801.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-2682022801.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-2682022801.sh Permissions
-Executing /tmp/cleopatra-temp-script-2682022801.sh
+Creating /tmp/ptconfigure-temp-script-2682022801.sh
+chmod <span class="m">755</span> /tmp/ptconfigure-temp-script-2682022801.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-2682022801.sh Permissions
+Executing /tmp/ptconfigure-temp-script-2682022801.sh
 The following will be written to /etc/sudoers
 Please check <span class="k">if</span> it looks wrong
 It may <span class="nb">break </span>your system <span class="k">if</span> wrong !!!
 jenkins <span class="nv">ALL</span><span class="o">=</span>NOPASSWD: ALL
-Temp File /tmp/cleopatra-temp-script-2682022801.sh Removed
+Temp File /tmp/ptconfigure-temp-script-2682022801.sh Removed
 ... All <span class="k">done</span>!
 *******************************
 Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more

@@ -31,7 +31,8 @@
     <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
-    <link rel="up" title="Cleopatra" href="gcleopatra_main.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="Firewall" href="gfirewall.html" />
     <link rel="prev" title="FireFox24" href="gfirefox24.html" />
 
 
@@ -79,7 +80,7 @@
      data-toggle="dropdown">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
     ><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 </li>
@@ -105,6 +106,8 @@
                 
   <li><a href="gfirefox24.html"
          title="Previous Chapter: FireFox24">&laquo; FireFox24</a></li>
+  <li><a href="gfirewall.html"
+         title="Next Chapter: Firewall">Firewall &raquo;</a></li>
               
             
             
@@ -140,7 +143,7 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="gcleopatra_main.html">Cleopatra</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
 </ul>
 </ul>
 
@@ -158,7 +161,7 @@
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
 <p>Dieser Befehl kann über die Ziele und Befehle unter Firefox33 Modul funktionieren. Es erklärt auch den Befehl zum firefox33 installieren. Vor der Installation kann der Benutzer lesen diese Hilfe Befehl erklärt seine Funktion.</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra firefox33 <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure firefox33 <span class="nb">help</span>
 </pre></div>
 </div>
 <p>Das folgende Bild hilft Ihnen auch dieses Modul genau verstehen.</p>
@@ -166,7 +169,7 @@
 </pre></div>
 </div>
 <p>The following image also helps you to understand this module clearly.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra Firefox33 <span class="nb">help</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Firefox33 <span class="nb">help</span>
 ******************************
 
 
@@ -176,7 +179,7 @@
 
        - install
        Installs the latest version of Firefox 33
-       example: cleopatra firefox33 install
+       example: ptconfigure firefox33 install
 
 ------------------------------
 End Help
@@ -186,31 +189,31 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Es ist eine eklatante Prozess firefox17 Modul unter Cleopatra von nur mit dem Befehl unten angegeben zu installieren,</p>
-<div class="highlight-bash"><div class="highlight"><pre>cleopatra firefox33 install
+<p>Es ist eine eklatante Prozess firefox17 Modul unter ptconfigure von nur mit dem Befehl unten angegeben zu installieren,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure firefox33 install
 </pre></div>
 </div>
 <p>After key in the command, it can asks</p>
 <p>Install firefox33?(Y/N)</p>
 <p>In case the user input as Y, it can install firefox33 from the package. Else, it can exit the screen. The following screen shots can explain it.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra Firefox33 install
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Firefox33 install
 Install Firefox 33? <span class="o">(</span>Y/N<span class="o">)</span>
 Y
 *******************************
 *        Pharaoh Tools        *
 *          Firefox <span class="m">33</span>         *
 *******************************
-Creating /tmp/cleopatra-temp-script-5246928428.sh
-chmod <span class="m">755</span> /tmp/cleopatra-temp-script-5246928428.sh 2&gt;/dev/null
-Changing /tmp/cleopatra-temp-script-5246928428.sh Permissions
-Executing /tmp/cleopatra-temp-script-5246928428.sh
+Creating /tmp/ptconfigure-temp-script-5246928428.sh
+chmod <span class="m">755</span> /tmp/ptconfigure-temp-script-5246928428.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-5246928428.sh Permissions
+Executing /tmp/ptconfigure-temp-script-5246928428.sh
 Cloning into <span class="s1">&#39;firefox33&#39;</span>...
 remote: Counting objects: 79, <span class="k">done</span>.
 Unpacking objects:  81% <span class="o">(</span>64/79<span class="o">)</span>
 remote: Total <span class="m">79</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
 Unpacking objects: 100% <span class="o">(</span>79/79<span class="o">)</span>, <span class="k">done</span>.
 Checking connectivity... <span class="k">done</span>.
-Temp File /tmp/cleopatra-temp-script-5246928428.sh Removed
+Temp File /tmp/ptconfigure-temp-script-5246928428.sh Removed
 Program Executor Deleted <span class="k">if</span> existed
 ... All <span class="k">done</span>!
 *******************************
@@ -233,8 +236,8 @@ Installer Finished
 <colgroup>
 <col width="21%" />
 <col width="35%" />
-<col width="13%" />
-<col width="31%" />
+<col width="12%" />
+<col width="32%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameter</th>
@@ -244,21 +247,21 @@ Installer Finished
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>cleopatra firefox33
+<tr class="row-even"><td>ptconfigure firefox33
 Install? (Y/N)</td>
 <td>Anstelle der Verwendung firefox33 wir
 verwenden können, ff33, Firefox33</td>
 <td>Y(Yes)</td>
 <td>System startet Installation Under
-cleopatra</td>
+ptconfigure</td>
 </tr>
-<tr class="row-odd"><td>cleopatra firefox33
+<tr class="row-odd"><td>ptconfigure firefox33
 Install? (Y/N)</td>
 <td>Anstelle der Verwendung firefox33 wir
 verwenden können, ff33, Firefox33</td>
 <td>N(No)</td>
 <td>Das System stoppt den
-Installationsprozess Under cleopatra|</td>
+Installationsprozess Under ptconfigure|</td>
 </tr>
 </tbody>
 </table>

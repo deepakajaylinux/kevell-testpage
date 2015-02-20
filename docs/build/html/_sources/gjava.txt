@@ -14,13 +14,13 @@ Der Befehl help führt den Anwender über den Zweck und als auch über die Mögl
 
 .. code-block:: bash
 
-		cleopatra Java help
+		ptconfigure Java help
 
 Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Java-Modul.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra java help
+ kevell@corp:/# ptconfigure java help
  ******************************
 
 
@@ -31,7 +31,7 @@ Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein
         - install
         Installs a version of Oracle Java JDK 1.7. It will also configure java,
         javac and javaws to be provided by the new Oracle version.
-        example: cleopatra java17 install
+        example: ptconfigure java17 install
 
  ------------------------------
  End Help
@@ -44,7 +44,7 @@ Installation der Oracle-Version von Java JDK 1.7 auf die Benutzer-Maschine kann 
 
 .. code-block:: bash
 	
-		cleopatra Java install
+		ptconfigure Java install
 
 Nach der Eingabe des Befehls oben, passiert folgendes Verfahren im Tabellenformat angezeigt.
 

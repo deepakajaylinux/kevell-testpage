@@ -16,13 +16,13 @@ Der Befehl help verwalten die Benutzer 체ber den Zweck und als auch 체ber die M�
 
 .. code-block:: bash
 
-		cleopatra Jenkinssudonopass help
+		ptconfigure Jenkinssudonopass help
 
 Die Syntax f체r die Deklaration den Befehl help ist nicht case sensitive was ein zus채tzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter jenkinssudonopass.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra JenkinsSudoNoPass help
+ kevell@corp:/# ptconfigure JenkinsSudoNoPass help
  ******************************
 
 
@@ -35,7 +35,7 @@ Die Syntax f체r die Deklaration den Befehl help ist nicht case sensitive was ein
 
         - install
         Installs the Jenkins sudo without password entry
-        example: cleopatra jenkins-sudo-nopass install
+        example: ptconfigure jenkins-sudo-nopass install
 
  ------------------------------
  End Help
@@ -48,28 +48,28 @@ Dieser Befehl erm채chtigen, jenkins sudo ohne Passworteingabe zu installieren. W
 
 .. code-block:: bash
 
-                cleopatra Jenkinssudonopass install
+                ptconfigure Jenkinssudonopass install
 
 Nachdem Sie diesen Befehl fragt das System Benutzer w체nschen. Das andere Verfahren wird die Installation durch den Screenshot.
 
 .. code-block:: bash
 
- kevell@corp:/# cleopatra jenkinssudonopass install
+ kevell@corp:/# ptconfigure jenkinssudonopass install
  Install Sudo w/o Pass for Jenkins User? (Y/N) 
  Y
  *******************************
  *        Pharaoh Tools        *
  *         Jenk Sudo Ps        *
  *******************************
- Creating /tmp/cleopatra-temp-script-2682022801.sh
- chmod 755 /tmp/cleopatra-temp-script-2682022801.sh 2>/dev/null
- Changing /tmp/cleopatra-temp-script-2682022801.sh Permissions
- Executing /tmp/cleopatra-temp-script-2682022801.sh
+ Creating /tmp/ptconfigure-temp-script-2682022801.sh
+ chmod 755 /tmp/ptconfigure-temp-script-2682022801.sh 2>/dev/null
+ Changing /tmp/ptconfigure-temp-script-2682022801.sh Permissions
+ Executing /tmp/ptconfigure-temp-script-2682022801.sh
  The following will be written to /etc/sudoers
  Please check if it looks wrong
  It may break your system if wrong !!!
  jenkins ALL=NOPASSWD: ALL
- Temp File /tmp/cleopatra-temp-script-2682022801.sh Removed
+ Temp File /tmp/ptconfigure-temp-script-2682022801.sh Removed
  ... All done!
  *******************************
  Thanks for installing , visit www.pharaohtools.com for more
