@@ -58,9 +58,10 @@ Das Spiel mit ptconfigure -Module
    gjava
    gjenkinssudonopass
    gjmeter
-   
-
-
+   gmysqltools  
+   gnagiosserver
+   gnetbeans
+   gnetworktools
 
 
 

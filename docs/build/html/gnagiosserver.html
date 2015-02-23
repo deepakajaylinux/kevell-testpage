@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Jmeter &mdash; KEVELL 0.1 documentation</title>
+    <title>NagiosServer &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
     <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
-    <link rel="next" title="MysqlTools" href="gmysqltools.html" />
-    <link rel="prev" title="JenkinsSudoNoPass" href="gjenkinssudonopass.html" />
+    <link rel="next" title="NetBeans" href="gnetbeans.html" />
+    <link rel="prev" title="MysqlTools" href="gmysqltools.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -88,10 +88,11 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Jmeter</a><ul>
+<li><a class="reference internal" href="#">NagiosServer</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#optionen">Optionen</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
 </li>
@@ -103,10 +104,10 @@
             
               
                 
-  <li><a href="gjenkinssudonopass.html"
-         title="Previous Chapter: JenkinsSudoNoPass">&laquo; JenkinsSudoNoPas...</a></li>
   <li><a href="gmysqltools.html"
-         title="Next Chapter: MysqlTools">MysqlTools &raquo;</a></li>
+         title="Previous Chapter: MysqlTools">&laquo; MysqlTools</a></li>
+  <li><a href="gnetbeans.html"
+         title="Next Chapter: NetBeans">NetBeans &raquo;</a></li>
               
             
             
@@ -114,7 +115,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/gjmeter.txt"
+  <a href="_sources/gnagiosserver.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -151,31 +152,31 @@
     <div class="col-md-9">
       
   
-  <div class="section" id="jmeter">
-<h1>Jmeter<a class="headerlink" href="#jmeter" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="nagiosserver">
+<h1>NagiosServer<a class="headerlink" href="#nagiosserver" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>Dieses Modul befasst sich mit der Installation der jmeter mit der aktualisierten Version. JMeter kann als Unit-Test-Tool für die JDBC-Datenbankverbindungen, FTP, LDAP, Web-Services, JMS, HTTP, generischen TCP-Verbindungen und OS Mutter Prozessen verwendet werden. Wir wollen sehen, wie dieses Modul hilft dem Anwender bei der Installation und Verwendung des Jmeter.</p>
+<p>Nagios ist ein Open-Source-Computersystemüberwachung, Netzwerküberwachung und Infrastruktur-Monitoring-Software-Anwendung. Nagios bietet Monitoring und Alerting Services für Server, Switches, Anwendungen und Dienste. Es warnt den Benutzer, wenn etwas schief geht und warnt sie ein zweites Mal, wenn das Problem behoben wurde.</p>
+<p>Nagios, ursprünglich unter dem Namen Nagios erstellt wurde geschrieben und wird derzeit von Ethan Galstad zusammen mit einer Gruppe von Entwicklern, die aktiv die Aufrechterhaltung sowohl der offiziellen und inoffiziellen Plugins erhalten. Nagios wurde ursprünglich entwickelt, um unter Linux laufen, sondern auch läuft gut auf anderen Unix-Varianten. Es ist freie Software unter den Bedingungen der GNU General Public License Version 2, wie von der Free Software Foundation veröffentlicht, lizenziert.</p>
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
-<p>Der Befehl help führt den Anwender über den Zweck und als auch über die Möglichkeiten, die in der Jmeter Modul enthalten sind. Es listet einige der alternativen Parameter jmeter Modul. Es beschreibt auch die Syntax für die Installation des jmeter Moduls. Der Befehl help für jmeter Modul wird wie unten dargestellt.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure Jmeter <span class="nb">help</span>
+<p>Dieser Befehl hilft, den Einsatz von Nagios Modul zu bestimmen. Der Benutzer wird kommen, um über die andere Art und Weise / Format um dieses Modul ausführen kennen. Dieser Befehl leitet den Anwender, um den Zweck dieses Befehls kennen. Da unten sind die Kommando- und der Screenshot der gleiche.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure nagios <span class="nb">help</span>
 </pre></div>
 </div>
-<p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Jmeter.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Jmeter <span class="nb">help</span>
-
+<p>Die bildliche Screenshot der obigen Befehl aufgelistet unten,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# cleopatra nagios <span class="nb">help</span>
 ******************************
 
 
- This <span class="nb">command </span>allows you to update Jmeter.
+ This <span class="nb">command </span>is part of Core and provides you with a method by which you can install Nagios.
 
- Jmeter, jmeter
+ NagiosServer, nagios-server, nagiosserver, nagios
 
        - install
-       Installs the latest version of Jmeter
-       example: ptconfigure jmeter install
+       Installs Nagios Network Monitoring Server
+       example: ptconfigure nagios-server install
 
 ------------------------------
 End Help
@@ -185,70 +186,106 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Der Befehl zum Installieren der jmeter im Benutzer Maschine verwendet wird unten dargestellt:</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure jmeter install
+<p>Dieser Befehl hilft bei der Installation des Nagios-in-System. Die unten angegebenen Befehl wird den Prozess der Installation auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure nagios install
 </pre></div>
 </div>
-<p>Nach der Eingabe des Befehls oben, passiert folgendes Verfahren im Tabellenformat angezeigt.</p>
+<p>Die bildliche Darstellung der obigen Befehl aufgelistet unten,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure nagios-server install
+
+Install Nagios Server? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*         Nagios Server!        *
+*******************************
+E: Unable to correct problems, you have held broken packages.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or <span class="k">if</span> you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may <span class="nb">help </span>to resolve the situation:
+
+The following packages have unmet dependencies:
+nagios3 : Depends: nagios3-core <span class="o">(=</span> 3.2.3-3ubuntu1<span class="o">)</span> but it is not going to be installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package nagios3 from the Packager Apt did not execute correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+NagiosServer: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="optionen">
+<h2>Optionen<a class="headerlink" href="#optionen" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="18%" />
-<col width="31%" />
-<col width="12%" />
-<col width="39%" />
+<col width="22%" />
+<col width="38%" />
+<col width="10%" />
+<col width="30%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Parameters</th>
+<tr class="row-odd"><th class="head">Parameter</th>
 <th class="head">Alternative Parameter</th>
-<th class="head">Optionen</th>
+<th class="head">Option</th>
 <th class="head">Kommentare</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install Jmeter? (Y/N)</td>
-<td>anstelle von jmeter, wir verwenden
-können, Jmeter also.</td>
+<tr class="row-even"><td>ptconfigure nagiosserver
+Install</td>
+<td><p class="first">Es gibt vier alternative Parameter, die in der
+Befehlszeile verwendet werden können.
+NagiosServer, nagios-server, nagiosserver,
+nagios Eg: ptconfigure nagios install/</p>
+<blockquote class="last">
+<div>ptconfigure nagiosserver install</div></blockquote>
+</td>
 <td>Y(Yes)</td>
-<td>Wenn der Benutzer wünschen, den
-Installationsprozess können sie als Eingangs
-gehen Y.</td>
+<td>System startet Installation</td>
 </tr>
-<tr class="row-odd"><td>Install Jmeter? (Y/N)</td>
-<td>anstelle von jmeter, wir verwenden
-können, Jmeter also.</td>
+<tr class="row-odd"><td>ptconfigure nagiosserver
+Install</td>
+<td><p class="first">Es gibt vier alternative Parameter, die in der
+Befehlszeile verwendet werden können.
+NagiosServer, nagios-server, nagiosserver,
+nagios Eg: ptconfigure nagios install/</p>
+<blockquote class="last">
+<div>ptconfigure nagiosserver install|</div></blockquote>
+</td>
 <td>N(No)</td>
-<td>Wenn der Benutzer wünschen, den
-Installationsprozess können sie Eingabe als
-beendet N.|</td>
+<td>Das System stoppt den
+Installationsprozess</td>
 </tr>
 </tbody>
 </table>
-<p>Wenn der Benutzer geht der Installation, während des Prozesses der Anlage wird in den folgenden Listen beschrieben:</p>
-<ul class="simple">
-<li>Baut die Abhängigkeitsstruktur.</li>
-<li>Liest den Status Informationen.</li>
-<li>Liste outs die Pakete, die automatisch installiert werden.</li>
-<li>Liste outs die neuen Pakete installieren.</li>
-<li>Details über die Anzahl der Dateien aktualisiert, neu installiert, entfernt und nicht aktualisiert.</li>
-<li>Liest die Paketliste und zeigt die Liste der Verpackung, die bereits installiert sind.</li>
-</ul>
-<p>Der folgende Screenshot zeigt bildhaft die oben beschriebene Prozess der Installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>
-</pre></div>
-</div>
 </div>
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Die in Hilfe und Installation verwendet muss nicht beachtet werden, welche ein zusätzlicher Vorteil ist, während im Vergleich zu anderen
-Parametern.</li>
-<li>Es ist gut-to-do sowohl Ubuntu und sowie Cent OS.</li>
-<li>Dies wird Modul installiert die Jmeter in aktualisierte Version.</li>
-<li>Wenn das Modul bereits in der Benutzermaschine vorhandene es wird eine Meldung angezeigt werden, da sie bereits vorhanden sind.</li>
-<li>JMeter unterstützt variable Parametrierung, Behauptungen (Antwort Validierung), pro Thema Cookies, Konfigurationsvariablen und eine
-Vielzahl von Berichte.</li>
-<li>Off-Site-Entwickler können leicht erweitern JMeter mit benutzerdefinierten Plugins.</li>
+<li>Überwachung von Netzwerkdiensten (SMTP, POP3, HTTP, NNTP, ICMP, SNMP, FTP, SSH)</li>
+<li>Überwachung von Host-Ressourcen (Prozessorlast, Plattennutzung, Systemprotokolle) auf einem Großteil der Netzwerkbetriebssystemen, darunter
+Microsoft Fenster mit der NSClient ++ Plugin oder Prüfen MK.</li>
+<li>Überwachung der noch etwas wie Sonden (Temperatur, Alarme, etc.), Die in der Lage, die gesammelten Daten über ein Netzwerk zu senden sind</li>
 </ul>
+<p>&nbsp;&nbsp;speziell geschrieben Plugins
+* Überwachung via remote ausführen Skripte über Nagios Remote-Plugin Executor
+* Fernüberwachung über SSH oder SSL-verschlüsselte Tunnel unterstützt.
+* Ein einfaches Plugin-Design, die Benutzer auf einfache Weise entwickeln ihre eigene Service-Prüfungen je nach Bedarf, indem sie ihre</p>
+<blockquote>
+<div>Werkzeuge der Wahl (Shell-Skripte, C ++, Perl, Ruby, Python, PHP, C #, etc.) erlaubt</div></blockquote>
 </div>
 </div>
 
@@ -308,8 +345,8 @@ Vielzahl von Berichte.</li>
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gjmeter.rst">
-          Jmeter
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gnagiosserver.rst">
+          NagiosServer
         </a> on GitHub.
       </li>
 
