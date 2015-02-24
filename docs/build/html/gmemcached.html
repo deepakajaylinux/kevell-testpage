@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Memcached &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="Minify" href="gminify.html" />
+    <link rel="prev" title="MediaTools" href="gmediatools.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Memcached</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#funktionen-des-memcached">Funktionen des Memcached</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gmediatools.html"
+         title="Previous Chapter: MediaTools">&laquo; MediaTools</a></li>
+  <li><a href="gminify.html"
+         title="Next Chapter: Minify">Minify &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gmemcached.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="memcached">
+<h1>Memcached<a class="headerlink" href="#memcached" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Der Hauptaspekt dieses Moduls ist für die Installation und Aktualisierung der memcache mit der neuesten Version.
+Memcached ist ein Mehrzweck-Distributed-Memory-Caching-System. Es wird häufig verwendet, um durch die Zwischenspeicherung von Daten und Objekten im Arbeitsspeicher, um die Anzahl, wie oft eine externe Datenquelle (wie zB einer Datenbank oder API) hinausgehen, darf gelesen werden beschleunigen dynamische Datenbank-gestützte Websites.</p>
+<p>Memcached ist kostenlos und Open-Source-Software unterliegt den Bestimmungen des revidierten BSD-Lizenz. [2] Memcached läuft auf Unix-ähnlichen (zumindest unter Linux und OS X) Betriebssysteme und für Microsoft Windows. Es gibt eine strikte Abhängigkeit von libevent.</p>
+<p>Lassen Sie uns über den Prozess der Installation und Verwendung dieses Moduls im kommenden Themen sehe</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help führt den Anwender über den Zweck und als auch über die Möglichkeiten, die in der Memcached-Modul enthalten sind. Es listet einige der alternativen Parameter der Memcached-Modul. Es beschreibt auch die Syntax für die Installation des Memcached Moduls. Der Befehl help für Memcached-Modul ist wie unten dargestellt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure  Memcached <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Memcached.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Memcached <span class="nb">help</span>
+
+******************************
+
+
+ This <span class="nb">command </span>allows you to update Memcached.
+
+ Memcached, memcached
+
+       - install
+       Installs the latest version of memcache
+       example: ptconfigure  memcached install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+<p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Memcached.
+Nach der Eingabe des Befehls oben, passiert folgendes Verfahren im Tabellenformat angezeigt.</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="20%" />
+<col width="35%" />
+<col width="11%" />
+<col width="34%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Alternative Parameter</th>
+<th class="head">Optionen</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install Memcached? (Y/N)</td>
+<td>Statt of memcached wir verwenden können,
+Memcached also.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer wünschen, den
+Installationsprozess können sie
+Eingang als Y gehen</td>
+</tr>
+<tr class="row-odd"><td>Install Memcached? (Y/N)</td>
+<td>Statt of memcached wir verwenden können,
+Memcached also.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer wünschen, den
+Installationsprozess können sie
+Eingang als N. beenden|</td>
+</tr>
+</tbody>
+</table>
+<p>Der folgende Screenshot kann Ihnen eine bildliche Darstellung in Bezug auf den Prozess der Installation.</p>
+</div>
+<div class="section" id="funktionen-des-memcached">
+<h2>Funktionen des Memcached<a class="headerlink" href="#funktionen-des-memcached" title="Permalink to this headline">¶</a></h2>
+<p>Während der Verwendung des Memcached kann der Prozess zu lesen und umzusetzen, die folgenden Funktionen, die im memcached enthalten sind,</p>
+<ul class="simple">
+<li>Memcache :: hinzufügen - Setzen Sie einen Artikel auf den Server</li>
+<li>Memcache :: addServer - zum Verbindungspool hinzufügen Memcached Server</li>
+<li>Memcache :: close - Close Memcached-Server-Verbindung</li>
+<li>Memcache :: connect - Offene Memcached-Server-Verbindung</li>
+<li>Memcache :: Dekrement - Wert Decrement Elements</li>
+<li>Memcache :: löschen - Los Löschen vom Server</li>
+<li>Memcache :: flush - alle vorhandenen Einträge auf dem Server</li>
+<li>Memcache :: get - abrufen Artikel vom Server</li>
+<li>Memcache :: getExtendedStats - Holen Sie Statistiken für alle Server im Pool</li>
+<li>Memcache :: GetServerStatus - Gibt den Serverstatus</li>
+<li>Memcache :: getStats - Get Statistiken des Servers</li>
+<li>Memcache :: getVersion - Return Version des Servers</li>
+<li>Memcache :: Schritt - Wert Schrittweite Elements</li>
+<li>Memcache :: pconnect - Offene Memcached Server persistente Verbindung</li>
+<li>Memcache :: ersetzen - Wert der bestehenden Artikel ersetzen</li>
+<li>Memcache :: set - Speichern Sie Daten auf dem Server</li>
+<li>Memcache :: setCompressThreshold - Aktivieren Sie die automatische Komprimierung von großen Werten</li>
+<li>Memcache :: setServerParams - Änderungen Server Parameter und Status zur Laufzeit</li>
+</ul>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Die in Hilfe und Installation verwendet muss nicht beachtet werden, welche ein zusätzlicher Vorteil ist, während im Vergleich zu anderen
+Parametern.</li>
+<li>Es ist gut-to-do sowohl Ubuntu und sowie Cent OS.</li>
+<li>Dies wird Modul installiert die Memcached in aktualisierte Version.</li>
+<li>Wenn das Modul bereits in der Benutzermaschine vorhandene es wird eine Meldung angezeigt werden, da sie bereits vorhanden sind.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gmemcached.rst">
+          Memcached
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

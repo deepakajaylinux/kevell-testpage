@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PharaohTools &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="PHPAPC" href="gphpapc.html" />
+    <link rel="prev" title="Phake" href="gphake.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">PharaohTools</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#dafur-sorgen">Dafür Sorgen</a></li>
+<li><a class="reference internal" href="#ptdeploy">Ptdeploy</a></li>
+<li><a class="reference internal" href="#pttest">Pttest</a></li>
+<li><a class="reference internal" href="#jrush">Jrush</a></li>
+<li><a class="reference internal" href="#paypal-logo">PayPal-Logo</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gphake.html"
+         title="Previous Chapter: Phake">&laquo; Phake</a></li>
+  <li><a href="gphpapc.html"
+         title="Next Chapter: PHPAPC">PHPAPC &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gpharaohtools.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="pharaohtools">
+<h1>PharaohTools<a class="headerlink" href="#pharaohtools" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Die Pharao-Tool Modul unterstützt in der Installierung ptdeploy, pttest, Jrush, Erzeugung ptconfigure Berichte. Es ermöglicht den Benutzern, die Verfügbarkeit, bevor Anlagen zu gewährleisten. Nur fehlende Module gezielt eingebaut werden.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help führt den Anwender dazu, wie Sie den Einsatz dieser speziellen Modul unter ptconfigure machen.</p>
+<p>Es machen sie zudem Kenntnis von den Optionen, die zu diesem speziellen Modul durchgeführt werden können.</p>
+<p>Der Screenshot siehe unten gibt Ihnen eine bildliche Darstellung über die Nutzung der Befehl help</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure PharaohTools <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to install the Pharaoh Tools which are ready. These include
+ ptconfigure - this Configuration Management tool, ptdeploy- the Automated Deployment tool,  andpttest, the <span class="nb">test </span>configuration and automation tool.
+
+ PharaohTools, pharaohtools, pharaoh-tools
+
+       - install
+       Installs the latest version of all of the Pharaoh Tools
+       example: ptconfigure pharaoh-tools install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Der Pharao Werkzeugmodul dient als kürzere Route, die Installation von Dapperstrano, Testingamen, Jrush umhüllt. Wenn eines bestimmten Moduls ist unter den drei fehlt, wird der spezifische Modul alleine installiert werden, ein zusätzlicher Vorteil ist. Die sicherzustellen Verfahren spielt eine wichtige Rolle in erregenden Daten bezüglich der Verfügbarkeit von Modulen.</p>
+<p>Der Befehl für die Installation unter dem Pharao Werkzeug verwendet wird unten gegeben,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure pharaoh-tools install
+</pre></div>
+</div>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="27%" />
+<col width="29%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Verfügbare Eingabemöglichkeiten</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install Pharaoh Tools? (Y/N)</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer Wunsch, mit Installation
+fortzusetzen, können sie Eingang als Y</td>
+</tr>
+<tr class="row-odd"><td>Install Pharaoh Tools? (Y/N)</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer wünschen, um die Installation
+zu beenden, sie einfach mit N verlassen können|</td>
+</tr>
+</tbody>
+</table>
+<p>Bei der Installation des Pharao Werkzeug die folgenden Schritte erfolgt:</p>
+</div>
+<div class="section" id="dafur-sorgen">
+<h2>Dafür Sorgen<a class="headerlink" href="#dafur-sorgen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Der Pharao-Tool sorgt für die zur Verfügung stehenden Module.</li>
+<li>Während die Gewährleistung, es wird nicht zu den Versionen überprüfen.</li>
+</ul>
+</div>
+<div class="section" id="ptdeploy">
+<h2>Ptdeploy<a class="headerlink" href="#ptdeploy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Das Modul Ptdeploy meldet sich als angebracht, für den Fall der Existenz.</li>
+<li>Es überprüft auch die Version für Ptdeploy Modul.</li>
+<li>Wenn die Ptdeploy Modul ist in der Maschine nicht zur Verfügung, so wird automatisch Ptdeploy fortschreiten, um zu installieren.</li>
+</ul>
+</div>
+<div class="section" id="pttest">
+<h2>Pttest<a class="headerlink" href="#pttest" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Nach einer Installation Ptdeploy sie gewährleisten die pttest Moduls.</li>
+<li>Das Modul Pttestreports sich als angebracht, für den Fall der Existenz.</li>
+<li>Wenn die Pttest Modul ist in der Maschine nicht zur Verfügung, so wird automatisch Pttest fortschreiten, um zu installieren.</li>
+</ul>
+</div>
+<div class="section" id="jrush">
+<h2>Jrush<a class="headerlink" href="#jrush" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Nach einer Installation pttest wird dadurch sichergestellt, das Jrush Moduls.</li>
+<li>Das Modul Jrush meldet sich als angebracht, für den Fall der Existenz.</li>
+<li>Wenn die Jrush Modul ist in der Maschine nicht zur Verfügung, so wird automatisch Jrush fortschreiten, um zu installieren.</li>
+</ul>
+<p>Wenn alle drei Module sind bereits vorhanden, dann wird es außergewöhnliche Meldung wie im Screenshot unten angegeben,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure pharaoh-tools install
+
+Install Pharaoh Tools? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         Pharaoh Tools        *
+*******************************
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module ptdeploy reports itself as Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module pttest reports itself as Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module ptconfigure reports itself as Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module JRush reports itself as Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+******************************
+
+Single App Installer:
+--------------------------------------------
+PharaohTools: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="paypal-logo">
+<h2>PayPal-Logo<a class="headerlink" href="#paypal-logo" title="Permalink to this headline">¶</a></h2>
+<p>Während der Installation von Ptdeploy Pttest werden Jrush Sie folgende Optionen bei Eingabe durch den Benutzer erforderlich. Wir wollen sehen, über die zusätzlichen Optionen, die von den Benutzern festgelegt werden können, wenn sie wollen, ist vertreten in tabellarischer Form wie unten dargestellt.</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="23%" />
+<col width="26%" />
+<col width="14%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Weg</th>
+<th class="head">Option</th>
+<th class="head">Bemerkung</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Program data directory
+(Default)</td>
+<td>&#8220;/opt/pttest (entsprechendes
+Modul)”</td>
+<td>Yes</td>
+<td>Wenn der Benutzer die Installation mit dem
+Standard-Programm-Daten-Verzeichnis gehen sie
+eingeben kann als Ja</td>
+</tr>
+<tr class="row-odd"><td>Program data directory</td>
+<td>User specific</td>
+<td>No(End slash)</td>
+<td>Wenn der Benutzer mit ihren eigenen
+Programmdatenverzeichnis fortfahren möchten,
+können sie Eingang als N, und in die Hand geben
+sie Ort besitzen.</td>
+</tr>
+<tr class="row-even"><td>Program executor directory
+(Default)</td>
+<td>“/usr/bin”</td>
+<td>Yes</td>
+<td>Wenn der Benutzer die Installation mit dem
+Standardprogramm Testamentsvollstrecker
+Verzeichnis gehen sie eingeben kann als Ja</td>
+</tr>
+<tr class="row-odd"><td>Program executor directory</td>
+<td>User specific</td>
+<td>No(End Slash)</td>
+<td>Wenn der Benutzer wünschen, mit ihrem eigenen
+Programm Testamentsvollstrecker Verzeichnis
+gehen, können sie Eingang als N, und in die
+Hand geben sie Ort besitzen|</td>
+</tr>
+</tbody>
+</table>
+<p>Während der Installation wird die Lage von git clone angeben, zeigt die Anzahl der Objekte, Aufnahme von Gegenständen, die Lösung Deltas, Konnektivität.</p>
+<p>Der folgende Screenshot erklärt grafisch über den Prozess der Installation des Pharao Werkzeug beteiligt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure pharaoh-tools install
+Install Pharaoh Tools? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         Pharaoh Tools        *
+*******************************
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module Ptdeploy reports itself as Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module pttest reports itself as Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module ptconfigure reports itself as Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Ensure module install is not checking versions
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Module JRush reports itself as Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Not installing as already installed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+PharaohTools: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Es ermöglicht den Nutzern, vor der Installation zu gewährleisten.</li>
+<li>Bei einem bestimmten Modul fehlt, kann der Nutzer gehen, dass bestimmte Modul alleine zu installieren.</li>
+<li>Der Benutzer kann seine eigenen Pfad oder Speicherort für die Programmdatenverzeichnis und Vollstrecker Verzeichnis angeben.</li>
+<li>Wenn ein bestimmtes Modul in der Maschine bereits vorhanden ist, wird das Installationswerkzeug eine Ausnahmemeldung werfen, da es bereits</li>
+</ul>
+<p>&nbsp; installiert.</p>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gpharaohtools.rst">
+          PharaohTools
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

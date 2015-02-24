@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Mysqlserver &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="NagiosServer" href="gnagiosserver.html" />
+    <link rel="prev" title="MysqlTools" href="gmysqltools.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Mysqlserver</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#der-befehl-help">Der Befehl help</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#wahrend-der-installation-wird-der-folgende-prozess">Während der Installation wird der folgende Prozess</a></li>
+<li><a class="reference internal" href="#zusatzliche-optionen">Zusätzliche Optionen</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gmysqltools.html"
+         title="Previous Chapter: MysqlTools">&laquo; MysqlTools</a></li>
+  <li><a href="gnagiosserver.html"
+         title="Next Chapter: NagiosServer">NagiosServer &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gmysqlserver.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="mysqlserver">
+<h1>Mysqlserver<a class="headerlink" href="#mysqlserver" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Modul fungiert als Vermittler, um MySQL-Server mit der aktualisierten Version über apt-get install. Wenn der MySQL-Server in Ihrer Maschine bereits vorhanden ist, wird es überprüft die Verfügbarkeit der neu aktualisierte Modul.</p>
+</div>
+<div class="section" id="der-befehl-help">
+<h2>Der Befehl help<a class="headerlink" href="#der-befehl-help" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help führt den Anwender in Bezug auf die Methodik in der Nutzung sowie über die Maßnahmen, die im Rahmen dieser Module durchgeführt werden können. Es beschreibt auch die alternative Namen für die mysql-server. Der Befehl für die Verwendung von Hilfe-Option ist unten angegeben</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure  mysql-server <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Dieser Befehl erlaubt den Benutzern, sich seiner Aufgabe und auch über den Befehl für die Installation der MySQL-Server verwendet wird.</p>
+<p>Der Screenshot unten angegeben eine bildliche Darstellung über den Befehl Hilfe.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure  MysqlServer <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to install the MySQL Server. Currently only
+ Mysql Workbench, the Database management GUI provided by Oracle <span class="k">for</span>
+ Mysql.
+
+ MysqlServer, mysql-server, mysqlserver
+
+       - install
+       Install some Mysql Server Tools through apt-get.
+       example: ptconfigure  mysql-server install
+
+ Notes, during mysql install a root password will be set. First, it<span class="s1">&#39;ll look</span>
+<span class="s1"> for the parameter --mysql-root-pass, if this is not set, it&#39;</span>ll look in the
+ ptconfigure  config <span class="k">for</span> a mysql-default-root-pass setting, and failing both of
+ those it will just <span class="nb">set </span>the password <span class="k">for</span> root to ptconfigure .
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl für die Installation der MySQL-Server verwendet, wird unten gegeben.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure  mysql-server install
+</pre></div>
+</div>
+</div>
+<div class="section" id="wahrend-der-installation-wird-der-folgende-prozess">
+<h2>Während der Installation wird der folgende Prozess<a class="headerlink" href="#wahrend-der-installation-wird-der-folgende-prozess" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Dieses Modul hilft, einige Werkzeuge für MySQL-Server via installieren apt-get.</li>
+<li>Zunächst wird ein Root-Passwort gesetzt.</li>
+<li>Bei der Installation, wird es für einen Parameter &#8211;mysql-root Pass suchen.</li>
+<li>Wenn die &#8211;mysql-root Pass nicht verfügbar ist, wird sie die Kleopatra Config für die Einstellungen der mysql-default-root Pass suchen.</li>
+<li>Bei den beiden oben genannten Schritte wird versagt, wird es, indem Sie root-Passwort zu Kleopatra gehen.</li>
+</ul>
+</div>
+<div class="section" id="zusatzliche-optionen">
+<h2>Zusätzliche Optionen<a class="headerlink" href="#zusatzliche-optionen" title="Permalink to this headline">¶</a></h2>
+<p>Lassen Sie uns über, die zusätzliche Optionen bei der Installation der MySQL-Server beteiligt sehen.</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="20%" />
+<col width="38%" />
+<col width="9%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Verzeichnis (Standard)</th>
+<th class="head">Optionen</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install MySQL Server?
+(Y/N)</td>
+<td>An der Stelle MySQL Server diese alternative
+Namen können verwendet werden: MysqlServer,
+mysql-server, mysqlserver.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer wünschen, den
+Installationsprozess können sie Eingang
+als Y. gehen</td>
+</tr>
+<tr class="row-odd"><td>Install MySQL Server?
+(Y/N)</td>
+<td>An der Stelle MySQL Server diese alternative
+Namen können verwendet werden: MysqlServer,
+mysql-server, mysqlserver.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer wünschen, den
+Installationsprozess können sie Eingang
+als N beenden|</td>
+</tr>
+</tbody>
+</table>
+<p>Der folgende Screenshot gibt Ihnen eine grafische Darstellung über den Installationsprozess.</p>
+<p>Wenn der MySQL-Server gibt es in Ihrem Computer bereits, dann wird es eine Meldung an den Benutzer zu werfen, wie es bereits installiert ist. Der folgende Screenshot stellt den Prozess der Sicherstellung:</p>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Bei der Installation der MySQL-Server, installiert es mit der aktualisierten Version.</li>
+<li>Es sorgt dafür, vor der Installation, und überprüfen Sie die Verfügbarkeit von Modulen.</li>
+<li>Im Falle von neuen Modulen in der aktualisierten Version enthalten ist, wird das fehlende Modul einzeln installiert werden.</li>
+<li>Es prüft die Verfügbarkeit der Bibliotheksfunktionen in der MySQL-Server.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gmysqlserver.rst">
+          Mysqlserver
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

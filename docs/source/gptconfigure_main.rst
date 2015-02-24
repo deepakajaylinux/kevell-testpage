@@ -31,10 +31,10 @@ Das Spiel mit ptconfigure -Module
    gchown
    gcitadel
    gcleofy
-   gptconfigure
    gcomposer
    gcopy
    gdevelopertools
+   gdigitalocean
    gdnsify
    gencryption
    genvironmentconfig
@@ -45,6 +45,8 @@ Das Spiel mit ptconfigure -Module
    gfirefox24
    gfirefox33
    gfirewall
+   ggem
+   ggenerator
    ggitbucket
    ggitkeysafe
    ggitlab
@@ -57,8 +59,19 @@ Das Spiel mit ptconfigure -Module
    ginvoke
    gjava
    gjenkinssudonopass
+   gjetty
    gjmeter
+   gjrush
+   glogging
+   gmediatools
+   gmemcached
+   gminify
+   gmkdir
+   gmodulemanager
+   gmongodb
+   gmysqladmins
    gmysqltools  
+   gmysqlserver
    gnagiosserver
    gnetbeans
    gnetworktools
@@ -69,3 +82,20 @@ Das Spiel mit ptconfigure -Module
    goracle
    gpackagemanager
    gparallax
+   gpear
+   gpecl
+   gphake
+   gpharaohtools
+   gphpapc
+   gphpcodebeautifier
+   gphpci
+   gphpcs
+   gphpeclipse
+   gphpdox
+   gptconfigure
+                            
+
+
+
+
+
