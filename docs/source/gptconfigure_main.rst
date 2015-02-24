@@ -62,6 +62,10 @@ Das Spiel mit ptconfigure -Module
    gnagiosserver
    gnetbeans
    gnetworktools
-
-
-
+   gnewrelic
+   gngnixserver
+   gnodejs
+   gopenoffice
+   goracle
+   gpackagemanager
+   gparallax

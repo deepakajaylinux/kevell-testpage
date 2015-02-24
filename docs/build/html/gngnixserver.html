@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>NetworkTools &mdash; KEVELL 0.1 documentation</title>
+    <title>NginxServer &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
     <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
-    <link rel="next" title="Newrelic" href="gnewrelic.html" />
-    <link rel="prev" title="NetBeans" href="gnetbeans.html" />
+    <link rel="next" title="NodeJS" href="gnodejs.html" />
+    <link rel="prev" title="Newrelic" href="gnewrelic.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -88,7 +88,7 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">NetworkTools</a><ul>
+<li><a class="reference internal" href="#">NginxServer</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
@@ -103,10 +103,10 @@
             
               
                 
-  <li><a href="gnetbeans.html"
-         title="Previous Chapter: NetBeans">&laquo; NetBeans</a></li>
   <li><a href="gnewrelic.html"
-         title="Next Chapter: Newrelic">Newrelic &raquo;</a></li>
+         title="Previous Chapter: Newrelic">&laquo; Newrelic</a></li>
+  <li><a href="gnodejs.html"
+         title="Next Chapter: NodeJS">NodeJS &raquo;</a></li>
               
             
             
@@ -114,7 +114,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/gnetworktools.txt"
+  <a href="_sources/gngnixserver.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -151,34 +151,31 @@
     <div class="col-md-9">
       
   
-  <div class="section" id="networktools">
-<h1>NetworkTools<a class="headerlink" href="#networktools" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="nginxserver">
+<h1>NginxServer<a class="headerlink" href="#nginxserver" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>Die Netzwerk-Tools sind Software-Dienstprogramme entwickelt, um zu analysieren und konfigurieren verschiedene Aspekte der Computer-Netzwerk. Die häufigsten Netzwerk-Tools auf den meisten Betriebssystem zu finden sind Traceroute, Netstat und Ping. Jeder Netzwerk-Tools über eine eigene Funktion.</p>
-<p>Zum Beispiel:</p>
-<p>Es wird verwendet, um die Verbindung zu überprüfen</p>
-<p>Netstat wird verwendet, um die Netzwerkverbindung ein- und ausgehende Anzeige</p>
+<p>Nginx, ausgesprochen &#8220;Engine X&#8221;, ist ein High-Performance-Web-Server. Die Nginx Web-Server ist eine leichte und vielseitige Server, der für die verschiedenen Aufgaben, die viele moderne Webseiten Bedarf konfiguriert werden können. Ngnix Server fungiert als Vermittler für die Benutzer bei der Konfiguration von Anwendungseinstellungen. Einige Beispiele für Anwendungen, Einstellungen enthält MySQL Admin-Benutzer, Host weiter. Nginx macht Schlagzeilen als der neue Web-Server der Wahl für viele Webmaster. Die oberste Grund für seine Popularität ist seine Geschwindigkeit. Nginx ist schneller als Apache in nicht-Testumgebungen, da seine Architektur ist ereignisgesteuert, während der Apache-Prozess ist angesteuert. Die ptconfigure Module dient als Weg durch für die Installation dieses Nginx Server.</p>
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
-<p>Dieser Befehl hilft, die Nutzung von Netzwerktools Modul zu bestimmen. Der Benutzer wird kommen, um über die verschiedenen Möglichkeiten / Format um dieses Modul ausführen kennen. Dieser Befehl wird dem Endbenutzer zu wissen, wann und wie der Befehl verwendet werden führen. Da unten sind die Kommando- und der Screenshot der gleiche.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure networktools <span class="nb">help</span>
+<p>Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in der Ngnix Servermodul enthalten sind. Der Befehl help listet einige der alternativen Parameter Ngnix Server. Es beschreibt auch die Syntax für die Installation Ngnix Server. Der Befehl help für Ngnix Server ist unten angegeben.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure nginx-server
 </pre></div>
 </div>
-<p>Die bildliche Darstellung der obigen Befehl aufgelistet unten,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure NetworkTools <span class="nb">help</span>
+<p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter Nginx Server.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure NginxServer <span class="nb">help</span>
 ******************************
 
 
- This <span class="nb">command </span>allows you to install a <span class="nb">set </span>of common Network Tools. These include
- traceroute, netstat, lsof, telnet and ps.
+This <span class="nb">command </span>is part of Core and provides you  with a method by which you can configure Application Settings.
+You can configure default application settings, ie: mysql admin user, host, pass
 
- NetworkTools, networktools, network-tools
+NginxServer, nginx-server, nginxserver
 
-       - install
-       Installs the latest version of Network Tools
-       example: ptconfigure networktools install
+- install
+Installs Nginx HTTP Server
+example: ptconfigure nginx-server install
 
 ------------------------------
 End Help
@@ -188,16 +185,17 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Wenn der Benutzer benötigt, um jede Netzwerk-Tool in Maschine zu installieren. Die unten angegebenen Befehl wird den Prozess der Installation auszuführen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure networktool install
-</pre></div>
-</div>
+<p>Installieren des Nginx Server ist einfacher, indem Sie den folgenden Befehl ein, wie gezeigt:
+.. code-block:: bash</p>
+<blockquote>
+<div>ptconfigure nginx-server install</div></blockquote>
+<p>Nach der Eingabe des Befehls über die folgenden Vorgänge, wie gezeigt in der Tabellenform auf.</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="19%" />
+<col width="20%" />
 <col width="37%" />
 <col width="10%" />
-<col width="34%" />
+<col width="33%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameter</th>
@@ -207,66 +205,73 @@ End Help
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Install Network
-Tools? (Y/N)</td>
-<td>Statt NetworkTools, die wir verwenden können
-networktools, network-tools also.</td>
+<tr class="row-even"><td>ptconfigure nginx-server
+install? (Y/N)</td>
+<td>Trotz Nginx Server, die folgende alternatives
+auch verwendet werden: NginxServer,
+nginx-Server, nginxserver.</td>
 <td>Y(Yes)</td>
 <td>Wenn der Benutzer wünschen, den
 Installationsprozess können sie Eingang
 als Y. gehen</td>
 </tr>
-<tr class="row-odd"><td>Install Network
-Tools? (Y/N)</td>
-<td>Statt NetworkTools, die wir verwenden können
-networktools, network-tools also.</td>
+<tr class="row-odd"><td>ptconfigure nginx-server
+install? (Y/N)</td>
+<td>Trotz Nginx Server, die folgende alternatives
+auch verwendet werden: NginxServer,
+nginx-Server, nginxserver.</td>
 <td>N(No)</td>
 <td>Wenn der Benutzer wünschen, den
 Installationsprozess können sie Eingang
-als N beenden|</td>
+als N. Beenden|</td>
 </tr>
 </tbody>
 </table>
-<p>Wenn der Benutzer Erlös Installation während des Prozesses der Installation die folgenden Schritte beteiligt sind,</p>
-<ul class="simple">
-<li>Baut die Abhängigkeitsstruktur.</li>
-<li>Liest den Status Informationen.</li>
-<li>Liste outs die neuen Pakete installieren.</li>
-<li>Details über die Anzahl der Dateien aktualisiert, neu installiert, entfernt und nicht aktualisiert.</li>
-</ul>
-<p>Der folgende Screenshot zeigt bildhaft die oben beschriebene Prozess der Installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure NetworkTools install
-Install Network Tools? <span class="o">(</span>Y/N<span class="o">)</span>
-Y
+<p>Wenn der Benutzer den Installationsprozess läuft, wird die Nginx HTTP Server installiert werden. Wenn das Paket von Nginx ist bereits in der Benutzer-Maschine vorhanden ist, wird eine Meldung angezeigt, um den Benutzer anweisen, wie Nginx ist vorhanden in dieser Maschine bereits. Schließlich Berichte werden mit klaren Ergebnissen und Status erzeugt. Der folgende Screenshot erklärt die oben genannten Verfahren bildlich.</p>
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure nginx-server install
+
+Install Nginx Server? <span class="o">(</span>Y/N<span class="o">)</span>
+y
 *******************************
 *        Pharaoh Tools        *
-*         !Network Tools!!        *
+*         Nginx Server!       *
 *******************************
 Reading package lists...
 Building dependency tree...
 Reading state information...
+The following extra packages will be installed:
+nginx-common nginx-core
+Suggested packages:
+fcgiwrap nginx-doc
 The following NEW packages will be installed:
- traceroute
-<span class="m">0</span> upgraded, <span class="m">1</span> newly installed, <span class="m">0</span> to remove and <span class="m">301</span> not upgraded.
-Need to get 45.0 kB of archives.
-After this operation, <span class="m">176</span> kB of additional disk space will be used.
-Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/universe traceroute amd64 1:2.0.20-0ubuntu0.1 <span class="o">[</span>45.0 kB<span class="o">]</span>
-Fetched 45.0 kB in 4s <span class="o">(</span>10.0 kB/s<span class="o">)</span>
-Selecting previously unselected package traceroute.
-<span class="o">(</span>Reading database ... <span class="m">182980</span> files and directories currently installed.<span class="o">)</span>
-Preparing to unpack .../traceroute_1%3a2.0.20-0ubuntu0.1_amd64.deb ...
-Unpacking traceroute <span class="o">(</span>1:2.0.20-0ubuntu0.1<span class="o">)</span> ...
+nginx nginx-common nginx-core
+<span class="m">0</span> upgraded, <span class="m">3</span> newly installed, <span class="m">0</span> to remove and <span class="m">278</span> not upgraded.
+Need to get <span class="m">347</span> kB of archives.
+After this operation, 1,295 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main nginx-common all 1.4.6-1ubuntu3.1 <span class="o">[</span>17.9 kB<span class="o">]</span>
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main nginx-core amd64 1.4.6-1ubuntu3.1 <span class="o">[</span><span class="m">324</span> kB<span class="o">]</span>
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main nginx all 1.4.6-1ubuntu3.1 <span class="o">[</span>5,218 B<span class="o">]</span>
+Fetched <span class="m">347</span> kB in 3s <span class="o">(</span><span class="m">104</span> kB/s<span class="o">)</span>
+Selecting previously unselected package nginx-common.
+<span class="o">(</span>Reading database ... <span class="m">168194</span> files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../nginx-common_1.4.6-1ubuntu3.1_all.deb ...
+Unpacking nginx-common <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
+Selecting previously unselected package nginx-core.
+Preparing to unpack .../nginx-core_1.4.6-1ubuntu3.1_amd64.deb ...
+Unpacking nginx-core <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.4.6-1ubuntu3.1_all.deb ...
+Unpacking nginx <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
+Processing triggers <span class="k">for</span> ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+ureadahead will be reprofiled on next reboot
+Processing triggers <span class="k">for</span> ufw <span class="o">(</span>0.34~rc-0ubuntu2<span class="o">)</span> ...
 Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
-Setting up traceroute <span class="o">(</span>1:2.0.20-0ubuntu0.1<span class="o">)</span> ...
-update-alternatives: using /usr/bin/traceroute.db to provide /usr/bin/traceroute <span class="o">(</span>traceroute<span class="o">)</span> in auto mode
-update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft <span class="o">(</span>lft<span class="o">)</span> in auto mode
-update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto <span class="o">(</span>traceproto<span class="o">)</span> in auto mode
-update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute <span class="o">(</span>tcptraceroute<span class="o">)</span> in auto mode
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package traceroute from the Packager Apt executed correctly
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package netstat from the Packager Apt is already installed, so not installing
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package lsof from the Packager Apt is already installed, so not installing
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package telnet from the Packager Apt is already installed, so not installing
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package ps from the Packager Apt is already installed, so not installing
+Setting up nginx-common <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
+Processing triggers <span class="k">for</span> ureadahead <span class="o">(</span>0.100.0-16<span class="o">)</span> ...
+Processing triggers <span class="k">for</span> ufw <span class="o">(</span>0.34~rc-0ubuntu2<span class="o">)</span> ...
+Setting up nginx-core <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
+Setting up nginx <span class="o">(</span>1.4.6-1ubuntu3.1<span class="o">)</span> ...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package nginx from the Packager Apt executed correctly
 ... All <span class="k">done</span>!
 *******************************
 Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
@@ -275,7 +280,7 @@ Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span 
 
 Single App Installer:
 --------------------------------------------
-NetworkTools: Success
+NginxServer: Success
 ------------------------------
 Installer Finished
 ******************************
@@ -284,7 +289,30 @@ Installer Finished
 </div>
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
-<p>Dieses Modul hilft bei der Installation der Reihe gemeinsamer Netzwerk-Tools. Dies kommt der Benutzer verschiedene Werkzeuge, die nützlich sein können bei der Vernetzung mit anderen Computern innerhalb des Netzwerks und über das Internet zu installieren. Dies hilft den Benutzern, die mit Remote-Rechnern arbeiten.</p>
+<ul class="simple">
+<li>Durch die Nutzung dieser Nginx Server kann der Benutzer die Anwendung zu konfigurieren.</li>
+<li>Die in Hilfe und Installation verwendet muss nicht beachtet werden, welche ein zusätzlicher Vorteil ist, während im Vergleich zu anderen
+Parametern.</li>
+<li>Nginx ist schnell, weil sie nicht brauchen, um einen neuen Prozess für jede neue Anfrage erstellen.</li>
+<li>Nginx verbraucht sehr wenig Speicher, vor allem für statische Webseiten.</li>
+<li>Nginx kann mit einer Vielzahl von Systemen eingesetzt werden.</li>
+<li>Nginx ist hoch skalierbar, und die Leistung ist unabhängig von Hardware.</li>
+<li>Nginx ist einfach zu installieren und zu konfigurieren.</li>
+<li>Wie Apache, Nginx hat alle Funktionen, die Sie von einem führenden Web-Server erwarten würden:</li>
+<li>Statische Datei dient.</li>
+<li>SSL / TLS-Unterstützung.</li>
+<li>Virtuelle Hosts.</li>
+<li>Rück Proxy.</li>
+<li>Der Lastausgleich.</li>
+<li>Compression.</li>
+<li>Zugangskontrollen.</li>
+<li>URL-Rewriting.</li>
+<li>Custom Logging.</li>
+<li>Server-Side Includes.</li>
+<li>WebDAV.</li>
+<li>FLV-Streaming.</li>
+<li>FastCGI.</li>
+</ul>
 </div>
 </div>
 
@@ -344,8 +372,8 @@ Installer Finished
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gnetworktools.rst">
-          NetworkTools
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gngnixserver.rst">
+          NginxServer
         </a> on GitHub.
       </li>
 

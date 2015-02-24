@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>NetworkTools &mdash; KEVELL 0.1 documentation</title>
+    <title>PackageManager &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
     <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
-    <link rel="next" title="Newrelic" href="gnewrelic.html" />
-    <link rel="prev" title="NetBeans" href="gnetbeans.html" />
+    <link rel="next" title="Parallax" href="gparallax.html" />
+    <link rel="prev" title="Oracle" href="goracle.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -88,10 +88,13 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">NetworkTools</a><ul>
+<li><a class="reference internal" href="#">PackageManager</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#pkg-install">Pkg-install</a></li>
+<li><a class="reference internal" href="#pkg-sicher">Pkg-sicher</a></li>
+<li><a class="reference internal" href="#pkg-remove">Pkg-remove</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
 </li>
@@ -103,10 +106,10 @@
             
               
                 
-  <li><a href="gnetbeans.html"
-         title="Previous Chapter: NetBeans">&laquo; NetBeans</a></li>
-  <li><a href="gnewrelic.html"
-         title="Next Chapter: Newrelic">Newrelic &raquo;</a></li>
+  <li><a href="goracle.html"
+         title="Previous Chapter: Oracle">&laquo; Oracle</a></li>
+  <li><a href="gparallax.html"
+         title="Next Chapter: Parallax">Parallax &raquo;</a></li>
               
             
             
@@ -114,7 +117,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/gnetworktools.txt"
+  <a href="_sources/gpackagemanager.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -151,34 +154,40 @@
     <div class="col-md-9">
       
   
-  <div class="section" id="networktools">
-<h1>NetworkTools<a class="headerlink" href="#networktools" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="packagemanager">
+<h1>PackageManager<a class="headerlink" href="#packagemanager" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>Die Netzwerk-Tools sind Software-Dienstprogramme entwickelt, um zu analysieren und konfigurieren verschiedene Aspekte der Computer-Netzwerk. Die häufigsten Netzwerk-Tools auf den meisten Betriebssystem zu finden sind Traceroute, Netstat und Ping. Jeder Netzwerk-Tools über eine eigene Funktion.</p>
-<p>Zum Beispiel:</p>
-<p>Es wird verwendet, um die Verbindung zu überprüfen</p>
-<p>Netstat wird verwendet, um die Netzwerkverbindung ein- und ausgehende Anzeige</p>
+<p>Dieser Befehl verwendet, um die Paketverwaltung zu wickeln. Es wird mit drei Optionen. Sie sind pkg-install, pkg-sicherzustellen, pkg-Entfernen. Dies ermöglicht es dem Benutzer, in einem beliebigen System installiert werden. Es verwaltet die Paket-Manager-Funktionen. Es eignet sich mit Ubuntu und CentOS arbeiten.</p>
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
-<p>Dieser Befehl hilft, die Nutzung von Netzwerktools Modul zu bestimmen. Der Benutzer wird kommen, um über die verschiedenen Möglichkeiten / Format um dieses Modul ausführen kennen. Dieser Befehl wird dem Endbenutzer zu wissen, wann und wie der Befehl verwendet werden führen. Da unten sind die Kommando- und der Screenshot der gleiche.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure networktools <span class="nb">help</span>
+<p>Dieser Befehl help führt den Benutzer zu installieren, stellen Sie sicher, nehmen Sie das Paketmanagement. Dies ermöglicht der Installation sicher, zu entfernen. Der Befehl help für Paket-Manager ist unten dargestellt</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure packagemanager <span class="nb">help</span>
 </pre></div>
 </div>
-<p>Die bildliche Darstellung der obigen Befehl aufgelistet unten,</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure NetworkTools <span class="nb">help</span>
+<p>Nach Eingang der obige Befehl, beginnt es funktioniert, um zu wickeln. Es Katechese die Funktionen in den Screenshots.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure packagemanager <span class="nb">help</span>
 ******************************
 
 
- This <span class="nb">command </span>allows you to install a <span class="nb">set </span>of common Network Tools. These include
- traceroute, netstat, lsof, telnet and ps.
+ This <span class="nb">command </span>allows you to use a Package Management wrapper.
 
- NetworkTools, networktools, network-tools
+ PackageManager, package-manager, packagemanager, package-mgr, pkgmgr
 
-       - install
-       Installs the latest version of Network Tools
-       example: ptconfigure networktools install
+       - pkg-install
+       Installs a Package through a Package Manager
+       example: ptconfigure package-manager install --package-name<span class="o">=</span><span class="s2">&quot;mysql&quot;</span> --package-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --packager<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
+
+       - pkg-ensure
+       Installs a Package through a Package Manager
+       example: ptconfigure package-manager install --package-name<span class="o">=</span><span class="s2">&quot;mysql&quot;</span> --package-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --packager<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
+
+       - pkg-remove
+       Removes a Package through a Package Manager
+       example: ptconfigure package-manager install --package-name<span class="o">=</span><span class="s2">&quot;mysql&quot;</span> --package-version<span class="o">=</span><span class="s2">&quot;5.0&quot;</span> --packager<span class="o">=</span><span class="s2">&quot;apt-get&quot;</span>
+
+ A package manager wrapper that will allow you to install packages on any system
 
 ------------------------------
 End Help
@@ -186,105 +195,46 @@ End Help
 </pre></div>
 </div>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Wenn der Benutzer benötigt, um jede Netzwerk-Tool in Maschine zu installieren. Die unten angegebenen Befehl wird den Prozess der Installation auszuführen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure networktool install
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Im Folgenden sind die Parameter, die in alternative Erklärungen definiert werden können:</p>
+<p>PackageManager, package-manager, packagemanager, pkgmgr, package-mgr.</p>
+</div>
+<div class="section" id="pkg-install">
+<h2>Pkg-install<a class="headerlink" href="#pkg-install" title="Permalink to this headline">¶</a></h2>
+<p>Die Installation umfasst die Installation von Package erforderlich, um die Installation in einer aktualisierten Version zu machen. Es ist eine offensichtliche Prozess Package Modul unter ptconfigure installieren. Packagemanager von nur mit dem Befehl unten angegeben,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PackageManager Install
 </pre></div>
 </div>
-<table border="1" class="table-bordered docutils">
-<colgroup>
-<col width="19%" />
-<col width="37%" />
-<col width="10%" />
-<col width="34%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Parameter</th>
-<th class="head">Alternative Parameter</th>
-<th class="head">Option</th>
-<th class="head">Kommentare</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>Install Network
-Tools? (Y/N)</td>
-<td>Statt NetworkTools, die wir verwenden können
-networktools, network-tools also.</td>
-<td>Y(Yes)</td>
-<td>Wenn der Benutzer wünschen, den
-Installationsprozess können sie Eingang
-als Y. gehen</td>
-</tr>
-<tr class="row-odd"><td>Install Network
-Tools? (Y/N)</td>
-<td>Statt NetworkTools, die wir verwenden können
-networktools, network-tools also.</td>
-<td>N(No)</td>
-<td>Wenn der Benutzer wünschen, den
-Installationsprozess können sie Eingang
-als N beenden|</td>
-</tr>
-</tbody>
-</table>
-<p>Wenn der Benutzer Erlös Installation während des Prozesses der Installation die folgenden Schritte beteiligt sind,</p>
-<ul class="simple">
-<li>Baut die Abhängigkeitsstruktur.</li>
-<li>Liest den Status Informationen.</li>
-<li>Liste outs die neuen Pakete installieren.</li>
-<li>Details über die Anzahl der Dateien aktualisiert, neu installiert, entfernt und nicht aktualisiert.</li>
-</ul>
-<p>Der folgende Screenshot zeigt bildhaft die oben beschriebene Prozess der Installation.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure NetworkTools install
-Install Network Tools? <span class="o">(</span>Y/N<span class="o">)</span>
-Y
-*******************************
-*        Pharaoh Tools        *
-*         !Network Tools!!        *
-*******************************
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following NEW packages will be installed:
- traceroute
-<span class="m">0</span> upgraded, <span class="m">1</span> newly installed, <span class="m">0</span> to remove and <span class="m">301</span> not upgraded.
-Need to get 45.0 kB of archives.
-After this operation, <span class="m">176</span> kB of additional disk space will be used.
-Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/universe traceroute amd64 1:2.0.20-0ubuntu0.1 <span class="o">[</span>45.0 kB<span class="o">]</span>
-Fetched 45.0 kB in 4s <span class="o">(</span>10.0 kB/s<span class="o">)</span>
-Selecting previously unselected package traceroute.
-<span class="o">(</span>Reading database ... <span class="m">182980</span> files and directories currently installed.<span class="o">)</span>
-Preparing to unpack .../traceroute_1%3a2.0.20-0ubuntu0.1_amd64.deb ...
-Unpacking traceroute <span class="o">(</span>1:2.0.20-0ubuntu0.1<span class="o">)</span> ...
-Processing triggers <span class="k">for</span> man-db <span class="o">(</span>2.6.7.1-1<span class="o">)</span> ...
-Setting up traceroute <span class="o">(</span>1:2.0.20-0ubuntu0.1<span class="o">)</span> ...
-update-alternatives: using /usr/bin/traceroute.db to provide /usr/bin/traceroute <span class="o">(</span>traceroute<span class="o">)</span> in auto mode
-update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft <span class="o">(</span>lft<span class="o">)</span> in auto mode
-update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto <span class="o">(</span>traceproto<span class="o">)</span> in auto mode
-update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute <span class="o">(</span>tcptraceroute<span class="o">)</span> in auto mode
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package traceroute from the Packager Apt executed correctly
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package netstat from the Packager Apt is already installed, so not installing
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package lsof from the Packager Apt is already installed, so not installing
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package telnet from the Packager Apt is already installed, so not installing
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package ps from the Packager Apt is already installed, so not installing
-... All <span class="k">done</span>!
-*******************************
-Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
-******************************
-
-
-Single App Installer:
---------------------------------------------
-NetworkTools: Success
-------------------------------
-Installer Finished
-******************************
+<p>Nach beleben den Befehl geben Sie den Wert katechisieren.</p>
+<p>Wenn die Benutzereingaben wie ja automatisch wird Packagemanager mit der Überprüfung aus dem System zu installieren. Wenn nicht beenden Sie die Installation. Der folgende Screenshot zeigen Packagemanager und seine Funktionen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
 </pre></div>
 </div>
+</div>
+<div class="section" id="pkg-sicher">
+<h2>Pkg-sicher<a class="headerlink" href="#pkg-sicher" title="Permalink to this headline">¶</a></h2>
+<p>Pkg gewährleisten eine Systemdienst ausgeführt wird. Im Falle einer nicht läuft starten Sie es sonst nicht zu versuchen. Durch diesen Befehl kann der Anwender feststellen, ob das System funktioniert oder im Leerlauf. Einfache Befehle sind leicht zu handhaben. Der folgende Befehl verwendet durch Paketmanager zu gewährleisten.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure PackageManager ensure
+</pre></div>
+</div>
+</div>
+<div class="section" id="pkg-remove">
+<h2>Pkg-remove<a class="headerlink" href="#pkg-remove" title="Permalink to this headline">¶</a></h2>
+<p>Pkg entfernen Befehl verwendet werden, um ein Paket von Paketmanager zu entfernen. Der Paket-Manager überprüft zuerst das Paket wollen von Paketmanager zu entfernen. Dann ist es die Bestätigung verlangen. Dann verwenden Sie die Option Entfernen.
+.. code-block:: bash</p>
+<blockquote>
+<div>ptconfigure PackageManager remove</div></blockquote>
 </div>
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
-<p>Dieses Modul hilft bei der Installation der Reihe gemeinsamer Netzwerk-Tools. Dies kommt der Benutzer verschiedene Werkzeuge, die nützlich sein können bei der Vernetzung mit anderen Computern innerhalb des Netzwerks und über das Internet zu installieren. Dies hilft den Benutzern, die mit Remote-Rechnern arbeiten.</p>
+<ul class="simple">
+<li>Nicht Groß- und Kleinschreibung.</li>
+<li>Well-to-do in Ubuntu und CentOS.</li>
+<li>Entfernen Sie die Verpackung ist möglich</li>
+<li>Wickeln Sie den Paket-Manager</li>
+<li>Befehle sind einfach zu bedienen</li>
+</ul>
 </div>
 </div>
 
@@ -344,8 +294,8 @@ Installer Finished
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gnetworktools.rst">
-          NetworkTools
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gpackagemanager.rst">
+          PackageManager
         </a> on GitHub.
       </li>
 
