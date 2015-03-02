@@ -7,7 +7,7 @@ Zusammenfassung
 
 NetBeans ist eine integrierte Entwicklungsumgebung (IDE) für die Entwicklung vor allem mit Java, aber auch mit anderen Sprachen, insbesondere PHP, C / C ++ und HTML. Es ist auch eine Anwendungsplattform Rahmen für Java-Desktop-Anwendungen und andere.
 
-Die NetBeans IDE ist in Java geschrieben und kann auf Windows, OS X, Linux, Solaris und andere Plattformen, die ein kompatibles JVM ausgeführt. NetBeans IDE ist ein freies, Open-Source, Cross-Plattform-IDE mit eingebauter Unterstützung für Programmiersprache Java.
+Die NetBeans IDE ist in Java geschrieben und kann auf Windows, OS X, Linux, Solaris und andere Plattformen, die ein kompatibles JVM ausgeführt NetBeans IDE ist eine Cross-Plattform-IDE mit eingebauter Unterstützung für Java-Programmiersprache.
 
 Die NetBeans-Plattform ermöglicht es Anwendungen, aus einer Reihe von modularen Softwarekomponenten genannt Module entwickelt werden. Anwendungen auf Basis der NetBeans-Plattform (einschließlich der NetBeans IDE selbst) von Drittentwickler erweitert werden.
 

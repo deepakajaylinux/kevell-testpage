@@ -99,25 +99,50 @@ Optionen
  |Install                     | Befehlszeile verwendet werden können.           |             |                                       |
  |                            | NagiosServer, nagios-server, nagiosserver,      |             |                                       |
  |                            | nagios Eg: ptconfigure nagios install/          |             |                                       |
- |                            |            ptconfigure nagiosserver install     |             |                                       |
+ |                            | ptconfigure nagiosserver install                |             |                                       |
  +----------------------------+-------------------------------------------------+-------------+---------------------------------------+
  |ptconfigure nagiosserver    | Es gibt vier alternative Parameter, die in der  | N(No)       | Das System stoppt den                 |
  |Install                     | Befehlszeile verwendet werden können.           |             | Installationsprozess                  |
  |                            | NagiosServer, nagios-server, nagiosserver,      |             |                                       |
  |                            | nagios Eg: ptconfigure nagios install/          |             |                                       |
- |                            |            ptconfigure nagiosserver install|    |             |                                       |
+ |                            | ptconfigure nagiosserver install|               |             |                                       |
  +----------------------------+-------------------------------------------------+-------------+---------------------------------------+
 
 
 Vorteile
 --------------
 
-* Überwachung von Netzwerkdiensten (SMTP, POP3, HTTP, NNTP, ICMP, SNMP, FTP, SSH)
-* Überwachung von Host-Ressourcen (Prozessorlast, Plattennutzung, Systemprotokolle) auf einem Großteil der Netzwerkbetriebssystemen, darunter 
-  Microsoft Fenster mit der NSClient ++ Plugin oder Prüfen MK.
-* Überwachung der noch etwas wie Sonden (Temperatur, Alarme, etc.), Die in der Lage, die gesammelten Daten über ein Netzwerk zu senden sind
-  speziell geschrieben Plugins
-* Überwachung via remote ausführen Skripte über Nagios Remote-Plugin Executor
-* Fernüberwachung über SSH oder SSL-verschlüsselte Tunnel unterstützt.
-* Ein einfaches Plugin-Design, die Benutzer auf einfache Weise entwickeln ihre eigene Service-Prüfungen je nach Bedarf, indem sie ihre 
-  Werkzeuge der Wahl (Shell-Skripte, C ++, Perl, Ruby, Python, PHP, C #, etc.) erlaubt
+* Überwachung von Netzwerkdiensten ( SMTP, POP3, HTTP, NNTP , ICMP, SNMP , FTP, SSH )
+
+* Überwachung von Host-Ressourcen ( Prozessorlast , Plattennutzung , Systemprotokolle ) auf einem Großteil der Netzwerkbetriebssystemen , 
+  darunter Microsoft Fenster mit der NSClient ++ Plugin oder Prüfen MK .
+
+* Überwachung der noch etwas wie Sonden ( Temperatur , Alarme, etc. ), Die in der Lage, die gesammelten Daten über ein Netzwerk zu senden sind
+  speziell geschrieben Plugins
+
+* Überwachung via remote ausführen Skripte über Nagios Remote- Plugin Executor
+
+* Fernüberwachung über SSH oder SSL- verschlüsselte Tunnel unterstützt.
+
+* Ein einfaches Plugin -Design , die Benutzer auf einfache Weise entwickeln ihre eigene Service-Prüfungen je nach Bedarf , indem sie ihre 
+  Werkzeuge der Wahl erlaubt ( Shell-Skripte , C ++, Perl, Ruby , Python, PHP , C # , etc.)
+
+* Die verfügbaren Daten Grafik- Plugins
+
+* Parallel laufende Service- Prüfungen
+
+* Die Fähigkeit, Netzwerk-Host -Hierarchien mit Hosts "Eltern" zu definieren , so dass die Erkennung von und Unterscheidung zwischen Hosts, 
+  die unten sind,  oder nicht erreichbar
+
+* Kontakt -Benachrichtigungen, wenn Service- oder Host- Probleme auf, entschlossen zu erhalten (per E- Mail, Pager , SMS, oder jede 
+  benutzerdefinierte Methode durch Plugin-System )
+
+* Die Fähigkeit, Event-Handler definieren, die während der Service- oder Host- Veranstaltungen zur proaktiven Problemlösung ausgeführt werden
+
+* Automatische Protokolldatei Dreh
+
+* Unterstützung für Implementieren von redundanten Überwachungs -Hosts
+
+* Ein optionaler Web-Interface für die Anzeige von aktuellen Netzwerkstatus , Benachrichtigungen Problem der Geschichte , Protokolldateien usw.
+
+* Datenspeicherung über Textdateien und nicht -Datenbank

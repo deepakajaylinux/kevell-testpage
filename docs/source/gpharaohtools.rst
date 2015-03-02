@@ -50,15 +50,17 @@ Der Befehl für die Installation unter dem Pharao Werkzeug verwendet wird unten 
 
 .. cssclass:: table-bordered
 
- +------------------------------+---------------------------------+-------------------------------------------------+
- | Parameters                   | Verfügbare Eingabemöglichkeiten | Kommentare                                      |
- +==============================+=================================+=================================================+
- |Install Pharaoh Tools? (Y/N)  | Y(Yes)                          | Wenn der Benutzer Wunsch, mit Installation      |
- |                              |                                 | fortzusetzen, können sie Eingang als Y          |
- +------------------------------+---------------------------------+-------------------------------------------------+
- |Install Pharaoh Tools? (Y/N)  | N(No)                           | Wenn der Benutzer wünschen, um die Installation |
- |                              |                                 | zu beenden, sie einfach mit N verlassen können| |
- +------------------------------+---------------------------------+-------------------------------------------------+ 	
+ +------------------------------+------------------------+------------+-------------------------------------------------+
+ | Parameters                   | Alternative Parameter  | Optionen   | Kommentare                                      |
+ +==============================+========================+============+=================================================+
+ |Install Pharaoh Tools? (Y/N)  | PharaohTools,          | Y(Yes)     | Wenn der Benutzer Wunsch, mit Installation      |
+ |                              | pharaohtools,          |            | fortzusetzen, können sie Eingang als Y          |
+ |                              | pharaoh-tools          |            |                                                 |
+ +------------------------------+------------------------+------------+-------------------------------------------------+
+ |Install Pharaoh Tools? (Y/N)  | PharaohTools,          | N(No)      | Wenn der Benutzer wünschen, um die Installation |
+ |                              | pharaohtools,          |            | zu beenden, sie einfach mit N verlassen können  |
+ |                              | pharaoh-tools|         |            |                                                 |
+ +------------------------------+------------------------+------------+-------------------------------------------------+ 	
 
 Bei der Installation des Pharao Werkzeug die folgenden Schritte erfolgt:
 

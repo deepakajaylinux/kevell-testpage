@@ -246,25 +246,21 @@ Installer Finished
 <tbody valign="top">
 <tr class="row-even"><td>ptconfigure nagiosserver
 Install</td>
-<td><p class="first">Es gibt vier alternative Parameter, die in der
+<td>Es gibt vier alternative Parameter, die in der
 Befehlszeile verwendet werden können.
 NagiosServer, nagios-server, nagiosserver,
-nagios Eg: ptconfigure nagios install/</p>
-<blockquote class="last">
-<div>ptconfigure nagiosserver install</div></blockquote>
-</td>
+nagios Eg: ptconfigure nagios install/
+ptconfigure nagiosserver install</td>
 <td>Y(Yes)</td>
 <td>System startet Installation</td>
 </tr>
 <tr class="row-odd"><td>ptconfigure nagiosserver
 Install</td>
-<td><p class="first">Es gibt vier alternative Parameter, die in der
+<td>Es gibt vier alternative Parameter, die in der
 Befehlszeile verwendet werden können.
 NagiosServer, nagios-server, nagiosserver,
-nagios Eg: ptconfigure nagios install/</p>
-<blockquote class="last">
-<div>ptconfigure nagiosserver install|</div></blockquote>
-</td>
+nagios Eg: ptconfigure nagios install/
+ptconfigure nagiosserver install|</td>
 <td>N(No)</td>
 <td>Das System stoppt den
 Installationsprozess</td>
@@ -275,17 +271,27 @@ Installationsprozess</td>
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Überwachung von Netzwerkdiensten (SMTP, POP3, HTTP, NNTP, ICMP, SNMP, FTP, SSH)</li>
-<li>Überwachung von Host-Ressourcen (Prozessorlast, Plattennutzung, Systemprotokolle) auf einem Großteil der Netzwerkbetriebssystemen, darunter
-Microsoft Fenster mit der NSClient ++ Plugin oder Prüfen MK.</li>
-<li>Überwachung der noch etwas wie Sonden (Temperatur, Alarme, etc.), Die in der Lage, die gesammelten Daten über ein Netzwerk zu senden sind</li>
+<li>Überwachung von Netzwerkdiensten ( SMTP, POP3, HTTP, NNTP , ICMP, SNMP , FTP, SSH )</li>
+<li>Überwachung von Host-Ressourcen ( Prozessorlast , Plattennutzung , Systemprotokolle ) auf einem Großteil der Netzwerkbetriebssystemen ,
+darunter Microsoft Fenster mit der NSClient ++ Plugin oder Prüfen MK .</li>
+<li>Überwachung der noch etwas wie Sonden ( Temperatur , Alarme, etc. ), Die in der Lage, die gesammelten Daten über ein Netzwerk zu senden sind
+speziell geschrieben Plugins</li>
+<li>Überwachung via remote ausführen Skripte über Nagios Remote- Plugin Executor</li>
+<li>Fernüberwachung über SSH oder SSL- verschlüsselte Tunnel unterstützt.</li>
+<li>Ein einfaches Plugin -Design , die Benutzer auf einfache Weise entwickeln ihre eigene Service-Prüfungen je nach Bedarf , indem sie ihre
+Werkzeuge der Wahl erlaubt ( Shell-Skripte , C ++, Perl, Ruby , Python, PHP , C # , etc.)</li>
+<li>Die verfügbaren Daten Grafik- Plugins</li>
+<li>Parallel laufende Service- Prüfungen</li>
+<li>Die Fähigkeit, Netzwerk-Host -Hierarchien mit Hosts &#8220;Eltern&#8221; zu definieren , so dass die Erkennung von und Unterscheidung zwischen Hosts,
+die unten sind,  oder nicht erreichbar</li>
+<li>Kontakt -Benachrichtigungen, wenn Service- oder Host- Probleme auf, entschlossen zu erhalten (per E- Mail, Pager , SMS, oder jede
+benutzerdefinierte Methode durch Plugin-System )</li>
+<li>Die Fähigkeit, Event-Handler definieren, die während der Service- oder Host- Veranstaltungen zur proaktiven Problemlösung ausgeführt werden</li>
+<li>Automatische Protokolldatei Dreh</li>
+<li>Unterstützung für Implementieren von redundanten Überwachungs -Hosts</li>
+<li>Ein optionaler Web-Interface für die Anzeige von aktuellen Netzwerkstatus , Benachrichtigungen Problem der Geschichte , Protokolldateien usw.</li>
+<li>Datenspeicherung über Textdateien und nicht -Datenbank</li>
 </ul>
-<p>&nbsp;&nbsp;speziell geschrieben Plugins
-* Überwachung via remote ausführen Skripte über Nagios Remote-Plugin Executor
-* Fernüberwachung über SSH oder SSL-verschlüsselte Tunnel unterstützt.
-* Ein einfaches Plugin-Design, die Benutzer auf einfache Weise entwickeln ihre eigene Service-Prüfungen je nach Bedarf, indem sie ihre</p>
-<blockquote>
-<div>Werkzeuge der Wahl (Shell-Skripte, C ++, Perl, Ruby, Python, PHP, C #, etc.) erlaubt</div></blockquote>
 </div>
 </div>
 
