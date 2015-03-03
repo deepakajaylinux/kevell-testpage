@@ -62,13 +62,13 @@ Options
  |Install                | Befehlszeile verwendet werden können.           |             |                                           |
  |                       | PHP-Eclipse, PHPEclipse, phpeclipse             |             |                                           |
  |                       | Eg: ptconfigure PHPEclipse install ptconfigure  |             |                                           |
- |                       |     PHP-Eclipse install                         |             |                                           |
+ |                       | PHP-Eclipse install                             |             |                                           |
  +-----------------------+-------------------------------------------------+-------------+-------------------------------------------+
  |ptconfigure PHPEclipse | Es gibt drei alternative Parameter, die in der  | N(No)       | Das System stoppt den                     |
  |Install                | Befehlszeile verwendet werden können.           |             | Installationsprozess                      |
  |                       | PHP-Eclipse, PHPEclipse, phpeclipse             |             |                                           |
  |                       | Eg: ptconfigure PHPEclipse install ptconfigure  |             |                                           |
- |                       |     PHP-Eclipse install|                        |             |                                           |
+ |                       | PHP-Eclipse install|                            |             |                                           |
  +-----------------------+-------------------------------------------------+-------------+-------------------------------------------+
 
 

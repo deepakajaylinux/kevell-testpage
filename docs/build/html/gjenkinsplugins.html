@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>JenkinsPlugins &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="JenkinsSudoNoPass" href="gjenkinssudonopass.html" />
+    <link rel="prev" title="JAVA" href="gjava.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">JenkinsPlugins</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#options">Options</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gjava.html"
+         title="Previous Chapter: JAVA">&laquo; JAVA</a></li>
+  <li><a href="gjenkinssudonopass.html"
+         title="Next Chapter: JenkinsSudoNoPass">JenkinsSudoNoPas... &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gjenkinsplugins.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="jenkinsplugins">
+<h1>JenkinsPlugins<a class="headerlink" href="#jenkinsplugins" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Jenkins ist sehr beliebt, um Server zu bauen. Jenins ist eine Quelle kontinuierliche Integration-Tool in Java geschrieben. Jenkins bietet kontinuierliche Integrationsleistungen für die Softwareentwicklung.</p>
+<p>Plugins für Jenkins, die seine Verwendung, um Projekte in anderen Sprachen als Java geschrieben verlängern veröffentlicht. Plugins sind für die Integration von Jenkins mit den meisten Versionskontrollsysteme und große Datenbanken. Viele Build-Tools werden über ihre jeweiligen Plug-ins unterstützt. Plugins können auch die Art und Weise Jenkins sieht ändern oder neue Funktionen hinzufügen. Builds können Prüfberichte in verschiedenen Formaten von Plugins unterstützt generieren (JUnit-Unterstützung ist derzeit gebündelt) und Jenkins können die Berichte anzeigen und erstellen Trends und machen sie in der GUI.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion dient, um die Verwendung von JenkinsPlugins Modul bestimmen. Der Benutzer wird kommen, um über die verschiedenen Möglichkeiten / Format um dieses Modul ausführen kennen. Dieser Befehl leitet den Anwender, um den Zweck dieses Befehls kennen. Da unten sind die Kommando- und der Screenshot der gleiche.</p>
+<div class="highlight-bash"><div class="highlight"><pre>       ptconfigure JenkinsPlugins <span class="nb">help</span>
+
+kevell@corp:/# ptconfigure JenkinsPlugins <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to install a bunch of plugins that we recommend <span class="k">for</span>
+ PHP builds in Jenkins.
+
+ JenkinsPlugins, jenkinsplugins, jenkins-plugins, jenkins-plugs
+
+       - install
+       Installs the latest version of Jenkins Plugins <span class="k">for</span> PHP recommended by Golden Contact
+       example: ptconfigure jenkins-plugins install
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>&nbsp; Dieser Befehl ermöglicht es Ihnen, eine Reihe von Plugins, die wir für PHP baut in Jenkins installieren. Wenn der Benutzer Jenkins Modul in Maschinen installieren muss, wird die unten gegebenen Befehl das Verfahren der Ausführung der Installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure JenkinsPlugins install
+</pre></div>
+</div>
+<p>Der Screenshot der obigen Befehl aufgelistet unten,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure JenkinsPlugins install
+Install Jenkins Plugins? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+*******************************
+*        Pharaoh Tools        *
+*         Jenkns Plgs!        *
+*******************************
+Creating /tmp/ptconfigure-temp-script-80223312434.sh
+chmod <span class="m">755</span> /tmp/ptconfigure-temp-script-80223312434.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-80223312434.sh Permissions
+Executing /tmp/ptconfigure-temp-script-80223312434.sh
+Cloning into <span class="s1">&#39;jplugins&#39;</span>...
+remote: Counting objects: 39, <span class="k">done</span>.
+remote: Total <span class="m">39</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
+Unpacking objects: 100% <span class="o">(</span>39/39<span class="o">)</span>, <span class="k">done</span>.
+Checking connectivity... <span class="k">done</span>.
+chown: invalid user: ‘jenkins’
+jenkins: unrecognized service
+Temp File /tmp/ptconfigure-temp-script-80223312434.sh Removed
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+JenkinsPlugins: Success
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="options">
+<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="16%" />
+<col width="45%" />
+<col width="10%" />
+<col width="29%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameter</th>
+<th class="head">Option</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ptconfigure
+JenkinsPlugins
+Install</td>
+<td>Entweder der vier alternative Parameter kann das Kommando
+verwendet werden - JenkinsPlugins, jenkinsplugins,
+jenkins-plugins, jenkins-plugs
+eg: ptconfigure jenkins-plugins Install</td>
+<td>Y</td>
+<td>Sobald der Benutzer bietet die
+Möglichkeit, startet
+System-Installation</td>
+</tr>
+<tr class="row-odd"><td>ptconfigure
+JenkinsPlugins
+Install</td>
+<td>Entweder der vier alternative Parameter kann das Kommando
+verwendet werden - JenkinsPlugins, jenkinsplugins,
+jenkins-plugins, jenkins-plugs
+eg: ptconfigure jenkins-plugins Install|</td>
+<td>N</td>
+<td>Sobald der Benutzer bietet die
+Möglichkeit, Anschläge
+System-Installation</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Das Plugin wird Ihnen einen Bericht darüber, wie viel jedes Plugin wird in alle Ihre Aufgaben verwendet werden. Daher wird es die verwendeten   Verlängerungs analysieren Punkte der einzelnen Jobs.</li>
+<li>Dieses Plugin gibt Ihnen die Möglichkeit, die Nutzung Ihrer installierten Plugins analysieren.</li>
+<li>Nicht Groß- und Kleinschreibung</li>
+<li>Well-to-do in Ubuntu und CentOS.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gjenkinsplugins.rst">
+          JenkinsPlugins
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

@@ -58,10 +58,12 @@ Das Spiel mit ptconfigure -Module
    gintellij
    ginvoke
    gjava
+   gjenkinsplugins
    gjenkinssudonopass
    gjetty
    gjmeter
    gjrush
+   glighttpdserver
    glogging
    gmediatools
    gmemcached
@@ -87,15 +89,57 @@ Das Spiel mit ptconfigure -Module
    gphake
    gpharaohtools
    gphpapc
-   gphpcodebeautifier
    gphpci
+   gphpcodebeautifier
+   gphpconf
    gphpcs
    gphpeclipse
-   gphpdox
+   gphpedit
+   gphpdox 
+   gphpmd
+   gphpmodules
+   gphpssh
+   gphpstorm
+   gphpunit
+   gphpvm
+   gping
+   gport
+   gpostgressserver
+   gprocess
+   gptbuild
    gptconfigure
-                            
-
-
-
-
-
+   gpttest
+   gptvirtualize
+   gpython                         
+   gra
+   gredis
+   grubybdd
+   grubyrvm
+   grubysystem
+   gruncommand
+   gseleniumserver
+   gservice
+   gsftp
+   gskipfish
+   gsshencrypt
+   gsshharden
+   gsshkeygen
+   gsshkeyinstall
+   gsshkeystore
+   gstandardtools
+   gsudonopass
+   gsvn
+   gsystemdetection
+   gteamcity
+   gtomcat
+   gubuntucompiler
+   guser
+   gvarnish
+   gvirtualbox
+   gvmplayer
+   gvmwareworkstation
+   gvnc
+   gvncpassword
+   gwireframesketcher
+   gxvfb
+   gzendserver

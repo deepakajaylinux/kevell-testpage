@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>SshHarden &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="SshKeygen" href="gsshkeygen.html" />
+    <link rel="prev" title="SshEncrypt" href="gsshencrypt.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">SshHarden</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#securify">Securify</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gsshencrypt.html"
+         title="Previous Chapter: SshEncrypt">&laquo; SshEncrypt</a></li>
+  <li><a href="gsshkeygen.html"
+         title="Next Chapter: SshKeygen">SshKeygen &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gsshharden.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="sshharden">
+<h1>SshHarden<a class="headerlink" href="#sshharden" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Modul hilft bei der Erstellung und Bearbeitung von sshhardens. Der ssh verhärten erleichtert Sicherheitsfunktionen für die Benutzer SSH-Konten.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in der SSH verhärten Modul enthalten sind. Der Befehl help Listen aus der alternativen Parameter SSH verhärten. Es beschreibt auch die Syntax für die Verwendung von SSH verhärten zu Securify. Der Befehl help für SSH verhärten wird unten gegeben.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure SshHarden <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter SSH Harden.</p>
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure SshHarden <span class="nb">help</span>
+
+******************************
+
+
+This <span class="nb">command </span>allows you to modify create or modify sshhardens
+
+SshHarden, sshharden, ssh-harden
+
+- securify
+Add some security to your SSH accounts
+example: ptconfigure ssh-harden securify
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="securify">
+<h2>Securify<a class="headerlink" href="#securify" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl für die Nutzer securifying SSH Konto über SSH verhärten verwendet wie folgt dar:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ssh-harden securify
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls wie oben die Installation von Ssh Härten gegeben beginnt wie im Tabellenformat angezeigt.</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="20%" />
+<col width="35%" />
+<col width="11%" />
+<col width="34%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Paramaters</th>
+<th class="head">Alternative Parameter</th>
+<th class="head">Optionen</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Install Ssh Hardening?
+(Y/N)</td>
+<td>anstelle von Ssh HardeningDie folgenden
+Alternativen können ebenfalls verwendet
+werden: SshHarden, sshharden, ssh-harden.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer wünschen, den
+Installationsprozess können sie Eingang
+als Y. gehen</td>
+</tr>
+<tr class="row-odd"><td>Install Ssh Hardening?
+(Y/N)</td>
+<td>anstelle von Ssh HardeningDie folgenden
+Alternativen können ebenfalls verwendet
+werden: SshHarden, sshharden, ssh-harden.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer wünschen, den
+Installationsprozess können sie Eingang
+als N. Beenden|</td>
+</tr>
+</tbody>
+</table>
+<p>Wenn der Benutzer geht die Installation von Ssh verhärten, die securifying ssh Konto von Benutzern ermöglicht wird eingeleitet. Während der Prozess der Ausführung auftritt, wird der sshd Konfigurations modifiziert, dass Root SSH-Login und sowie sshd Konfigurations geändert wird, die Passwortbasierte SSH-Login verbietet verbietet. schließlich wird es die ssh-Dienst neu gestartet und die Ergebnisse der abgeschlossenen Ssh Harden Modifikationen. Der folgende Screenshot erklärt die oben genannten Verfahren bildlich.</p>
+<div class="highlight-bash"><div class="highlight"><pre>Kevell@corp:/# ptconfigure ssh-harden securify
+
+Install Ssh Hardening? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
+PHP Notice:  Undefined index: searchline in /opt/ptconfigure/ptconfigure/src/Modules/File/Model/FileAllOS.php on line 175
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
+PHP Notice:  Undefined index: searchline in /opt/ptconfigure/ptconfigure/src/Modules/File/Model/FileAllOS.php on line 149
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Writing File /etc/ssh/sshd_config
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> /etc/ssh/sshd_config modified to disallow root ssh login
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
+PHP Notice:  Undefined index: searchline in /opt/ptconfigure/ptconfigure/src/Modules/File/Model/FileAllOS.php on line 175
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Reading File /etc/ssh/sshd_config
+PHP Notice:  Undefined index: searchline in /opt/ptconfigure/ptconfigure/src/Modules/File/Model/FileAllOS.php on line 149
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>File<span class="o">]</span> Writing File /etc/ssh/sshd_config
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> /etc/ssh/sshd_config modified to disallow password based ssh login
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Restarting ssh service
+ssh stop/waiting
+ssh start/running, process 17375
+******************************
+
+
+SshHarden Modifications:
+--------------------------------------------
+
+Ssh Hardening: Success
+
+------------------------------
+SshHarden Mods Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Diese Ssh verhärten wirkt wie ein Verstärker, der die Sicherheitsfunktionen der Nutzer SSH-Konten ermöglicht.</li>
+<li>Die in Hilfe und securifying verwendeten Parameter werden die Installationsvorgänge nicht beachtet, welche ein zusätzlicher Vorteil ist,
+während im Vergleich zu andere.</li>
+<li>Dieses Modul ermöglicht Änderung der ssh verhärten Config, die Wurzel ssh Login, Passwort basierte SSH-Login verbietet.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gsshharden.rst">
+          SshHarden
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

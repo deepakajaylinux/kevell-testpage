@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PTBuild &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="PTConfigure" href="gptconfigure.html" />
+    <link rel="prev" title="Process" href="gprocess.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">PTBuild</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#uninstall">Uninstall</a></li>
+<li><a class="reference internal" href="#dafur-sorgen">Dafür Sorgen</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gprocess.html"
+         title="Previous Chapter: Process">&laquo; Process</a></li>
+  <li><a href="gptconfigure.html"
+         title="Next Chapter: PTConfigure">PTConfigure &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gptbuild.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="ptbuild">
+<h1>PTBuild<a class="headerlink" href="#ptbuild" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Tool hilft dem Benutzer, unter ptconfigure in Pharao Tools zu installieren und zu aktualisieren ptbuild. Automatisierung des Build sollte auch die Automatisierung der Integration, die häufig Einsatz in einer produktionsähnlichen Umgebung. In vielen Fällen ist die Build-Skript nicht nur kompiliert Binärdateien, sondern erzeugt auch Dokumentation, Webseiten, Statistiken und Vertriebsmedien wie Red Hat. Es tröstet mit Ubuntu und Cent OS.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den ptbuild Module enthalten sind. Der Befehl help Listen aus der alternativen Parameter ptbuild unter ptconfigure Modul. Es beschreibt auch die Syntax für die Installation updation des Benutzers. Der Befehl help für ptbuild ist nachfolgend dargestellt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ptbuild <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Der folgende Screenshot zeigt den vollen Einsatz der ptbuild.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure ptbuild <span class="nb">help</span>
+
+******************************
+
+
+ This <span class="nb">command </span>allows you to install or update ptbuild.
+
+ ptbuild, ptbuild
+
+       - install
+       Installs the latest version of ptbuild
+       example: ptconfigure ptbuild install
+
+       - ensure
+       Ensures ptbuild is installed
+       example: ptconfigure ptbuild ensure
+
+       - uninstall
+       Uninstalls the latest version of ptbuild
+       example: ptconfigure ptbuild uninstall
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Dies ist ein Werkzeug, das unter ptconfigure sitzt und zieht saubere Kopien der Benutzercodebasis und hat volle baut, aus dem Nichts, die ganze Zeit. Dieser Befehl wird verwendet, um neueste Version von ptbuild installieren. Der Befehl für den Einbau verwendet wird, ist wie folgt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ptbuild install
+</pre></div>
+</div>
+<p>Nach Den Befehl das System an ist</p>
+<p>Install ptbuild?(Y/N)</p>
+<p>Wenn der Benutzer gibt dann Y ptbuild installiert. Der folgende Screenshot zeigen es.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="21%" />
+<col width="18%" />
+<col width="21%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Verzeichnis (default)</th>
+<th class="head">Optionen</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Data directory (Default)</td>
+<td>Yes</td>
+<td>“/opt/ptbuild”</td>
+<td>Es wird ptbuild unter ptconfigure installieren</td>
+</tr>
+<tr class="row-odd"><td>Data directory</td>
+<td>No</td>
+<td>End Schrägstrich</td>
+<td>Der Benutzer muss ein den Pfad</td>
+</tr>
+<tr class="row-even"><td>Executor directory
+(Default)</td>
+<td>Yes</td>
+<td>“/usr/bin”</td>
+<td>Es wird Testamentsvollstrecker Verzeichnis
+installieren</td>
+</tr>
+<tr class="row-odd"><td>Executor directory</td>
+<td>No</td>
+<td>No Schrägstrich</td>
+<td>Der Nutzer ist damit Eingang als Verzeichnisname.|</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uninstall">
+<h2>Uninstall<a class="headerlink" href="#uninstall" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl wird verwendet, um die neueste Version von ptbuild Deinstallieren. Der Befehl für die Deinstallation verwendet wird, ist wie folgt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ptbuild Uninstall
+</pre></div>
+</div>
+<p>Nach Den Befehl das System an ist</p>
+<p>Uninstall ptbuild?(Y/N)</p>
+<p>Wenn der Benutzer gibt dann Y ptbuild wird deinstalliert. Der folgende Screenshot zeigen es.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
+</pre></div>
+</div>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="21%" />
+<col width="18%" />
+<col width="21%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Verzeichnis (default)</th>
+<th class="head">Optionen</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Data directory (Default)</td>
+<td>Yes</td>
+<td>“/opt/ptbuild”</td>
+<td>es wird uninstall ptbuild unter ptconfigure</td>
+</tr>
+<tr class="row-odd"><td>Data directory</td>
+<td>No</td>
+<td>End Schrägstrich</td>
+<td>Der Benutzer muss ein den Pfad</td>
+</tr>
+<tr class="row-even"><td>Executor directory
+(Default)</td>
+<td>Yes</td>
+<td>“/usr/bin”</td>
+<td>es wird uninstall Vollstrecker-Verzeichnis</td>
+</tr>
+<tr class="row-odd"><td>Executor directory</td>
+<td>No</td>
+<td>No Schrägstrich</td>
+<td>Der Nutzer ist damit Eingang als Verzeichnisname.|</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="dafur-sorgen">
+<h2>Dafür Sorgen<a class="headerlink" href="#dafur-sorgen" title="Permalink to this headline">¶</a></h2>
+<p>Stellen Sie sicher, Prozess verwendet, um die ptbuild im Benutzersystem oder nicht installiert zu überprüfen. Der folgende Befehl hilft dem Anwender, zu gewährleisten.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure ptbuild ensure
+</pre></div>
+</div>
+<p>Der folgende Screenshot zeigt seine Funktionen.
+Vorteile
+&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+<ul class="simple">
+<li>Wird möglich installieren ptbuilds.</li>
+<li>Geeignet, um mit Ubuntu und CentOS arbeiten.</li>
+<li>Nicht Groß- und Kleinschreibung.</li>
+<li>Automation in aktualisierte Version.</li>
+<li>Zuverlässigkeit, Verfügbarkeit, Wartungsfreundlichkeit mit anderen Verbindungen.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gptbuild.rst">
+          PTBuild
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>
