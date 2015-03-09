@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>SFTP &mdash; KEVELL 0.1 documentation</title>
+    <title>GIMP &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
     <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
-    <link rel="next" title="Skipfish" href="gskipfish.html" />
-    <link rel="prev" title="Service" href="gservice.html" />
+    <link rel="next" title="Gitbucket" href="ggitbucket.html" />
+    <link rel="prev" title="Generator" href="ggenerator.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -88,11 +88,10 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">SFTP</a><ul>
+<li><a class="reference internal" href="#">GIMP</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
 </li>
@@ -104,10 +103,10 @@
             
               
                 
-  <li><a href="gservice.html"
-         title="Previous Chapter: Service">&laquo; Service</a></li>
-  <li><a href="gskipfish.html"
-         title="Next Chapter: Skipfish">Skipfish &raquo;</a></li>
+  <li><a href="ggenerator.html"
+         title="Previous Chapter: Generator">&laquo; Generator</a></li>
+  <li><a href="ggitbucket.html"
+         title="Next Chapter: Gitbucket">Gitbucket &raquo;</a></li>
               
             
             
@@ -115,7 +114,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/gsftp.txt"
+  <a href="_sources/ggimp.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -152,121 +151,87 @@
     <div class="col-md-9">
       
   
-  <div class="section" id="sftp">
-<h1>SFTP<a class="headerlink" href="#sftp" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="gimp">
+<h1>GIMP<a class="headerlink" href="#gimp" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dieses Modul unterstützen die Übertragung von Dateien von einem System auf ein anderes. Es kann Hoch- und Herunterladen der Dateien auf das System. Automation möglich. Setzen Sie und erhalten Sie Optionen in diesem Modul zur Verfügung. Es gibt die Konfiguration Ihrer Umgebung. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.</p>
+<p>Dieses Modul ermöglicht es Anwendern, GIMP, die ein beliebtes Bild-Editor zu installieren.</p>
+<p>GIMP ein Akronym für GNU Image Manipulation Program) ist für die Bildretusche und Bearbeiten, Freiform-Zeichnung verwendet, Skalieren, Beschneiden, Fotomontagen, die Konvertierung zwischen verschiedenen Bildformaten und mehr spezialisierte Aufgaben.</p>
+<p>GIMP ist frei (und nach) jeder verteilt, und jeder kann in ihrem Inhalt und ihrer Quellcode schauen und können Funktionen hinzufügen oder Probleme beheben. Es wird unter LGPLv3 und GPLv3 + Lizenzen freigegeben. GIMP begann 1995 als Schulprojekt von zwei Studenten; Jetzt GIMP ist eine vollwertige Anwendung, auf allen Distributionen von GNU / Linux und die jüngsten Versionen von Microsoft Windows und Mac OS X.</p>
+<p>Lassen Sie uns sehen, wie dieses Modul erleichtert die Installation von GIMP aus den anstehenden Themen.</p>
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
-<p>Hilfe Befehl verwendet werden, um Informationen zu einem bestimmten Befehl zu finden. Weitere Informationen zu den Funktionsänderungen von SFTP können wir diese Hilfe Befehl verwenden.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure sftp <span class="nb">help</span>
+<p>Der Befehl help ist eine kurze Bedienungsanleitung, die die Benutzer über den Zweck dieses Moduls Die Listen outs sein alternatives Parameter, die in den Erklärungen für die Installation von GIMP durch verwendet werden kann, zusammen mit der Syntax Apt-get stellt. Die Syntax für die Hilfe-Option im Rahmen dieses Moduls ist unten dargestellt,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure GIMP <span class="nb">help</span>
 </pre></div>
 </div>
-<p>Der folgende Screenshot wird dich führen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp <span class="nb">help</span>
-******************************
-
-
- This <span class="nb">command </span>handles SFTP Transfer Functions.
-
- SFTP, sftp
-
-       - put
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from <span class="nb">local </span>to remote
-       example: ptconfigure sftp put
-       example: ptconfigure sftp put --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: ptconfigure sftp put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
-
-       - get
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from remote to <span class="nb">local</span>
-<span class="nb">       </span>example: ptconfigure sftp get
-       example: ptconfigure sftp get --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: ptconfigure sftp get --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
-
-------------------------------
-End Help
-******************************
-</pre></div>
-</div>
+<p>Die Syntax für die Deklaration den Befehl help ist nicht case sensitive was ein zusätzlicher Vorteil ist. Der folgende Screenshot visualisieren Sie den Befehl help unter GIMP.</p>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Als Unternehmen und als Individuen, SFTP wurde zur Erfüllung technologischen Herausforderungen der einzelnen Partner, die Erfüllung ihrer technischen Anforderungen und Erfüllung ihrer Unternehmensziele gewidmet. Es ist offensichtlich, dass die Verfahren zur SFTP-Modul unter ptconfigure installieren, indem einfach mit dem Befehl unten angegeben,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure SFTP put
+<p>Der Befehl für die Installation von GIMP durch verwendet apt-get mit diesem Modul ist einfach nur mit Hilfe von unter dem Befehl,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure GIMP install
 </pre></div>
 </div>
-<p>After giving the command then the system will raise the question as,</p>
-<p>Install SFTP server group? Y/N</p>
-<p>If the user input as Y then</p>
-<p>SSh timeout section?</p>
-<p>The user has to enter the value</p>
-<p>Please enter remote ssh port</p>
-<p>Default value is 22. The user can enter any value</p>
-<p>Enter server host IP?</p>
-<p>The user has to enter username, password, and key path.</p>
-<p>Add another server?</p>
-<p>If the user input as Y he has to enter new server name</p>
-<p>Then everything will be connected.</p>
-<p>If the user input as N previous server name can be accessed.</p>
-<p>The following screenshot will guide you.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp put
-
-SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
-Y
-Please Enter SSH Timeout in seconds
-90
-Please Enter remote SSH Port
-22
-Use Environments Configured in Project? <span class="o">(</span>Y/N<span class="o">)</span>
-N
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Attempting to load SFTP connections...
-Enter <span class="nb">local source </span>file path
-/root/vv
-Enter remote target file path
-/root/gg/vv
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Opening SFTP Connections...
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> All SFTP Puts Completed
-******************************
-</pre></div>
-</div>
-</div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<p>Nach der Eingabe des Befehls vor, werden die folgenden Schritte, wie in der Tabelle dargestellt, durchgeführt,</p>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="18%" />
-<col width="21%" />
-<col width="61%" />
+<col width="16%" />
+<col width="29%" />
+<col width="11%" />
+<col width="44%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Alternative Parameter</th>
-<th class="head">Kommentare</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
+<th class="head">Kommentar</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>put</td>
-<td>SFTP, sftp</td>
-<td>Quelle zu -Die Zieldatei übertragen werden können</td>
+<tr class="row-even"><td>GIMP Install? (Y/N)</td>
+<td>anstelle von GIMP wir verwenden
+können, gimp also.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer auf Wunsch Installation
+fortzusetzen, können sie Eingang als Y.</td>
 </tr>
-<tr class="row-odd"><td>get</td>
-<td>SFTP, sftp</td>
-<td>Pfad zur Datei -Die Quelle kann von Remote-System heruntergeladen|</td>
+<tr class="row-odd"><td>GIMP Install? (Y/N)</td>
+<td>anstelle von GIMP wir verwenden
+können, gimp also.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer wünschen, um die Installation
+zu beenden, können sie Eingang als N.|</td>
 </tr>
 </tbody>
 </table>
+<p>Der folgende Screenshot zeigt visuell über den Prozess der Installation.</p>
 </div>
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Multi-Server von Einöde.</li>
-<li>Die angegebene Datei ist nicht verfügbar Fehlermeldung kommen.</li>
-<li>Erreichbarkeit ist schwierig ohne Genehmigung.</li>
-<li>Automatisch bei bereits überschreiben bei Datei vorhanden.</li>
-<li>Nicht Groß- und Kleinschreibung.</li>
-<li>Geheimhaltung und Sicherheit möglich ist.</li>
+<li>Die verwendeten Hilfe und andere unterschiedliche Merkmale von apt erklärt Parameter wird nicht zwischen Groß- und Kleinschreibung.</li>
+<li>Es ist gut-to-do in beiden Cent os und als auch in Ubuntu.</li>
+</ul>
+<p>GIMP bietet auch &#8220;intelligente&#8221; Werkzeuge, die einen komplexeren Algorithmus verwenden, um Dinge, die sonst zeitaufwändig oder unmöglich machen. Dazu zählen ein:</p>
+<ul class="simple">
+<li>Klonen-Werkzeug, das Kopien Pixel mit einem Pinsel</li>
+<li>Reparatur-Pinsel, die Kopien Pixel aus einem Bereich und Ton und Farbe korrigiert</li>
+<li>Perspective Klon-Werkzeug, das wie das Klon-Werkzeug funktioniert, aber korrigiert Abstandsänderungen</li>
+<li>Unschärfe und schärfen Werkzeug Unschärfen und schärft mit einem Pinsel</li>
+<li>Dodge und Burn-Tool ist ein Pinsel, der Zielbildpunkte heller (Winkelzüge) oder dunkler (Verbrennungen) macht</li>
+</ul>
+<p>GIMP verwandeln Tools gehören:</p>
+<ul class="simple">
+<li>Richten</li>
+<li>Sich Bewegen</li>
+<li>Crop</li>
+<li>Drehen</li>
+<li>Skala</li>
+<li>Shear</li>
+<li>Perspective</li>
+<li>Flip</li>
 </ul>
 </div>
 </div>
@@ -327,8 +292,8 @@ Enter remote target file path
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gsftp.rst">
-          SFTP
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/ggimp.rst">
+          GIMP
         </a> on GitHub.
       </li>
 

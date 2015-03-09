@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>SFTP &mdash; KEVELL 0.1 documentation</title>
+    <title>Jenkins &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
     <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
-    <link rel="next" title="Skipfish" href="gskipfish.html" />
-    <link rel="prev" title="Service" href="gservice.html" />
+    <link rel="next" title="JenkinsPlugins" href="gjenkinsplugins.html" />
+    <link rel="prev" title="JAVA" href="gjava.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -88,11 +88,10 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">SFTP</a><ul>
+<li><a class="reference internal" href="#">Jenkins</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
+<li><a class="reference internal" href="#optionen">Optionen</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
 </li>
@@ -104,10 +103,10 @@
             
               
                 
-  <li><a href="gservice.html"
-         title="Previous Chapter: Service">&laquo; Service</a></li>
-  <li><a href="gskipfish.html"
-         title="Next Chapter: Skipfish">Skipfish &raquo;</a></li>
+  <li><a href="gjava.html"
+         title="Previous Chapter: JAVA">&laquo; JAVA</a></li>
+  <li><a href="gjenkinsplugins.html"
+         title="Next Chapter: JenkinsPlugins">JenkinsPlugins &raquo;</a></li>
               
             
             
@@ -115,7 +114,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/gsftp.txt"
+  <a href="_sources/gjenkins.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -152,108 +151,129 @@
     <div class="col-md-9">
       
   
-  <div class="section" id="sftp">
-<h1>SFTP<a class="headerlink" href="#sftp" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="jenkins">
+<h1>Jenkins<a class="headerlink" href="#jenkins" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dieses Modul unterstützen die Übertragung von Dateien von einem System auf ein anderes. Es kann Hoch- und Herunterladen der Dateien auf das System. Automation möglich. Setzen Sie und erhalten Sie Optionen in diesem Modul zur Verfügung. Es gibt die Konfiguration Ihrer Umgebung. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.</p>
+<p>Jenkins ist sehr beliebt, um Server zu bauen. Jenkins ist ein Open Source kontinuierliche Integration-Tool in Java geschrieben. Jenkins bietet kontinuierliche Integrationsleistungen für die Softwareentwicklung. Es ist ein Server-basiertes System läuft in einem Servlet-Container wie Apache Tomcat.</p>
+<p>Kernfunktionalität und Flexibilität Jenkins &#8216;lassen Sie ihn in einer Vielzahl von Umgebungen geeignet und kann helfen, den Entwicklungsprozess für alle Beteiligten</p>
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
-<p>Hilfe Befehl verwendet werden, um Informationen zu einem bestimmten Befehl zu finden. Weitere Informationen zu den Funktionsänderungen von SFTP können wir diese Hilfe Befehl verwenden.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure sftp <span class="nb">help</span>
+<p>Diese Funktion dient, um die Verwendung von Jenkins Modul bestimmen. Der Benutzer wird kommen, um über die verschiedenen Möglichkeiten / Format um dieses Modul ausführen kennen. Dieser Befehl leitet den Anwender, um den Zweck dieses Befehls kennen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure jenkins <span class="nb">help</span>
 </pre></div>
 </div>
-<p>Der folgende Screenshot wird dich führen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp <span class="nb">help</span>
+<p>Der Screenshot für den obigen Befehl aufgelistet unten,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure jenkins <span class="nb">help</span>
 ******************************
 
 
- This <span class="nb">command </span>handles SFTP Transfer Functions.
+This <span class="nb">command </span>allows you to install Jenkins, the popular Build Server.
 
- SFTP, sftp
+Jenkins, jenkins
 
-       - put
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from <span class="nb">local </span>to remote
-       example: ptconfigure sftp put
-       example: ptconfigure sftp put --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: ptconfigure sftp put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
-
-       - get
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from remote to <span class="nb">local</span>
-<span class="nb">       </span>example: ptconfigure sftp get
-       example: ptconfigure sftp get --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: ptconfigure sftp get --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
+- install
+Installs Jenkins through apt-get
+example: ptconfigure jenkins install
 
 ------------------------------
 End Help
 ******************************
+Installation
+----------------
 </pre></div>
 </div>
-</div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Als Unternehmen und als Individuen, SFTP wurde zur Erfüllung technologischen Herausforderungen der einzelnen Partner, die Erfüllung ihrer technischen Anforderungen und Erfüllung ihrer Unternehmensziele gewidmet. Es ist offensichtlich, dass die Verfahren zur SFTP-Modul unter ptconfigure installieren, indem einfach mit dem Befehl unten angegeben,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure SFTP put
+<p>Wenn der Benutzer Jenkins Modul in Maschinen installieren muss, wird die unten gegebenen Befehl das Verfahren der Ausführung der Installation.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure jenkins install
 </pre></div>
 </div>
-<p>After giving the command then the system will raise the question as,</p>
-<p>Install SFTP server group? Y/N</p>
-<p>If the user input as Y then</p>
-<p>SSh timeout section?</p>
-<p>The user has to enter the value</p>
-<p>Please enter remote ssh port</p>
-<p>Default value is 22. The user can enter any value</p>
-<p>Enter server host IP?</p>
-<p>The user has to enter username, password, and key path.</p>
-<p>Add another server?</p>
-<p>If the user input as Y he has to enter new server name</p>
-<p>Then everything will be connected.</p>
-<p>If the user input as N previous server name can be accessed.</p>
-<p>The following screenshot will guide you.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp put
+<p>Der Screenshot der obigen Befehl aufgelistet unten,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure jenkins install
+Install Jenkins? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+*******************************
+*        Pharaoh Tools        *
+*          ! Jenkins !        *
+*******************************
+Creating /tmp/ptconfigure-temp-script-14615194352.sh
+chmod <span class="m">755</span> /tmp/ptconfigure-temp-script-14615194352.sh 2&gt;/dev/null
+Changing /tmp/ptconfigure-temp-script-14615194352.sh Permissions
+Executing /tmp/ptconfigure-temp-script-14615194352.sh
+E: Could not get lock /var/lib/apt/lists/lock - open <span class="o">(</span>11: Resource temporarily unavailable<span class="o">)</span>
+E: Unable to lock directory /var/lib/apt/lists/
+OK
+Temp File /tmp/ptconfigure-temp-script-14615194352.sh Removed
+W: Duplicate sources.list entry http://dl.google.com/linux/chrome/deb/ stable/main amd64 Packages <span class="o">(</span>/var/lib/apt/lists/dl.google.com_linux_chrome_deb_dists_stable_main_binary-amd64_Packages<span class="o">)</span>
+W: Duplicate sources.list entry http://dl.google.com/linux/chrome/deb/ stable/main i386 Packages <span class="o">(</span>/var/lib/apt/lists/dl.google.com_linux_chrome_deb_dists_stable_main_binary-i386_Packages<span class="o">)</span>
+W: You may want to run apt-get update to correct these problems
+W: Duplicate sources.list entry http://dl.google.com/linux/chrome/deb/ stable/main amd64 Packages <span class="o">(</span>/var/lib/apt/lists/dl.google.com_linux_chrome_deb_dists_stable_main_binary-amd64_Packages<span class="o">)</span>
+W: Duplicate sources.list entry http://dl.google.com/linux/chrome/deb/ stable/main i386 Packages <span class="o">(</span>/var/lib/apt/lists/dl.google.com_linux_chrome_deb_dists_stable_main_binary-i386_Packages<span class="o">)</span>
+W: You may want to run apt-get update to correct these problems
+E: Unable to correct problems, you have held broken packages.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or <span class="k">if</span> you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may <span class="nb">help </span>to resolve the situation:
 
-SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
-Y
-Please Enter SSH Timeout in seconds
-90
-Please Enter remote SSH Port
-22
-Use Environments Configured in Project? <span class="o">(</span>Y/N<span class="o">)</span>
-N
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Attempting to load SFTP connections...
-Enter <span class="nb">local source </span>file path
-/root/vv
-Enter remote target file path
-/root/gg/vv
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Opening SFTP Connections...
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> All SFTP Puts Completed
+The following packages have unmet dependencies:
+jenkins : Depends: daemon but it is not installable
+          Depends: default-jre-headless but it is not installable or
+                   java-runtime-headless
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Adding Package jenkins from the Packager Apt did not execute correctly
+... All <span class="k">done</span>!
+*******************************
+Thanks <span class="k">for</span> installing , visit www.pharaohtools.com <span class="k">for</span> more
+******************************
+
+
+Single App Installer:
+--------------------------------------------
+Jenkins: Success
+------------------------------
+Installer Finished
 ******************************
 </pre></div>
 </div>
 </div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="optionen">
+<h2>Optionen<a class="headerlink" href="#optionen" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
-<col width="18%" />
-<col width="21%" />
-<col width="61%" />
+<col width="20%" />
+<col width="34%" />
+<col width="12%" />
+<col width="33%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
 <th class="head">Alternative Parameter</th>
+<th class="head">Optionen</th>
 <th class="head">Kommentare</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>put</td>
-<td>SFTP, sftp</td>
-<td>Quelle zu -Die Zieldatei übertragen werden können</td>
+<tr class="row-even"><td>ptconfigure Jenkins
+Install</td>
+<td>Anstelle der Verwendung von Jenkins,
+kann der Benutzer Jenkins</td>
+<td>Y</td>
+<td>Sobald der Benutzer bietet die
+Möglichkeit , startet System-
+Installation</td>
 </tr>
-<tr class="row-odd"><td>get</td>
-<td>SFTP, sftp</td>
-<td>Pfad zur Datei -Die Quelle kann von Remote-System heruntergeladen|</td>
+<tr class="row-odd"><td>ptconfigure Jenkins
+Install</td>
+<td>Anstelle der Verwendung von Jenkins,
+kann der Benutzer Jenkins</td>
+<td>N</td>
+<td>Sobald der Benutzer bietet die
+Möglichkeit , stoppt System-
+Installation|</td>
 </tr>
 </tbody>
 </table>
@@ -261,12 +281,10 @@ Enter remote target file path
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Multi-Server von Einöde.</li>
-<li>Die angegebene Datei ist nicht verfügbar Fehlermeldung kommen.</li>
-<li>Erreichbarkeit ist schwierig ohne Genehmigung.</li>
-<li>Automatisch bei bereits überschreiben bei Datei vorhanden.</li>
-<li>Nicht Groß- und Kleinschreibung.</li>
-<li>Geheimhaltung und Sicherheit möglich ist.</li>
+<li>Sofortige Fehlererkennung</li>
+<li>Keine Integration Schritt im Lebenszyklus</li>
+<li>Entfaltbarer System zu einem bestimmten Zeitpunkt</li>
+<li>Aufnahme der Entwicklung des Projekts</li>
 </ul>
 </div>
 </div>
@@ -327,8 +345,8 @@ Enter remote target file path
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gsftp.rst">
-          SFTP
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gjenkins.rst">
+          Jenkins
         </a> on GitHub.
       </li>
 

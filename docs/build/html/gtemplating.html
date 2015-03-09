@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>SFTP &mdash; KEVELL 0.1 documentation</title>
+    <title>Templating &mdash; KEVELL 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -32,8 +32,8 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
     <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
-    <link rel="next" title="Skipfish" href="gskipfish.html" />
-    <link rel="prev" title="Service" href="gservice.html" />
+    <link rel="next" title="Tomcat" href="gtomcat.html" />
+    <link rel="prev" title="Teamcity module" href="gteamcity.html" />
 
 
 <script src="_static/labibi.js"></script>
@@ -88,11 +88,11 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">SFTP</a><ul>
+<li><a class="reference internal" href="#">Templating</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#options">Options</a></li>
+<li><a class="reference internal" href="#option">Option</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
 </li>
@@ -104,10 +104,10 @@
             
               
                 
-  <li><a href="gservice.html"
-         title="Previous Chapter: Service">&laquo; Service</a></li>
-  <li><a href="gskipfish.html"
-         title="Next Chapter: Skipfish">Skipfish &raquo;</a></li>
+  <li><a href="gteamcity.html"
+         title="Previous Chapter: Teamcity module">&laquo; Teamcity module</a></li>
+  <li><a href="gtomcat.html"
+         title="Next Chapter: Tomcat">Tomcat &raquo;</a></li>
               
             
             
@@ -115,7 +115,7 @@
             
 <!--              <li>
 <div id="sourcelink">
-  <a href="_sources/gsftp.txt"
+  <a href="_sources/gtemplating.txt"
      rel="nofollow">Source</a>
 </div></li>-->
             
@@ -152,38 +152,33 @@
     <div class="col-md-9">
       
   
-  <div class="section" id="sftp">
-<h1>SFTP<a class="headerlink" href="#sftp" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="templating">
+<h1>Templating<a class="headerlink" href="#templating" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dieses Modul unterstützen die Übertragung von Dateien von einem System auf ein anderes. Es kann Hoch- und Herunterladen der Dateien auf das System. Automation möglich. Setzen Sie und erhalten Sie Optionen in diesem Modul zur Verfügung. Es gibt die Konfiguration Ihrer Umgebung. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.</p>
+<p>Der Begriff Templat wenn sie im Kontext der ptconfigure Dateiformat verwendet, bezieht sich auf ein gemeinsames Merkmal von vielen Software-Anwendungen, die eine einzigartige nicht ausführbaren Dateiformat, die speziell für diese spezielle Anwendung vorgesehen definieren.</p>
+<p>Templating Formate sind solche, deren Datei zeigt an, dass der Dateityp wird als eine sehr hohe Ausgangspunkt, um andere Dateien erstellen soll.</p>
+<p>Diese Arten von Dateien werden normalerweise Template-Datei durch neue Werte installiert. Es passt sich mit Ubuntu und CentOS arbeiten.</p>
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
-<p>Hilfe Befehl verwendet werden, um Informationen zu einem bestimmten Befehl zu finden. Weitere Informationen zu den Funktionsänderungen von SFTP können wir diese Hilfe Befehl verwenden.</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure sftp <span class="nb">help</span>
+<p>Der Befehl help führt die Benutzer über den Zweck und als auch über die Möglichkeiten, die in den Template-Module enthalten sind. Der Befehl help listet einige der alternativen Parameter Template unter Ptconfigure Modul. Es beschreibt auch die Syntax zur Erfassung des Nutzers oder der Nutzerin € ™ s Maschine.</p>
+<p>Der Befehl help für Templating ist nachfolgend dargestellt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure templating <span class="nb">help</span>
 </pre></div>
 </div>
-<p>Der folgende Screenshot wird dich führen.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp <span class="nb">help</span>
+<p>Die folgende Abbildung erläutert die Template.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure templating <span class="nb">help</span>
 ******************************
 
 
- This <span class="nb">command </span>handles SFTP Transfer Functions.
+ This <span class="nb">command </span>allows you to install a templated file with new values.
 
- SFTP, sftp
+ Templating, templating, template
 
-       - put
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from <span class="nb">local </span>to remote
-       example: ptconfigure sftp put
-       example: ptconfigure sftp put --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: ptconfigure sftp put --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
-
-       - get
-       Will ask you <span class="k">for</span> details <span class="k">for</span> servers, <span class="k">then</span> copy a file or directory from remote to <span class="nb">local</span>
-<span class="nb">       </span>example: ptconfigure sftp get
-       example: ptconfigure sftp get --yes --environment-name<span class="o">=</span>staging --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span>
-       example: ptconfigure sftp get --yes --source<span class="o">=</span><span class="s2">&quot;/tmp/file&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/home/user/file&quot;</span> <span class="c"># will ask for server details</span>
+       - install
+       Installs a template
+       example: ptconfigure template install
 
 ------------------------------
 End Help
@@ -193,67 +188,48 @@ End Help
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Als Unternehmen und als Individuen, SFTP wurde zur Erfüllung technologischen Herausforderungen der einzelnen Partner, die Erfüllung ihrer technischen Anforderungen und Erfüllung ihrer Unternehmensziele gewidmet. Es ist offensichtlich, dass die Verfahren zur SFTP-Modul unter ptconfigure installieren, indem einfach mit dem Befehl unten angegeben,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure SFTP put
+<p>In ptconfigure Zusammenhang bezieht sich Template, um die Schaffung eines einheitlichen Bild der virtuellen Maschine als Gastbetriebssystem, dann speichern Sie sie als Werkzeug für mehrere virtuelle Maschinen. Die Technik wird verwendet, um sowohl in der Virtualisierung und Cloud Computing-Management zu installieren, und ist in großen Server-Warehouses häufig.</p>
+<p>Der folgende Befehl hilft dem Anwender, Templating installieren.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure templating install
 </pre></div>
 </div>
-<p>After giving the command then the system will raise the question as,</p>
-<p>Install SFTP server group? Y/N</p>
-<p>If the user input as Y then</p>
-<p>SSh timeout section?</p>
-<p>The user has to enter the value</p>
-<p>Please enter remote ssh port</p>
-<p>Default value is 22. The user can enter any value</p>
-<p>Enter server host IP?</p>
-<p>The user has to enter username, password, and key path.</p>
-<p>Add another server?</p>
-<p>If the user input as Y he has to enter new server name</p>
-<p>Then everything will be connected.</p>
-<p>If the user input as N previous server name can be accessed.</p>
-<p>The following screenshot will guide you.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure sftp put
-
-SFTP on Server group? <span class="o">(</span>Y/N<span class="o">)</span>
-Y
-Please Enter SSH Timeout in seconds
-90
-Please Enter remote SSH Port
-22
-Use Environments Configured in Project? <span class="o">(</span>Y/N<span class="o">)</span>
-N
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Attempting to load SFTP connections...
-Enter <span class="nb">local source </span>file path
-/root/vv
-Enter remote target file path
-/root/gg/vv
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Opening SFTP Connections...
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> All SFTP Puts Completed
-******************************
+<p>Der folgende Screenshot führt den Benutzer zu installieren.</p>
+<div class="highlight-bash"><div class="highlight"><pre>
 </pre></div>
 </div>
 </div>
-<div class="section" id="options">
-<h2>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="option">
+<h2>Option<a class="headerlink" href="#option" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="table-bordered docutils">
 <colgroup>
 <col width="18%" />
-<col width="21%" />
-<col width="61%" />
+<col width="40%" />
+<col width="11%" />
+<col width="31%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Parameters</th>
-<th class="head">Alternative Parameter</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
 <th class="head">Kommentare</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>put</td>
-<td>SFTP, sftp</td>
-<td>Quelle zu -Die Zieldatei übertragen werden können</td>
+<tr class="row-even"><td>Install templating
+functionality (Y/N)</td>
+<td>Anstelle der Verwendung der Benutzer
+verwendenTemplating,templating,template.</td>
+<td>Y(Yes)</td>
+<td>Templating unter ptconfigure
+installiert werden.</td>
 </tr>
-<tr class="row-odd"><td>get</td>
-<td>SFTP, sftp</td>
-<td>Pfad zur Datei -Die Quelle kann von Remote-System heruntergeladen|</td>
+<tr class="row-odd"><td>Install templating
+functionality (Y/N)</td>
+<td>Anstelle der Verwendung der Benutzer
+verwendenTemplating,templating,template.</td>
+<td>N(No)</td>
+<td>Es kann den Bildschirm zu
+verlassen.|</td>
 </tr>
 </tbody>
 </table>
@@ -261,12 +237,11 @@ Enter remote target file path
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Multi-Server von Einöde.</li>
-<li>Die angegebene Datei ist nicht verfügbar Fehlermeldung kommen.</li>
-<li>Erreichbarkeit ist schwierig ohne Genehmigung.</li>
-<li>Automatisch bei bereits überschreiben bei Datei vorhanden.</li>
-<li>Nicht Groß- und Kleinschreibung.</li>
-<li>Geheimhaltung und Sicherheit möglich ist.</li>
+<li>Template Verarbeitung ist in verschiedenen Zusammenhängen für verschiedene Zwecke verwendet.</li>
+<li>Das spezifische Ziel ist es, von der Software-Anwendung oder eine Vorlage verwendet wird gewöhnlich Kontingent.</li>
+<li>Nicht empfindlich</li>
+<li>Anzüge mit Ubuntu und CentOS arbeiten.</li>
+<li>Aktualisierte Version mit neuen Werten ist möglich</li>
 </ul>
 </div>
 </div>
@@ -327,8 +302,8 @@ Enter remote target file path
 
         <li>
           Go to
-        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gsftp.rst">
-          SFTP
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gtemplating.rst">
+          Templating
         </a> on GitHub.
       </li>
 

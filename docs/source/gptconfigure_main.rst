@@ -585,6 +585,7 @@ Das Spiel mit ptconfigure -Module
    gfirewall
    ggem
    ggenerator
+   ggimp
    ggitbucket
    ggitkeysafe
    ggitlab
@@ -596,6 +597,7 @@ Das Spiel mit ptconfigure -Module
    gintellij
    ginvoke
    gjava
+   gjenkins
    gjenkinsplugins
    gjenkinssudonopass
    gjetty
@@ -669,6 +671,7 @@ Das Spiel mit ptconfigure -Module
    gsvn
    gsystemdetection
    gteamcity
+   gtemplating
    gtomcat
    gubuntucompiler
    guser
