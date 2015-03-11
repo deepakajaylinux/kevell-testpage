@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Drupal &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Drupal</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#wie-drupal-dapperfy">Wie Drupal Dapperfy</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gdrupal_deploy.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="drupal">
+<h1>Drupal<a class="headerlink" href="#drupal" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Drupal-Modul ist Teil der Standard-Module. Es bietet Autopiloten für Drupal, die von builderfy und dapperfy Autopiloten zugeschnitten ist. Neben dem builderfy und dapperfy bietet es drupal Bankkonfiguration für die DB configure Moduls.</p>
+<p>Drupal ist ein freies Open-Source Content-Management-Framework in PHP geschrieben und unter der GNU General Public License. Es wird als Back-End-Rahmen für die mindestens 2,1% aller Websites weltweit von persönlichen Blogs der Unternehmens, politischen und Regierungs-Websites einschließlich WhiteHouse.gov und data.gov.uk. hin verwendet Es ist auch für das Wissensmanagement und Business Collaboration verwendet.</p>
+<p>Drupal läuft auf allen Computer-Plattform, die sowohl eine Web-Server in der Lage, mit PHP (einschließlich Apache, Litespeed, IIS, Lighttpd, Hiawatha, Cherokee oder Nginx) und eine Datenbank (zB MySQL, MongoDB, MariaDB, PostgreSQL, SQLite oder Microsoft unterstützt SQL Server), um Inhalte und Einstellungen zu speichern.</p>
+<p>Lassen Sie uns sehen, wie man das Drupal unter diesen Modulen in verschiedenen Aspekten dapperfy.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl help ist eine kurze und sowie interessante Zusammenfassung für den Benutzer. Sie bietet Informationen über seine wichtige Rolle, Angaben zum abweichenden Parameter, die in Erklärungen verwendet werden können, Seine drei Hauptfunktionen (builderfy, dapperfy, ausführen), und auch die Syntax für die Verwendung und zu erklären, diese drei interessante Funktionen. Die Hilfe-Option erklärte Syntax, ist unten angegeben.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy Drupal <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls oben angegeben, kann der Benutzer die Anzeige aufgrund der Hilfe-Optionen zusammen mit den oben beschriebenen Details anzuzeigen, können Sie visuell diese Ergebnisse der Hilfe-Option erhalten, wie aus der folgenden Bildschirm dargestellt ist.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy Drupal <span class="nb">help</span>
+******************************
+
+
+ This module is a Default Modules and provides autopilots <span class="k">for</span> drupal tailored Builderfy and Dapperfy Autopilots.
+ Also provides Drupal Database Configuration <span class="k">for</span> the DBConfigure Module.
+
+ Drupal, drupal
+
+ This module adds multiple actions to both builderfy and dapperfy. This will <span class="nb">let </span>you produce autopilots <span class="k">for</span> both
+ which are tailored to Drupal.
+
+ // dapperfy - create our auto deploy files
+ ptdeploy dapperfy drupal --yes --guess
+
+ // builderfy - create templates to install build
+ sudo ptdeploy builderfy continuous --yes --jenkins-home<span class="o">=</span><span class="s2">&quot;/var/lib/jenkins&quot;</span> --target-job-name<span class="o">=</span><span class="s2">&quot;my-project-continuous&quot;</span> --project-description<span class="o">=</span><span class="s2">&quot;This is the Continuous Delivery build for My Project&quot;</span> --primary-scm-url<span class="o">=</span><span class="s2">&quot;http://146.185.129.66:8080/git/root/first-pharaoh-cd.git&quot;</span> --source-branch-spec<span class="o">=</span><span class="s2">&quot;origin/master&quot;</span> --source-scm-url<span class="o">=</span><span class="s2">&quot;http://146.185.129.66:8080/git/root/first-pharaoh-cd.git&quot;</span> --days-to-keep<span class="o">=</span><span class="s2">&quot;-1&quot;</span> --amount-to-keep<span class="o">=</span><span class="s2">&quot;10&quot;</span> --autopilot-test-invoke-install-file<span class="o">=</span><span class="s2">&quot;build/config/ptdeploy/autopilots/tiny-staging-invoke-code-no-dbconf.php&quot;</span> --autopilot-prod-invoke-install-file<span class="o">=</span><span class="s2">&quot;build/config/ptdeploy/autopilots/tiny-prod-invoke-code-no-dbconf.php&quot;</span> --error-email<span class="o">=</span><span class="s2">&quot;phpengine@hotmail.co.uk&quot;</span> --only-autopilots
+
+ // execute the build creator
+ ptdeploy autopilot execute build/config/ptdeploy/builderfy/autopilots/tiny-jenkins-invoke-continuous.php
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="wie-drupal-dapperfy">
+<h2>Wie Drupal Dapperfy<a class="headerlink" href="#wie-drupal-dapperfy" title="Permalink to this headline">¶</a></h2>
+<p>Wir wollen sehen, über die verschiedenen Aspekte dieses Moduls in dapperfying die Drupal. Der Befehl für diesen Zweck verwendet wird, ist für alle Aspekte, wie unten dargestellt,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy dapperfy drupal
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls oben angegeben, werden die folgenden Informationen während der Ausführung erkundigte sich aus der Tabelle dargestellt,</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="21%" />
+<col width="30%" />
+<col width="8%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Dapperfy This for
+Drupal? (Y/N)</td>
+<td>Anstelle von Drupal, können
+wir drupal auch.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer die drupal sie eingeben
+können, wie Y. dapperfy muss</td>
+</tr>
+<tr class="row-odd"><td>Dapperfy This for
+Drupal? (Y/N)</td>
+<td>Anstelle von Drupal, können
+wir drupal auch.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer nicht in der Notwendigkeit,
+die Drupal sie eingeben können, wie N. dapperfy|</td>
+</tr>
+</tbody>
+</table>
+<p>Wenn der Benutzer Erlös dapperfying die Drupal durch Eingabe als Y, werden die folgenden Schritte während der Ausführung beteiligt,</p>
+<p>Schritt 1:</p>
+<p>Haben Sie eine andere Umgebung hinzufügen? (Y / N)</p>
+<p>Der Benutzer die Eingabe Y oder N aufweisen kann, je nach Bedarf für das Hinzufügen eines weiteren Umgebung.</p>
+<p>Der folgende Screenshot zeigt visuell diesen Prozess der dapperfying die Drupal.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy dapperfy drupal
+Dapperfy This <span class="k">for</span> Drupal? <span class="o">(</span>Y/N<span class="o">)</span>
+Y
+Use existing environment settings? <span class="o">(</span>Y/N<span class="o">)</span>
+n
+Do you want to add another environment? <span class="o">(</span>Y/N<span class="o">)</span>
+n
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+******************************
+
+
+Success
+In Dapperfy
+******************************
+</pre></div>
+</div>
+<p>Die zweite Form der Deklaration der dapperfying von Drupal wird nachstehend erläutert, und der Befehl für das verwendet wird, ist die gleiche wie
+.. code-block:: bash</p>
+<blockquote>
+<div>ptdeploy dapperfy drupal</div></blockquote>
+<p>Nach der Eingabe des Befehls oben angegeben, werden die folgenden Informationen während der Ausführung erkundigte sich aus der Tabelle dargestellt,</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="20%" />
+<col width="23%" />
+<col width="10%" />
+<col width="47%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Dapperfy This for
+Drupal? (Y/N)</td>
+<td>Anstelle von Drupal, können
+wir drupal auch.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer die drupal sie eingeben können, wie Y.
+dapperfy muss</td>
+</tr>
+<tr class="row-odd"><td>Dapperfy This for
+Drupal? (Y/N)</td>
+<td>Anstelle von Drupal, können
+wir drupal auch.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer nicht in der Notwendigkeit, die Drupal
+sie eingeben können, wie N. dapperfy</td>
+</tr>
+<tr class="row-even"><td>Use existing environment
+settings? (Y/N)</td>
+<td>&nbsp;</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer wünschen, mit den vorhandenen
+Umgebungseinstellungen können sie Eingang als Y. gehen</td>
+</tr>
+<tr class="row-odd"><td>Use existing environment
+settings? (Y/N)</td>
+<td>&nbsp;</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer Wunsch, mit den neuen
+Umgebungseinstellungen gehen sie eingeben kann als N.|</td>
+</tr>
+</tbody>
+</table>
+<p>Nach Abschluß der Untersuchungen oben angegeben, werden die folgenden Schritte, wie beschrieben, auszuführen,</p>
+<p>Schritt 1:</p>
+<p>Möchten Sie Einträge auf jede App in Umgebung ändern möchten default-lokale (J / N)</p>
+<p>Der Benutzer die Eingabe Y oder N sind</p>
+<p>Schritt 2:</p>
+<p>Umwelt 1 Standard-local:</p>
+<p>In diesem Schritt wird Wert für Umwelt und temp dir erkundigt werden und der Benutzer zur Eingabe von ihnen haben.</p>
+<p>Schritt 3:</p>
+<p>Enter-Servers ist ein Array von Einträgen</p>
+<p>Ziel eingeben?</p>
+<p>Geben Nutzer?</p>
+<p>Nach Abschluß der Untersuchungen oben angegeben, werden die folgenden Schritte, wie beschrieben, auszuführen,</p>
+<p>Schritt 1:</p>
+<p>Möchten Sie Einträge auf jede App in Umgebung ändern möchten default-lokale (J / N)</p>
+<p>Der Benutzer die Eingabe Y oder N sind</p>
+<p>Schritt 2:</p>
+<p>Umwelt 1 Standard-local:</p>
+<p>In diesem Schritt wird Wert für Umwelt und temp dir erkundigt werden und der Benutzer zur Eingabe von ihnen haben.</p>
+<p>Schritt 3:</p>
+<p>Enter-Servers ist ein Array von Einträgen</p>
+<p>Ziel eingeben?</p>
+<p>Geben Nutzer?</p>
+<p>Enter Password?</p>
+<p>Der Benutzer hat die Eingabe diejenigen Daten erfragt.</p>
+<p>Schritt 4:</p>
+<p>In einem anderen Server? (Y / N)</p>
+<p>Der Benutzer muss die Eingabe Y oder N je nach ihrem Wunsch.</p>
+<p>Schritt 5:</p>
+<p>Möchten Sie Einträge auf jede App in Umgebung ändern möchten default-lokalen -0.000 (J / N)</p>
+<p>Der Benutzer die Eingabe Y oder N sind</p>
+<p>Schritt 6:</p>
+<p>Die Einstellungen für die Umwelt kann manuell, wenn die Eingabe nicht-Standardwerte erforderlich definiert werden.</p>
+<p>Die Daten während der Ausführung der Anwendung Einstellungen erkundigt wie unten definiert sind,</p>
+<p>Preis Git Repo-URL</p>
+<p>Preis Optional privaten SSH-Schlüssel für Git Repo.</p>
+<p>Preis Git Individuelle Niederlassung</p>
+<p>Preis Apache VHost URL</p>
+<p>Preis Apache VHost Hostname / IP</p>
+<p>Preis, wie viele Revisionen zu halten</p>
+<p>Preis-Leistungs-DB-IP-Adresse</p>
+<p>Preis DB App Benutzername</p>
+<p>Preis DB App User Pass</p>
+<p>Schritt 7:</p>
+<p>Haben Sie eine andere Umgebung hinzufügen? (Y / N)</p>
+<p>Der Benutzer muss die Eingabe Y oder N, je nach ihren Bedürfnissen.</p>
+<p>Das folgende Bild wird eine bildliche Darstellung zu geben für die oben genannten Schritte erläutert.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy dapperfy drupal
+
+Dapperfy This for Drupal? (Y/N)
+Y
+Use existing environment settings? (Y/N)
+Y
+Do you want to modify entries applicable to any app in environment default-local (Y/N)
+Y
+Environment 1 default-local :
+Default Settings for Any App not setup for environment default-local enter them now.
+Value for: Name of this Environment
+kevell
+Value for: Default Temp Dir (should usually be /tmp/)
+
+Enter Servers - this is an array of entries
+Enter target ?
+/root/gg
+Enter user ?
+root
+Enter password ?
+123
+Add Another Server? (Y/N)
+n
+Do you want to modify entries applicable to any app in environment default-local-8080 (Y/N)
+n
+Settings for dapper not setup for environment default-local-8080 enter them manually.
+Environment 2 default-local-8080 :
+Value for: Project Container directory, (inc slash)
+/root/vv
+Value for: Git Repo URL
+
+Value for: Optional Private SSH Key for Git Repo
+
+Value for: Git Custom Branch
+
+Value for: Apache VHost URL (Don&#39;t Include http://)
+
+Value for: Apache VHost Hostname/IP
+
+Value for: How many revisions to keep
+
+Value for: DB IP Address
+
+Value for: DB App User Name (Will be created if not existing)
+
+Value for: DB App User Pass
+
+Value for: DB Name (Will be created if not existing)
+
+Value for: DB Admin User Name
+
+Value for: DB Admin User Pass
+
+Do you want to add another environment? (Y/N)
+n
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+******************************
+
+
+Success
+In Dapperfy
+******************************
+</pre></div>
+</div>
+<p>Die dritte Form der Ausführung wird von den kommenden Schritten erklärt. Der Befehl ist identisch mit</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy dapperfy drupal
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls oben angegeben, werden die folgenden Informationen während der Ausführung erkundigte sich aus der Tabelle dargestellt,</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="21%" />
+<col width="27%" />
+<col width="9%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Dapperfy This for Drupal?
+(Y/N)</td>
+<td>Anstelle von Drupal, können wir
+drupal auch.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer die drupal sie eingeben können,
+wie Y. dapperfy muss</td>
+</tr>
+<tr class="row-odd"><td>Dapperfy This for Drupal?
+(Y/N)</td>
+<td>Anstelle von Drupal, können wir
+drupal auch.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer nicht in der Notwendigkeit, die
+Drupal sie eingeben können, wie N. dapperfy</td>
+</tr>
+<tr class="row-even"><td>Use existing environment
+settings? (Y/N)</td>
+<td>&nbsp;</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer wünschen, mit den vorhandenen
+Umgebungseinstellungen können sie Eingang als Y. gehen</td>
+</tr>
+<tr class="row-odd"><td>Use existing environment
+settings? (Y/N)</td>
+<td>&nbsp;</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer Wunsch, mit den neuen
+Umgebungseinstellungen gehen sie eingeben kann als N.|</td>
+</tr>
+</tbody>
+</table>
+<p>After completion of the enquiries given above, the following steps as described will execute,</p>
+<p>Step 1:</p>
+<p>Do you want to add another environment settings? (Y/N)</p>
+<p>The user have to input Y or N.</p>
+<p>Step 2:</p>
+<p>Environment 3 default-local:</p>
+<p>In this step, value for environment and temp dir are enquired and the user have to input them.</p>
+<p>The settings for environment can be defined manually if needed to input non-default values.</p>
+<p>The data&#8217;s inquired during the execution of applying settings are defined as below,</p>
+<p>Value for Project Container Directory.</p>
+<p>Value for Git repo URL</p>
+<p>Value for Optional Private SSH Key for Git Repo.</p>
+<p>Value for Git Custom Branch</p>
+<p>Value for Apache VHost URL</p>
+<p>Value for Apache VHost Hostname/IP</p>
+<p>Value for how many revisions to keep</p>
+<p>Value for DB IP Address</p>
+<p>Value for DB App User Name</p>
+<p>Value for DB App User Pass</p>
+<p>The following screenshot will give an pictorial representation for the steps explained above.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy dapperfy drupal
+Dapperfy This for Drupal? (Y/N)
+y
+Use existing environment settings? (Y/N)
+n
+Do you want to add another environment? (Y/N)
+y
+Environment 3  :
+Default Settings for Any App not setup for environment  enter them now.
+Value for: Name of this Environment
+kevell
+Value for: Default Temp Dir (should usually be /tmp/)
+
+Value for: Project Container directory, (inc slash)
+
+Value for: Git Repo URL
+
+Value for: Optional Private SSH Key for Git Repo
+
+Value for: Git Custom Branch
+
+Value for: Apache VHost URL (Don&#39;t Include http://)
+
+Value for: Apache VHost Hostname/IP
+
+Value for: How many revisions to keep
+
+Value for: DB IP Address
+
+Value for: DB App User Name (Will be created if not existing)
+
+Value for: DB App User Pass
+
+Value for: DB Name (Will be created if not existing)
+
+Value for: DB Admin User Name
+
+Value for: DB Admin User Pass
+
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+******************************
+
+
+Success
+In Dapperfy
+******************************
+</pre></div>
+</div>
+<p>Die vierte Art von dapperfying die Drupal wird nachstehend erläutert, und der Befehl verwendet wird, ist dieselbe wie</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy dapperfy drupal
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls oben angegeben, werden die folgenden Informationen während der Ausführung erkundigte sich aus der Tabelle dargestellt,</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="21%" />
+<col width="27%" />
+<col width="8%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Dapperfy This for
+Drupal? (Y/N)</td>
+<td>Anstelle von Drupal, können wir
+drupal auch.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer die drupal sie eingeben können, wie
+Y. dapperfy muss</td>
+</tr>
+<tr class="row-odd"><td>Dapperfy This for
+Drupal? (Y/N)</td>
+<td>Anstelle von Drupal, können wir
+drupal auch.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer nicht in der Notwendigkeit, die
+Drupal sie eingeben können, wie N. dapperfy</td>
+</tr>
+<tr class="row-even"><td>Use existing environment
+settings? (Y/N)</td>
+<td>&nbsp;</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer wünschen, mit den vorhandenen
+Umgebungseinstellungen können sie Eingang als Y. gehen</td>
+</tr>
+<tr class="row-odd"><td>Use existing environment
+settings? (Y/N)</td>
+<td>&nbsp;</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer Wunsch, mit den neuen
+Umgebungseinstellungen gehen sie eingeben kann als N.|</td>
+</tr>
+</tbody>
+</table>
+<p>Wenn der Benutzer Erlös dapperfying die Drupal durch Eingabe als Y, werden die folgenden Schritte während der Ausführung beteiligt,</p>
+<p>Schritt 1:</p>
+<p>Haben Sie eine andere Umgebung hinzufügen? (Y / N)</p>
+<p>Der Benutzer die Eingabe Y oder N aufweisen kann, je nach Bedarf für das Hinzufügen eines weiteren Umgebung.</p>
+<p>Der folgende Screenshot zeigt visuell diesen Prozess der dapperfying die Drupal.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy dapperfy drupal
+Dapperfy This <span class="k">for</span> Drupal? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Use existing environment settings? <span class="o">(</span>Y/N<span class="o">)</span>
+n
+Do you want to add another environment? <span class="o">(</span>Y/N<span class="o">)</span>
+n
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Builderfy
+//build/config/ptdeploy/dapperfy/autopilots/generated/Dapperfy
+******************************
+
+
+Success
+In Dapperfy
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Es ist gut-to-do sowohl ubuntu und als auch in Cent OS.</li>
+<li>Die in der Erklärung verwendeten Parameter wird nicht zwischen Groß- und Kleinschreibung.</li>
+<li>Die Einstellungen für die Umwelt können während der Ausführung des dapperfying definiert werden.</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gdrupal_deploy.rst">
+          Drupal
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

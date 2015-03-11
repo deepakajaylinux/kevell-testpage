@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PTDeploy &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul>
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">PTDeploy</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#warum-diese-ptdeploy-bauen">Warum diese ptdeploy bauen</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#installieren-ptdeploy-uber-ptconfigure">Installieren ptdeploy über ptconfigure</a></li>
+<li><a class="reference internal" href="#installieren-des-ptdeploy-ohne-abhangigkeit-von-ptconfigure">Installieren des ptdeploy ohne Abhängigkeit von ptconfigure</a></li>
+<li><a class="reference internal" href="#erweiterte-funktionen">Erweiterte Funktionen</a></li>
+<li><a class="reference internal" href="#die-art-und-weise-wie-die-ptdeploy-fordert-das-projekt-mit-dapperfy">Die Art und Weise, wie die ptdeploy fördert das Projekt mit dapperfy</a></li>
+<li><a class="reference internal" href="#capify-vs-dapperfy">Capify Vs Dapperfy</a></li>
+<li><a class="reference internal" href="#so-verwenden-und-verfugbare-module">So verwenden und Verfügbare Module</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gptdeploy_main.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="ptdeploy">
+<h1>PTDeploy<a class="headerlink" href="#ptdeploy" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Die ptdeploy umhüllt die Anwendungen der Nutzer mit automatisierte Bereitstellung, Aufbau und Release-Funktionen, Web-App Versionierung und Infrastruktur-Code in PHP.</p>
+<p>Es erleichtern die Benutzer und bietet automatisierte Deployment Templates und installiert eine vollständig kontinuierliche Build für Ihr Projekt.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Wenn Sie den Zweck eines bestimmten Moduls wissen möchten, geben Sie einfach den Befehl wie folgt:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy ModuleName <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Dieser Befehl liefert die Verwendung dieser speziellen Modul und auch die verfügbaren Optionen in Aktionen, die Sie ausführen können. Die unter gezeigt Screenshot erläutert die Verwendung des Moduls Apache Steuer unter ptdeploy mit dem Befehl help.</p>
+<p>Der Befehl help listet auch die alternativen Parameter, die in der Erklärung verwendet werden kann.</p>
+</div>
+<div class="section" id="warum-diese-ptdeploy-bauen">
+<h2>Warum diese ptdeploy bauen<a class="headerlink" href="#warum-diese-ptdeploy-bauen" title="Permalink to this headline">¶</a></h2>
+<p>Um gut Einsatz zu bauen, werden viele Dateien benötigt, um von FTP- oder anderen Ad-hoc-Lösungen kopiert werden. Und auch viele Unternehmen Automation Werkzeuge fehlten. Um diese Engpässe ptdeploy unter dem Pharao Werkzeug überwunden waren aufzubauen.
+PHP hat ptdeploy wie Rubin fiils die Lücke in Capistrano.</p>
+<p>Dieses Tool ist für die Bereitstellung Anwendungen und baut auf Ihre Boxen. Der Benutzer kann mit einem oder zwei PHP-Dateien Oder schnell Setup Cloud freundliche Bereitstellungsmustern einzurichten sogar einfache oder komplexe Anwendungsbereitstellungsmuster für ihr System.</p>
+<p>ptdeploy ist modular aufgebaut. objektorientiert und erweiterbar. Also, wenn der Benutzer keine zusätzlichen Module erfordert sie erstellen und die neuen Module auf der Basis ihrer Anforderungen.</p>
+<p>Diese ptdeploy fungiert als Wrapper, wo alle Schritte der Nutzer Implementierung wird in einer einzigen Datei bedeckt. Auf diese Weise können mit einem einzigen Befehl zu feuern eine Instanz Ihrer Anwendungen.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Installieren des ptdeploy können auf zwei Arten in Abhängigkeit von der Verfügbarkeit und Anforderungen der Anwender durchgeführt werden. Diese beiden Möglichkeiten des Einrichtens ptdeploy sind:</p>
+<ul class="simple">
+<li>Installieren ptdeploy über ptconfigure</li>
+<li>Installation des ptdeploy ohne Abhängigkeit von ptconfigure.</li>
+</ul>
+</div>
+<div class="section" id="installieren-ptdeploy-uber-ptconfigure">
+<h2>Installieren ptdeploy über ptconfigure<a class="headerlink" href="#installieren-ptdeploy-uber-ptconfigure" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer die ptconfigure in ihrer Maschine, dann ist es die einfacheren Weg, um ptdeploy mit dem folgenden Befehl installiert werden:</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo ptconfigure ptdeploy install --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="installieren-des-ptdeploy-ohne-abhangigkeit-von-ptconfigure">
+<h2>Installieren des ptdeploy ohne Abhängigkeit von ptconfigure<a class="headerlink" href="#installieren-des-ptdeploy-ohne-abhangigkeit-von-ptconfigure" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer wünschen, die ptdeploy ohne abhängig und mit dem ptconfigure sie mit dem folgenden Befehl installieren:</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo apt-get install php5 git
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>git clone https://git.pharaoh-tools.com/phpengine/ptdeploy <span class="o">&amp;&amp;</span> sudo php ptdeploy/install-silent
+</pre></div>
+</div>
+<p>or</p>
+<p>Die folgende Befehl ist vorhersehbar für die Benutzer, um die Position während der Installation angeben möchten.</p>
+<div class="highlight-bash"><div class="highlight"><pre>git clone https://git.pharaoh-tools.com/phpengine/ptdeploy <span class="o">&amp;&amp;</span> sudo php ptdeploy/install
+</pre></div>
+</div>
+</div>
+<div class="section" id="erweiterte-funktionen">
+<h2>Erweiterte Funktionen<a class="headerlink" href="#erweiterte-funktionen" title="Permalink to this headline">¶</a></h2>
+<p>Bearbeiten der Host-Dateien, virtuellen Host-Dateien, Konfigurationsdateien, Datenbankupdates und alle mit dieser automatisiert werden.</p>
+<p>Durch die Verwendung der Fähigkeit der Remote-Server-Management, können die Benutzer-Bereitstellungen in Infrastruktur jeder Größe zu automatisieren.</p>
+</div>
+<div class="section" id="die-art-und-weise-wie-die-ptdeploy-fordert-das-projekt-mit-dapperfy">
+<h2>Die Art und Weise, wie die ptdeploy fördert das Projekt mit dapperfy<a class="headerlink" href="#die-art-und-weise-wie-die-ptdeploy-fordert-das-projekt-mit-dapperfy" title="Permalink to this headline">¶</a></h2>
+<p>Das Wort ist eine dapperfy ptdeploy Befehl, einige Autopiloten für Ihr Projekt erstellt.</p>
+<p>Mit dem dapperfy ist sehr schnell und ist wahrscheinlich der beste Ausgangspunkt.</p>
+</div>
+<div class="section" id="capify-vs-dapperfy">
+<h2>Capify Vs Dapperfy<a class="headerlink" href="#capify-vs-dapperfy" title="Permalink to this headline">¶</a></h2>
+<p>Beim Vergleich der capify mit dapperfy ist es offensichtlich, zu sagen, dass die dapperfy ist die beste, wie es ist in PHP geschrieben.</p>
+<p>Die Stärke ist, dass die dapperfy ptdeploy Befehl stellt die Standard-Set von Autopiloten für die Benutzer Projekte. wo die capify bietet ähnliche Funktion wie der Ruby-Projekt.</p>
+</div>
+<div class="section" id="so-verwenden-und-verfugbare-module">
+<h2>So verwenden und Verfügbare Module<a class="headerlink" href="#so-verwenden-und-verfugbare-module" title="Permalink to this headline">¶</a></h2>
+<p>Lassen Sie uns sehen, wie man die ptdeploy Tool, zuerst, geben Sie einfach als</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy
+</pre></div>
+</div>
+<p>dieser Befehl die Namen der Module, die unter ptdeploy sind, aus.</p>
+<ul class="simple">
+<li>ApacheControl - Apache Server Control</li>
+<li>ApacheVHostEditor - Apache Virtual Host Functions</li>
+<li>AppSettings - PTDeploy Application Settings</li>
+<li>Autopilot - PTConfigure Autopilot - User Defined Installations</li>
+<li>Builderfy - PTDeploy Builderfyer - Create some standard autopilots for your project</li>
+<li>CukeConf - Cucumber Configuration</li>
+<li>DBConfigure - Database Connection Configuration Functions</li>
+<li>DBInstall - Database Installation Management Functions</li>
+<li>Dapperfy - PTDeploy Dapperfyer - Automated Application Deployment autopilots for your project</li>
+<li>Drupal - Drupal - Integration and Templates for Drupal</li>
+<li>EnvironmentConfig - Environment Configuration - Configure Environments for a project</li>
+<li>GitClone - GitClone Source Control Clone Functions</li>
+<li>HostEditor - Host File Management Functions</li>
+<li>Invoke - SSH Invocation Functions</li>
+<li>Joomla - Joomla - Integration and Templates for Joomla</li>
+<li>LighttpdControl - Lighttpd Server Control</li>
+<li>Logging - Logging - Output errors to the logging</li>
+<li>NginxControl - Nginx Server Control</li>
+<li>NginxSBEditor - Nginx Server Block Functions</li>
+<li>ParallelSshChild - Command Execution Functions</li>
+<li>Project - PTDeploy Project Management Functions</li>
+<li>RunCommand - Execute a Command</li>
+<li>SFTP - SFTP Functionality</li>
+<li>SVN - SVN Source Control Project Checkout/Download Functions</li>
+<li>SystemDetection - System Detection - Detect the Running Operating System</li>
+<li>Templating - Templating</li>
+<li>Version - Versioning Functions</li>
+<li>Wordpress - Wordpress - Integration and Templates for Wordpress</li>
+</ul>
+<p>Hier bezeichnet der Bildschirm die Anzeige aller Module unter ptconfigure.</p>
+<div class="highlight-bash"><div class="highlight"><pre>Available Commands:
+---------------------------------------
+
+ApacheControl - Apache Server Control
+ApacheVHostEditor - Apache Virtual Host Functions
+AppSettings - PTDeploy Application Settings
+Autopilot - PTConfigure Autopilot - User Defined Installations
+Builderfy - PTDeploy Builderfyer - Create some standard autopilots <span class="k">for</span> your project
+CukeConf - Cucumber Configuration
+DBConfigure - Database Connection Configuration Functions
+DBInstall - Database Installation Management Functions
+Dapperfy - PTDeploy Dapperfyer - Automated Application Deployment autopilots <span class="k">for</span> your project
+Drupal - Drupal - Integration and Templates <span class="k">for</span> Drupal
+EnvironmentConfig - Environment Configuration - Configure Environments <span class="k">for</span> a project
+GitClone - GitClone Source Control Clone Functions
+HostEditor - Host File Management Functions
+Invoke - SSH Invocation Functions
+Joomla - Joomla - Integration and Templates <span class="k">for</span> Joomla
+LighttpdControl - Lighttpd Server Control
+Logging - Logging - Output errors to the logging
+NginxControl - Nginx Server Control
+NginxSBEditor - Nginx Server Block Functions
+ParallelSshChild - Command Execution Functions
+Project - PTDeploy Project Management Functions
+RunCommand - Execute a Command
+SFTP - SFTP Functionality
+SVN - SVN Source Control Project Checkout/Download Functions
+SystemDetection - System Detection - Detect the Running Operating System
+Templating - Templating
+Version - Versioning Functions
+Wordpress - Wordpress - Integration and Templates <span class="k">for</span> Wordpress
+</pre></div>
+</div>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gapachecontrol_deploy.html">Apache Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gapachecontrol_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachecontrol_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachecontrol_deploy.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachecontrol_deploy.html#start-funktion">Start-Funktion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachecontrol_deploy.html#stop-funktion">Stop-Funktion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachecontrol_deploy.html#starten-sie-eine-funktion">Starten Sie eine Funktion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachecontrol_deploy.html#nachladen-einer-funktion">Nachladen einer Funktion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachecontrol_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gapachevhosteditor_deploy.html">ApacheVHostEditor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#hinzufugen">hinzufügen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#add-balancer">Add-Balancer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#entfernen">entfernen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#liste">Liste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#ermoglichen">ermöglichen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#deaktivieren">Deaktivieren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gapachevhosteditor_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gautopilot_deploy.html">Autopilot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot_deploy.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautopilot_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdapperfy_deploy.html">Dapperfy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdapperfy_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdapperfy_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdapperfy_deploy.html#wie-dapper-norm-verwenden">Wie Dapper Norm verwenden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdapperfy_deploy.html#wie-dapperfy-liste-verwenden">Wie Dapperfy Liste verwenden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdapperfy_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdbconfigure_deploy.html">DBConfigure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdbconfigure_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbconfigure_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbconfigure_deploy.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbconfigure_deploy.html#configure-conf">Configure, conf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbconfigure_deploy.html#rucksetzen">rücksetzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbconfigure_deploy.html#option">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbconfigure_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdbinstall_deploy.html">DBInstall</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdbinstall_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbinstall_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbinstall_deploy.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbinstall_deploy.html#speichern">Speichern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbinstall_deploy.html#fallen-lassen">Fallen Lassen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbinstall_deploy.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdbinstall_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdrupal_deploy.html">Drupal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdrupal_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdrupal_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdrupal_deploy.html#wie-drupal-dapperfy">Wie Drupal Dapperfy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdrupal_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="genvironmentconfig_deploy.html">EnvironmentConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig_deploy.html#wie-man-die-umgebung-konfigurieren">Wie man die Umgebung konfigurieren</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig_deploy.html#wie-umgebungskonfiguration-loschen">Wie Umgebungskonfiguration löschen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig_deploy.html#wie-umgebungskonfiguration-liste">Wie Umgebungskonfiguration Liste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig_deploy.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="genvironmentconfig_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ggitclone_deploy.html">GitClone</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ggitclone_deploy.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitclone_deploy.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitclone_deploy.html#how-to-use-the-checkout-functions">How to Use the checkout functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggitclone_deploy.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gptdeploy_main.rst">
+          PTDeploy
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>
