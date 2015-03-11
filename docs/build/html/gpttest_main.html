@@ -88,7 +88,15 @@
                 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">PTTest</a></li>
+<li><a class="reference internal" href="#">PTTest</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#installieren-pttest-uber-ptconfigure">Installieren pttest über ptconfigure</a></li>
+<li><a class="reference internal" href="#installieren-des-pttest-ohne-abhangigkeit-von-ptconfigure">Installieren des pttest ohne Abhängigkeit von ptconfigure</a></li>
+<li><a class="reference internal" href="#so-verwenden-und-verfugbare-module">So verwenden und Verfügbare Module</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -148,6 +156,116 @@
   
   <div class="section" id="pttest">
 <h1>PTTest<a class="headerlink" href="#pttest" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Die pttest zielt auf Testkonfiguration und Ablaufautomatisierung Management mit Hilfe von php.</p>
+<p>Es verwenden, gemeinsame Regeln für eine Reihe von Tools und Technologien für die Handhabung der Testsuite Konfiguration und Ausführung.</p>
+<p>Es bietet gemeinsame API, um Tests in einer Vielzahl von Sprachen und Test-Tools auszuführen. Der Anwender kann komplexe Testreihen mit wenig oder ohne zusätzliche Konfiguration erforderlich laufen. Es nährt die Benutzer-Tests manuell oder mit einem Betriebssystem und in der Hand gewährleistet die Stabilität der Umwelt.</p>
+<p>Es modulare, objektorientierte und erweiterbar. Also, wenn die Benutzer spürt keine zusätzlichen Module nach Bedarf sie einrahmen und fügen ihre eigenen Modul je nach ihren Anforderungen.</p>
+<p>Es ist ein Teil des Pharaos Tool-Suite, die das Konfigurationsmanagement, Test Automation-Management, Automated Deployment, Build und Release-Management und vieles mehr, alles in Code implementiert, und alle in PHP umhüllt.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Wenn Sie den Zweck eines bestimmten Moduls wissen möchten, geben Sie einfach den Befehl wie folgt:</p>
+<div class="highlight-bash"><div class="highlight"><pre>pttest ModuleName <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Dieser Befehl liefert die Verwendung dieser speziellen Modul und auch die verfügbaren Optionen in Aktionen, die Sie ausführen können. Die unter gezeigt Screenshot erläutert die Verwendung des Moduls Behat unter pttest mit dem Befehl help.</p>
+<p>Der Befehl help listet auch die alternativen Parameter, die in der Erklärung verwendet werden kann.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# pttest Behat <span class="nb">help</span>
+******************************
+
+
+ This <span class="nb">command </span>allows you to initialize a Behat <span class="nb">test </span>suite.
+
+ Behat, behat
+
+       - init, initialize
+       Initialises the Behat <span class="nb">test </span>suite of this project
+       example: pttest behat init
+       example: pttest behat initialize
+
+       - execute
+       Executes the Behat <span class="nb">test </span>suite of this project
+       example: pttest behat execute
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Installieren des pttest können auf zwei Arten in Abhängigkeit von der Verfügbarkeit und Anforderungen der Anwender durchgeführt werden. Diese beiden Möglichkeiten des Einrichtens pttest sind:</p>
+<ul class="simple">
+<li>Installieren pttest über ptconfigure</li>
+<li>Installation des pttest ohne Abhängigkeit von ptconfigure.</li>
+</ul>
+</div>
+<div class="section" id="installieren-pttest-uber-ptconfigure">
+<h2>Installieren pttest über ptconfigure<a class="headerlink" href="#installieren-pttest-uber-ptconfigure" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer die ptconfigure in ihrer Maschine, dann ist es die einfacheren Weg, um pttest mit dem folgenden Befehl installiert werden:</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo ptconfigure pttest install --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="installieren-des-pttest-ohne-abhangigkeit-von-ptconfigure">
+<h2>Installieren des pttest ohne Abhängigkeit von ptconfigure<a class="headerlink" href="#installieren-des-pttest-ohne-abhangigkeit-von-ptconfigure" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer wünschen, die pttest ohne abhängig und mit dem ptconfigure sie mit dem folgenden Befehl installieren:</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo apt-get install php5 git
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>git clone https://github.com/phpengine/pttest <span class="o">&amp;&amp;</span> sudo php pttest/install-silent
+</pre></div>
+</div>
+<p>or</p>
+<p>Die folgende Befehl ist vorhersehbar für die Benutzer, um die Position während der Installation angeben möchten.</p>
+<div class="highlight-bash"><div class="highlight"><pre>git clone https://github.com/phpengine/pttest <span class="o">&amp;&amp;</span> sudo php pttest/install
+</pre></div>
+</div>
+</div>
+<div class="section" id="so-verwenden-und-verfugbare-module">
+<h2>So verwenden und Verfügbare Module<a class="headerlink" href="#so-verwenden-und-verfugbare-module" title="Permalink to this headline">¶</a></h2>
+<p>Lassen Sie uns sehen, wie man die pttest Tool, zuerst, geben Sie einfach als</p>
+<div class="highlight-bash"><div class="highlight"><pre>pttest
+</pre></div>
+</div>
+<p>dieser Befehl die Namen der Module, die unter pttest sind, aus. Der folgende Screenshot zeigt, dass visuell.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# pttest
+******************************
+
+
+PTTest by Golden Contact Computing
+-------------------
+
+About:
+-----------------
+PTTest is <span class="k">for</span> Test Automation. It can be used to generate starter <span class="nb">test </span>suites <span class="k">for</span> your applications,
+and automated <span class="nb">test </span>execution scripts within minutes.
+
+By providing an common API by which to execute tests in a wide range
+of languages and <span class="nb">test </span>tools, you can run complex <span class="nb">test </span>suites across a range of platforms with little to no
+extra configuration.
+
+-------------------------------------------------------------
+
+Available Commands:
+---------------------------------------
+
+Autopilot - PTConfigure Autopilot - User Defined Installations
+Behat - Behat - Initialize or Execute a Behat Test Suite
+Cucumber - Cucumber - Initialize or Execute a Cucumber Test Suite
+EnvironmentConfig - Environment Configuration - Configure Environments <span class="k">for</span> a project
+PHPUnit - PHPUnit - Initialize or Execute a PHPUnit Test Suite
+SystemDetection - System Detection - Detect the Running Operating System
+Templating - Templating
+Testify - Testifyer - Creates default tests <span class="k">for</span> your project
+
+******************************
+</pre></div>
+</div>
+<p>Das Spiel mit PTTest Module</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="gbehat_test.html">Behat</a><ul>
@@ -203,6 +321,7 @@
 </ul>
 </li>
 </ul>
+</div>
 </div>
 </div>
 
