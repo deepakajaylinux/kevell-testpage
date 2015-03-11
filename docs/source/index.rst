@@ -19,7 +19,7 @@ Commands
    :maxdepth: 6
    
  gptconfigure_main
-
+ gpttest_main
 
 
 
