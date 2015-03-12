@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PTVirtualize &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="next" title="AutoSSH" href="gautossh_virtualize.html" />
+    <link rel="prev" title="Templating" href="gtemplating_test.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">PTVirtualize</a><ul>
+<li><a class="reference internal" href="#bedarf">Bedarf</a></li>
+<li><a class="reference internal" href="#code-fur-die-installation-von-virtual-box">Code für die Installation von Virtual Box</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#installation-uber-ptconfigure">Installation über ptconfigure</a></li>
+<li><a class="reference internal" href="#installieren-ptvirtualize-allein">Installieren ptvirtualize allein</a></li>
+<li><a class="reference internal" href="#methoden-in-nutzung">Methoden in Nutzung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl:</a></li>
+<li><a class="reference internal" href="#kurze-beispiel">kurze Beispiel</a></li>
+<li><a class="reference internal" href="#das-spiel-mit-ptvirtualize-module">Das Spiel mit ptvirtualize Module</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gtemplating_test.html"
+         title="Previous Chapter: Templating">&laquo; Templating</a></li>
+  <li><a href="gautossh_virtualize.html"
+         title="Next Chapter: AutoSSH">AutoSSH &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gptvirtualize_main.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="ptvirtualize">
+<h1>PTVirtualize<a class="headerlink" href="#ptvirtualize" title="Permalink to this headline">¶</a></h1>
+<p>Beim Vergleich mit ptconfigure ist die ptvirtualize eine virtuelle Maschine-Management-Tool, das die Funktionen für virtuelle Maschinen und Entwicklung Umweltmanagement bietet.</p>
+<p>Durch die Verwendung von DevOps sie verwaltet die Konfiguration der virtuellen Maschine ermöglicht, die verschiedenen Arten der Beitragszahler auch in einer hochkomplexen Entwicklungsumgebung.</p>
+<p>Es erleichtert die Automatisierung, Standardisierung und die Verwaltung der Einrichtung zu virtualisierten Umgebung. Seine Funktionalitäten beinhaltet Configuration Management, Test Automation-Management, Automated Deployment, Build und Release Management, Entwicklung Umweltmanagement und diese Funktionen durchgeführt werden.</p>
+<p>In ptvirtualize das Configuration Management, Systems Automation und Infrastruktur ist in php umrahmt. Bearbeiten eines PHP-Skript ist sehr einfach, da es keine Kompilierung Schritt durchzuführen.</p>
+<p>Die ptvirtualize ist objektorientiert, das nicht nur den Datentyp, sondern auch die Arten von Operationen, die auf die Daten angewendet werden kann, zu bereichern. Daher, während Vergleichen objektorientierte Programmiertechniken als Verfahrensprogrammiertechniken, die die objektorientierte Programmierung können die Endbenutzer auf Module, müssen nicht geändert werden, wenn ein neuer Typ von Objekt hinzugefügt erstellen.</p>
+<p>Die ptvirtualize ist erweiterbar, als ob jede Zusatzmodul benötigt der Benutzer Rahmen und gestalten Sie das Modul nach ihren Anforderungen können und sie schließen kann.</p>
+<p>Durch die Verwendung der Funktionalität der Template-Option extra Vorlagen können hinzugefügt werden, wenn erforderlich. Die Option SSH ermöglicht, eine SSH-Schlüssel Wert zu setzen. Die SFTP erleichtert die Lesbarkeit und Schreibfähigkeit zwischen den zwei verschiedenen OS mit Virtual Box.</p>
+<div class="section" id="bedarf">
+<h2>Bedarf<a class="headerlink" href="#bedarf" title="Permalink to this headline">¶</a></h2>
+<p>Wenn Sie die ptvirtualize verwenden möchten, stellen Sie sicher, ob der Virual Box wird in Ihrem Computer installiert ist, zusammen mit dem virtuellen Feld Gasterweiterungen Funktionalität</p>
+</div>
+<div class="section" id="code-fur-die-installation-von-virtual-box">
+<h2>Code für die Installation von Virtual Box<a class="headerlink" href="#code-fur-die-installation-von-virtual-box" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>sudo ptconfigure virtualbox install --yes --guess --with-guest-additions
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Es gibt zwei Möglichkeiten, um die ptvirtualize Werkzeug, um Ihren Computer zu installieren:</p>
+<p>1)Installation via ptconfigure</p>
+<p>2)Installing ptvirtualize alone</p>
+</div>
+<div class="section" id="installation-uber-ptconfigure">
+<h2>Installation über ptconfigure<a class="headerlink" href="#installation-uber-ptconfigure" title="Permalink to this headline">¶</a></h2>
+<p>wenn Sie ptconfigure Werkzeug in Ihrem Rechner haben, dann ist es einfach, die ptvirtualize indem Sie den Code wie unten angegeben zu installieren,</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo ptconfigure ptvirtualize install --yes --guess
+</pre></div>
+</div>
+<p>Hier kann das Wort erraten ignoriert, während Sie Ihr eigenes Verzeichnis während der Installation werden.</p>
+</div>
+<div class="section" id="installieren-ptvirtualize-allein">
+<h2>Installieren ptvirtualize allein<a class="headerlink" href="#installieren-ptvirtualize-allein" title="Permalink to this headline">¶</a></h2>
+<p>Wenn Sie die ptvirtualize Werkzeug, um Ihre Maschine ohne je nach ptconfigure Tool installieren wollen, ist es einfacher, mit dem Befehl,</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo apt-get install php5 git
+</pre></div>
+</div>
+<p>this command will install php5 and git on your machine. After that use the following command,:</p>
+<div class="highlight-python"><div class="highlight"><pre>git clone http://github.com/PharaohTools/ptvirtualize &amp;&amp; sudo php ptvirtualize/install-silent
+</pre></div>
+</div>
+<p>the command on the above mentioned can be used if you don&#8217;t want to select the location during the installation. If you wish to do so, use the following command:</p>
+<div class="highlight-python"><div class="highlight"><pre>git clone http://github.com/PharaohTools/ptvirtualize &amp;&amp; sudo php ptvirtualize/install
+</pre></div>
+</div>
+</div>
+<div class="section" id="methoden-in-nutzung">
+<h2>Methoden in Nutzung<a class="headerlink" href="#methoden-in-nutzung" title="Permalink to this headline">¶</a></h2>
+<p>Hier wollen wir sehen, wie man die Befehle unter dem Werkzeug und seine Nutzung zu verwenden.</p>
+<p>wenn Sie geben Sie einfach den folgenden Befehl ein,</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">ptvirtualize</span>
+</pre></div>
+</div>
+<p>Wie in der Abbildung unten werden Sie die Anzeige aller unter diesem Tool Module erhalten.</p>
+<div class="highlight-python"><div class="highlight"><pre>kevell@corp:/# ptvirtualize
+******************************
+Pharaoh Tools - Virtualize
+******************************
+
+
+Virtualize by Golden Contact Computing
+-------------------
+
+About:
+-----------------
+Virtualize is for controlling Virtual Machines in Development Environments.
+
+-------------------------------------------------------------
+
+Available Commands:
+---------------------------------------
+
+AutoSSH - AutoSSH - Use your Papyrus details to automatically SSH or SFTP into your Virtualize box
+Box - Box - Manage Base Boxes for Virtualize
+Destroy - Destroy - Stop a Virtualize Box
+Flirtify - Virtualize Flirtify - Generate a Phalgrantfile
+Halt - Halt - Stop a Virtualize Box
+Invoke - SSH Invocation Functions
+PharaohTools - Pharaoh Tools Provisioner Integration
+Provision - Provision - Stop a Virtualize Box
+Resume - Resume - Stop a Virtualize Box
+SFTP - SFTP Functionality
+Shell - Shell Provisioner Integration
+Status - Status - Stop a Virtualize Box
+SystemDetection - System Detection - Detect the Running Operating System
+Up - Up - Create and Start a Virtualize Box
+Virtualbox - Virtualbox Provider Integration
+
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl:<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Es ist einfach, um den Befehl Hilfe verwenden,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize Module Hilfe
+</pre></div>
+</div>
+<p>Dieser Befehl hilft Ihnen, wie die einzelnen Module arbeitet, und auch über das, was sind die Maßnahmen, die sie durchführen.
+Die folgende Abbildung erklärt Ihnen, wie Sie den Befehl help wird verwendet, um das Modul autossh erklären.</p>
+<div class="highlight-python"><div class="highlight"><pre>kevell@Corp:/#ptvirtualize AutoSSH help
+
+******************************
+Pharaoh Tools - Virtualize
+******************************
+
+
+This command allows you to autoSSH a ptvirtualize box
+
+AutoSSH, auto-ssh, autossh, ssh, SSH
+
+    - cli
+    Open an SSH Cli to your ptvirtualize Box
+    example: ptvirtualize auto-ssh cli --yes --guess
+
+    - sftp-put
+    SFTP Put a file on to your ptvirtualize Box
+    example: ptvirtualize auto-ssh sftp-put --yes --guess --source=/path/to/source --target=/path/to/target
+
+    - sftp-get
+    SFTP Get a file from your ptvirtualize Box
+    example: ptvirtualize auto-ssh sftp-get --yes --guess --source=/path/to/source --target=/path/to/target
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="kurze-beispiel">
+<h2>kurze Beispiel<a class="headerlink" href="#kurze-beispiel" title="Permalink to this headline">¶</a></h2>
+<p>lassen Sie uns über ein kurzes Beispiel in Bezug auf die ptvirtualize hier zu sehen.</p>
+<p>create a directory, or simply use a current web project as your new Pharaoh project mkdir /var/www/my-test-project &amp;&amp; cd /var/www/my-test-project</p>
+<p>install virtualbox to your machine if you don&#8217;t have it already, it&#8217;s simple by using the command as follows,:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo ptconfigure virtualbox install --yes --guess --with-guest-additions
+</pre></div>
+</div>
+<p>add a default ptconfigure Configuration Management Autopilot file using the following command:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo ptconfigure cleofy install-generic-autopilots --yes --guess --template-group=ptvirtualize
+</pre></div>
+</div>
+<p>flirtify ptvirtualize flirt now &#8211;template-group=default-php</p>
+<p>install, configure and start the virtual machine ptvirtualize up now</p>
+</div>
+<div class="section" id="das-spiel-mit-ptvirtualize-module">
+<h2>Das Spiel mit ptvirtualize Module<a class="headerlink" href="#das-spiel-mit-ptvirtualize-module" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gautossh_virtualize.html">AutoSSH</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gautossh_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautossh_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautossh_virtualize.html#funktionen-autossh">Funktionen autossh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautossh_virtualize.html#cli">cli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautossh_virtualize.html#sftp-put">Sftp_put</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautossh_virtualize.html#sftp-get">Sftp_get</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautossh_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gautossh_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gbox_virtualize.html">Box</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#funktionen-ptvirtualize-box">Funktionen ptvirtualize Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#hinzufugen">hinzufügen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#entfernen">entfernen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#paket">Paket</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#liste">Liste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbox_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdestroy_virtualize.html">Destroy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdestroy_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdestroy_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdestroy_virtualize.html#wie-zu-zerstoren">Wie zu zerstören</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdestroy_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gflirtify_virtualize.html">Flirtify</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gflirtify_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gflirtify_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gflirtify_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gflirtify_virtualize.html#standard-cleo">Standard-cleo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gflirtify_virtualize.html#sonderanfertigungen-cleo-dapper">Sonderanfertigungen cleo-dapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gflirtify_virtualize.html#standard-cleo-dapper">Standard-cleo-dapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gflirtify_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ghalt_virtualize.html">Halt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ghalt_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghalt_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghalt_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghalt_virtualize.html#halt-nach-name">Halt nach Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghalt_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ginvoke_virtualize.html">Invoke</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke_virtualize.html#erhalten">erhalten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ginvoke_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gpharaohtools_virtualize.html">PharaohTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#dafur-sorgen">Dafür Sorgen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#ptdeploy">ptdeploy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#pttest">pttest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#jrush">Jrush</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#paypal-logo">PayPal-Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpharaohtools_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gresume_virtualize.html">Resume</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gresume_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gresume_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gresume_virtualize.html#wie-um-eine-aktion-fortsetzen">Wie, um eine Aktion fortsetzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gresume_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gsftp_virtualize.html">SFTP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gsftp_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsftp_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsftp_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsftp_virtualize.html#setzen">setzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsftp_virtualize.html#erhalten">erhalten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsftp_virtualize.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsftp_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gshell_virtualize.html">Shell</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gshell_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gshell_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gshell_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gshell_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gstatus_virtualize.html">Status</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gstatus_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gstatus_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gstatus_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gstatus_virtualize.html#show">Show</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gstatus_virtualize.html#voll">voll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gstatus_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gsystemdetection_virtualize.html">SystemDetection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gsystemdetection_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsystemdetection_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsystemdetection_virtualize.html#entdecken">entdecken</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsystemdetection_virtualize.html#alternative-parameter">Alternative Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsystemdetection_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gup_virtualize.html">Up</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gup_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gup_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gup_virtualize.html#die-arbeit-der-up-funktion">Die Arbeit der Up-Funktion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gup_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gvirtualbox_virtualize.html">Virtualbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gvirtualbox_virtualize.html#zusammenfassung">Zusammenfassung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gvirtualbox_virtualize.html#hilfe-befehl">Hilfe Befehl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gvirtualbox_virtualize.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gvirtualbox_virtualize.html#options">Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gvirtualbox_virtualize.html#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gptvirtualize_main.rst">
+          PTVirtualize
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

@@ -19,8 +19,9 @@ Commands
    :maxdepth: 6
    
  gptconfigure_main
+ gptdeploy_main
  gpttest_main
-
+ gptvirtualize_main
 
 
 

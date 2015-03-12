@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Wordpress &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTDeploy" href="gptdeploy_main.html" />
+    <link rel="next" title="PTTest" href="gpttest_main.html" />
+    <link rel="prev" title="Version" href="gversion_deploy.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Wordpress</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#wie-dapperfy-wordpress-verwenden">Wie dapperfy Wordpress verwenden</a></li>
+<li><a class="reference internal" href="#arbeiten-von-wordpress-auto-deploy-dateien">Arbeiten von Wordpress Auto Deploy-Dateien</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gversion_deploy.html"
+         title="Previous Chapter: Version">&laquo; Version</a></li>
+  <li><a href="gpttest_main.html"
+         title="Next Chapter: PTTest">PTTest &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gwordpress_deploy.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="wordpress">
+<h1>Wordpress<a class="headerlink" href="#wordpress" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Modul ist ein schönes Teil der Rückstellung eine, die die Nutzer bei der Integration der Word Press Websites erleichtert. Zu seinen Aufgaben gehören dapperfy, builderfy und bietet auch Word Press Datenbankkonfiguration für die DBConfigure Modul.</p>
+<p>Word Press ist eine freie und Open-Source-Blogging-Tool und ein Content Management System (CMS) auf Basis von PHP und MySQL. Zur Ausstattung gehören eine Plugin-Architektur und ein Template-System. Word Press wurde von mehr als 23,3% der 10 Millionen Websites im Januar 2015. Word Press den beliebtesten Blogging-System im Einsatz auf dem Web verwendet wird, bei mehr als 60 Millionen Websites.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl Hilfe erläutert die Nutzer in Bezug auf die Hauptfunktion des Moduls, seine alternative Parameter, die in Erklärungen verwendet werden können, die drei Hauptfunktionen (zB: dapperfy, builderfy, ausführen), und auch über die Syntax für die Deklaration seiner drei Hauptfunktionen. Der Befehl zur Feststellung der Hilfe-Option verwendet, ist unten dargestellt,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy Wordpress <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Der folgende Screenshot zeigt visuell in Bezug auf die Hilfe-Befehl unter diesem Modul. Die in der Erklärung Syntax ist nicht case-sensitive.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy Wordpress <span class="nb">help</span>
+******************************
+
+
+ This module is a Default one, and provides integration <span class="k">for</span> Wordpress websites. It has tailored Builderfy and Dapperfy
+ Autopilots and also provides Wordpress Database Configuration <span class="k">for</span> the DBConfigure Module.
+
+ Wordpress, wordpress
+
+ This module adds multiple actions to both builderfy and dapperfy. This will <span class="nb">let </span>you produce autopilots <span class="k">for</span> both
+ which are tailored to Wordpress.
+
+ // dapperfy - create our auto deploy files
+ ptdeploy dapperfy wordpress --yes --guess
+
+ // builderfy - create templates to install build
+ sudo ptdeploy builderfy continuous --yes --jenkins-home<span class="o">=</span><span class="s2">&quot;/var/lib/jenkins&quot;</span> --target-job-name<span class="o">=</span><span class="s2">&quot;my-project-continuous&quot;</span> --project-description<span class="o">=</span><span class="s2">&quot;This is the Continuous Delivery build for My Project&quot;</span> --primary-scm-url<span class="o">=</span><span class="s2">&quot;http://146.185.129.66:8080/git/root/first-pharaoh-cd.git&quot;</span> --source-branch-spec<span class="o">=</span><span class="s2">&quot;origin/master&quot;</span> --source-scm-url<span class="o">=</span><span class="s2">&quot;http://146.185.129.66:8080/git/root/first-pharaoh-cd.git&quot;</span> --days-to-keep<span class="o">=</span><span class="s2">&quot;-1&quot;</span> --amount-to-keep<span class="o">=</span><span class="s2">&quot;10&quot;</span> --autopilot-test-invoke-install-file<span class="o">=</span><span class="s2">&quot;build/config/ptdeploy/autopilots/tiny-staging-invoke-code-no-dbconf.php&quot;</span> --autopilot-prod-invoke-install-file<span class="o">=</span><span class="s2">&quot;build/config/ptdeploy/autopilots/tiny-prod-invoke-code-no-dbconf.php&quot;</span> --error-email<span class="o">=</span><span class="s2">&quot;phpengine@hotmail.co.uk&quot;</span> --only-autopilots
+
+ // execute the build creator
+ ptdeploy autopilot execute build/config/ptdeploy/builderfy/autopilots/tiny-jenkins-invoke-continuous.php
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="wie-dapperfy-wordpress-verwenden">
+<h2>Wie dapperfy Wordpress verwenden<a class="headerlink" href="#wie-dapperfy-wordpress-verwenden" title="Permalink to this headline">¶</a></h2>
+<p>Der Befehl zum dapperfy die Wordpress ist unten angegeben verwendet wird,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy dapperfy wordpress
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls oben angegebenen, beginnt der Prozess der dapperfying wie in der Tabelle unten dargestellt,</p>
+<table border="1" class="table-bordered docutils">
+<colgroup>
+<col width="20%" />
+<col width="31%" />
+<col width="10%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameters</th>
+<th class="head">Alternative Parameters</th>
+<th class="head">Options</th>
+<th class="head">Kommentare</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Dapperfy This for
+Wordpress? (Y/N)</td>
+<td>Anstelle von Wordpress, Wordpress
+kann man auch verwenden.</td>
+<td>Y(Yes)</td>
+<td>Wenn der Benutzer, um die Wordpress können sie
+Eingang als Y. dapperfy muss</td>
+</tr>
+<tr class="row-odd"><td>Dapperfy This for
+Wordpress? (Y/N)</td>
+<td>Anstelle von Wordpress, Wordpress
+kann man auch verwenden.</td>
+<td>N(No)</td>
+<td>Wenn der Benutzer nicht in der Notwendigkeit, die
+Wordpress können sie Eingang als N. dapperfy|</td>
+</tr>
+</tbody>
+</table>
+<p>Wenn der Benutzer den Prozess der dapperfying die Wordpress, die während der Ausführung dapperfying die folgenden Schritte erfolgt verläuft,</p>
+<p>Schritt 1:</p>
+<p>Verwenden vorhandener Umgebungseinstellungen? (Y / N)</p>
+<p>Der Benutzer muss J oder N angeben, je nach ihrem Wunsch nach der vorhandenen Umgebungseinstellungen.</p>
+<p>Schritt 2:</p>
+<p>Haben Sie eine andere Umgebung hinzufügen? (Y / N)</p>
+<p>Der Benutzer muss J oder N angeben, je nach ihrem Wunsch für das Hinzufügen eines weiteren Umgebung.</p>
+<p>Nach Abschluss dieser Schritte, den Prozess der dapperfying die Wordpress wird abgeschlossen. Es ist optisch von dem Screenshot unten angegeben dargestellt,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy dapperfy wordpress
+Dapperfy This <span class="k">for</span> Wordpress? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Use existing environment settings? <span class="o">(</span>Y/N<span class="o">)</span>
+n
+Do you want to add another environment? <span class="o">(</span>Y/N<span class="o">)</span>
+n
+Standard Dapperfies:
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-code-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-enforce-revisions.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-rollback-newest.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-rollback-previous.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-enforce-revisions.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-rollback-newest.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-rollback-previous.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-uninstall-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-uninstall-code.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-nodepool-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-ptvirtualize-host-install-host-file-entry.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-ptvirtualize-host-uninstall-host-file-entry.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-ptvirtualize-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-uninstall-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-uninstall-code.php
+Wordpress Dapperfies:
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-code-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-install-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-install-code-dbconf.php
+Standard Dapperfies:
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-code-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-enforce-revisions.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-rollback-newest.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-rollback-previous.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-enforce-revisions.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-rollback-newest.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-rollback-previous.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-uninstall-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-uninstall-code.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-nodepool-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-ptvirtualize-host-install-host-file-entry.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-ptvirtualize-host-uninstall-host-file-entry.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-ptvirtualize-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-uninstall-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-uninstall-code.php
+Wordpress Dapperfies:
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-code-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-install-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-install-code-dbconf.php
+******************************
+
+
+Success
+In Dapperfy
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="arbeiten-von-wordpress-auto-deploy-dateien">
+<h2>Arbeiten von Wordpress Auto Deploy-Dateien<a class="headerlink" href="#arbeiten-von-wordpress-auto-deploy-dateien" title="Permalink to this headline">¶</a></h2>
+<p>Zur Erzeugung der automatischen Bereitstellung von Dateien in Wordpress, wird der Benutzer zur Eingabe müssen Sie den Befehl unten angegeben,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy dapperfy wordpress --yes --guess
+</pre></div>
+</div>
+<p>Nach der Eingabe des Befehls oben angegeben, die automatische Bereitstellung von Dateien erzeugt werden, wie bildhaft aus der Abbildung unten dargestellt,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy dapperfy wordpress --yes --guess
+Standard Dapperfies:
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-code-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-enforce-revisions.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-rollback-newest.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-invoke-rollback-previous.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-enforce-revisions.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-rollback-newest.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-rollback-previous.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-uninstall-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-uninstall-code.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-nodepool-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-ptvirtualize-host-install-host-file-entry.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-ptvirtualize-host-uninstall-host-file-entry.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-ptvirtualize-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-uninstall-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-uninstall-code.php
+Wordpress Dapperfies:
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-node-install-code-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-install-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-workstation-install-code-dbconf.php
+Standard Dapperfies:
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-code-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-enforce-revisions.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-rollback-newest.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-invoke-rollback-previous.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-enforce-revisions.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-rollback-newest.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-rollback-previous.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-uninstall-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-uninstall-code.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-nodepool-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-ptvirtualize-host-install-host-file-entry.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-ptvirtualize-host-uninstall-host-file-entry.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-ptvirtualize-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-install-code-no-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-uninstall-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-uninstall-code.php
+Wordpress Dapperfies:
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-node-install-code-dbconf.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-install-code-data.php
+//build/config/ptdeploy/dapperfy/autopilots/generated/default-local-8080-workstation-install-code-dbconf.php
+******************************
+
+
+Success
+In Dapperfy
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Es ist gut-to-do sowohl ubuntu und als auch in Cent OS.</li>
+<li>Die in der Erklärung verwendeten Parameter wird nicht zwischen Groß- und Kleinschreibung.</li>
+<li>Auch Word Press verfügt über integrierte Linkmanagement; eine Suchmaschine, freundlich, sauber Permalink-Struktur</li>
+<li>Es hat die Fähigkeit, mehrere Kategorien Artikel zuweisen; und Unterstützung für die Kennzeichnung der Beiträge und Artikel.</li>
+<li>In Wordpress Automatikfilter sind ebenfalls enthalten und bietet eine standardisierte Formatierung und Formatierung von Text in Artikeln</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gwordpress_deploy.rst">
+          Wordpress
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

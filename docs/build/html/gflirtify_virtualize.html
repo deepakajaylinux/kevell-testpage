@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Flirtify &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTVirtualize" href="gptvirtualize_main.html" />
+    <link rel="next" title="Halt" href="ghalt_virtualize.html" />
+    <link rel="prev" title="Destroy" href="gdestroy_virtualize.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Flirtify</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#standard-cleo">Standard-cleo</a></li>
+<li><a class="reference internal" href="#sonderanfertigungen-cleo-dapper">Sonderanfertigungen cleo-dapper</a></li>
+<li><a class="reference internal" href="#standard-cleo-dapper">Standard-cleo-dapper</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gdestroy_virtualize.html"
+         title="Previous Chapter: Destroy">&laquo; Destroy</a></li>
+  <li><a href="ghalt_virtualize.html"
+         title="Next Chapter: Halt">Halt &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gflirtify_virtualize.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="flirtify">
+<h1>Flirtify<a class="headerlink" href="#flirtify" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Dies war früher ptvirtualize Dateien für vordefinierte Vorlagen erstellen. Nicht Groß- und Kleinschreibung, die zusätzlichen Vorteil für dieses Modul bringt. Dieses Modul haben viele alternative Parameter. Die Standard-Konfigurationsmanagement für PHP-Anwendung.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl help führt den Benutzer zu ptvirtualize Dateien für vordefinierte Vorlagen erstellen. Es hat sich in ptvirtualize und ptdeploy personalisiert. Auch bietet Standardeinstellung für Konfiguration einer virtuellen Maschine.</p>
+<p>Der Befehl help für flirtify</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize flirtify <span class="nb">help</span>
+</pre></div>
+</div>
+<p>Nach Eingang der obige Befehl, beginnt es funktioniert, um die Standardeinstellung zu ermöglichen. Es Katechese die Funktionen flirtify in der
+Screenshots.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptvirtualize Flirtify <span class="nb">help</span>
+******************************
+Pharaoh Tools - ptvirtualize
+******************************
+
+
+ With Flirtify you can create ptvirtualize files <span class="k">for</span> your project from predefined templates. This will <span class="nb">enable </span>you to
+ create default Virtual machine hardware and provisioning configurations <span class="k">for</span> your project in a single command.
+
+ Flirtify, flirt, flirtify, phlirt, phlirtify
+
+       - default-cleo
+       Create a ptvirtualizefile <span class="k">for</span> your project, with default Configuration Management <span class="k">for</span> a PHP Application
+       example: ptvirtualize flirt default-cleo
+
+       - default-cleo-dapper
+       Create a ptvirtualizefile <span class="k">for</span> your project, with default Configuration Management <span class="k">for</span> a PHP Application and
+       ptdeploy Application
+       example: ptvirtualize flirt default-cleo-dapper
+           --host-dapperfile<span class="o">=</span>*relative/path/to/dapperfile/<span class="s2">&quot;</span>
+<span class="s2">           # guess will use build/config/ptdeploy/dapperfy/autopilots/generated/</span>
+
+<span class="s2">       - custom-cleo-dapper</span>
+<span class="s2">       Create a ptvirtualizefile for your project</span>
+<span class="s2">       example: ptvirtualize flirt custom-cleo-dapper</span>
+
+<span class="s2">------------------------------</span>
+<span class="s2">End Help</span>
+<span class="s2">******************************</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Es gibt viele Alternativen in flirtify. Sie sind,</p>
+<p>Flirtify, Flirtify, flirten, phlirt, phlirtify</p>
+</div>
+<div class="section" id="standard-cleo">
+<h2>Standard-cleo<a class="headerlink" href="#standard-cleo" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Verfahren verwendet, um eine ptvirtualize Datei für den Benutzer-Projekt mit Standardkonfiguration Management für die PHP-Anwendung zu erstellen. Mit dem folgenden Befehl wird ein ptvirtualize Datei zu erstellen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize flirtify default-cleo
+</pre></div>
+</div>
+<p>nach Eingang der oben genannten Befehl beginnt es funktioniert.</p>
+</div>
+<div class="section" id="sonderanfertigungen-cleo-dapper">
+<h2>Sonderanfertigungen cleo-dapper<a class="headerlink" href="#sonderanfertigungen-cleo-dapper" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Verfahren verwendet, um eine Datei für ptvirtualize Projekt Benutzers zu erstellen. Mit dem folgenden Befehl wird ein ptvirtualize Datei zu erstellen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize flirtify Custom-cleo-dapper
+</pre></div>
+</div>
+<p>nach Eingang der oben genannten Befehl beginnt es funktioniert.</p>
+</div>
+<div class="section" id="standard-cleo-dapper">
+<h2>Standard-cleo-dapper<a class="headerlink" href="#standard-cleo-dapper" title="Permalink to this headline">¶</a></h2>
+<p>Dieses Verfahren verwendet, um eine ptvirtualize Datei für den Benutzer-Projekt mit Standardkonfigurationsmanagement für eine PHP-Anwendung und ptdeploy Anwendung zu erstellen. Mit dem folgenden Befehl wird ein ptvirtualize Datei zu erstellen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptvirtualize flirtify default-cleo-dapper
+</pre></div>
+</div>
+<p>Nach der Eingabe wie die oben genannten Befehl beginnt es funktioniert.</p>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Gut Unterstützung für IT-Profis</li>
+<li>Nicht Groß- und Kleinschreibung</li>
+<li>Geeignet für Ubuntu und Cent OS</li>
+<li>Zum ptvirtualize Dateien für vordefinierte Vorlagen erstellen</li>
+</ul>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gflirtify_virtualize.rst">
+          Flirtify
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

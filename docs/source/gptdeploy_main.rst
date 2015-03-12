@@ -190,18 +190,21 @@ Hier bezeichnet der Bildschirm die Anzeige aller Module unter ptconfigure.
  gdrupal_deploy
  genvironmentconfig_deploy
  ggitclone_deploy
-
-
-
-
-
-
-
-
-
-
-
-
+ ggrafana_deploy
+ ghosteditor_deploy
+ gjoomla_deploy
+ glighttpdcontrol_deploy
+ glogging_deploy
+ gnginxcontrol_deploy
+ gnginxsbeditor_deploy
+ gproject_deploy
+ gruncommand_deploy
+ gsftp_deploy
+ gsvn_deploy
+ gsystemdetection_deploy
+ gtemplating_deploy
+ gversion_deploy
+ gwordpress_deploy
 
 
 

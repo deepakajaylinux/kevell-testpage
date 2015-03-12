@@ -1,0 +1,49 @@
+========
+Invoke
+========
+
+Zusammenfassung
+------------------------
+
+Rufen holt die insbesondere SSH-Datei von Basismaschine auf der virtuellen Maschine. Bei der Datenverarbeitung, der SSH File Transfer Protocol (auch Secure File Transfer Protocol oder SFTP) ist ein Netzwerkprotokoll, Dateizugriff, Dateiübertragung und Dateimanagement-Funktionen über eine zuverlässige Datenstrom liefert.
+
+Hilfe Befehl
+----------------------
+
+
+Diese Funktion dient, um die Verwendung von Aufrufmodul zu bestimmen. Der Benutzer wird kommen, um über die andere Art und Weise / Format um dieses Modul ausführen kennen. Dieser Befehl leitet den Anwender, um den Zweck dieses Befehls kennen. Da unten sind die Kommando- und der Screenshot der gleiche.
+
+.. code-block:: bash
+        
+        ptvirtualize invoke help
+
+erhalten
+----------
+
+Wenn der Benutzer eine Datei in unserer Quelle zu anderen Ziel holt braucht, wird der unten gegebenen Befehl das Verfahren auszuführen.
+
+.. code-block:: bash
+        
+        ptvirtualize invoke get
+
+
+Das System fragt nach Quelldateipfad und Zieldateipfad.
+
+Es ist eine weitere Option, wobei Sie die Quell- und Ziel-Pfad in der Befehlszeile geben.
+
+
+Alternative Parameter
+--------------------------------
+
+Es gibt zwei alternative Parameter, der in der Befehlszeile verwendet werden können
+
+Invoke , invoke.
+
+Eg: ptvirtualize invoke get/ ptvirtualize Invoke get
+
+Vorteile
+--------------
+
+* Dieser Befehl hilft, SSH Dateien oder Verzeichnisse abruft.
+* Ruft eine Datei oder ein Verzeichnis von der Quelle zum Ziel mit einzelnen Befehl
+
