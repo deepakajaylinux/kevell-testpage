@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Rackspace &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="Redis" href="gredis.html" />
+    <link rel="prev" title="Ra" href="gra.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Rackspace</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#box-add">Box - Add</a></li>
+<li><a class="reference internal" href="#box-zerstoren">Box - zerstören</a></li>
+<li><a class="reference internal" href="#box-zerstoren-all">Box - zerstören -all</a></li>
+<li><a class="reference internal" href="#save-ssh-schlussel">Save- ssh- Schlüssel</a></li>
+<li><a class="reference internal" href="#liste">Liste</a></li>
+<li><a class="reference internal" href="#list-container">List- Container</a></li>
+<li><a class="reference internal" href="#list-objekte">List- Objekte</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gra.html"
+         title="Previous Chapter: Ra">&laquo; Ra</a></li>
+  <li><a href="gredis.html"
+         title="Next Chapter: Redis">Redis &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/grackspace.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="rackspace">
+<h1>Rackspace<a class="headerlink" href="#rackspace" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Rackspace bietet leistungsstarke , zuverlässige Infrastruktur in der Cloud erfolgreich zu sein. Es dauert mit vollem Funktionsumfang, optimierte Plattformen und ein Team von Experten , um Workloads .</p>
+<p>Rackspace hat zwei Hauptgeschäftsbereiche- Cloud-Server und dedizierte Server . Rackspace hilft planen, bauen und betreiben Workloads in beiden Umgebungen je nach den individuellen Bedürfnissen des Kunden .</p>
+<p>Cloud Server - Die Managed Infrastructure Service-Level bietet einen Kernsatz von Dienstleistungen erforderlich , um Kunden in die Cloud setzen , einschließlich Architektur Beratung, Sicherheitsunterstützung und Codeentwicklungshilfe ( über APIs und SDKs ) . Die Managed Operations Support-Level bietet alle Managed Infrastructure Services und zusätzliche proaktive Unterstützung .</p>
+<p>Dedizierte Server - Der Managed Service-Level besteht aus On-Demand- Support , wo proaktive Dienstleistungen erbracht werden.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion dient , um die Verwendung von Rackspace bestimmen. Der Benutzer wird kommen, um über die andere Art und Weise / Format um dieses Modul ausführen kennen. Dieser Befehl leitet den Anwender , um den Zweck dieses Befehls kennen. Da unten sind die Kommando- und der Screenshot der gleiche.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Rackspace <span class="nb">help</span>
+
+******************************
+
+
+   This is an extension provided <span class="k">for</span> Handling Servers on Rackspace.
+
+   Rackspace, rackspace
+
+       - box-add
+       Lets you add boxes to Rackspace, and adds them to your papyrusfile
+       example: ptconfigure rackspace box-add
+                   --yes
+                   --rackspace-ssh-key-path<span class="o">=</span><span class="s2">&quot;/home/dave/.ssh/bastion.pub&quot;</span>
+                   --rackspace-ssh-key-name<span class="o">=</span><span class="s2">&quot;bastion&quot;</span>
+
+       - box-destroy
+       Will destroy box/es in an environment <span class="k">for</span> you, and remove them from the papyrus file
+       example: ptconfigure rackspace box-destroy --yes --guess --rackspace-ssh-key-path<span class="o">=</span><span class="s2">&quot;/home/dave/.ssh/bastion.pub&quot;</span> --rackspace-ssh-key-name<span class="o">=</span><span class="s2">&quot;bastion&quot;</span>
+
+       - box-destroy-all
+       Will destroy all boxes in your Rackspace account - Careful - its irreversible
+       example: ptconfigure rackspace box-destroy-all --yes --guess
+
+       - save-ssh-key, sshkey, ssh-key
+       Will <span class="nb">let </span>you save a <span class="nb">local </span>ssh key to your Rackspace account, so you can ssh in to your nodes with it
+       securely and without a password
+       example: ptconfigure rackspace save-ssh-key
+                   --yes
+                   --rackspace-ssh-key-path<span class="o">=</span><span class="s2">&quot;/home/dave/.ssh/bastion.pub&quot;</span>
+                   --rackspace-ssh-key-name<span class="o">=</span><span class="s2">&quot;bastion&quot;</span>
+
+       - list
+       Will display data about your Rackspace account
+       example: ptconfigure rackspace list
+       example: ptconfigure rackspace list --yes
+                   --guess <span class="c"># use project saved connection details if possible</span>
+                   --rackspace-list-data-type<span class="o">=</span>sizes <span class="c"># servers, sizes, images, domains, regions, ssh_keys</span>
+
+       - list-containers
+       Will display Container data about your Rackspace account
+       example: ptconfigure rackspace list-containers
+       example: ptconfigure rackspace list-containers --yes
+                   --guess <span class="c"># use project saved connection details if possible</span>
+
+       - list-objects
+       Will display object of Containers data about your Rackspace account
+       example: ptconfigure rackspace list-objects
+       example: ptconfigure rackspace list-objects --yes
+                   --guess <span class="c"># use project saved connection details if possible</span>
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="box-add">
+<h2>Box - Add<a class="headerlink" href="#box-add" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, Boxen Rackspace hinzufügen und fügt sie den Papyrus -Datei. Die unten angegebenen Befehl wird den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace box-add --yes --rackspace-ssh-key-path<span class="o">=</span><span class="s2">&quot;/home/dave/.ssh/bastion.pub&quot;</span> --rackspace-ssh-key-name<span class="o">=</span><span class="s2">&quot;bastion&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="box-zerstoren">
+<h2>Box - zerstören<a class="headerlink" href="#box-zerstoren" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, Box / es in einer Umgebung für Sie zu zerstören , und sie aus dem Papyrus -Datei. Die unten angegebenen Befehl wird den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace box-destroy --yes --guess --rackspace-ssh-key-path<span class="o">=</span><span class="s2">&quot;/home/dave/.ssh/bastion.pub&quot;</span> --rackspace-ssh-key-name<span class="o">=</span><span class="s2">&quot;bastion&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="box-zerstoren-all">
+<h2>Box - zerstören -all<a class="headerlink" href="#box-zerstoren-all" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, alle Kisten in Ihrem Konto Rackspace zu zerstören. Der wichtigste Teil ist es irreversibel ist .</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace box-destroy-all --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="save-ssh-schlussel">
+<h2>Save- ssh- Schlüssel<a class="headerlink" href="#save-ssh-schlussel" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, eine lokale SSH-Schlüssel zu Ihrem Rackspace Konto zu speichern , so dass Sie zu Ihrem Knoten mit sich sicher und ohne Passwort in ssh . Es gibt drei alternative Parameter für diesen Befehl verwendet - ssh -key, sshkey , ssh- Schlüssel . Die unten angegebenen Befehl wird den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace save-ssh-key --yes --rackspace-ssh-key-path<span class="o">=</span><span class="s2">&quot;/home/dave/.ssh/bastion.pub&quot;</span> --rackspace-ssh-key-name<span class="o">=</span><span class="s2">&quot;bastion&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="liste">
+<h2>Liste<a class="headerlink" href="#liste" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft dabei, Daten über Ihre Rackspace Konto. Die unten angegebenen Befehl wird den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace list
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace list --yes --guess <span class="c"># use project saved connection details if possible --rackspace-list-data-type=sizes # servers, sizes, images, domains, regions, ssh_keys</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-container">
+<h2>List- Container<a class="headerlink" href="#list-container" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, Container Daten über Ihre Rackspace Konto anzuzeigen. Die unten angegebenen Befehl wird den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace list-containers
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace list-containers --yes --guess <span class="c"># use project saved connection details if possible</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-objekte">
+<h2>List- Objekte<a class="headerlink" href="#list-objekte" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, Gegenstand Containers Daten über Ihre Rackspace Konto anzuzeigen. Die unten angegebenen Befehl wird den Prozess auszuführen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace list-objects
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure rackspace list-objects --yes --guess <span class="c"># use project saved connection details if possible</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Es gibt zwei alternative Parameter, die in der Befehlszeile verwendet werden kann.</p>
+<p>Rackspace, rackspace</p>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<p>Rackspace bietet eine Komplettlösung für die Kunden fordern eine leistungsstarke, speziell gebaute Infrastruktur für relationale Datenbanken gesichert und von Ingenieuren unterstützt , die in MySQL Workloads spezialisiert konzipiert. Rackspace ist ein vollständig verwalteter Dienst für Kunden, die auf die Entwicklung ihrer Anwendungen konzentrieren und nicht über die zugrunde liegende Infrastruktur kümmern möchten. Der Service bietet bei Bedarf Sicherungen und Wiederherstellungen , die integrierte Überwachung , redundante Speicherung , Skalierbarkeit , um den Anforderungen Ihrer Anwendung und die vollständige Kontrolle über die Datenbank auf der Basis wachsen .</p>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.3.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/grackspace.rst">
+          Rackspace
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

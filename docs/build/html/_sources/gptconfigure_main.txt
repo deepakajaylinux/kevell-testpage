@@ -648,10 +648,12 @@ Das Spiel mit ptconfigure -Module
    gprocess
    gptbuild
    gptconfigure
+   gptdeploy
    gpttest
    gptvirtualize
    gpython                         
    gra
+   grackspace
    gredis
    grubybdd
    grubyrvm
