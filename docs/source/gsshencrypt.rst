@@ -22,26 +22,6 @@ Der folgende Screenshot zeigt etwa sshencrypted
 
 .. code-block:: bash
 
- kevell@corp:/# ptconfigure SshEncrypt help
-
- ******************************
-
-
-    This command allows you to install an encrypted private SSH key or to encrypt one.
-
-    SshEncrypt, ssh-encrypt, sshencrypt
-
-        - encrypt
-        Installs an encrypted SSH Key.
-        example: ptconfigure ssh-encrypt install
-
-        - unencrypt
-        Installs an encrypted SSH Key.
-        example: ptconfigure ssh-encrypt install
-
- ------------------------------
- End Help
- ******************************
 
 
 Alternative Parameter

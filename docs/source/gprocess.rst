@@ -18,6 +18,32 @@ Der Befehl help dient den Anwendern darüber, wie zu handhaben und mit Verfahren
 
 Der folgende Screenshot, wie unten dargestellt, zeigt, wie man einen Prozess zu beenden, und wie Sie definieren einen Prozess zu töten.
 
+.. code-block:: bash 
+
+ kevell@corp:/# ptconfigure process help
+ ******************************
+
+
+  This command handles process functions, kill a process for now
+
+  Process, process
+
+        - kill
+        Will ask you for process name, aa file or directory from local to remote
+        example: ptconfigure process kill
+        example: ptconfigure process kill --yes --name="selenium" --use-psax # default, will look for string in result of
+        example: ptconfigure process kill --yes --name="selenium" --use-pkill # will allow pkill to find  by string to kill
+        example: ptconfigure process kill --yes
+                                        --guess
+                                        --id="1234 # will kill a process by id
+                                        --level # will guess a 9
+
+ ------------------------------
+ End Help
+ ******************************
+
+
+
 Wie zu definieren und um den Prozess zu verwenden
 ----------------------------------------------------
 

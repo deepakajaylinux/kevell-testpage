@@ -120,16 +120,6 @@ Nach der Eingabe des Befehls oben angegeben wurde, wird der folgende Prozess, wi
 
 Die zwei verschiedenen Arten von Bildschirm kann nützlich für die Benutzer, die eine bildliche Darstellung dapperfying Prozess sein. Der zweite Screenshot zeigt Methode zur Angabe Bereitschaft in einem der vorhandenen Umgebungseinstellungen.
 
-Wie Dapperfy Liste verwenden
----------------------------------
-
-Das primäre Ziel der Liste Aufgabe es ist, alle Autopilot-Dateien der Benutzer Projekte, die an einem bestimmten Ort verfügbar sind, aus. Die Syntax für die Liste unter dapperfy ist unten dargestellt,
-
-.. code-block:: bash
-
-	ptdeploy dapperfy list
-
-Der unten abgebildete Screenshot zeigt die Funktionsweise der Liste Option unter dapperfy.
 
 .. code-block:: bash
 
@@ -185,6 +175,21 @@ Der unten abgebildete Screenshot zeigt die Funktionsweise der Liste Option unter
  Success
  In Dapperfy
  ******************************
+
+
+Wie Dapperfy Liste verwenden
+---------------------------------
+
+Das primäre Ziel der Liste Aufgabe es ist, alle Autopilot-Dateien der Benutzer Projekte, die an einem bestimmten Ort verfügbar sind, aus. Die Syntax für die Liste unter dapperfy ist unten dargestellt,
+
+.. code-block:: bash
+
+        ptdeploy dapperfy list
+
+Der unten abgebildete Screenshot zeigt die Funktionsweise der Liste Option unter dapperfy.
+
+
+
 
 Vorteile
 -----------

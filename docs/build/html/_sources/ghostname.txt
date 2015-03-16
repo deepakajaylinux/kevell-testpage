@@ -52,6 +52,25 @@ Hostnamen werden in der Regel in einem Verwaltungskapazitäten verwendet und kö
 
 Aus der obigen Befehl der neue Host-Namen eingeben können.
 
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure hostname change –hostname=”kevellcorp”
+ Enter Hostname:
+ kevellcorp
+ ******************************
+
+
+ Hostname Modifications:
+ --------------------------------------------
+
+ Hostname: Success
+
+ ------------------------------
+ Hostname Mods Finished
+ ******************************
+
+
+
 Show
 -------------------
 

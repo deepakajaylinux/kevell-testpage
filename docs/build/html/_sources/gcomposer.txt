@@ -44,7 +44,7 @@ Wenn der Benutzer Komponist-Modul installiert, in der Maschine muss, die unten m
 
 .. code-block:: bash
 
-           ptconfigure composer help 
+	ptconfigure composer install
 
 Während der Installation, das System Fragen für den Verzeichnisnamen, wenn Sie Ihren Pfad einrichten will, können Sie Ihre Pfad definieren. Definieren Sie Ihren Weg zu sein, gefolgt von ' /' symbol hat. Drücken Sie die EINGABETASTE, um die Standard-Pfad zu verwenden.
 
@@ -65,6 +65,43 @@ Während der Installation, das System Fragen zum Ausführen von Verzeichnisnamen
  +-------------------------------+---------------------------------+------------------+------------------------------------------------+
  |ptconfigure composer Install   | Composer , composer             | N                | System stoppt Installation process|            |
  +-------------------------------+---------------------------------+------------------+------------------------------------------------+
+
+Der Screenshot zur Installation Befehl aufgeführt unten ,
+
+.. code-block:: bash
+
+ kevell@corp:/$ ptconfigure composer install
+ Install Composer - Update to latest version ? (Y/N) 
+ Y
+ ******************************
+ *        Pharaoh Tools        *
+ *          Composer!         *
+ *******************************
+ What is the program data directory? Found "/opt/composer" - use this? (Enter nothing for yes, no end slash)
+
+ What is the program executor directory? Found "/usr/bin" - use this? (Enter nothing for yes, No Trailing Slash)
+
+ git clone 'https://github.com/phpengine/composer-phar.git'  /tmp/composer/composerCloning into '/tmp/composer/composer'...
+
+ remote: Counting objects: 6, done.
+ remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 6
+ Unpacking objects: 100% (6/6), done.
+ Checking connectivity... done.
+ Program Data Folder /opt/composer Deleted if existed
+ Program Data folder populated
+ Program Executor Deleted if existed
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Installer:
+ --------------------------------------------
+ Composer: Success
+ ------------------------------
+ Installer Finished
+ ******************************
 
           
 Vorteile

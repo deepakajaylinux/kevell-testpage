@@ -128,7 +128,6 @@ Nach der Eingabe des Befehls vor, tritt die folgenden Vorgänge wie im Tabellenf
  +-------------------------+---------------------------------------------+-------------+---------------------------------------------+
 
 
-Der folgende Screenshot kann eine bildliche Darstellung in Bezug auf den Prozess der Installation geben.
 
 
 Vorteile
