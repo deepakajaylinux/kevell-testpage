@@ -1,6 +1,3 @@
-Welcome to kevell_Multilanguage's documentation!
-==================================================
-
 Pharaohtools Documentation
 ============================
 
@@ -18,6 +15,7 @@ Commands
 .. toctree::
    :maxdepth: 6
    
+ gjrush_main
  gptconfigure_main
  gptdeploy_main
  gpttest_main

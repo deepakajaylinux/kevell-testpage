@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Amazon S3 &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="ApacheConf" href="gapacheconf.html" />
+    <link rel="prev" title="AMAZON ROUTE 53" href="gamazonroute53.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Amazon S3</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#ensure-bucket-exists">Ensure-bucket-exists</a></li>
+<li><a class="reference internal" href="#add-object">Add-object</a></li>
+<li><a class="reference internal" href="#remove-bucket">Remove-bucket</a></li>
+<li><a class="reference internal" href="#remove-object-all">Remove-object-all</a></li>
+<li><a class="reference internal" href="#remove-object">Remove-object</a></li>
+<li><a class="reference internal" href="#list">List</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gamazonroute53.html"
+         title="Previous Chapter: AMAZON ROUTE 53">&laquo; AMAZON ROUTE 53</a></li>
+  <li><a href="gapacheconf.html"
+         title="Next Chapter: ApacheConf">ApacheConf &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gamazons3.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="amazon-s3">
+<h1>Amazon S3<a class="headerlink" href="#amazon-s3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Amazon Simple Storage Service (Amazon S3), bietet Entwicklern und IT-teams mit hoch skalierbare, sichere, dauerhafte Objektspeicherung. Amazon S3 ist einfach zu bedienen, mit eine einfache Web-Services-Schnittstelle zum Speichern und Abrufen von beliebige Datenmengen von überall im Web. Mit Amazon S3 Zahlen Sie nur für die Lagerung, die Sie wirklich nutzen. Es gibt keine Mindestgebühr und keine Setup-Kosten.</p>
+<p>Amazon S3 kann allein oder zusammen mit anderen AWS-Diensten wie Amazon Elastic Compute Cloud (Amazon EC2), Amazon Elastic Block Store (Amazon EBS), und Amazon-Gletscher, sowie Lagerung Drittanbieterpaketdepots und Gateways verwendet werden. Amazon S3 bietet kostengünstige Objektspeicherung für eine Vielzahl von Anwendungsfällen einschließlich Cloud-Anwendungen, Content-Verteilung, Backup und Archivierung, Disaster Recovery und große Datenanalyse.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, um die Nutzung von AWS S3 zu bestimmen. Der Benutzer wird kommen, über den anderen Weg/Format wissen, dieses Modul ausgeführt. Dieser Befehl führt den Endbenutzer, um diesen Befehl zu erfahren. Unten gegeben sind, den Befehl und den Screenshot von der gleichen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure AWSS3 <span class="nb">help</span>
+
+******************************
+
+
+   This is an extension provided <span class="k">for </span>Handling AWSS3.
+
+   AWSS3, awss3 aws-s3
+
+       - ensure-bucket-exists
+       Lets you add bucket to AWSS3 <span class="k">if </span>doesnt exists
+       example: ptconfigure AWSS3 ensure-bucket-exists
+                   --yes
+                   --guess
+       - add-object
+       Lets you upload object to bucket
+       example: ptconfigure AWSS3 add-object
+                   --yes
+                   --guess
+
+
+       - remove-bucket
+         Lets you remove bucket
+         example: ptconfigure AWSS3 remove-bucket
+                   --yes
+                   --guess
+
+       - remove-object-all
+      Lets you remove all object from a bucket
+         example: ptconfigure AWSS3 remove-object-all
+                   --yes
+                   --guess
+
+
+           - remove-object
+      Lets you remove a object from a bucket
+         example: ptconfigure AWSS3 remove-object
+                   --yes
+                   --guess
+
+       - list
+       Will display data about your AWS S3
+       example: ptconfigure AWSS3 list
+                 --yes
+                 --guess
+
+
+       Note: region must be one of the following...
+       us-east-1, ap-northeast-1, sa-east-1, ap-southeast-1, ap-southeast-2, us-west-2, us-gov-west-1, us-west-1, cn-north-1, eu-west-1
+
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="ensure-bucket-exists">
+<h2>Ensure-bucket-exists<a class="headerlink" href="#ensure-bucket-exists" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft AWSS3 wenn Eimer hinzu existiert nicht. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRoute53 create-hosted-zone --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-object">
+<h2>Add-object<a class="headerlink" href="#add-object" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, Objekt, um Eimer hochladen. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSS3 add-object --yes –guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove-bucket">
+<h2>Remove-bucket<a class="headerlink" href="#remove-bucket" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, um Eimer zu entfernen. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSS3 remove-bucket --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove-object-all">
+<h2>Remove-object-all<a class="headerlink" href="#remove-object-all" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, um alle Objekte aus einem Eimer zu entfernen. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSS3 remove-object-all --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove-object">
+<h2>Remove-object<a class="headerlink" href="#remove-object" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl können Sie ein Objekt aus einem Eimer entfernt. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSS3 remove-object --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="list">
+<h2>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft zum Anzeigen von Daten über die AWS-S3. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSS3 list --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Es gibt drei alternative Parameter, die in der Befehlszeile verwendet werden können.</p>
+<p>AWSS3, awss3 aws-s3</p>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<p>Langlebig: Amazon S3 bietet dauerhafte Infrastruktur um wichtige Daten zu speichern und richtet sich an Dauerhaftigkeit von 99.999999999 % der Objekte. Ihre Daten werden redundant über mehrere Einrichtungen und mehrere Geräte in jede Einrichtung.</p>
+<p>Low-Cost: Amazon S3 können Sie große Datenmengen auf einem sehr niedrigen Preis zu speichern. Sie zahlen für das was Sie, ohne minimale Verpflichtungen oder vorab Gebühren brauchen.</p>
+<p>Verfügbar: Amazon S3 ist für 99,99 % Verfügbarkeit der Objekte über ein bestimmtes Jahr entwickelt.  Amazon S3 wird auch unterstützt durch das Amazon S3 Service Level Agreement, sicherzustellen, dass Sie sich darauf verlassen können, wenn Sie es brauchen. Und Sie können eine AWS-Region für Latenz optimieren, Kosten zu minimieren oder regulatorischen Anforderungen.</p>
+<p>Zu sichern: Amazon S3 Datenübertragung über SSL und automatische Verschlüsselung Ihrer Daten unterstützt, sobald sie hochgeladen werden. Sie können auch Eimer Richtlinien zum Verwalten von Berechtigungen für Objekte und steuern den Zugriff auf Ihre Daten mit AWS Identity und Access Management (IAM) konfigurieren.</p>
+<p>Skalierbar: Mit Amazon S3, können Sie speichern, so viele Daten wie Sie wollen und sie, greifen Wenn Sie es brauchen. Du kannst aufhören raten, Ihre zukünftigen Speicherbedarfs und Skala oben und unten je nach Bedarf, geschäftliche Flexibilität drastisch zu erhöhen.</p>
+<p>Event-Benachrichtigungen senden: Amazon S3 können Benachrichtigungen senden, wenn Objekte auf Amazon S3 hochgeladen werden. Amazon S3-Ereignisbenachrichtigungen können mit Amazon SQS oder Amazon SNS zugestellt oder direkt an AWS Lambda, sodass Sie Trigger Workflows, Warnungen oder sonstige Verarbeitung gesendet werden. Amazon S3-Ereignisbenachrichtigungen können Sie z. B. auslösen Transcodierung von Media-Dateien beim Upload sind, Verarbeitung von Datendateien, sobald diese verfügbar sind, oder Synchronisierung von Amazon S3-Objekten mit anderen Datenspeichern.
+Hohe Leistung: Amazon S3 unterstützt mehrteilige lädt zur Maximierung der Netzwerkdurchsatz und Ausfallsicherheit und ermöglicht Ihnen, wählen Sie die AWS-Region zu speichern Ihre Daten in der Nähe der Endbenutzer und minimieren Netzwerklatenz. Und Amazon S3 ist mit Amazon CloudFront, ein Content-Delivery-Webdienst, der Inhalt an Endbenutzer mit geringer Latenz, hohe Geschwindigkeit der Datenübertragung und keine minimale Nutzung Verpflichtungen vertreibt integriert.</p>
+<p>Integriert: Amazon S3 ist integriert mit anderen AWS-Diensten zu vereinfachen, hoch- und Herunterladen von Daten von Amazon S3 und erleichtern das Erstellen von Lösungen, die eine Reihe von AWS-Dienste verwenden. Amazon S3-Integrationen sind Amazon CloudFront Amazon Kinesis, Amazon RDS, Amazon-Gletscher, Amazon EBS, Amazon DynamoDB, Amazon Redshift, Amazon Route 53, Amazon EMR und AWS Lambda.
+Einfach zu bedienen: Amazon S3 ist einfach zu bedienen mit einer webbasierten Management-Konsole und mobile app und vollen REST APIs und SDKs für die einfache Integration mit Drittanbieter-Technologien.</p>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gamazons3.rst">
+          Amazon S3
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

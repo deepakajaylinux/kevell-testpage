@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>AWS RDS &mdash; KEVELL 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/labibi.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.0.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="KEVELL 0.1 documentation" href="index.html" />
+    <link rel="up" title="PTConfigure" href="gptconfigure_main.html" />
+    <link rel="next" title="Awstats" href="gawstats.html" />
+    <link rel="prev" title="AWSCloudFormation" href="gawscloudformation.html" />
+
+
+<script src="_static/labibi.js"></script>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16853172-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">KEVELL</a>
+<!--        <span class="navbar-text navbar-version pull-left"><b>0.1</b></span>-->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a href="index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">AWS RDS</a><ul>
+<li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
+<li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
+<li><a class="reference internal" href="#describe-instance">Describe-instance</a></li>
+<li><a class="reference internal" href="#delete-instance">Delete-instance</a></li>
+<li><a class="reference internal" href="#create-db-snapshot">Create-db-snapshot</a></li>
+<li><a class="reference internal" href="#delete-db-snapshot">Delete-db-snapshot</a></li>
+<li><a class="reference internal" href="#copy-db-snapshot">Copy-db-snapshot</a></li>
+<li><a class="reference internal" href="#create-instance">Create-instance</a></li>
+<li><a class="reference internal" href="#reboot-instance">Reboot-instance</a></li>
+<li><a class="reference internal" href="#create-instance-read-replica">Create-instance-read replica</a></li>
+<li><a class="reference internal" href="#list">List</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#vorteile">Vorteile</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li><a href="gawscloudformation.html"
+         title="Previous Chapter: AWSCloudFormation">&laquo; AWSCloudFormatio...</a></li>
+  <li><a href="gawstats.html"
+         title="Next Chapter: Awstats">Awstats &raquo;</a></li>
+              
+            
+            
+            
+            
+<!--              <li>
+<div id="sourcelink">
+  <a href="_sources/gawsrds.txt"
+     rel="nofollow">Source</a>
+</div></li>-->
+            
+     <li><a href="http://testpage.readthedocs.org">English</a></li>
+    <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
+    <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
+    <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+      </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="globaltoc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gjrush_main.html">Jrush</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="gptconfigure_main.html">PTConfigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptdeploy_main.html">PTDeploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gpttest_main.html">PTTest</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gptvirtualize_main.html">PTVirtualize</a></li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9">
+      
+  
+  <div class="section" id="aws-rds">
+<h1>AWS RDS<a class="headerlink" href="#aws-rds" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zusammenfassung">
+<h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
+<p>Amazon Relational Database Service (Amazon RDS) ist ein Webdienst, der macht es einfach einzurichten, zu betreiben und Skalieren eine relationale Datenbank in der Cloud. Es bietet kostengünstige und veränderbare Kapazität beim Verwalten von zeitraubenden Datenbankverwaltung, damit Sie sich auf Ihre Anwendungen und Geschäft konzentrieren.</p>
+<p>Amazon RDS ermöglicht Ihnen online Zugriff auf die Funktionen eines MySQL, Oracle, Microsoft SQL Server, PostgreSQL oder Amazon Aurora-relationalen Datenbank-Management-Systems. Dies bedeutet, dass der Code, Anwendungen und Tools, die Sie bereits heute mit vorhandenen Datenbanken mit Amazon RDS verwendet werden können Amazon RDS automatisch patches die Datenbanksoftware und Ihre Datenbank gesichert, speichern die Sicherungen für einen Benutzer-definierten Aufbewahrungszeitraum und eine Point-in-Time-Recovery. Sie profitieren von der Flexibilität, die Compute-Ressourcen oder die Speicherkapazität Ihrer Datenbank-Instanz (DB-Instanz) über einen einzigen API-Aufruf Skalieren zu können.</p>
+<p>Datenbankinstanzen, die mit Amazon RDS-MySQL, Oracle, SQL Server und PostgreSQL-Motoren können mit allgemeinen Zweck (SSD) Speicher, bereitgestellt von IOPS (SSD) Speicher oder magnetische Speicherung bereitgestellt werden. Datenbank-Instanzen, die über die Amazon-Aurora-Engine beschäftigen eine fehlertolerante, Selbstheilungs-SSD gestützten virtualisierten Speicherschicht speziell für Datenbankarbeitslasten.</p>
+<p>Darüber hinaus macht es Amazon RDS bedienungsfreundlich Replikation auf Verfügbarkeit und Zuverlässigkeit für Arbeitslasten der Produktion zu verbessern. Mit der Multi-AZ-Bereitstellung-Option, Sie können ausführen, mission kritische Arbeitslasten mit hoher Verfügbarkeit und integrierte automatische Failover-aus der primären Datenbank in einer synchron replizierten sekundären Datenbank im Falle eines Ausfalls. Verwendung von Read-Replika, können damit Amazon RDS für MySQL, PostgreSQL und Amazon Aurora auch übersteigt die Leistungsfähigkeit einer einzelnen Datenbank-Bereitstellung für Lese-Heavy Datenbankauslastungen skalieren. Wie bei allen Amazon Web Services, gibt es keine Vorab-Investitionen erforderlich und Sie zahlen nur für die Ressourcen, die Sie verwenden.</p>
+</div>
+<div class="section" id="hilfe-befehl">
+<h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, um zu bestimmen, die Verwendung von Amazon RDS. Der Benutzer wird kommen, über den anderen Weg/Format wissen, dieses Modul ausgeführt. Dieser Befehl führt den Endbenutzer, um diesen Befehl zu erfahren. Unten gegeben sind, den Befehl und den Screenshot von der gleichen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Amazon RDS <span class="nb">help</span>
+
+******************************
+
+
+   This is an extension provided <span class="k">for </span>Handling AWS ElastiCache.
+
+   Amazon RDS, Amazon RDS, aws-elasticache
+
+       - create-cache-cluster
+       Lets you add cache Cluster to AWS ElastiCache
+       example: ptconfigure Amazon RDS create-cache-cluster
+                   --yes
+                   --guess
+       - create-health-check
+       Lets you add Health Check to AWS Route53
+       example: ptconfigure AWSRoute53 create-health-check
+                   --yes
+                   --guess
+
+         - reboot-cache-cluster
+       Lets you reboot cache Cluster to AWS ElastiCache
+       example: ptconfigure AWSRoute53 delete-hosted-zone
+                   --yes
+                   --guess
+
+        - delete-cache-cluster
+       Lets you delete cache Cluster to AWS ElastiCache
+       example: ptconfigure Amazon RDS delete-cache-cluster
+                   --yes
+                   --guess
+
+        - delete-replication-group
+       Lets you delete replication group to AWS ElastiCache
+       example: ptconfigure Amazon RDS delete-replication-group
+                   --yes
+                   --guess
+
+       - list
+       Will display data about your AWS ElastiCache
+       example: ptconfigure Amazon RDS list
+                   --yes
+                   --guess
+
+       Note: region must be one of the following...
+       us-east-1, ap-northeast-1, sa-east-1, ap-southeast-1, ap-southeast-2, us-west-2, us-gov-west-1, us-west-1, cn-north-1, eu-west-1
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="describe-instance">
+<h2>Describe-instance<a class="headerlink" href="#describe-instance" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, beschreiben Sie die Instanz der AWS RDS. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS describe-instance --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="delete-instance">
+<h2>Delete-instance<a class="headerlink" href="#delete-instance" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, die um Instanz zu löschen. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS delete-instance --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-db-snapshot">
+<h2>Create-db-snapshot<a class="headerlink" href="#create-db-snapshot" title="Permalink to this headline">¶</a></h2>
+<p>Dies hilft der Befehl neu starten erstellen Db Snapshot. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS create-db-snapshot --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="delete-db-snapshot">
+<h2>Delete-db-snapshot<a class="headerlink" href="#delete-db-snapshot" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, um Db-Snapshot zu entfernen. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS delete-db-snapshot –yes –guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="copy-db-snapshot">
+<h2>Copy-db-snapshot<a class="headerlink" href="#copy-db-snapshot" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl ermöglicht Db Snapshot kopieren. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS copy-db-snapshot --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-instance">
+<h2>Create-instance<a class="headerlink" href="#create-instance" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, die um Instanz zu erstellen. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS create-instance --yes –guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="reboot-instance">
+<h2>Reboot-instance<a class="headerlink" href="#reboot-instance" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft Instanz neu starten. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS reboot-instance --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-instance-read-replica">
+<h2>Create-instance-read replica<a class="headerlink" href="#create-instance-read-replica" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl hilft, um Db-Instanz gelesen Replikat zu erstellen. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS create-instance-readreplica --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="list">
+<h2>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+<p>Dieser Befehl können Sie die anzuzeigenden Daten über Ihre AWS RDS. Die unten mit dem Befehl führt den Prozess.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure AWSRDS list --yes --guess
+</pre></div>
+</div>
+</div>
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Es gibt drei alternative Parameter, die in der Befehlszeile verwendet werden können.</p>
+<p>AWSRDS, awsrds, aws-rds</p>
+</div>
+<div class="section" id="vorteile">
+<h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>
+<p>Einfache Datenbank-Webdienst bereitstellen: Amazon RDS vereinfacht die Bereitstellung von Projekt-Konzeption gehen. Verwenden Sie die AWS Management Console oder einfache API-Aufrufe, um die Funktionen einer serienreifen relationalen Datenbank in Minuten zugreifen, ohne sich Gedanken über Bereitstellung von Infrastruktur oder Installation und Verwaltung von Datenbanksoftware.</p>
+<p>Verwaltet: Amazon RDS behandelt zeitaufwändige Datenbankverwaltung, wie Sicherungen, Patch-Management und Replikation, so dass Sie höhere Wert-Anwendungsentwicklung oder Datenbank Verbesserungen einleiten.</p>
+<p>Kompatibel: Mit Amazon RDS erhalten Sie nativen Zugriff auf ein relationales Datenbank-Managementsystem. Dies erleichtert die Kompatibilität mit Ihrem vorhandenen Tools und Anwendungen. Darüber hinaus gibt Amazon RDS Sie optionale Steuerung über die Engine Version Befugnisse Ihrer DB-Instanz über DB Engine Version Management unterstützt.</p>
+<p>Schnell, vorhersagbare Performance: Datenbankinstanzen können mit Amazon RDS MySQL, Oracle, SQL Server und Oracle-Engines mit allgemeinen Zweck (SSD) Speicher, bereitgestellt von IOPS (SSD) Speicher oder magnetische Speicherung bereitgestellt werden.</p>
+<p>Amazon RDS allgemeine Zweck (SSD) Speicher liefert eine konsistente Basisrichtlinie 3 IOPS pro bereitgestellten GB und bietet die Möglichkeit, bis zu 3.000 IOPS platzen.</p>
+<p>Amazon RDS bereitgestellt IOPS (SSD) Lagerung ist eine Hochleistungs-Speicheroption entworfen, um schnelle, berechenbar und konsistente Performance für I/O intensive Transaktionsdatenbank Workloads zu liefern. Sie können von 1.000 IOPS auf 30.000 IOPS pro DB-Instanz bereitstellen. (Maximum erkannte, dass IOPS Motortyp variieren wird.)</p>
+<p>Magnetspeicher (früher bekannt als Amazon RDS Standard Speicher) eignet sich für kleine Datenbankauslastungen wo weniger häufig auf Daten zugegriffen werden.</p>
+<p>Datenbank-Instanzen, die über die Amazon-Aurora-Engine beschäftigen eine fehlertolerante, Selbstheilungs-SSD gestützten virtualisierten Speicherschicht speziell für Datenbankarbeitslasten.</p>
+<p>Skalierbare Datenbank in der Cloud: Sie können die Compute skalieren und Speicherressourcen verfügbar zu Ihrer Datenbank zu Ihrer Anwendung zu erfüllen braucht mit Amazon RDS-API oder der AWS Management Console. Wenn Sie Amazon RDS bereitgestellt IOPS Speicher mit Amazon RDS für MySQL, Oracle oder PostgreSQL verwenden, können Sie bereitstellen und skalieren Sie den Speicher bis zu 3TB und IOPS auf bis zu 30.000. Beachten Sie, dieses Maximum erkannte, dass IOPS Motortyp variieren wird. Zusätzlich für MySQL, PostgreSQL und Amazon Aurora-Datenbank-Engines, können Sie auch eine oder mehrere Read-Replikate mit der Datenbank-Instanz-Bereitstellung zuordnen aktivieren Sie über die Kapazität einer einzelnen Datenbank-Instanz für Lese-Heavy-Arbeitslasten skalieren.</p>
+<p>Die Amazon-Aurora-Datenbank-Engine ermöglicht es Ihnen, Ihren Speicher skaliert bis zu 64TB. Sie können Ihre Datenbank-Instanz-Bereitstellung bis zu 15 Amazon-Aurora-Replikate zuordnen. Amazon Aurora Replikate teilen den gleichen zugrunde liegenden Speicher als die Quellinstanz, Senkung der Kosten und die Notwendigkeit zum Kopieren von Daten auf die Replik-Knoten zu vermeiden.</p>
+<p>Zuverlässig: Amazon RDS hat mehrere Funktionen, die Zuverlässigkeit für kritische Produktionsdatenbanken, einschließlich automatisierte Backups, DB-Snapshots, automatische Host Ersatz und Multi-AZ-Bereitstellungen zu erweitern. Amazon RDS läuft auf die gleiche zuverlässige Infrastruktur, die von anderen Amazon Web Services verwendet.</p>
+<p>Für die Amazon-Aurora-Engine verwendet Amazon RDS RDS Multi-AZ-Technologie, um Failover zu einem der bis zu 15 Aurora Replikate zu automatisieren, die Sie in keinem der drei Availability Zones erstellt haben.
+Zur Verwendung mit anderen Amazon Web Services: Amazon RDS ist eng mit anderen Amazon Web Services. Zum Beispiel wird eine Anwendung im Amazon EC2 Latenzzeiten Datenbankzugriff auf eine Amazon RDS-DB-Instanz in der gleichen Region erleben.</p>
+<p>Sichere: Amazon RDS bietet eine Reihe von Mechanismen um Ihre DB-Instances.Amazon-RDS sichern können Sie verschlüsseln Ihre MySQL oder PostgreSQL-Datenbanken, die mit Schlüsseln, die Sie durch AWS Key Management Service (KMS) verwalten. Auf eine Datenbankinstanz, die mit Amazon RDS-Verschlüsselung ausgeführt wird werden im Ruhezustand in den zugrunde liegenden Speicher gespeicherte Daten verschlüsselt, wie seine automatisierte Backups, Replikate und Snapshots zu lesen sind.</p>
+<p>Amazon RDS unterstützt transparente Datenverschlüsselung in SQL Server und Oracle. Transparente Datenverschlüsselung in Oracle ist AWS CloudHSM, integriert, wodurch Sie sicher erzeugen, speichern und verwalten die kryptografischen Schlüssel in Single-Tenant (Hardware Security Module, HSM) Appliances in der AWS-Cloud.</p>
+<p>Amazon RDS umfasst Web-Service-Interfaces um Firewall-Einstellungen konfigurieren, die Netzwerkzugriff auf Ihre Datenbank steuern.
+Amazon RDS können Sie Ihre DB-Instanzen in Amazon Virtual Private Cloud (Amazon VPC) ausführen. Amazon VPC können Sie Ihre DB-Instanzen zu isolieren, durch Angabe den IP-Adressbereich, den Sie verwenden möchten, und schließen an Ihre bestehende IT-Infrastruktur durch Industriestandard-verschlüsselte IPsec-VPN. Mehr über Amazon RDS in VPC finden Sie im Amazon RDS-Benutzerhandbuch.</p>
+<p>Preiswert: Sie zahlen sehr niedrige Steuersätze und nur für die Ressourcen, die Sie tatsächlich verbrauchen. Darüber hinaus profitieren Sie von der Option der On-Demand Preise und keine Vorauszahlung oder langfristigen Verpflichtungen, oder sogar noch niedriger stündlich Preise über unsere reservierten Mengen Option.</p>
+<p>On-Demand-DB Instanzen – On-Demand-DB-Instanzen können Sie für Compute-Kapazität pro Stunde mit keine langfristigen Verpflichtungen zu bezahlen. Dies erspart Ihnen die Kosten und die Komplexität der Planung, Kauf und Wartung Hardware und transformiert, was häufig große Fixkosten in viel kleineren Variable Kosten sind.</p>
+<p>Reservierte DB-Instanzen – reservierte DB-Instanzen geben Ihnen die Möglichkeit, eine geringe, einmalige Zahlung für jede DB-Instanz zu machen, die Sie möchten reservieren und erhalten im Gegenzug einen erheblichen Rabatt auf die stündliche Benutzungsgebühr für diese DB-Instanz. Je nach Ihrer Verwendung können Sie die Wahl zwischen drei vorbehalten DB-Instanz (Light, Medium und Belastungstests) und bekommen überall zwischen 30 % und 55 % Rabatt über On-Demand-Preise.</p>
+</div>
+</div>
+
+
+
+
+  
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kevellsrdoc'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    </div>
+      
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, kevell.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+
+
+
+<!--
+<div id="editor-trap">
+      <h3>Edit this document!</h3>
+
+      <p>
+        This file can be edited directly through the Web. Anyone can
+        update and fix errors in this document with few clicks --
+        no downloads needed.
+      </p>
+
+<!--      <ol>
+
+        <li>
+          Go to
+        <a href="https://github.com/deepakajaylinux/kevellphara/blob/master/gawsrds.rst">
+          AWS RDS
+        </a> on GitHub.
+      </li>
+
+        <li>
+        <b>Edit</b> files using GitHub's text editor in your web browser (see the 'Edit' tab on the top right of the file)
+      </li>
+
+      <li>
+        Fill in the <b>Commit message</b> text box at the bottom of the page describing <i>why</i>
+        you made the changes. Press the <b>Propose file change</b> button next to it when done.
+      </li>
+
+      <li>
+        Then click <b>Send a pull request</b>.
+      </li>
+
+      <li>
+        Your changes are now queued for review under the project's <a href="https://github.com/deepakajaylinux/kevellphara/pulls">Pull requests</a> tab on GitHub!
+      </li>
+      </ol>
+
+      <p>
+        For an introduction to the documentation format please see <a href="http://docutils.sourceforge.net/docs/user/rst/quickstart.html">the reST primer</a>.
+      </p>
+
+  </div> -->
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', UA-58804904-1]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  </body>
+</html>

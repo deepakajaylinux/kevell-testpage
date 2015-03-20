@@ -547,9 +547,17 @@ Das Spiel mit ptconfigure -Module
 
 .. toctree::
    :maxdepth: 6
-    
+   
+
+
+ 
   
-  
+   gamazoncloudfront
+   gamazoncloudwatch
+   gamazondynamodb
+   gamazonelasticache
+   gamazonroute53
+   gamazons3  
    gapacheconf
    gapachemodules
    gapachereverseproxy
@@ -558,6 +566,8 @@ Das Spiel mit ptconfigure -Module
    gapt   
    gaptana
    gautopilot
+   gawscloudformation
+   gawsrds
    gawstats
    gbehat
    gboxify

@@ -92,20 +92,12 @@ Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufa
 geben 'N'.
 
 
-Options
------------
-                             
+Alternative Parameter
+--------------------------------------
 
-.. cssclass:: table-bordered
+Entweder der drei alternativen Parameter kann in Befehls ngnixcontrol , NgnixControl und nginxcil verwendet werden
 
- +--------------------------+-----------------------------------------------------------------+-------------------------------------------+
- | Parameters               | Alternative Parameter                                           | Kommentare                                |
- +==========================+=================================================================+===========================================+
- |ptdeploy ngnixcontrolhelp | Entweder der drei alternativen Parameter kann das Kommando      | Sobald der Benutzer bietet die            |
- |                          | verwendet werden - ngnixcontrol , NgnixControl and nginxcil     | Möglichkeit, beginnt Systems Verarbeitung |
- |                          | eg: ptdeploy ngnixcontrol help/ ptdeploy ngnixControl help|     |                                           |
- +--------------------------+-----------------------------------------------------------------+-------------------------------------------+
-
+zB : ptdeploy ngnixcontrol Hilfe / ptdeploy ngnixControl Hilfe
  
 
 Vorteile
