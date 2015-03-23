@@ -31,7 +31,7 @@ Die Syntax für den Befehl help non-und Kleinschreibung, die einen Vorteil für 
 
         - detect
         Detects the Operating System
-        example: ptconfigure system-detection detect
+        example: ptdeploy system-detection detect
 
  ------------------------------
  End Help
@@ -46,7 +46,7 @@ Der Befehl für die Systemerkennung verwendet wird unten gegeben.
 
 .. code-block:: bash
 
-	ptconfigure systemdetection detect
+	ptdeploy systemdetection detect
 
 Nach der Eingabe der oben genannten Befehl, den Prozess der Systemerkennung beginnt. Während des Systemerkennung die folgenden Informationen betreffend der entsprechenden Maschine gemeldet:
 
@@ -63,7 +63,7 @@ Endlich, nach Erkennung der Informationen zu den oben genannten Funktionen sind 
 
 .. code-block:: bash
 
- kevell@corp:/# ptconfigure system-detection detect
+ kevell@corp:/# ptdeploy system-detection detect
  ******************************
 
 

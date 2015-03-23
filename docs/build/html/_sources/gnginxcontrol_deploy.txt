@@ -58,6 +58,21 @@ Wenn der Benutzer braucht, um die Nginx Server zu starten, wird der unten angege
 
 Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren 'J' eingeben möchten, wenn keine geben 'N'.
 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxcontrol start 
+
+ Do you want to Start Nginx? (Y/N) 
+ y 
+ Starting Nginx... 
+ ****************************** 
+
+ 1Nginx Controller Finished 
+ ****************************** 
+
+
+
 Stopp
 ----------------
 
@@ -67,6 +82,21 @@ Wenn der Benutzer braucht, um die Nginx Server zu stoppen, wird der unten angege
 	ptdeploy nginxcontrol stop	
 
 Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren 'J' eingeben möchten, wenn keine geben 'N'.
+
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxcontrol stop 
+
+ Do you want to Stop Nginx? (Y/N) 
+ y 
+ Stopping Nginx... 
+ ****************************** 
+
+ 1Nginx Controller Finished 
+ ****************************** 
+
+
 
 Neustart
 ----------------
@@ -79,6 +109,22 @@ Wenn der Benutzer braucht, um die Nginx Server neu starten (wenn es irgendwelche
 
 Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren 'J' eingeben möchten, wenn keine geben 'N'.
 
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxcontrol restart 
+
+ Do you want to Restart Nginx? (Y/N) 
+ y 
+ Restarting Nginx... 
+ * Restarting nginx nginx 
+   ...fail! 
+ ****************************** 
+
+ 1Nginx Controller Finished 
+ ****************************** 
+
+
+
 Neu Laden
 ----------------
 
@@ -90,6 +136,21 @@ Wenn der Benutzer die Nginx Server ohne Neustart neu laden muss, wird der unten 
 
 Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren 'J' eingeben möchten, wenn keine 
 geben 'N'.
+
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxcontrol reload
+
+ Do you want to Reload Nginx? (Y/N) 
+ y
+ Reloading Nginx...
+ * Reloading nginx configuration nginx
+   ...done.
+ ******************************
+
+ 1Nginx Controller Finished
+ ******************************
 
 
 Alternative Parameter

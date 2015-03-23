@@ -74,7 +74,36 @@ Der Server kann mit einem einfachen Befehl mit der Option, um wieder eine Verbin
 
 Nach der Eingabe des Befehls, erlaubt es dem Benutzer, die lighttpd-Server Funktion zu starten.
 
-Stopp
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy lighttpdcontrol start 
+
+ Do you want to Start Lighttpd? (Y/N) 
+ y 
+ Starting Lighttpd... 
+ * Starting web server lighttpd 
+   ...done. 
+ ****************************** 
+
+ 1Lighttpd Controller Finished 
+ ****************************** 
+
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy lighttpdcontrol start --yes 
+
+ Starting Lighttpd... 
+ * Starting web server lighttpd 
+   ...done. 
+ ****************************** 
+
+ 1Lighttpd Controller Finished 
+ ****************************** 
+
+Stop
 -------
 
 Dieser Anschlag Option verwendet, um den lighttpd Dienst zu beenden. Insbesondere Ubuntu Linux, ruft der Stopp-Befehl die lighttpd, einen Job, der auf dem System ausgeführt wird, stoppen. Es ist gleichbedeutend mit dem Befehl service Altestelle. Nachfolgend finden Sie eine vollständige Beschreibung der Stoppbefehl.
@@ -84,6 +113,36 @@ Dieser Anschlag Option verwendet, um den lighttpd Dienst zu beenden. Insbesonder
 	ptdeploy lighttpdcontrol stop
 
 Nach Eingang als dem oben genannten Befehl, wird der Dienst die Funktion.
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy lighttpdcontrol stop 
+
+ Do you want to Stop Lighttpd? (Y/N) 
+ y 
+ Stopping Lighttpd... 
+ * Stopping web server lighttpd 
+   ...done. 
+ ****************************** 
+
+ 1Lighttpd Controller Finished 
+ ****************************** 
+
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy lighttpdcontrol stop --yes 
+
+ Stopping Lighttpd... 
+ * Stopping web server lighttpd 
+   ...done. 
+ ****************************** 
+
+ 1Lighttpd Controller Finished 
+ ****************************** 
+
+
 
 Neustart
 ------------
@@ -96,6 +155,41 @@ Der Begriff bezieht sich auf einen Neustart des Betriebssystems vor einem Warmst
 
 Nach Eingang als dem oben genannten Befehl, starten der Dienst die lighttpd Service.
 
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy lighttpdcontrol restart 
+
+ Do you want to Restart Lighttpd? (Y/N) 
+ y 
+ Restarting Lighttpd... 
+ * Stopping web server lighttpd 
+   ...done. 
+ * Starting web server lighttpd 
+   ...done. 
+ ****************************** 
+
+ 1Lighttpd Controller Finished 
+ ****************************** 
+
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy lighttpdcontrol restart --yes 
+
+ Restarting Lighttpd... 
+ * Stopping web server lighttpd 
+   ...done. 
+ * Starting web server lighttpd 
+   ...done. 
+ ****************************** 
+
+ 1Lighttpd Controller Finished 
+ ****************************** 
+
+
+
+
 
 Neu Laden
 ------------
@@ -105,6 +199,34 @@ Reload bedeutet, die Dinge ändern sich. Die lighttpd erfährt eine Überarbeitu
 .. code-block:: bash
    
 	ptdeploy lighttpdcontrol reload
+
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy lighttpdcontrol reload 
+ 
+ Do you want to Reload Lighttpd? (Y/N) 
+ y 
+ Reloading Lighttpd... 
+ * Reloading web server configuration lighttpd 
+   ...done. 
+ ****************************** 
+
+ 1Lighttpd Controller Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+ 
+ kevell@corp:/# ptdeploy lighttpdcontrol reload --yes 
+
+ Reloading Lighttpd... 
+ * Reloading web server configuration lighttpd 
+   ...done. 
+ ****************************** 
+
+ 1Lighttpd Controller Finished 
+ ****************************** 
 
 
 Vorteile

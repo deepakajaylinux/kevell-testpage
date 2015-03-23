@@ -130,6 +130,7 @@
     <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
     <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
     <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+    <li><a href="http://kevellspanish.readthedocs.org/">spanish</a></li>
       </ul>
 
           
@@ -259,6 +260,7 @@ End Help
 <p>Nachdem sie die Eingabe des Apache-Service-Name, wird es startet den Prozess.</p>
 <p>Der folgende Screenshot zeigt den Startvorgang bildlich.</p>
 <div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol start
+
 Do you want to Start Apache? <span class="o">(</span>Y/N<span class="o">)</span>
 y
 What is the apache service name?
@@ -270,6 +272,27 @@ Starting Apache...
 *
 ******************************
 
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol start --yes  --guess
+
+Starting Apache...
+* Starting web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol start --yes  --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+
+Starting Apache...
+* Starting web server apache2
+*
+******************************
 
 1Apache Controller Finished
 ******************************
@@ -287,11 +310,41 @@ Starting Apache...
 <p>Für Ubuntu die apche2 ist der Standardwert.</p>
 <p>Für Cent OS httpd ist der Standardwert.</p>
 <p>Der folgende Screenshot zeigt Sie über die Stopp-Funktion und Zweck der Vermutung Möglichkeiten bildhaft.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol stop --yes --guess
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol stop
+
+Do you want to Stop Apache? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the apache service name?
+<span class="o">(</span>0<span class="o">)</span> apache2
+<span class="o">(</span>1<span class="o">)</span> httpd
+0
 Stopping Apache...
 * Stopping web server apache2
 *
 ******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol stop --yes  --guess
+
+Stopping Apache...
+* Stopping web server apache2
+*
+******************************
+
+1Apache Controller Finished
+*****************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol stop --yes  --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+
+Stopping Apache...
+* Stopping web server apache2
+*
+******************************
+
 1Apache Controller Finished
 ******************************
 </pre></div>
@@ -305,12 +358,39 @@ Stopping Apache...
 </div>
 <p>Dies ist die dritte Art von Syntax der Festlegung einer Steuerfunktionen für apche Server)</p>
 <p>Der Benutzer kann diese dritte Art von Syntax verwenden, um den Wert des erforderlichen Apache-Befehl angeben. Der Screenshot siehe unten zeigt diese dritte Art von Syntax und Prozess der Neustart einer Funktion bildlich.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol restart --yes --apache-command=&quot;apache2&quot;
-Restarting Apache...
-AH00558: apache2: Could not reliably determine the server&#39;s fully qualified domain name, using 127.0.1.1. Set the &#39;ServerName&#39; directive globa lly to suppress this message
-* Restarting web server apache2
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol restart
 
- ....done.
+Do you want to Restart Apache? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the apache service name?
+<span class="o">(</span>0<span class="o">)</span> apache2
+<span class="o">(</span>1<span class="o">)</span> httpd
+0
+Restarting Apache...
+* Restarting web server apache2
+  ...done.
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeployapachecontrol restart --yes  --guess
+
+Restarting Apache...
+* Restarting web server apache2
+  ...done.
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeployapachecontrol restart --yes  --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+
+Restarting Apache...
+* Restarting web server apache2
+  ...done.
 ******************************
 
 
@@ -334,6 +414,45 @@ AH00558: apache2: Could not reliably determine the server&#39;s fully qualified 
 </pre></div>
 </div>
 <p>Der Reload-Funktion führt das erneute Laden der Apache-Server ohne Neustart.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol reload
+
+Do you want to Reload Apache? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the apache service name?
+<span class="o">(</span>0<span class="o">)</span> apache2
+<span class="o">(</span>1<span class="o">)</span> httpd
+0
+Reloading Apache Configuration...
+* Reloading web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol reload --yes  --guess
+
+Reloading Apache Configuration...
+* Reloading web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy apachecontrol reload --yes  --apache-command<span class="o">=</span><span class="s2">&quot;apache2&quot;</span>
+
+Reloading Apache Configuration...
+* Reloading web server apache2
+*
+******************************
+
+1Apache Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="vorteile">
 <h2>Vorteile<a class="headerlink" href="#vorteile" title="Permalink to this headline">¶</a></h2>

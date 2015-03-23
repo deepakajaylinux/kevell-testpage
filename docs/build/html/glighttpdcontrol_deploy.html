@@ -97,7 +97,7 @@
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
 <li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
 <li><a class="reference internal" href="#start">Start</a></li>
-<li><a class="reference internal" href="#stopp">Stopp</a></li>
+<li><a class="reference internal" href="#stop">Stop</a></li>
 <li><a class="reference internal" href="#neustart">Neustart</a></li>
 <li><a class="reference internal" href="#neu-laden">Neu Laden</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
@@ -130,6 +130,7 @@
     <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
     <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
     <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+    <li><a href="http://kevellspanish.readthedocs.org/">spanish</a></li>
       </ul>
 
           
@@ -223,14 +224,62 @@ End Help
 </pre></div>
 </div>
 <p>Nach der Eingabe des Befehls, erlaubt es dem Benutzer, die lighttpd-Server Funktion zu starten.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol start
+
+Do you want to Start Lighttpd? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Starting Lighttpd...
+* Starting web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
 </div>
-<div class="section" id="stopp">
-<h2>Stopp<a class="headerlink" href="#stopp" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol start --yes
+
+Starting Lighttpd...
+* Starting web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="stop">
+<h2>Stop<a class="headerlink" href="#stop" title="Permalink to this headline">¶</a></h2>
 <p>Dieser Anschlag Option verwendet, um den lighttpd Dienst zu beenden. Insbesondere Ubuntu Linux, ruft der Stopp-Befehl die lighttpd, einen Job, der auf dem System ausgeführt wird, stoppen. Es ist gleichbedeutend mit dem Befehl service Altestelle. Nachfolgend finden Sie eine vollständige Beschreibung der Stoppbefehl.</p>
 <div class="highlight-bash"><div class="highlight"><pre>ptdeploy lighttpdcontrol stop
 </pre></div>
 </div>
 <p>Nach Eingang als dem oben genannten Befehl, wird der Dienst die Funktion.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol stop
+
+Do you want to Stop Lighttpd? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Stopping Lighttpd...
+* Stopping web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol stop --yes
+
+Stopping Lighttpd...
+* Stopping web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="neustart">
 <h2>Neustart<a class="headerlink" href="#neustart" title="Permalink to this headline">¶</a></h2>
@@ -239,11 +288,63 @@ End Help
 </pre></div>
 </div>
 <p>Nach Eingang als dem oben genannten Befehl, starten der Dienst die lighttpd Service.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol restart
+
+Do you want to Restart Lighttpd? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Restarting Lighttpd...
+* Stopping web server lighttpd
+  ...done.
+* Starting web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol restart --yes
+
+Restarting Lighttpd...
+* Stopping web server lighttpd
+  ...done.
+* Starting web server lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="neu-laden">
 <h2>Neu Laden<a class="headerlink" href="#neu-laden" title="Permalink to this headline">¶</a></h2>
 <p>Reload bedeutet, die Dinge ändern sich. Die lighttpd erfährt eine Überarbeitung und eine Reinigung. Es erleichtert die Wiederverwendung von lighttpd und Dienstleistungen. Ohne den Prozess abtöten kann lighttpd neu zu laden. Der folgende Befehl assis der Benutzer neu zu laden. Zusammen mit dem Befehl, wenn der Benutzer den Einsatz ja .. Optionen ohne Fragen zu stellen automatisch kann es funktionieren.</p>
 <div class="highlight-bash"><div class="highlight"><pre>ptdeploy lighttpdcontrol reload
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol reload
+
+Do you want to Reload Lighttpd? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Reloading Lighttpd...
+* Reloading web server configuration lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy lighttpdcontrol reload --yes
+
+Reloading Lighttpd...
+* Reloading web server configuration lighttpd
+  ...done.
+******************************
+
+1Lighttpd Controller Finished
+******************************
 </pre></div>
 </div>
 </div>

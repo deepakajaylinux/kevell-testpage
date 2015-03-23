@@ -126,6 +126,39 @@ Instead of
 
 the user can add any text to the portion of log message depending upon their requirements.
 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy logging log --php-log --log-message="Here is something logging to the console and error log" 
+
+ Install Logging? (Y/N) 
+ y 
+ ******************************* 
+ *   Golden Contact Computing  * 
+ *           Logging!          * 
+ ******************************* 
+ [Pharaoh Logging] Here is something logging to the console and error log 
+ [Pharaoh Logging] Here is something logging to the console and error log 
+
+ ... All done! 
+ ******************************* 
+ Thanks for installing , visit www.gcsoftshop.co.uk for more 
+ ****************************** 
+
+
+ Single App Installer: 
+ -------------------------------------------- 
+
+ No Data. 
+
+ ------------------------------ 
+ Installer Finished 
+ *********************** 
+
+
+
+
+
 Vorteile
 -----------
 

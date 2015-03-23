@@ -130,6 +130,7 @@
     <li><a href="http://kevellgerman.readthedocs.org">Deutsch</a></li>
     <li><a href="http://kevelljapanese.readthedocs.org">日本人</a></li>
     <li><a href="http://kevellfrench.readthedocs.org">français</a></li>
+    <li><a href="http://kevellspanish.readthedocs.org/">spanish</a></li>
       </ul>
 
           
@@ -212,6 +213,17 @@ End Help
 </pre></div>
 </div>
 <p>Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren &#8216;J&#8217; eingeben möchten, wenn keine geben &#8216;N&#8217;.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy nginxcontrol start
+
+Do you want to Start Nginx? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Starting Nginx...
+******************************
+
+1Nginx Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="stopp">
 <h2>Stopp<a class="headerlink" href="#stopp" title="Permalink to this headline">¶</a></h2>
@@ -220,6 +232,17 @@ End Help
 <blockquote>
 <div>ptdeploy nginxcontrol stop</div></blockquote>
 <p>Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren &#8216;J&#8217; eingeben möchten, wenn keine geben &#8216;N&#8217;.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy nginxcontrol stop
+
+Do you want to Stop Nginx? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Stopping Nginx...
+******************************
+
+1Nginx Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="neustart">
 <h2>Neustart<a class="headerlink" href="#neustart" title="Permalink to this headline">¶</a></h2>
@@ -228,6 +251,19 @@ End Help
 </pre></div>
 </div>
 <p>Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren &#8216;J&#8217; eingeben möchten, wenn keine geben &#8216;N&#8217;.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy nginxcontrol restart
+
+Do you want to Restart Nginx? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Restarting Nginx...
+* Restarting nginx nginx
+  ...fail!
+******************************
+
+1Nginx Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="neu-laden">
 <h2>Neu Laden<a class="headerlink" href="#neu-laden" title="Permalink to this headline">¶</a></h2>
@@ -237,6 +273,19 @@ End Help
 </div>
 <p>Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren &#8216;J&#8217; eingeben möchten, wenn keine
 geben &#8216;N&#8217;.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy nginxcontrol reload
+
+Do you want to Reload Nginx? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Reloading Nginx...
+* Reloading nginx configuration nginx
+  ...done.
+******************************
+
+1Nginx Controller Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="alternative-parameter">
 <h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
