@@ -679,6 +679,7 @@ Das Spiel mit ptconfigure -Module
    gsshkeyinstall
    gsshkeystore
    gstandardtools
+   gstoryplayer
    gsudonopass
    gsvn
    gsystemdetection
