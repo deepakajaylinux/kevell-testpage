@@ -82,6 +82,25 @@ Dieses Modul ist eine spürbare Prozess um den Hostnamen unter ptconfigure von n
 
 Nach dem Schlüssel im Befehl, es zeigt den Hostnamen.
 
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure hostname show
+
+ ******************************
+
+
+ Hostname Modifications:
+ --------------------------------------------
+
+ Hostname: Success
+ my-laptop
+
+
+ ------------------------------
+ Hostname Mods Finished
+ ******************************
+
+
 Option
 ------------
 
