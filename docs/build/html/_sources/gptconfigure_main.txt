@@ -584,6 +584,7 @@ Das Spiel mit ptconfigure -Module
    gdevelopertools
    gdigitalocean
    gdnsify
+   gdocker
    gencryption
    genvironmentconfig
    gfile
@@ -606,6 +607,7 @@ Das Spiel mit ptconfigure -Module
    ginstallpackage
    gintellij
    ginvoke
+   gjasmine
    gjava
    gjenkins
    gjenkinsplugins
@@ -672,6 +674,7 @@ Das Spiel mit ptconfigure -Module
    gseleniumserver
    gservice
    gsftp
+   gsimpletest
    gskipfish
    gsshencrypt
    gsshharden
@@ -695,6 +698,7 @@ Das Spiel mit ptconfigure -Module
    gvnc
    gvncpassword
    gwireframesketcher
+   gxcache
    gxvfb
    gzendserver
 

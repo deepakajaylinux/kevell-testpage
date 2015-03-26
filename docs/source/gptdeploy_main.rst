@@ -192,6 +192,7 @@ Hier bezeichnet der Bildschirm die Anzeige aller Module unter ptconfigure.
  ggitclone_deploy
  ggrafana_deploy
  ghosteditor_deploy
+ ginvoke_deploy
  gjoomla_deploy
  glighttpdcontrol_deploy
  glogging_deploy
