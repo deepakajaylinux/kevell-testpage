@@ -37,11 +37,13 @@ Installation eines ptvirtualize Modul ist einschließlich Gerätetreiber und Plu
 .. code-block:: bash
 
 	ptconfigure ptvirtualize install
+
 Nach Den Befehl das System an ist
 
 Install ptvirtualize?(Y/N)
 
 Wenn der Benutzer gibt Y dann ptvirtualize installiert werden. Der folgende Screenshot zeigen es.
+
 .. code-block:: bash
 
 	Kevell@corp:/# ptconfigure ptvirtualize install

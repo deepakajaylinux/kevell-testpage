@@ -104,7 +104,7 @@ Während der Installation wird der folgende Prozess:
 * Zeigt als Programmdatenordner besiedelt.
 * Löscht die Programmverwalter , ob bereits vorhanden.
 
-Schließlich wird die Installation von Jrush abgeschlossen. Der folgende Screenshot zeigt den Prozess der Installation des JRush auf Ihren Rechner:
+Schließlich wird die Installation von Jrush abgeschlossen. Der folgende Screenshot zeigt den Prozess der Installation und deinstallieren JRush auf Ihren Rechner:
 
 .. code-block:: bash
 
@@ -139,6 +139,35 @@ Schließlich wird die Installation von Jrush abgeschlossen. Der folgende Screens
  ------------------------------
  Installer Finished
  ******************************
+
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure jRush uninstall
+ Un Install JRush - Joomla Command Line ? (Y/N) 
+ y
+ *******************************
+ *        Pharaoh Tools        *
+ *         JRush CLI !!        *
+ *******************************
+ What is the program data directory? Found "/opt/jrush" - use this? (Enter nothing for yes, no end slash)
+ 
+ What is the program executor directory? Found "/usr/bin" - use this? (Enter nothing for yes, No Trailing Slash)
+ 
+ Program Executor Deleted if existed
+ ... All done!
+ *******************************
+ Thanks for installing , visit www.pharaohtools.com for more
+ ******************************
+
+
+ Single App Uninstaller:
+ ------------------------------
+ JRush: Success
+ ------------------------------
+ Installer Finished
+ ******************************
+
 
 
 Vorteile

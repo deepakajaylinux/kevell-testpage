@@ -23,6 +23,41 @@ Diese Funktion dient, um die Verwendung von Dateimodul zu bestimmen. Der Benutze
         
 	        ptconfigure file help
 
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure File help
+ ******************************
+
+
+  This command allows you to modify files or check their existence
+
+  File, file
+
+        - create
+        Create a new system file
+        example: ptconfigure file create --file="somename"
+
+        - delete
+        Delete a system file
+        example: ptconfigure file delete --file="somename"
+
+        - exists
+        Check the existence of a file
+        example: ptconfigure file exists --filename="somename"
+
+        - append
+        Append a line to a file
+        example: ptconfigure file append --filename="somename" --line="a line"
+
+        - should-have-line
+        Ensure that a file contains a particular line
+        example: ptconfigure file should-have-line --filename="somename" --line="a line"
+
+ ------------------------------
+ End Help
+ ******************************
+
+
 schaffen
 ------------
 
@@ -44,6 +79,27 @@ The below given command for write the data in the file
            
 		ptconfigure file create –file="somename” --data="things to put in the file" 
 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure file create --file="somename"
+
+ [Pharaoh Logging] [File] Creating File somename
+ File somename exists 
+ ******************************
+
+
+ File Modifications:
+ --------------------------------------------
+
+ File: Success
+
+ ------------------------------
+ File Mods Finished
+ ******************************
+
+
+
 löschen
 ----------
 
@@ -53,6 +109,29 @@ Wenn der Benutzer eine Systemdatei zu löschen muss, wird die unten gegebenen Be
 	
 		ptconfigure file delete --file="somename"
 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure file delete --file="somename"
+
+ [Pharaoh Logging] [File] Deleting File somename
+ somename Deleted
+ File somename not exists 
+ ******************************
+
+
+ File Modifications:
+ --------------------------------------------
+
+ File: Success
+
+ ------------------------------
+ File Mods Finished
+ ******************************
+
+
+
+
 vorhanden
 -----------
 
@@ -61,6 +140,26 @@ Wenn der Benutzer benötigt, um die Existenz einer Datei zu überprüfen, wird d
 .. code-block:: bash
 
 		ptconfigure file exists --filename="somename"
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure file exists --filename="somename"
+
+ Enter File Path:
+ /home/kevells/Desktop/somename
+ File /home/kevells/Desktop/somename exists 
+ ******************************
+
+
+ File Modifications:
+ --------------------------------------------
+
+ File: Success
+
+ ------------------------------
+ File Mods Finished
+ ******************************
+
 
 anhängen
 ------------
@@ -72,6 +171,32 @@ Wenn der Benutzer eine Zeile in eine Datei angehängt werden muss, wird der unte
 		ptconfigure file append --filename="somename" --line="a line"
 
 * Line option – you can insert a line to be appended
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure file append --filename="somename" --line="a line"
+
+ Enter File Path:
+ /home/kevells/Desktop/somename                             
+ Enter the input for append:
+ this is for test
+ [Pharaoh Logging] [File] Reading File /home/kevells/Desktop/somename
+ [Pharaoh Logging] [File] Writing File /home/kevells/Desktop/somename
+ ******************************
+
+
+ File Modifications:
+ --------------------------------------------
+
+ File: Success
+
+ ------------------------------
+ File Mods Finished
+ ******************************
+
+
+
+
 
 Should-have-line
 -------------------
