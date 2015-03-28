@@ -183,6 +183,7 @@ Hier bezeichnet der Bildschirm die Anzeige aller Module unter ptconfigure.
 
  gapachecontrol_deploy
  gapachevhosteditor_deploy
+ gappsettings_deploy
  gautopilot_deploy
  gdapperfy_deploy
  gdbconfigure_deploy
