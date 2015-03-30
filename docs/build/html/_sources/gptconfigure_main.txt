@@ -616,6 +616,7 @@ Das Spiel mit ptconfigure -Module
    gjmeter
    gjrush
    glighttpdserver
+   gloadrunner
    glogging
    gmediatools
    gmemcached
@@ -626,6 +627,7 @@ Das Spiel mit ptconfigure -Module
    gmysqladmins
    gmysqltools  
    gmysqlserver
+   gmysqlservergalera
    gnagiosserver
    gnetbeans
    gnetworktools
