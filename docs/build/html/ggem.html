@@ -96,13 +96,8 @@
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
 <li><a class="reference internal" href="#verschiedene-merkmale-der-gem">Verschiedene Merkmale der Gem</a></li>
-<li><a class="reference internal" href="#schaffen">schaffen</a></li>
-<li><a class="reference internal" href="#entfernen">ENTFERNEN</a></li>
-<li><a class="reference internal" href="#set-pass">SET PASS</a></li>
-<li><a class="reference internal" href="#vorhanden">VORHANDEN</a></li>
-<li><a class="reference internal" href="#gruppen-zeige">Gruppen Zeige</a></li>
-<li><a class="reference internal" href="#add-to-group">ADD _TO_GROUP</a></li>
-<li><a class="reference internal" href="#remove-from-group">REMOVE_FROM_GROUP</a></li>
+<li><a class="reference internal" href="#remove">Remove</a></li>
+<li><a class="reference internal" href="#ensure">Ensure</a></li>
 <li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
@@ -184,7 +179,6 @@
 </div>
 <p>Der folgende Screenshot visualisieren die Ausgabe und Bearbeitung der Hilfe-Option im Rahmen dieses Moduls.</p>
 <div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem <span class="nb">help</span>
-
 ******************************
 
 
@@ -192,33 +186,17 @@
 
  Gem, gem
 
-       - create
-       Create a new system gem, overwriting <span class="k">if </span>it exists
-       example: ptconfigure gem create --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+       - install
+       Install
+       example: ptconfigure gem pkg-install --package-name<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 
        - remove
-       Remove a system gem
-       example: ptconfigure gem remove --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+       Remove
+       example: ptconfigure gem pkg-remove --package-name<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 
-       - <span class="nb">set</span>-password
-       Set the password of a system gem
-       example: ptconfigure gem <span class="nb">set</span>-password --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span>                                                                                        <span class="s2">&quot;somepassword&quot;</span>
-
-       - exists
-       Check the existence of a gem
-       example: ptconfigure gem exists --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
-
-       - show-groups
-       Show groups to which a gem belongs
-       example: ptconfigure gem show-groups --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
-
-       - add-to-group
-       Add gem to a group
-       example: ptconfigure gem add-to-group --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;so                                                                                        megroupname&quot;</span>
-
-       - remove-from-group
-       Remove gem from a group
-       example: ptconfigure gem remove-from-group --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupnam                                                                                        <span class="nv">e</span><span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+       - ensure
+       Ensure
+       example: ptconfigure gem pkg-ensure --package-name<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 
 ------------------------------
 End Help
@@ -230,91 +208,49 @@ End Help
 <h2>Verschiedene Merkmale der Gem<a class="headerlink" href="#verschiedene-merkmale-der-gem" title="Permalink to this headline">¶</a></h2>
 <p>Wie aus der obigen Befehl help dargestellt, wird die verschiedenen Merkmale der Edelstein, wie unten aufgeführt,</p>
 <ul class="simple">
-<li>Erstellen</li>
-<li>Entfernen</li>
-<li>Set Password</li>
-<li>Vorhanden</li>
-<li>Show_groups</li>
-<li>Add_to_group</li>
-<li>Remove_from_group</li>
+<li>Remove</li>
+<li>Ensure</li>
 </ul>
 <p>Lassen Sie uns im Detail über diese Funktionen finden.</p>
 </div>
-<div class="section" id="schaffen">
-<h2>schaffen<a class="headerlink" href="#schaffen" title="Permalink to this headline">¶</a></h2>
-<p>Diese Funktion zielt auf die Schaffung eines neuen Systems Juwel, und so gut wie überschreibt bei bereits bestehenden. Diese Funktion von Perle mit diesem Modul kann durch die folgende Syntax erreicht werden,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem create --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
-</pre></div>
-</div>
-<p>An der Stelle des gemname kann der Benutzer den Namen des Edelsteins, das erzeugt werden soll angeben. Nach der Eingabe des Befehls, wie oben angegeben, wird das neue Schmuckstück mit dem angegebenen Namen erstellt werden.</p>
-</div>
-<div class="section" id="entfernen">
-<h2>ENTFERNEN<a class="headerlink" href="#entfernen" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="remove">
+<h2>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h2>
 <p>Dies funktioniert zielt darauf ab, eine bestehende gem. Diese Funktion von Perle mit diesem Modul kann durch die folgende Syntax erreicht werden,</p>
 <div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem remove --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 </pre></div>
 </div>
 <p>An der Stelle des gemname kann der Benutzer den Namen des Edelsteins, die gelöscht werden soll, zu spezifizieren. Nach der Eingabe des Befehls, wie oben angegeben, wird die angegebene Juwel gelöscht.</p>
 </div>
-<div class="section" id="set-pass">
-<h2>SET PASS<a class="headerlink" href="#set-pass" title="Permalink to this headline">¶</a></h2>
-<p>Diese Funktion erleichtert die Einstellung eines neuen Passworts auf ein System, Edelstein gemäß den Anforderungen. Dies kann durch den Befehl, wie unten angegeben durchgeführt werden,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem <span class="nb">set</span>-password --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span><span class="s2">&quot;somepassword&quot;</span>
+<div class="section" id="ensure">
+<h2>Ensure<a class="headerlink" href="#ensure" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion stellt sicher, das Paket in der Maschine korrekt installiert ist.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem pkg-ensure --package<span class="o">=</span><span class="s2">&quot;ssh&quot;</span>
 </pre></div>
 </div>
-<p>Um diese Funktionen zu implementieren, muss der Benutzer, um die beiden Felder geben,</p>
-<ul class="simple">
-<li>Gem Namen</li>
-<li>Neues Kennwort</li>
-</ul>
-<p>Nachdem Sie die beiden Felder im Format der oben genannten Befehl wird das neue Kennwort für den angegebenen Juwel geschaffen werden.</p>
-</div>
-<div class="section" id="vorhanden">
-<h2>VORHANDEN<a class="headerlink" href="#vorhanden" title="Permalink to this headline">¶</a></h2>
-<p>Diese Funktion soll die Überprüfung der Existenz einer gem. Dies kann einfach durchgeführt werden, indem Sie unter dem Befehl,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem exists --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem pkg-ensure --package<span class="o">=</span><span class="s2">&quot;ssh&quot;</span>
+
+<span class="nb">true</span>
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package ssh from the Packager Gem is Installed
+******************************
+
+
+Gem Modifications:
+--------------------------------------------
+
+Gem: Success
+
+------------------------------
+Gem Mods Finished
+******************************
 </pre></div>
 </div>
-<p>Nach der Anwendung des Befehls, wie oben, wird die Existenz einer genannten gem dem Ergebnis sichergestellt.</p>
-</div>
-<div class="section" id="gruppen-zeige">
-<h2>Gruppen Zeige<a class="headerlink" href="#gruppen-zeige" title="Permalink to this headline">¶</a></h2>
-<p>Diese Funktion unterstützt die Nutzer wissen zu welcher Gruppe ist der Edelstein gehört. Dies kann einfach durch das unten stehende Befehl erreicht werden,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem show-groups --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
-</pre></div>
-</div>
-<p>Der Benutzer muss den Namen der Edelstein auf dem Gebiet der gemname angeben, um die Details seiner Gruppe wissen.</p>
-</div>
-<div class="section" id="add-to-group">
-<h2>ADD _TO_GROUP<a class="headerlink" href="#add-to-group" title="Permalink to this headline">¶</a></h2>
-<p>Das Hauptziel dieser Funktion ist es, die erforderlichen Juwel in die gewünschte Gruppe, indem einfach der Befehl wie unten angegeben hinzu,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem add-to-group --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
-</pre></div>
-</div>
-<p>Um diese Funktion zu implementieren, muss der Benutzer die beiden folgenden Felder nach ihren Bedürfnissen im Format der oben genannten Befehl angeben,</p>
-<ul class="simple">
-<li>Gemname</li>
-<li>Gruppennamen</li>
-</ul>
-</div>
-<div class="section" id="remove-from-group">
-<h2>REMOVE_FROM_GROUP<a class="headerlink" href="#remove-from-group" title="Permalink to this headline">¶</a></h2>
-<p>Der Hauptzweck dieser Funktion besteht darin, das gem von einer Gruppe, indem einfach den Befehl, wie unten angegeben zu entfernen,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem remove-from-group --gemname<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
-</pre></div>
-</div>
-<p>Um diese Funktion zu implementieren, muss der Benutzer die beiden folgenden Felder nach ihren Bedürfnissen im Format der oben genannten Befehl angeben,</p>
-<ul class="simple">
-<li>Gemname</li>
-<li>Gruppennamen</li>
-</ul>
 </div>
 <div class="section" id="alternative-parameter">
 <h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
 <p>Die alternative Parameter für dieses Modul, die beide in Erklärung verwendet werden,</p>
 <ul class="simple">
 <li>Gem</li>
-<li>Edelstein</li>
+<li>gem</li>
 </ul>
 </div>
 <div class="section" id="vorteile">

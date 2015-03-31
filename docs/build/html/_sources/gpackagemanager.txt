@@ -20,31 +20,34 @@ Nach Eingang der obige Befehl, beginnt es funktioniert, um zu wickeln. Es Katech
 
 .. code-block:: bash
 
- kevell@corp:/# ptconfigure packagemanager help
- ******************************
+
+ kevell@corp:/# ptconfigure PackageManager help 
+
+ ****************************** 
 
 
-  This command allows you to use a Package Management wrapper.
+  This command allows you to use a Package Management wrapper. 
 
-  PackageManager, package-manager, packagemanager, package-mgr, pkgmgr
+  PackageManager, package-manager, packagemanager, package-mgr, pkgmgr 
 
-        - pkg-install
-        Installs a Package through a Package Manager
-        example: ptconfigure package-manager install --package-name="mysql" --package-version="5.0" --packager="apt-get"
+        - pkg-install 
+        Installs a Package through a Package Manager 
+        example: ptconfigure package-manager pkg-install --package-name="mysql" --packager-name="apt" 
 
-        - pkg-ensure
-        Installs a Package through a Package Manager
-        example: ptconfigure package-manager install --package-name="mysql" --package-version="5.0" --packager="apt-get"
+        - pkg-ensure 
+        Installs a Package through a Package Manager 
+        example: ptconfigure package-manager pkg-ensure --package-name="mysql" --packager-name="apt" 
+ 
+        - pkg-remove 
+        Removes a Package through a Package Manager 
+        example: ptconfigure package-manager pkg-remove --package-name="mysql" --packager-name="apt" 
 
-        - pkg-remove
-        Removes a Package through a Package Manager
-        example: ptconfigure package-manager install --package-name="mysql" --package-version="5.0" --packager="apt-get"
+  A package manager wrapper that will allow you to install packages on any system 
 
-  A package manager wrapper that will allow you to install packages on any system
+ ------------------------------ 
+ End Help 
+ ****************************** 
 
- ------------------------------
- End Help
- ******************************
 
 
 Alternative Parameter
@@ -70,6 +73,36 @@ Wenn die Benutzereingaben wie ja automatisch wird Packagemanager mit der Überpr
 
 .. code-block:: bash
 
+
+ kevell@corp:/# ptconfigure package-manager pkg-install --package-name="ssh" --packager-name="apt" 
+
+ Reading package lists... 
+ Building dependency tree... 
+ Reading state information... 
+ The following NEW packages will be installed: 
+   ssh 
+ 0 upgraded, 1 newly installed, 0 to remove and 87 not upgraded. 
+ Need to get 0 B/1,106 B of archives. 
+ After this operation, 29.7 kB of additional disk space will be used. 
+ Selecting previously unselected package ssh. 
+ (Reading database ... 198126 files and directories currently installed.) 
+ Preparing to unpack .../ssh_1%3a6.6p1-2ubuntu2_all.deb ... 
+ Unpacking ssh (1:6.6p1-2ubuntu2) ... 
+ Setting up ssh (1:6.6p1-2ubuntu2) ... 
+ [Pharaoh Logging] Adding Package ssh from the Packager Apt executed correctly 
+ ****************************** 
+
+
+ Apt Modifications: 
+ -------------------------------------------- 
+
+ Package Manager: Success 
+
+ ------------------------------ 
+ Apt Mods Finished 
+ ****************************** 
+
+
 Pkg-sicher
 -----------------
 
@@ -78,6 +111,55 @@ Pkg gewährleisten eine Systemdienst ausgeführt wird. Im Falle einer nicht läu
 .. code-block:: bash
     
 	ptconfigure PackageManager ensure
+
+
+ kevell@corp:/# ptconfigure package-manager pkg-ensure --package-name="mysql" --packager-name="apt" 
+
+
+ [Pharaoh Logging] Package mysql from the Packager apt is already installed, so not installing 
+ ****************************** 
+
+
+ Apt Modifications: 
+ -------------------------------------------- 
+
+ Package Manager: Success 
+
+ ------------------------------ 
+ Apt Mods Finished 
+ ****************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure package-manager pkg-ensure --package-name="ssh" --packager-name="apt" 
+
+ Reading package lists... 
+ Building dependency tree... 
+ Reading state information... 
+ The following NEW packages will be installed: 
+  ssh 
+ 0 upgraded, 1 newly installed, 0 to remove and 87 not upgraded. 
+ Need to get 0 B/1,106 B of archives. 
+ After this operation, 29.7 kB of additional disk space will be used. 
+ Selecting previously unselected package ssh. 
+ (Reading database ... 198126 files and directories currently installed.) 
+ Preparing to unpack .../ssh_1%3a6.6p1-2ubuntu2_all.deb ... 
+ Unpacking ssh (1:6.6p1-2ubuntu2) ... 
+ Setting up ssh (1:6.6p1-2ubuntu2) ... 
+ [Pharaoh Logging] Adding Package ssh from the Packager Apt executed correctly 
+ ****************************** 
+
+
+ Apt Modifications: 
+ -------------------------------------------- 
+
+ Package Manager: Success 
+
+ ------------------------------ 
+ Apt Mods Finished 
+ ****************************** 
+
+
 
 Pkg-remove
 -----------------

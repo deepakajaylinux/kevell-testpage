@@ -25,7 +25,6 @@ Der folgende Screenshot visualisieren die Ausgabe und Bearbeitung der Hilfe-Opti
 .. code-block:: bash
 
  kevell@corp:/# ptconfigure gem help
-
  ******************************
 
 
@@ -33,33 +32,17 @@ Der folgende Screenshot visualisieren die Ausgabe und Bearbeitung der Hilfe-Opti
 
   Gem, gem
 
-        - create
-        Create a new system gem, overwriting if it exists
-        example: ptconfigure gem create --gemname="somename"
+        - install
+        Install
+        example: ptconfigure gem pkg-install --package-name="somename"
 
         - remove
-        Remove a system gem
-        example: ptconfigure gem remove --gemname="somename"
+        Remove
+        example: ptconfigure gem pkg-remove --package-name="somename"
 
-        - set-password
-        Set the password of a system gem
-        example: ptconfigure gem set-password --gemname="somename" --new-password=                                                                                        "somepassword"
-
-        - exists
-        Check the existence of a gem
-        example: ptconfigure gem exists --gemname="somename"
-
-        - show-groups
-        Show groups to which a gem belongs
-        example: ptconfigure gem show-groups --gemname="somename"
-
-        - add-to-group
-        Add gem to a group
-        example: ptconfigure gem add-to-group --gemname="somename" --groupname="so                                                                                        megroupname"
-
-        - remove-from-group
-        Remove gem from a group
-        example: ptconfigure gem remove-from-group --gemname="somename" --groupnam                                                                                        e="somegroupname"
+        - ensure
+        Ensure
+        example: ptconfigure gem pkg-ensure --package-name="somename"
 
  ------------------------------
  End Help
@@ -71,29 +54,13 @@ Verschiedene Merkmale der Gem
 
 Wie aus der obigen Befehl help dargestellt, wird die verschiedenen Merkmale der Edelstein, wie unten aufgeführt,
 
-* Erstellen
-* Entfernen
-* Set Password
-* Vorhanden
-* Show_groups
-* Add_to_group
-* Remove_from_group
+* Remove
+* Ensure
 
 
 Lassen Sie uns im Detail über diese Funktionen finden.
 
-schaffen
---------
-
-Diese Funktion zielt auf die Schaffung eines neuen Systems Juwel, und so gut wie überschreibt bei bereits bestehenden. Diese Funktion von Perle mit diesem Modul kann durch die folgende Syntax erreicht werden,
-
-.. code-block:: bash
-
-	ptconfigure gem create --gemname="somename"
-
-An der Stelle des gemname kann der Benutzer den Namen des Edelsteins, das erzeugt werden soll angeben. Nach der Eingabe des Befehls, wie oben angegeben, wird das neue Schmuckstück mit dem angegebenen Namen erstellt werden.
-
-ENTFERNEN
+Remove
 -----------------
 
 Dies funktioniert zielt darauf ab, eine bestehende gem. Diese Funktion von Perle mit diesem Modul kann durch die folgende Syntax erreicht werden,
@@ -105,71 +72,34 @@ Dies funktioniert zielt darauf ab, eine bestehende gem. Diese Funktion von Perle
 
 An der Stelle des gemname kann der Benutzer den Namen des Edelsteins, die gelöscht werden soll, zu spezifizieren. Nach der Eingabe des Befehls, wie oben angegeben, wird die angegebene Juwel gelöscht.
 
-SET PASS
+Ensure
 --------------------
 
-Diese Funktion erleichtert die Einstellung eines neuen Passworts auf ein System, Edelstein gemäß den Anforderungen. Dies kann durch den Befehl, wie unten angegeben durchgeführt werden,
+Diese Funktion stellt sicher, das Paket in der Maschine korrekt installiert ist.
 
 .. code-block:: bash
 
-	ptconfigure gem set-password --gemname="somename" --new-password="somepassword"
-
-Um diese Funktionen zu implementieren, muss der Benutzer, um die beiden Felder geben,
-
-* Gem Namen
-* Neues Kennwort
-
-Nachdem Sie die beiden Felder im Format der oben genannten Befehl wird das neue Kennwort für den angegebenen Juwel geschaffen werden.
-
-VORHANDEN
--------------------
-
-Diese Funktion soll die Überprüfung der Existenz einer gem. Dies kann einfach durchgeführt werden, indem Sie unter dem Befehl,
+	ptconfigure gem pkg-ensure --package="ssh"
 
 .. code-block:: bash
 
-	ptconfigure gem exists --gemname="somename"
 
-Nach der Anwendung des Befehls, wie oben, wird die Existenz einer genannten gem dem Ergebnis sichergestellt.
+ kevell@corp:/# ptconfigure gem pkg-ensure --package="ssh" 
 
-Gruppen Zeige
---------------------
+ true 
+ [Pharaoh Logging] Package ssh from the Packager Gem is Installed 
+ ****************************** 
 
-Diese Funktion unterstützt die Nutzer wissen zu welcher Gruppe ist der Edelstein gehört. Dies kann einfach durch das unten stehende Befehl erreicht werden,
 
-.. code-block:: bash
+ Gem Modifications: 
+ -------------------------------------------- 
 
-	ptconfigure gem show-groups --gemname="somename"
+ Gem: Success 
 
-Der Benutzer muss den Namen der Edelstein auf dem Gebiet der gemname angeben, um die Details seiner Gruppe wissen.
+ ------------------------------ 
+ Gem Mods Finished 
+ ****************************** 
 
-ADD _TO_GROUP
------------------------
-
-Das Hauptziel dieser Funktion ist es, die erforderlichen Juwel in die gewünschte Gruppe, indem einfach der Befehl wie unten angegeben hinzu,
-
-.. code-block:: bash
-
-	ptconfigure gem add-to-group --gemname="somename" --groupname="somegroupname"
-
-Um diese Funktion zu implementieren, muss der Benutzer die beiden folgenden Felder nach ihren Bedürfnissen im Format der oben genannten Befehl angeben,
-
-* Gemname
-* Gruppennamen
-
-REMOVE_FROM_GROUP
---------------------------------
-
-Der Hauptzweck dieser Funktion besteht darin, das gem von einer Gruppe, indem einfach den Befehl, wie unten angegeben zu entfernen,
-
-.. code-block:: bash
-
-	ptconfigure gem remove-from-group --gemname="somename" --groupname="somegroupname"
-
-Um diese Funktion zu implementieren, muss der Benutzer die beiden folgenden Felder nach ihren Bedürfnissen im Format der oben genannten Befehl angeben,
-
-* Gemname
-* Gruppennamen
 
 Alternative Parameter
 -----------------------------
@@ -177,7 +107,7 @@ Alternative Parameter
 Die alternative Parameter für dieses Modul, die beide in Erklärung verwendet werden,
 
 * Gem
-* Edelstein
+* gem
 
 Vorteile
 ---------

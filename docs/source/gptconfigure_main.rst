@@ -602,6 +602,7 @@ Das Spiel mit ptconfigure -Module
    ggitlab
    ggittools
    ghaproxy
+   ghardycssregression
    ghhvm
    ghostname
    ginstallpackage
@@ -615,6 +616,7 @@ Das Spiel mit ptconfigure -Module
    gjetty
    gjmeter
    gjrush
+   gjsunit
    glighttpdserver
    gloadrunner
    glogging
@@ -673,6 +675,7 @@ Das Spiel mit ptconfigure -Module
    grubyrvm
    grubysystem
    gruncommand
+   gsaucelab
    gseleniumserver
    gservice
    gsftp
