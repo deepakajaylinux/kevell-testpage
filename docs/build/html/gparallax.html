@@ -173,6 +173,29 @@
 </pre></div>
 </div>
 <p>Die Darstellung der Ergebnisse nach der Eingabe des Befehl help wird in der Abbildung unten dargestellt.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure Parallax help
+******************************
+
+
+
+ This Module lets you execute commands in parallel
+
+ Parallax, parallax
+
+       - cli
+       Go through all questions to execute parallel programs
+       example: ptconfigure parallax cli
+       example: ptconfigure parallax cli --yes --command-1=&quot;pwd&quot; --command-2=&quot;ls&quot;
+
+       - child
+       Unlikely you&#39;ll use this, its used by cli to spawn child processes
+       example: ptconfigure parallax cli child
+
+------------------------------
+End Help
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
@@ -205,7 +228,7 @@ kevells   pts/1        2015-01-08 16:36 (:0)
 kevells   pts/10       2015-01-08 16:36 (:0)</p>
 </div></blockquote>
 <p>Der Befehl für die Deklaration der Mehraufgaben zur Laufzeit verwendet wird, wie folgt dar:</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptconfigure parallax cli
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure parallax cli child
 </pre></div>
 </div>
 <p>Nach der Eingabe des Befehls oben geschieht Folgendes:</p>
@@ -248,7 +271,7 @@ als N. Beenden|</td>
 </table>
 <p>Wenn der Benutzer der Installation fortfahren möchten, kann der Benutzer die mehrere Aufgaben nach ihren Anforderungen festzulegen. Nach Abschluss der Angabe der mehrere Aufgaben, wenn die Benutzer wünschen, hören sie auf, indem Sie einfach niemand stoppen kann.</p>
 <p>Schließlich werden die Ergebnisse der abgeschlossenen Aufgaben sowie der Zustand am Ende definiert. Die folgenden Screenshots können Sie eine grafische Darstellung in Bezug auf die oben genannten Verfahren.</p>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure parallax cli
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure parallax cli child
 
 Run Commands in Parallel? <span class="o">(</span>Y/N<span class="o">)</span>
 y

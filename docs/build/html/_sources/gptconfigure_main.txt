@@ -601,6 +601,7 @@ Das Spiel mit ptconfigure -Module
    ggitkeysafe
    ggitlab
    ggittools
+   ggo
    ghaproxy
    ghardycssregression
    ghhvm
@@ -654,6 +655,7 @@ Das Spiel mit ptconfigure -Module
    gphpdox 
    gphpmd
    gphpmodules
+   gphpspec
    gphpssh
    gphpstorm
    gphpunit
@@ -706,4 +708,4 @@ Das Spiel mit ptconfigure -Module
    gxcache
    gxvfb
    gzendserver
-
+   gzendstudio

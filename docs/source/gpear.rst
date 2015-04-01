@@ -40,105 +40,92 @@ The pictorial representation of the above command is listed below,
 
   Pear, pear
 
-        - create
-        Create a new system pear, overwriting if it exists
-        example: ptconfigure pear create --pearname="somename"
+        - install
+        Install
+        example: ptconfigure pear pkg-install --package-name="somename"
 
         - remove
-        Remove a system pear
-        example: ptconfigure pear remove --pearname="somename"
+        Remove
+        example: ptconfigure pear pkg-remove --package-name="somename"
 
-        - set-password
-        Set the password of a system pear
-        example: ptconfigure pear set-password --pearname="somename" --new-password="somepassword"
-
-        - exists
-        Check the existence of a pear
-        example: ptconfigure pear exists --pearname="somename"
-
-        - show-groups
-        Show groups to which a pear belongs
-        example: ptconfigure pear show-groups --pearname="somename"
-
-        - add-to-group
-        Add pear to a group
-        example: ptconfigure pear add-to-group --pearname="somename" --groupname="somegroupname"
-
-        - remove-from-group
-        Remove pear from a group
-        example: ptconfigure pear remove-from-group --pearname="somename" --groupname="somegroupname"
-
+        - ensure
+        Ensure
+        example: ptconfigure pear pkg-ensure --package-name="somename"
+        
  ------------------------------
  End Help
- ******************************
-
-schaffen
-------------
 
 
-Wenn der Benutzer ein neues System zu schaffen Birne müssen, bzw. die bestehende überschrieben wird die unten gegebenen Befehl das Verfahren auszuführen.
+Install
+---------------
+
+Wenn der Benutzer müssen eine Birne zu installieren , wird der unten angegebenen Befehl den Prozess auszuführen.
 
 .. code-block:: bash
-	
-	ptconfigure pear create - -pearname=”somename”
 
-entfernen
+	ptconfigure pear pkg-install --package-name="somename"
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure pear pkg-install --package-name="file"
+ downloading File-1.4.1.tgz ...
+ Starting to download File-1.4.1.tgz (8,164 bytes)
+ .....done: 8,164 bytes
+ install ok: channel://pear.php.net/File-1.4.1
+ ******************************
+
+
+ Pear Modifications:
+ --------------------------------------------
+
+ Pear: Success
+
+ ------------------------------
+ Pear Mods Finished
+ ******************************
+
+
+Remove
 ------------
 
 Wenn der Benutzer braucht, um ein System Birne zu entfernen, wird der unten angegebenen Befehl den Prozess auszuführen.
 
 .. code-block:: bash
 
-	ptconfigure pear remove - -pearname=”somename”
-
-
-Passwort wählen
----------------------
-
-Wenn der Benutzer das Kennwort eines System Birne setzen muss, wird der unten angegebenen Befehl den Prozess auszuführen.
+	ptconfigure pear pkg-remove --package-name="somename"
 
 .. code-block:: bash
-	
-	ptconfigure pear setpassword - -pearname=”somename”- - new-password=”somepassword”
 
 
-vorhanden
----------------------
+Ensure
+---------
 
-Wenn der Benutzer braucht, um die Existenz von Birne wissen, wird die unten gegebenen Befehl das Verfahren auszuführen.
+Wenn der Benutzer braucht, um eine Birne zu gewährleisten , wird der unten angegebenen Befehl den Prozess und führen .
 
 .. code-block:: bash
-	
-	ptconfigure pear exists - -pearname=”somename”
 
-
-Show-Gruppen
----------------------
-
-Wenn der Benutzer braucht, um die Gruppe, zu der eine Birne gehört kennen, wird der unten angegebenen Befehl den Prozess auszuführen.
+	ptconfigure pear pkg-ensure --package-name="somename"
 
 .. code-block:: bash
-	
-	ptconfigure pear show-groups - -pearname=”somename”
+
+ kevell@corp:/# ptconfigure pear pkg-ensure --package-name="file"
+ downloading File-1.4.1.tgz ...
+ Starting to download File-1.4.1.tgz (8,164 bytes)
+ .....done: 8,164 bytes
+ install ok: channel://pear.php.net/File-1.4.1
+ ******************************
 
 
-Zur Gruppe hinzufügen
----------------------
+ Pear Modifications:
+ --------------------------------------------
 
-Wenn der Benutzer Birne zu einer bestimmten Gruppe zuordnen muss, wird der unten angegebenen Befehl den Prozess auszuführen.
+ Pear: Success
 
-.. code-block:: bash
-	
- 	ptconfigure pear add-to-group - -pearname=”somename” - - groupname=”somegroupname”
+ ------------------------------
+ Pear Mods Finished
+ ******************************
 
-Aus Gruppe entfern
-----------------------------
 
-Wenn der Benutzer muss Birne aus einer Gruppe entfernen, wird der unten angegebenen Befehl den Prozess auszuführen.
-
-.. code-block:: bash
-	
-	ptconfigure pear remove-from-group - -pearname=”name” - -groupname=”groupname”
 
 Alternative Parameter
 --------------------------------
@@ -147,9 +134,6 @@ Es gibt zwei alternative Parameter, die in der Befehlszeile verwendet werden kan
 
 Pear, pear
 
-.. code-block:: bash
-
- Eg: ptconfigure pear create - -pearname=”somename”/ ptconfigure Pear create - -pearname=”somename”
 
 Vorteile
 --------------

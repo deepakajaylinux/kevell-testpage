@@ -18,6 +18,30 @@ Der Befehl help führt den Benutzer bei der Arbeit mit diesem Parallaxe. Es gibt
 
 Die Darstellung der Ergebnisse nach der Eingabe des Befehl help wird in der Abbildung unten dargestellt.
 
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure Parallax help
+ ******************************
+
+
+
+  This Module lets you execute commands in parallel
+
+  Parallax, parallax
+
+        - cli
+        Go through all questions to execute parallel programs
+        example: ptconfigure parallax cli
+        example: ptconfigure parallax cli --yes --command-1="pwd" --command-2="ls"
+
+        - child
+        Unlikely you'll use this, its used by cli to spawn child processes
+        example: ptconfigure parallax cli child
+
+ ------------------------------
+ End Help
+ ******************************
+
 Installation
 --------------
 
@@ -68,7 +92,7 @@ Der Befehl für die Deklaration der Mehraufgaben zur Laufzeit verwendet wird, wi
 
 .. code-block:: bash
 
-	ptconfigure parallax cli
+	ptconfigure parallax cli child
 
 Nach der Eingabe des Befehls oben geschieht Folgendes:
 
@@ -93,7 +117,7 @@ Schließlich werden die Ergebnisse der abgeschlossenen Aufgaben sowie der Zustan
 .. code-block:: bash
 
    
-	kevell@corp:/# ptconfigure parallax cli 
+	kevell@corp:/# ptconfigure parallax cli child
 	
 	Run Commands in Parallel? (Y/N) 
 	y
