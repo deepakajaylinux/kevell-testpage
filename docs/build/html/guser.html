@@ -94,13 +94,13 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">User</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
-<li><a class="reference internal" href="#schaffen">schaffen</a></li>
-<li><a class="reference internal" href="#entfernen">entfernen</a></li>
-<li><a class="reference internal" href="#set-passwort">Set-Passwort</a></li>
-<li><a class="reference internal" href="#vorhanden">vorhanden</a></li>
-<li><a class="reference internal" href="#show-gruppen">Show-Gruppen</a></li>
-<li><a class="reference internal" href="#add-to-gruppe">Add-to-Gruppe</a></li>
-<li><a class="reference internal" href="#entfernen-von-gruppe">Entfernen-von-Gruppe</a></li>
+<li><a class="reference internal" href="#create">Create</a></li>
+<li><a class="reference internal" href="#remove">Remove</a></li>
+<li><a class="reference internal" href="#set-password">Set-Password</a></li>
+<li><a class="reference internal" href="#exists">Exists</a></li>
+<li><a class="reference internal" href="#show-groups">Show-Groups</a></li>
+<li><a class="reference internal" href="#add-to-group">Add-to-Group</a></li>
+<li><a class="reference internal" href="#remove-from-group">Remove from group</a></li>
 <li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
@@ -178,69 +178,237 @@ ptconfigure user help</p>
 <p>Der Screenshot für den obigen Befehl aufgelistet unten,</p>
 <div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user <span class="nb">help</span>
 ******************************
+
 This <span class="nb">command </span>allows you to modify create or modify users
+
 User, user
+
       - create
       Create a new system user, overwriting <span class="k">if </span>it exists
       example: ptconfigure user create --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
       - remove
       Remove a system user
       example: ptconfigure user remove --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
       - <span class="nb">set</span>-password
       Set the password of a system user
       example: ptconfigure user <span class="nb">set</span>-password --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span><span class="s2">&quot;somepassword&quot;</span>
+
       - exists
       Check the existence of a user
       example: ptconfigure user exists --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
       - show-groups
       Show groups to which a user belongs
       example: ptconfigure user show-groups --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+
       - add-to-group
       Add user to a group
       example: ptconfigure user add-to-group --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+
       - remove-from-group
       Remove user from a group
       example: ptconfigure user remove-from-group --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+
 ------------------------------
 End Help
 ******************************
 </pre></div>
 </div>
 </div>
-<div class="section" id="schaffen">
-<h2>schaffen<a class="headerlink" href="#schaffen" title="Permalink to this headline">¶</a></h2>
-<p>Wenn der Benutzer muss ein neues System-Benutzerkonto erstellen, wird der unten angegebenen Befehl den Prozess und führen.
-ptconfigure user create &#8211;username=&#8221;somename&#8221;</p>
+<div class="section" id="create">
+<h2>Create<a class="headerlink" href="#create" title="Permalink to this headline">¶</a></h2>
+<p>Wenn der Benutzer muss ein neues System-Benutzerkonto erstellen, wird der unten angegebenen Befehl den Prozess und führen.</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure user create --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
 </div>
-<div class="section" id="entfernen">
-<h2>entfernen<a class="headerlink" href="#entfernen" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user create
+
+Enter Username:
+kevell
+******************************
+
+
+User Modifications:
+--------------------------------------------
+
+User: 1
+
+------------------------------
+User Mods Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove">
+<h2>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer muss ein Systembenutzerkonto zu entfernen, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
-<p>ptconfigure user remove &#8211;username=&#8221;somename&#8221;</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure user remove --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
 </div>
-<div class="section" id="set-passwort">
-<h2>Set-Passwort<a class="headerlink" href="#set-passwort" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user remove
+
+Enter Username:
+kevell
+******************************
+
+
+User Modifications:
+--------------------------------------------
+
+User: 1
+
+------------------------------
+User Mods Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="set-password">
+<h2>Set-Password<a class="headerlink" href="#set-password" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer das Kennwort eines Systembenutzers eingestellt benötigt, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
-<p>ptconfigure user set-password &#8211;username=&#8221;somename&#8221; &#8211;new-password=&#8221;somepassword&#8221;</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure user <span class="nb">set</span>-password --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --new-password<span class="o">=</span><span class="s2">&quot;somepassword&quot;</span>
+</pre></div>
 </div>
-<div class="section" id="vorhanden">
-<h2>vorhanden<a class="headerlink" href="#vorhanden" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user <span class="nb">set</span>-password
+
+Enter Username:
+kevell
+Enter New Password:
+kevell
+******************************
+
+
+User Modifications:
+--------------------------------------------
+
+User:
+
+------------------------------
+User Mods Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="exists">
+<h2>Exists<a class="headerlink" href="#exists" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer braucht, um das Vorhandensein eines Benutzers zu überprüfen, werden die unten angegebenen Befehl den Prozess auszuführen.</p>
-<p>ptconfigure user exists &#8211;username=&#8221;somename&#8221;</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure user exists --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
 </div>
-<div class="section" id="show-gruppen">
-<h2>Show-Gruppen<a class="headerlink" href="#show-gruppen" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user exists
+
+Enter Username:
+kevell
+******************************
+
+
+User Modifications:
+--------------------------------------------
+
+User: <span class="nv">Success</span> <span class="o">=</span> User Exists
+User Name:
+
+------------------------------
+User Mods Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user exists
+
+Enter Username:
+karuna
+******************************
+
+
+User Modifications:
+--------------------------------------------
+
+User: Failure - User Does Not Exist
+User Name:
+
+------------------------------
+User Mods Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="show-groups">
+<h2>Show-Groups<a class="headerlink" href="#show-groups" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer benötigt, um Gruppen, denen ein Benutzer angehört zu zeigen, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
-<p>ptconfigure user show-groups &#8211;username=&#8221;somename&#8221;</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure user show-groups --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
+</pre></div>
 </div>
-<div class="section" id="add-to-gruppe">
-<h2>Add-to-Gruppe<a class="headerlink" href="#add-to-gruppe" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user show-groups
+
+Enter Username:
+kevell
+******************************
+
+
+User Modifications:
+--------------------------------------------
+
+User: kevell
+
+
+------------------------------
+User Mods Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="add-to-group">
+<h2>Add-to-Group<a class="headerlink" href="#add-to-group" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer benötigt, um Benutzer zu einer Gruppe hinzuzufügen, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
-<p>ptconfigure user add-to-group &#8211;username=&#8221;somename&#8221; &#8211;groupname=&#8221;somegroupname&#8221;</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure user add-to-group --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+</pre></div>
 </div>
-<div class="section" id="entfernen-von-gruppe">
-<h2>Entfernen-von-Gruppe<a class="headerlink" href="#entfernen-von-gruppe" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user add-to-group --username<span class="o">=</span><span class="s2">&quot;kevell&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;kumar&quot;</span>
+
+Enter New Password:
+kevell
+******************************
+
+
+User Modifications:
+--------------------------------------------
+
+User: 1
+
+------------------------------
+User Mods Finished
+******************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove-from-group">
+<h2>Remove from group<a class="headerlink" href="#remove-from-group" title="Permalink to this headline">¶</a></h2>
 <p>Wenn der Benutzer benötigt, um Benutzer aus einer Gruppe zu entfernen, wird der unten angegebenen Befehl den Prozess auszuführen.</p>
-<p>ptconfigure user remove-from-group &#8211;username=&#8221;somename&#8221; &#8211;groupname=&#8221;somegroupname&#8221;</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptconfigure user remove-from-group --username<span class="o">=</span><span class="s2">&quot;somename&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;somegroupname&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure user remove-from-group --username<span class="o">=</span><span class="s2">&quot;kevell&quot;</span> --groupname<span class="o">=</span><span class="s2">&quot;kumar&quot;</span>
+
+Enter New Password:
+kevell
+
+/usr/sbin/deluser: You may not remove the user from their primary group.
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>User<span class="o">]</span> Removing User kevell from the Group kevell did not execute correctly
+******************************
+
+
+User Modifications:
+--------------------------------------------
+
+User:
+
+------------------------------
+User Mods Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="alternative-parameter">
 <h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>

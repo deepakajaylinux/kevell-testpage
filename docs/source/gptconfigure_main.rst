@@ -598,6 +598,7 @@ Das Spiel mit ptconfigure -Module
    ggenerator
    ggimp
    ggitbucket
+   ggitcommand
    ggitkeysafe
    ggitlab
    ggittools
@@ -618,6 +619,7 @@ Das Spiel mit ptconfigure -Module
    gjmeter
    gjrush
    gjsunit
+   gkvm
    glighttpdserver
    gloadrunner
    glogging
@@ -709,3 +711,4 @@ Das Spiel mit ptconfigure -Module
    gxvfb
    gzendserver
    gzendstudio
+   gzephir
