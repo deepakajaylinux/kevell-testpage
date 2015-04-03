@@ -7,7 +7,7 @@ Zusammenfassung
 
 Eine virtuelle Kernel -basierte Maschine (KVM) ist eine Virtualisierungs-Infrastruktur für Linux-Betriebssystem integriert ist und auf x86- Prozessorarchitektur zu betreiben. Es besteht aus einem ladbares Kernel-Modul , kvm.ko , die den Kern Virtualisierungsinfrastruktur und einen Prozessor bestimmtes Modul , KVM - intel.ko oder KVM - amd.ko bietet . KVM erfordert auch ein modifiziertes QEMU obwohl Arbeit ist im Gange, um die erforderlichen Änderungen aufwärts zu bekommen.
 
- KVM ist Open Source Software . Mit KVM , kann man mehrere virtuelle Maschinen ausgeführt unmodifizierten Linux oder Windows laufen Bilder . Jede virtuelle Maschine verfügt über einen eigenen virtualisierten Hardware : eine Netzwerkkarte , Festplatte, Grafikkarte usw.	 
+KVM ist Open Source Software . Mit KVM , kann man mehrere virtuelle Maschinen ausgeführt unmodifizierten Linux oder Windows laufen Bilder . Jede virtuelle Maschine verfügt über einen eigenen virtualisierten Hardware : eine Netzwerkkarte , Festplatte, Grafikkarte usw.	 
 
 
 Hilfe Befehl

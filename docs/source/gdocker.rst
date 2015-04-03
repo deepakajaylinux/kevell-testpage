@@ -6,9 +6,9 @@ Docker
 Zusammenfassung
 ------------------
 
-	Docker ist eine offene Plattform für verteilte Anwendungen für Entwickler und Systemadministratoren. Docker ist ein Tool, das Paket kann eine Anwendung und ihrer Abhängigkeiten in einem virtuellen Container, der auf einem Linuxserver ausgeführt werden können. 
+Docker ist eine offene Plattform für verteilte Anwendungen für Entwickler und Systemadministratoren. Docker ist ein Tool, das Paket kann eine Anwendung und ihrer Abhängigkeiten in einem virtuellen Container, der auf einem Linuxserver ausgeführt werden können. 
 	
-	Es besteht aus Docker-Motor, einem tragbaren. leichte Runtime und Verpackung-Tool. und Docker Hub, eine Cloud-service für die gemeinsame Nutzung von Anwendungen und Workflows automatisieren, Docker ermöglicht apps schnell aus Komponenten montiert werden und beseitigt die Reibung zwischen Entwicklung, QS und Produktionsumgebungen.
+Es besteht aus Docker-Motor, einem tragbaren. leichte Runtime und Verpackung-Tool. und Docker Hub, eine Cloud-service für die gemeinsame Nutzung von Anwendungen und Workflows automatisieren, Docker ermöglicht apps schnell aus Komponenten montiert werden und beseitigt die Reibung zwischen Entwicklung, QS und Produktionsumgebungen.
 
 
 Hilfe Befehl

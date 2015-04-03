@@ -10,7 +10,7 @@ JSUnit ist ein Open-Source- Unit Testing Framework für JavaScript . Es ist im W
 Hilfe Befehl
 ---------------
 
- Der Befehl help führt den Anwender über den Zweck und als auch über die Möglichkeiten , die in der JSUnit Modul enthalten sind. außerdem
+Der Befehl help führt den Anwender über den Zweck und als auch über die Möglichkeiten , die in der JSUnit Modul enthalten sind. außerdem
 beschreibt die Syntax für die Installation des Moduls JSUnit . Der Befehl help für JSUnit Modul wird wie unten dargestellt.
 
 

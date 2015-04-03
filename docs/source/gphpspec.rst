@@ -6,7 +6,7 @@ PHPSpec
 Zusammenfassung
 -------------------
 
- PHPSpec ist ein Design- Tool, das Ihnen helfen kann, sauber und gut funktionierend PHP-Code schreiben, mit Verhalten Driven Development oder BDD . BDD ist eine Technik von Test-First- Entwicklung abgeleitet . PHPSpec hilft Ihnen, die interne Verhalten der Anwendung zu beschreiben, indem er kleine " Spezifikationen " in der PHP-Sprache - daher SpecBDD . Diese Spezifikationen testen , dass Ihr Code hat das gewünschte Verhalten . PHPSpec reagiert auf das Verhalten in der unteren Ebene von der inneren der Klassen.
+PHPSpec ist ein Design- Tool, das Ihnen helfen kann, sauber und gut funktionierend PHP-Code schreiben, mit Verhalten Driven Development oder BDD . BDD ist eine Technik von Test-First- Entwicklung abgeleitet . PHPSpec hilft Ihnen, die interne Verhalten der Anwendung zu beschreiben, indem er kleine " Spezifikationen " in der PHP-Sprache - daher SpecBDD . Diese Spezifikationen testen , dass Ihr Code hat das gewünschte Verhalten . PHPSpec reagiert auf das Verhalten in der unteren Ebene von der inneren der Klassen.
 
 
 Hilfe Befehl
