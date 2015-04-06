@@ -698,6 +698,7 @@ Das Spiel mit ptconfigure -Module
    gteamcity
    gtemplating
    gtomcat
+   gtracelytics
    gubuntucompiler
    guser
    gvarnish
@@ -712,3 +713,4 @@ Das Spiel mit ptconfigure -Module
    gzendserver
    gzendstudio
    gzephir
+
