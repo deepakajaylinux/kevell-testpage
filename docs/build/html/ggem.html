@@ -96,6 +96,7 @@
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
 <li><a class="reference internal" href="#verschiedene-merkmale-der-gem">Verschiedene Merkmale der Gem</a></li>
+<li><a class="reference internal" href="#install">Install</a></li>
 <li><a class="reference internal" href="#remove">Remove</a></li>
 <li><a class="reference internal" href="#ensure">Ensure</a></li>
 <li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
@@ -198,6 +199,11 @@
        Ensure
        example: ptconfigure gem pkg-ensure --package-name<span class="o">=</span><span class="s2">&quot;somename&quot;</span>
 
+       - update
+       Update
+       example: ptconfigure gem update
+
+
 ------------------------------
 End Help
 ******************************
@@ -208,10 +214,34 @@ End Help
 <h2>Verschiedene Merkmale der Gem<a class="headerlink" href="#verschiedene-merkmale-der-gem" title="Permalink to this headline">¶</a></h2>
 <p>Wie aus der obigen Befehl help dargestellt, wird die verschiedenen Merkmale der Edelstein, wie unten aufgeführt,</p>
 <ul class="simple">
+<li>Install</li>
 <li>Remove</li>
 <li>Ensure</li>
+<li>Update</li>
 </ul>
 <p>Lassen Sie uns im Detail über diese Funktionen finden.</p>
+</div>
+<div class="section" id="install">
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
+<p>Diese Funktion ermöglicht es Ihnen, das Paket, das die Bedürfnisse der Nutzer zu installieren. Der folgende Screenshot visualisieren die Ausgabe ,</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem pkg-install --package-name<span class="o">=</span>cucumber
+Successfully installed cucumber-2.0.0
+1 gem installed
+Installing ri documentation <span class="k">for </span>cucumber-2.0.0...
+Installing RDoc documentation <span class="k">for </span>cucumber-2.0.0...
+******************************
+
+
+Gem Modifications:
+--------------------------------------------
+
+Gem: Success
+
+------------------------------
+Gem Mods Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="remove">
 <h2>Remove<a class="headerlink" href="#remove" title="Permalink to this headline">¶</a></h2>
@@ -220,6 +250,22 @@ End Help
 </pre></div>
 </div>
 <p>An der Stelle des gemname kann der Benutzer den Namen des Edelsteins, die gelöscht werden soll, zu spezifizieren. Nach der Eingabe des Befehls, wie oben angegeben, wird die angegebene Juwel gelöscht.</p>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem pkg-remove --package-name<span class="o">=</span>cucumber
+Removing cucumber
+Successfully uninstalled cucumber-2.0.0
+******************************
+
+
+Gem Modifications:
+--------------------------------------------
+
+Gem: Failure
+
+------------------------------
+Gem Mods Finished
+******************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="ensure">
 <h2>Ensure<a class="headerlink" href="#ensure" title="Permalink to this headline">¶</a></h2>
@@ -227,10 +273,29 @@ End Help
 <div class="highlight-bash"><div class="highlight"><pre>ptconfigure gem pkg-ensure --package<span class="o">=</span><span class="s2">&quot;ssh&quot;</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem pkg-ensure --package<span class="o">=</span><span class="s2">&quot;ssh&quot;</span>
-
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem pkg-ensure
+Enter Package:
+cucumber
 <span class="nb">true</span>
-<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package ssh from the Packager Gem is Installed
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package cucumber from the Packager Gem is Installed
+******************************
+
+
+Gem Modifications:
+--------------------------------------------
+
+Gem: Success
+
+------------------------------
+Gem Mods Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptconfigure gem pkg-ensure
+Enter Package:
+cucumber
+<span class="nb">false</span>
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Package cucumber from the Packager Gem is not Installed
 ******************************
 
 

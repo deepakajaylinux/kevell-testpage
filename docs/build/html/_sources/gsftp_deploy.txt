@@ -7,7 +7,7 @@ SFTP
 Zusammenfassung
 ----------------------
 
-  Dieses Modul unterstützen die Übertragung von Dateien von einem System auf ein anderes. Es kann Hoch- und Herunterladen der Dateien auf das System. Automation möglich. Setzen Sie und erhalten Sie Optionen in diesem Modul zur Verfügung. Es gibt die Konfiguration Ihrer Umgebung. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.
+Dieses Modul unterstützen die Übertragung von Dateien von einem System auf ein anderes. Es kann Hoch- und Herunterladen der Dateien auf das System. Automation möglich. Setzen Sie und erhalten Sie Optionen in diesem Modul zur Verfügung. Es gibt die Konfiguration Ihrer Umgebung. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.
 
 Hilfe Befehl
 -----------------------
@@ -244,7 +244,7 @@ Wenn der Benutzereingaben wie N vorherigen Server-Namen zugegriffen werden kann.
  ****************************** 
  
 
-.. code-bock:: bash
+.. code-block:: bash
 
 
  kevell@corp:/# ptdeploy sftp get --yes --environment-name=karthik --source="/tmp/testing" --target="/opt/testr" 

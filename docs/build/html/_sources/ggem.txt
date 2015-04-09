@@ -44,6 +44,11 @@ Der folgende Screenshot visualisieren die Ausgabe und Bearbeitung der Hilfe-Opti
         Ensure
         example: ptconfigure gem pkg-ensure --package-name="somename"
 
+        - update
+        Update
+        example: ptconfigure gem update
+
+
  ------------------------------
  End Help
  ******************************
@@ -54,11 +59,41 @@ Verschiedene Merkmale der Gem
 
 Wie aus der obigen Befehl help dargestellt, wird die verschiedenen Merkmale der Edelstein, wie unten aufgeführt,
 
+* Install
 * Remove
 * Ensure
+* Update
 
 
 Lassen Sie uns im Detail über diese Funktionen finden.
+
+
+Install
+-----------
+
+Diese Funktion ermöglicht es Ihnen, das Paket, das die Bedürfnisse der Nutzer zu installieren. Der folgende Screenshot visualisieren die Ausgabe ,
+
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure gem pkg-install --package-name=cucumber
+ Successfully installed cucumber-2.0.0
+ 1 gem installed
+ Installing ri documentation for cucumber-2.0.0...
+ Installing RDoc documentation for cucumber-2.0.0...
+ ******************************
+
+
+ Gem Modifications:
+ --------------------------------------------
+
+ Gem: Success
+
+ ------------------------------
+ Gem Mods Finished
+ ******************************
+
+
+
 
 Remove
 -----------------
@@ -72,6 +107,25 @@ Dies funktioniert zielt darauf ab, eine bestehende gem. Diese Funktion von Perle
 
 An der Stelle des gemname kann der Benutzer den Namen des Edelsteins, die gelöscht werden soll, zu spezifizieren. Nach der Eingabe des Befehls, wie oben angegeben, wird die angegebene Juwel gelöscht.
 
+.. code-block:: bash
+
+ kevell@corp:/# ptconfigure gem pkg-remove --package-name=cucumber
+ Removing cucumber
+ Successfully uninstalled cucumber-2.0.0
+ ******************************
+
+
+ Gem Modifications:
+ --------------------------------------------
+
+ Gem: Failure
+
+ ------------------------------
+ Gem Mods Finished
+ ****************************** 
+
+
+
 Ensure
 --------------------
 
@@ -84,21 +138,42 @@ Diese Funktion stellt sicher, das Paket in der Maschine korrekt installiert ist.
 .. code-block:: bash
 
 
- kevell@corp:/# ptconfigure gem pkg-ensure --package="ssh" 
+ kevell@corp:/# ptconfigure gem pkg-ensure
+ Enter Package:
+ cucumber
+ true
+ [Pharaoh Logging] Package cucumber from the Packager Gem is Installed
+ ******************************
 
- true 
- [Pharaoh Logging] Package ssh from the Packager Gem is Installed 
- ****************************** 
+
+ Gem Modifications:
+ --------------------------------------------
+
+ Gem: Success
+
+ ------------------------------
+ Gem Mods Finished
+ ******************************
 
 
- Gem Modifications: 
- -------------------------------------------- 
+.. code-block:: bash
 
- Gem: Success 
+ kevell@corp:/# ptconfigure gem pkg-ensure
+ Enter Package:
+ cucumber
+ false
+ [Pharaoh Logging] Package cucumber from the Packager Gem is not Installed
+ ******************************
 
- ------------------------------ 
- Gem Mods Finished 
- ****************************** 
+
+ Gem Modifications:
+ --------------------------------------------
+
+ Gem: Success
+
+ ------------------------------
+ Gem Mods Finished
+ ******************************
 
 
 Alternative Parameter

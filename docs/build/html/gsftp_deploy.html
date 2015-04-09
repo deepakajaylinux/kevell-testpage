@@ -164,7 +164,7 @@
 <h1>SFTP<a class="headerlink" href="#sftp" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>&nbsp; Dieses Modul unterstützen die Übertragung von Dateien von einem System auf ein anderes. Es kann Hoch- und Herunterladen der Dateien auf das System. Automation möglich. Setzen Sie und erhalten Sie Optionen in diesem Modul zur Verfügung. Es gibt die Konfiguration Ihrer Umgebung. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.</p>
+<p>Dieses Modul unterstützen die Übertragung von Dateien von einem System auf ein anderes. Es kann Hoch- und Herunterladen der Dateien auf das System. Automation möglich. Setzen Sie und erhalten Sie Optionen in diesem Modul zur Verfügung. Es gibt die Konfiguration Ihrer Umgebung. Es ist benutzerfreundlich mit Ubuntu und Cent-OS.</p>
 </div>
 <div class="section" id="hilfe-befehl">
 <h2>Hilfe Befehl<a class="headerlink" href="#hilfe-befehl" title="Permalink to this headline">¶</a></h2>
@@ -360,6 +360,29 @@ Enter local target file path
 [Pharaoh Logging] 1
 [Pharaoh Logging] [192.168.1.14] SFTP Get Completed...
 [Pharaoh Logging] All SFTP Gets Completed
+******************************
+
+Shell Result: Success
+SFTP Get
+
+------------------------------
+Installer Finished
+******************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy sftp get --yes --environment-name<span class="o">=</span>karthik --source<span class="o">=</span><span class="s2">&quot;/tmp/testing&quot;</span> --target<span class="o">=</span><span class="s2">&quot;/opt/testr&quot;</span>
+
+Please Enter SSH Timeout in seconds
+200
+Please Enter remote SSH Port
+22
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Attempting to load SFTP connections...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Connection to Server 192.168.1.14 successful.
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> Opening SFTP Connections...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>192.168.1.14<span class="o">]</span> Executing SFTP Get...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> 1
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> <span class="o">[</span>192.168.1.14<span class="o">]</span> SFTP Get Completed...
+<span class="o">[</span>Pharaoh Logging<span class="o">]</span> All SFTP Gets Completed
 ******************************
 
 Shell Result: Success
