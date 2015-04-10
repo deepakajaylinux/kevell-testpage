@@ -69,7 +69,7 @@ Wie dargestellt und in der obigen Befehl help erläutert, NginxSBEditor, hat die
 
 Lassen Sie uns sehen, wie man diese interessante Funktionen unter NginxSBEditor verwenden.
 
-hinzufügen
+Add
 --------------
 
 Die Rolle dieser Funktion ist zum Erstellen / fügen Sie einen neuen Server-Block. Der Befehl und Bearbeitung von Funktionen hinzuzufügen ist unten dargestellt,
@@ -217,7 +217,7 @@ Der folgende Screenshot zeigt die visuell oben erläuterten Verfahren.
 
 
 
-entfernen
+Remove
 ----------
 
 Das Entfernen Funktion wird zum Entfernen der unerwünschten Server-Blöcken. Dies kann mit dem Befehl unten angegeben durchgeführt werden,
@@ -316,8 +316,8 @@ Der folgende Screenshot zeigt visuell über den Prozess der Löschung.
  1ServerBlock Creator Finished
  ******************************
 
-Liste
-----
+List
+-------
 
 Die Funktion der Liste Option ist die Bereitstellung der aktuellen installierten Server blockiert. Der Befehl für die Liste verwendet, ist unten angegeben,
 
@@ -363,6 +363,98 @@ Der folgende Screenshot zeigt die Funktionsweise der Liste Option visuell.
 
  1ServerBlock Creator Finished
  ******************************
+
+Enable
+----------
+
+Mit der Freigabefunktion verwendet, um eine serverblock ermöglichen . Der Befehl zum Aktivieren verwendet wird unten gezeigt ,
+
+.. code-block:: bash
+
+	ptdeploy nginxsbe enable
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy nginxsbe enable
+
+ Do you want to enable a ServerBlock? (Y/N) 
+ y
+ What is your Enabled Symlink ServerBlock directory? Found "/etc/nginx/sites-enabled" - Enter nothing to use this
+
+ Please Choose ServerBlock:
+ --- All Server Blocks: ---
+ (0) ServerBlocktemp
+ (1) aaaaaa
+ (2) as
+ (3) ddd
+ (4) default
+ (5) default.dpkg-old
+ (6) dfdkdfsd.com
+ (7) dfsdfssfdfdfdf.com
+ (8) google
+ (9) karuna
+ (10) kkkkkkk
+ (11) kumark
+ (12) sites-available
+ (13) vijay
+ (14) www.amazon.com
+ (15) www.deepak.com
+ (16) www.google.com
+ (17) www.kkk.com
+
+ 1
+ Server Block Enabled Symlink Created
+ ******************************
+ ServerBlock Creator Finished
+ ******************************
+
+
+Disable
+----------
+
+Die Sperrfunktion wird verwendet, um eine Server- Block deaktivieren. Der Befehl zum Deaktivieren aufgelistet unten ,
+
+.. code-block:: bash
+
+	ptdeploy nginxsbe disable
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy nginxsbe disable
+
+ Do you want to disable a ServerBlock? (Y/N) 
+ y
+ What is your Enabled Symlink ServerBlock directory? Found "/etc/nginx/sites-enabled" - Enter nothing to use this
+
+ Please Choose ServerBlock:
+ --- All Server Blocks: ---
+ (0) ServerBlocktemp
+ (1) aaaaaa
+ (2) as
+ (3) ddd
+ (4) default
+ (5) default.dpkg-old
+ (6) dfdkdfsd.com
+ (7) dfsdfssfdfdfdf.com
+ (8) google
+ (9) karuna
+ (10) kkkkkkk
+ (11) kumark
+ (12) sites-available
+ (13) vijay
+ (14) www.amazon.com
+ (15) www.deepak.com
+ (16) www.google.com
+ (17) www.kkk.com
+
+ 1
+ Server Block aaaaaa Disabled  if exist
+ ******************************
+ ServerBlock Creator Finished
+ ******************************
+
+
 
 Vorteile
 ----------

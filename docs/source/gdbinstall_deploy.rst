@@ -69,40 +69,53 @@ Installation
 ----------------
 
 Wenn der Benutzer zu installieren muss, kann der Benutzer die folgenden Befehle für DBIstall ausgeben. Das System wird den Prozess der Installation durchzuführen.
+
 .. code-block:: bash
 	
 	 ptdeploy dbinstall install
 
-Das System fordern Sie die MySQL-Host, Drücken Sie die Eingabetaste, um den Standard-Host zu verwenden.
-
 .. code-block:: bash
 
- What's the Mysql Host? Enter for 127.0.0.1
 
+ kevell@corp:/# ptdeploy DBInstall install
+ Do you want to install a database? (Y/N) 
+ y
+ What's the Mysql Host? Enter for 127.0.0.1 
 
-Dann wird das System fordern Mysql Admin-Benutzer, wird die Benutzernamen "root" und die der MySQL-Admin-Kennwort ist.
+ What's the MySQL Admin User? 
 
-.. code-block:: bash
+ You must enter a value. Please try again.
+ What's the MySQL Admin User?
 
+ You must enter a value. Please try again.
  What's the MySQL Admin User?
  root
  What's the MySQL Admin Password?
- 123456
+ root
+ What's the application DB User?
+ (0) **CREATE NEW USER** 
+ (1) phpci 
+ (2) debian-sys-maint 
+ (3) phpci 
+ (4) phpmyadmin 
+ 1
+ What's the application DB Password?
+ phpci_pass
+ What's the application DB Name?
+ Current Db's are:
+ hps
+ phpci
+ phpmyadmin
 
- 
-Dann wird das System fragen, für die Anwendung DB Benutzer, können Sie mit den vorhandenen Benutzern weiter oder erstellen Sie einen neuen Benutzer. Sobald Sie mit der Option "0" für neue Benutzer zu liefern das System fragen Sie nach dem neuen Benutzernamen, Passwort und Anwendung DB Anwendung DB Namen.
-
-.. code-block:: bash
-
-
-
-Sobald die oben genannten Angaben, das System nach Bestätigung. Nach der Bestätigung, führen Sie das System den Vorgang.
-
-.. code-block:: bash
+ phpci
+ Database script executed
+ **************************************
+ Seems Fine...Database Actions Finished
+ **************************************
 
 
 
-Speichern
+Save
 ----------------
 
 Wenn der Benutzer auf die Datenbank für ein Projekt zu speichern muss, wird der unten angegebenen Befehl den Prozess auszuführen.
@@ -111,32 +124,36 @@ Wenn der Benutzer auf die Datenbank für ein Projekt zu speichern muss, wird der
 	
 	ptdeploy dbinstall save	
 
-Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren 'J' eingeben möchten, wenn keine geben 'N'.
-
 .. code-block:: bash
 
-Das System fordern Sie die MySQL-Host, Drücken Sie die Eingabetaste, um den Standard-Host zu verwenden.
-
-.. code-block:: bash
-
+ kevell@corp:/# ptdeploy DBInstall save
+ Do you want to save a database? (Y/N) 
+ y
  What's the Mysql Host? Enter for 127.0.0.1
-
-
-Then the system ask for Mysql Admin user, the user name will be “root” and the the Mysql Admin password.
-
-.. code-block:: bash
 
  What's the MySQL Admin User?
  root
  What's the MySQL Admin Password?
- 123456
+ root
+ What's the application DB Name?
+ Current Db's are:
+ asdf
+ hps
+ phpci 
 
- 
-Then the system ask for the application DB user. 
+ asdf
+ Cannot connect with these details. Sure you want to continue? (Y/N) 
+ y
+ Exporting DB to /opt/db/database.sql 
+ Database Dumping...
+ **************************************
+ Seems Fine...Database Actions Finished
+ ************************************** 
 
-.. code-block:: bash
 
-Fallen Lassen
+
+
+Drop
 ----------------
 
 Wenn der Benutzer auf die Datenbank für ein Projekt fallen muss, wird die unten gegebenen Befehl das Verfahren auszuführen.
@@ -145,30 +162,33 @@ Wenn der Benutzer auf die Datenbank für ein Projekt fallen muss, wird die unten
 	
 	ptdeploy dbinstall drop      
 
-Vor der Ausführung ist das System fragen Sie nach der Bestätigung, um fortzufahren, wenn Sie fortfahren 'J' eingeben möchten, wenn keine geben 'N'.
-
 .. code-block:: bash
 
-Das System fordern Sie die MySQL-Host, Drücken Sie die Eingabetaste, um den Standard-Host zu verwenden.
 
-.. code-block:: bash
+ kevell@corp:/# ptdeploy db-install drop 
 
- What's the Mysql Host? Enter for 127.0.0.1
-
-
-Dann wird das System fordern Mysql Admin-Benutzer, wird die Benutzernamen "root" und die der MySQL-Admin-Kennwort ist.
-
-.. code-block:: bash
+ Do you want to perform drop actions (user/db)? (Y/N) 
+ y
+ Do you want to drop a database? (Y/N) 
+ y
+ What's the Mysql Host? Enter for 127.0.0.1 
 
  What's the MySQL Admin User?
  root
  What's the MySQL Admin Password?
- 123456
+ root123
+ What's the application DB Name?
+ (0) karuna 
+ (1) test1 
+ (2) test2 
+ 2
+ Database test2 dropped
+ **************************************
+ Seems Fine...Database Actions Finished
+ **************************************
 
- 
-Dann wird das System fragen, für die Anwendung DB Benutzer.
 
-.. code-block:: bash
+
 
 Alternative Parameter
 ------------------------------
