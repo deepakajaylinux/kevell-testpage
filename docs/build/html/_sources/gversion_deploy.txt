@@ -52,20 +52,150 @@ Der folgende Screenshot zeigt den vollen Einsatz der ptdeploy.
  ******************************
 
 
-Der folgende Screenshot zeigt den vollen Einsatz der ptdeploy.Version, version, VERSION
+Alternative Parameter
+-----------------------
 
-Installation
-----------------
 
-Die Installation umfasst die Installation von Version erforderlich, um die Installation in einer aktualisierten Version zu machen. Es ist eine offensichtliche Prozess auf Version Modul unter ptdeploy installieren. Version mit nur mit dem Befehl unten angegeben,
+Der folgende Screenshot zeigt den vollen Einsatz der ptdeploy. 
+
+Version, version, vrs
+
+
+
+Specific
+-----------
+
+Das Besondere Option ermöglicht es dem Benutzer, zu ändern zurück die aktuelle Version Verzeichnis bestimmte Version zu machen. Der Befehl für die bestimmte Option ist unten dargestellt ,
 
 .. code-block:: bash
 
-	ptdeploy version Install
+        ptdeploy version specific
 
-Nach beleben den Befehl geben Sie den Wert katechisieren.
+or
 
-Wenn die Benutzereingaben wie ja es wird automatisch Version mit der Überprüfung aus dem System zu installieren. Wenn nicht beenden Sie die Installation. Der folgende Screenshot zeigen, Version und seine Funktionen.
+.. code-block:: bash
+
+        ptdeploy version specific --limit=4 --container=/opt/versiontest/ --version=2
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy version specific
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ What is the Project Container Directory? (The one with versions in) Enter none for /opt/versiontest
+ /opt/versiontest/
+ Please Choose Version to make current (Showing newest first, Enter none for newest):
+ --- All Versions: ---
+ (0) karuna 
+
+ 0
+ How many Versions to limit to? Enter 0 to ignore version limits
+ 2
+ Removed Version Symlink
+ Created Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ********************************
+ 
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy version specific --limit=4 --container=/opt/versiontest/ --version=2
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ Removed Version Symlink
+ Created Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ******************************** 
+
+Latest
+----------
+
+Die neueste Option erlaubt die Benutzer, die verfügbaren Link auf die neueste Version zu ändern zurück . Der Befehl für die neuesten Ausführungsprozess wird unten gezeigt ,
+
+.. code-block:: bash 
+
+        ptdeploy version latest
+
+or
+
+.. code-block:: bash
+
+        ptdeploy version latest --limit=3 --container=/var/www/applications/the-app
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy version latest
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ What is the Project Container Directory? (The one with versions in) Enter none for /opt/versiontest
+ /opt/versiontest/
+ How many Versions to limit to? Enter 0 to ignore version limits
+ 5
+ Removed Version Symlink
+ Created Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ******************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy version latest --limit=3 --container=/opt/versiontest/
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ Removed Version Symlink
+ Created Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ********************************
+
+Rollback
+----------
+
+Die Option Rollback ermöglicht die Benutzer Änderungen an der bestehenden Version zu machen. Die Rollback- Ausführungsprozess wird unten gezeigt ,
+
+.. code-block:: bash
+
+        ptdeploy version rollback
+
+or
+
+.. code-block:: bash
+
+        ptdeploy version rollback --limit=3 --container=/opt/versiontest/
+
+.. code-block:: bash
+
+
+ kevell@corp:/# ptdeploy version rollback
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ What is the Project Container Directory? (The one with versions in) Enter none for /opt/versiontest
+ /opt/versiontest/
+ How many Versions to limit to? Enter 0 to ignore version limits
+ 4
+ Removed Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ******************************** 
+
+.. code-block:: bash
+
+ kevell@corp:/# ptdeploy version rollback --limit=3 --container=/opt/versiontest/
+
+ Do you want to change the version that *current* points to? (Y/N) 
+ y
+ Removed Version Symlink
+ ********************************
+ Seems Fine...Versioning Finished
+ ********************************
 
 
 Option
@@ -77,10 +207,12 @@ Option
  | Parameters                   | Alternative parameter                      | Option    | Kommentare                                   |
  +==============================+============================================+===========+==============================================+
  |Install version?(Y/N)         | Anstelle der Verwendung von Version        | Yes       | Unter ptdeploy Modul erfolgreich             |
- |                              | kann der Anwender nutzen Version,VERSION   |           | installiert                                  |
+ |                              | kann der Anwender nutzen Version,          |           | installiert                                  |
+ |                              | version,vrs                                |           |                                              |
  +------------------------------+--------------------------------------------+-----------+----------------------------------------------+
  |Install version?(Y/N)         | Anstelle der Verwendung von Version kann   | No        | Verlassen Sie das Bild                       |
- |                              | der Anwender nutzen Version, VERSION.|     |           |                                              |
+ |                              | der Anwender nutzen Version,               |           |                                              |
+ |                              | version, vrs|                              |           |                                              |
  +------------------------------+--------------------------------------------+-----------+----------------------------------------------+
 
 

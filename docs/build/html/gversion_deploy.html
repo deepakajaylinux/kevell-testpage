@@ -95,7 +95,10 @@
 <li><a class="reference internal" href="#">Version</a><ul>
 <li><a class="reference internal" href="#zusammenfassung">Zusammenfassung</a></li>
 <li><a class="reference internal" href="#hilfe-befehl">Hilfe Befehl</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#alternative-parameter">Alternative Parameter</a></li>
+<li><a class="reference internal" href="#specific">Specific</a></li>
+<li><a class="reference internal" href="#latest">Latest</a></li>
+<li><a class="reference internal" href="#rollback">Rollback</a></li>
 <li><a class="reference internal" href="#option">Option</a></li>
 <li><a class="reference internal" href="#vorteile">Vorteile</a></li>
 </ul>
@@ -205,16 +208,125 @@ End Help
 ******************************
 </pre></div>
 </div>
-<p>Der folgende Screenshot zeigt den vollen Einsatz der ptdeploy.Version, version, VERSION</p>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Die Installation umfasst die Installation von Version erforderlich, um die Installation in einer aktualisierten Version zu machen. Es ist eine offensichtliche Prozess auf Version Modul unter ptdeploy installieren. Version mit nur mit dem Befehl unten angegeben,</p>
-<div class="highlight-bash"><div class="highlight"><pre>ptdeploy version Install
+<div class="section" id="alternative-parameter">
+<h2>Alternative Parameter<a class="headerlink" href="#alternative-parameter" title="Permalink to this headline">¶</a></h2>
+<p>Der folgende Screenshot zeigt den vollen Einsatz der ptdeploy.</p>
+<p>Version, version, vrs</p>
+</div>
+<div class="section" id="specific">
+<h2>Specific<a class="headerlink" href="#specific" title="Permalink to this headline">¶</a></h2>
+<p>Das Besondere Option ermöglicht es dem Benutzer, zu ändern zurück die aktuelle Version Verzeichnis bestimmte Version zu machen. Der Befehl für die bestimmte Option ist unten dargestellt ,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy version specific
 </pre></div>
 </div>
-<p>Nach beleben den Befehl geben Sie den Wert katechisieren.</p>
-<p>Wenn die Benutzereingaben wie ja es wird automatisch Version mit der Überprüfung aus dem System zu installieren. Wenn nicht beenden Sie die Installation. Der folgende Screenshot zeigen, Version und seine Funktionen.</p>
+<p>or</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy version specific --limit<span class="o">=</span>4 --container<span class="o">=</span>/opt/versiontest/ --version<span class="o">=</span>2
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy version specific
+
+Do you want to change the version that *current* points to? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the Project Container Directory? <span class="o">(</span>The one with versions in<span class="o">)</span> Enter none <span class="k">for</span> /opt/versiontest
+/opt/versiontest/
+Please Choose Version to make current <span class="o">(</span>Showing newest first, Enter none <span class="k">for </span>newest<span class="o">)</span>:
+--- All Versions: ---
+<span class="o">(</span>0<span class="o">)</span> karuna
+
+0
+How many Versions to limit to? Enter 0 to ignore version limits
+2
+Removed Version Symlink
+Created Version Symlink
+********************************
+Seems Fine...Versioning Finished
+********************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy version specific --limit<span class="o">=</span>4 --container<span class="o">=</span>/opt/versiontest/ --version<span class="o">=</span>2
+
+Do you want to change the version that *current* points to? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Removed Version Symlink
+Created Version Symlink
+********************************
+Seems Fine...Versioning Finished
+********************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="latest">
+<h2>Latest<a class="headerlink" href="#latest" title="Permalink to this headline">¶</a></h2>
+<p>Die neueste Option erlaubt die Benutzer, die verfügbaren Link auf die neueste Version zu ändern zurück . Der Befehl für die neuesten Ausführungsprozess wird unten gezeigt ,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy version latest
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy version latest --limit<span class="o">=</span>3 --container<span class="o">=</span>/var/www/applications/the-app
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy version latest
+
+Do you want to change the version that *current* points to? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the Project Container Directory? <span class="o">(</span>The one with versions in<span class="o">)</span> Enter none <span class="k">for</span> /opt/versiontest
+/opt/versiontest/
+How many Versions to limit to? Enter 0 to ignore version limits
+5
+Removed Version Symlink
+Created Version Symlink
+********************************
+Seems Fine...Versioning Finished
+********************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy version latest --limit<span class="o">=</span>3 --container<span class="o">=</span>/opt/versiontest/
+
+Do you want to change the version that *current* points to? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Removed Version Symlink
+Created Version Symlink
+********************************
+Seems Fine...Versioning Finished
+********************************
+</pre></div>
+</div>
+</div>
+<div class="section" id="rollback">
+<h2>Rollback<a class="headerlink" href="#rollback" title="Permalink to this headline">¶</a></h2>
+<p>Die Option Rollback ermöglicht die Benutzer Änderungen an der bestehenden Version zu machen. Die Rollback- Ausführungsprozess wird unten gezeigt ,</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy version rollback
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-bash"><div class="highlight"><pre>ptdeploy version rollback --limit<span class="o">=</span>3 --container<span class="o">=</span>/opt/versiontest/
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy version rollback
+
+Do you want to change the version that *current* points to? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+What is the Project Container Directory? <span class="o">(</span>The one with versions in<span class="o">)</span> Enter none <span class="k">for</span> /opt/versiontest
+/opt/versiontest/
+How many Versions to limit to? Enter 0 to ignore version limits
+4
+Removed Version Symlink
+********************************
+Seems Fine...Versioning Finished
+********************************
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre>kevell@corp:/# ptdeploy version rollback --limit<span class="o">=</span>3 --container<span class="o">=</span>/opt/versiontest/
+
+Do you want to change the version that *current* points to? <span class="o">(</span>Y/N<span class="o">)</span>
+y
+Removed Version Symlink
+********************************
+Seems Fine...Versioning Finished
+********************************
+</pre></div>
+</div>
 </div>
 <div class="section" id="option">
 <h2>Option<a class="headerlink" href="#option" title="Permalink to this headline">¶</a></h2>
@@ -235,14 +347,16 @@ End Help
 <tbody valign="top">
 <tr class="row-even"><td>Install version?(Y/N)</td>
 <td>Anstelle der Verwendung von Version
-kann der Anwender nutzen Version,VERSION</td>
+kann der Anwender nutzen Version,
+version,vrs</td>
 <td>Yes</td>
 <td>Unter ptdeploy Modul erfolgreich
 installiert</td>
 </tr>
 <tr class="row-odd"><td>Install version?(Y/N)</td>
 <td>Anstelle der Verwendung von Version kann
-der Anwender nutzen Version, VERSION.|</td>
+der Anwender nutzen Version,
+version, vrs|</td>
 <td>No</td>
 <td>Verlassen Sie das Bild</td>
 </tr>
