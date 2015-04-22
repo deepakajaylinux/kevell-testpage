@@ -18,6 +18,7 @@ Dieser Befehl hilft, die Nutzung von Projektmodul zu bestimmen. Der Benutzer wir
 	
 	ptdeploy project help
        
+.. code-block:: bash
 
  kevell@corp:/# ptdeploy Project help
  ******************************
@@ -64,16 +65,19 @@ Wenn der Benutzer zu installieren muss, kann der Benutzer die folgenden Befehle 
 	
 	 ptdeploy proj container
 
+
+.. code-block:: bash
+
  kevell@corp:/# ptdeploy proj container
  Do you want to Modify Project Container Settings? (Y/N) 
- Y
+ y
  Do you want to initialize this as a ptdeploy project Container? (Y/N) 
- Y
+ y
  What is your Project Container directory?
- /root/gg
+ /var/www/applications/the-app
  Project Container directory created
- /root/gg space /root/ggMoving to Container
- /root/gg
+ /var/www/applications/the-app space /var/www/applications/the-appMoving to Container
+ /var/www/applications/the-app
  Showing Container Directory
  Project Container file created
  ******************************
@@ -81,6 +85,7 @@ Wenn der Benutzer zu installieren muss, kann der Benutzer die folgenden Befehle 
 
  Seems Fine...Project Editor Finished
  ******************************
+
 
 
 
